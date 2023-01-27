@@ -9,8 +9,8 @@ app.get("/", (req, res) => {
   res.send(JSON.stringify({ name: "Hello World!" }));
 });
 
-app.use((req, res) => {
-  res.status(404);
+app.all("*", (req, res) => {
+  res.status(404).send("404");
 });
 
 app.listen(port, () => {
