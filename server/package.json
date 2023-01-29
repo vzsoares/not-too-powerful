@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Utils:",
   "main": "index.ts",
-  "engines":{
-    "node":">=18.12.1"
+  "engines": {
+    "node": ">=18.12.1"
   },
   "scripts": {
     "start": "nodemon app.ts",
@@ -24,6 +24,7 @@
     "@typescript-eslint/parser": "^5.49.0",
     "eslint": "^8.33.0",
     "eslint-config-prettier": "^8.6.0",
+    "eslint-config-standard-with-typescript": "^33.0.0",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-n": "^15.6.1",
     "eslint-plugin-prettier": "^4.2.1",
