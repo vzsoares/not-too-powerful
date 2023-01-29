@@ -5,7 +5,7 @@
   "main": "app.ts",
   "scripts": {
     "dev-s":"cd server && yarn start",
-    "dev-c":"cd client && yarn start",
+    "dev-c":"cd client && yarn dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "vzsoares",
