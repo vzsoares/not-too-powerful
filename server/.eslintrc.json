@@ -3,6 +3,14 @@
     "es2021": true,
     "node": true
   },
+  "settings": {
+    "import/resolver": {
+      "typescript": true,
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  },
   "extends": [
     "eslint:recommended",
     "standard-with-typescript",
@@ -12,6 +20,7 @@
     "plugin:import/errors",
     "plugin:import/warnings",
     "plugin:@typescript-eslint/recommended",
+    "plugin:import/typescript",
     "prettier"
   ],
   "overrides": [],
@@ -24,9 +33,8 @@
   "plugins": ["unused-imports", "@typescript-eslint", "prettier"],
   "rules": {
     "prettier/prettier": "error",
-    // "@typescript-eslint/strict-boolean-expressions": "warn",
-    // "no-console": ["error",{"allow":["warn","error"]}]
-    "no-unused-vars": "off", // or "@typescript-eslint/no-unused-vars": "off",
+    "no-unused-vars": "off",
+    "@typescript-eslint/explicit-function-return-type": 0,
     "unused-imports/no-unused-imports": "error",
     "unused-imports/no-unused-vars": [
       "error",
@@ -37,6 +45,8 @@
         "argsIgnorePattern": "^_"
       }
     ],
+    "n/no-missing-import": 0,
+    "import/no-named-as-default-member": 0,
     "import/order": [
       "error",
       {
@@ -50,6 +60,48 @@
           "sibling",
           "index",
           "type"
+        ],
+        "pathGroups": [
+          {
+            "pattern": "@services/**",
+            "group": "unknown",
+            "position": "after"
+          },
+          {
+            "pattern": "@models/**",
+            "group": "unknown",
+            "position": "after"
+          },
+          {
+            "pattern": "@controllers/**",
+            "group": "unknown",
+            "position": "after"
+          },
+          {
+            "pattern": "@middleware/**",
+            "group": "unknown",
+            "position": "after"
+          },
+          {
+            "pattern": "@utils/**",
+            "group": "unknown",
+            "position": "after"
+          },
+          {
+            "pattern": "@routes/**",
+            "group": "unknown",
+            "position": "after"
+          },
+          {
+            "pattern": "@validations/**",
+            "group": "unknown",
+            "position": "after"
+          },
+          {
+            "pattern": "@startup/**",
+            "group": "unknown",
+            "position": "after"
+          }
         ]
       }
     ]
