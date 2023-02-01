@@ -2,12 +2,21 @@
   "name": "not-too-powerful",
   "version": "1.0.0",
   "description": "Discord Bot",
+  "author": "vzsoares",
+  "license": "ISC",
   "main": "app.ts",
   "scripts": {
-    "dev-s":"cd server && yarn start",
-    "dev-c":"cd client && yarn dev",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev-s": "cd server && yarn start",
+    "dev-c": "cd client && yarn dev",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install",
+    "fmt": "cd client && yarn fmt & cd server && yarn fmt"
   },
-  "author": "vzsoares",
-  "license": "ISC"
+  "lint-staged": {
+    "*": "yarn fmt"
+  },
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.0"
+  }
 }
