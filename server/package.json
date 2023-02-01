@@ -11,7 +11,7 @@
   },
   "scripts": {
     "start": "nodemon app.ts",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"TODO server tests: no test specified\" && exit 0",
     "fmt": "yarn eslint --fix . && yarn prettier -w ."
   },
   "dependencies": {

@@ -8,7 +8,7 @@
   "scripts": {
     "dev-s": "cd server && yarn start",
     "dev-c": "cd client && yarn dev",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test-smoke": "cd client && yarn run test & cd server && yarn run test",
     "prepare": "husky install",
     "fmt": "cd client && yarn fmt & cd server && yarn fmt"
   },
