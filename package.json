@@ -8,9 +8,9 @@
   "scripts": {
     "dev-s": "cd server && yarn start",
     "dev-c": "cd client && yarn dev",
-    "test-smoke": "cd client && yarn run test & cd server && yarn run test",
-    "prepare": "husky install",
-    "fmt": "cd client && yarn fmt & cd server && yarn fmt"
+    "test-smoke": "cd client && yarn run test && cd ../server && yarn run test",
+    "fmt": "cd client && yarn fmt && cd ../server && yarn fmt",
+    "prepare": "husky install"
   },
   "lint-staged": {
     "*": "yarn fmt"
