@@ -9,13 +9,12 @@
     "dev-s": "cd server && yarn start",
     "dev-c": "cd client && yarn dev",
     "test-smoke": "cd client && yarn run test && cd ../server && yarn run test",
-    "fmt": "cd client ; yarn fmt ; cd ../server ; yarn fmt",
+    "fmt": "cd client && yarn fmt ; cd ../server && yarn fmt",
+    "check-types":"cd client ; yarn check-types ; cd ../server ; yarn check-types",
     "prepare": "husky install"
   },
   "lint-staged": {
-    "*": [
-      "bash -c yarn fmt"
-    ]
+    "*.{ts,tsx,js,jsx}": "yarn fmt"
   },
   "devDependencies": {
     "husky": "^8.0.3",
