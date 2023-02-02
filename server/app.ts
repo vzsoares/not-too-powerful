@@ -35,6 +35,13 @@ app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, '../client/dist', 'index.html'));
 });
 
+
+
+
+
+
+
+
 app.use(notFound);
 
 app.listen(port, () => {

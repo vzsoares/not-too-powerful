@@ -30,7 +30,7 @@
     "sourceType": "module",
     "project": "./tsconfig.json"
   },
-  "plugins": ["unused-imports", "@typescript-eslint", "prettier"],
+  "plugins": ["unused-imports", "@typescript-eslint", "log", "prettier"],
   "rules": {
     "prettier/prettier": "error",
     "no-unused-vars": "off",

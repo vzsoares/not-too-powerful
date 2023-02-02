@@ -12,7 +12,8 @@
   "scripts": {
     "start": "nodemon app.ts",
     "test": "echo \"TODO server tests: no test specified\" && exit 0",
-    "fmt": "yarn eslint --fix . && yarn prettier -w ."
+    "fmt": "yarn prettier -w . ; yarn eslint --fix . ; yarn run check-types ",
+    "check-types": "yarn tsc --project tsconfig.json --noemit --diagnostics"
   },
   "dependencies": {
     "cookie-parser": "^1.4.6",
@@ -37,6 +38,7 @@
     "eslint-config-standard-with-typescript": "^33.0.0",
     "eslint-import-resolver-typescript": "^3.5.3",
     "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-log": "^1.2.7",
     "eslint-plugin-n": "^15.6.1",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-promise": "^6.1.1",
