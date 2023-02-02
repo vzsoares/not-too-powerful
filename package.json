@@ -9,7 +9,7 @@
     "dev-s": "cd server && yarn start",
     "dev-c": "cd client && yarn dev",
     "test-smoke": "cd client && yarn run test && cd ../server && yarn run test",
-    "fmt": "cd client && yarn fmt ; cd ../server && yarn fmt",
+    "fmt": "cd client && yarn fmt & cd server && yarn fmt && wait -f",
     "check-types":"cd client && yarn check-types & cd server && yarn check-types && wait -f",
     "prepare": "husky install"
   },
