@@ -27,8 +27,20 @@ app.use(
 );
 app.use(cookieParser(process.env.JWT_SECRET));
 
+app.use((req, res, next) => {
+  // TODO extend res
+  // https://www.npmjs.com/package/express-respond
+  res.currentUser = '';
+  res.error = () => {
+    res['code'] = 450;
+    return () => {};
+  };
+
+  next();
+});
+
 app.get('/api/v1', (req, res) => {
-  res.send('ok');
+  res.json({ status: 201 });
 });
 
 app.get('*', (req, res) => {
