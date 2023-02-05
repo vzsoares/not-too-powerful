@@ -1,5 +1,8 @@
 import path from 'path';
 
+import { message as STATUS_CODES } from 'statuses';
+import myCodes from 'statuses/codes.json';
+import _ from 'lodash';
 import dotenv from 'dotenv';
 import express from 'express';
 import helmet from 'helmet';
@@ -8,6 +11,7 @@ import rateLimiter from 'express-rate-limit';
 import cookieParser from 'cookie-parser';
 
 import notFound from '@middleware/not-found';
+import responseEnhancer from '@middleware/responseEnhancer';
 
 dotenv.config();
 
@@ -27,19 +31,11 @@ app.use(
 );
 app.use(cookieParser(process.env.JWT_SECRET));
 
-app.use((req, res, next) => {
-  // TODO extend res
-  // https://www.npmjs.com/package/express-respond
-  res.currentUser = '';
-  res.error = () => {
-    res['code'] = 450;
-    return () => {};
-  };
-
-  next();
-});
+app.use(responseEnhancer);
 
 app.get('/api/v1', (req, res) => {
+  // res.idada = 'asd';
+  // res.ok = 'asd';
   res.json({ status: 201 });
 });
 
@@ -51,4 +47,7 @@ app.use(notFound);
 
 app.listen(port, () => {
   console.log(`listening on port ${port}`);
+  const codes = Object.values(STATUS_CODES).map((c) => _.camelCase(c));
+  console.log(myCodes);
+  codes;
 });
