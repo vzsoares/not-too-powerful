@@ -1,8 +1,5 @@
 import path from 'path';
 
-import { message as STATUS_CODES } from 'statuses';
-import myCodes from 'statuses/codes.json';
-import _ from 'lodash';
 import dotenv from 'dotenv';
 import express from 'express';
 import helmet from 'helmet';
@@ -41,13 +38,11 @@ app.get('/api/v1', (req, res) => {
 
 app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, '../client/dist', 'index.html'));
+  res['423'] = 'askdmasdk';
 });
 
 app.use(notFound);
 
 app.listen(port, () => {
   console.log(`listening on port ${port}`);
-  const codes = Object.values(STATUS_CODES).map((c) => _.camelCase(c));
-  console.log(myCodes);
-  codes;
 });
