@@ -8,7 +8,7 @@
     "build": "tsc && yarn fmt && vite build",
     "preview": "vite preview",
     "test": "vitest run",
-    "fmt": " yarn prettier -w . ; yarn eslint --fix .",
+    "fmt": " yarn prettier -w . && yarn eslint --fix .",
     "check-types": "yarn tsc --project ./tsconfig.json --noemit && echo 'Client types are valid ✔︎'"
   },
   "dependencies": {

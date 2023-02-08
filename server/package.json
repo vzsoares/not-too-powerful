@@ -12,7 +12,7 @@
   "scripts": {
     "start": "nodemon app.ts",
     "test": "echo \"TODO server tests: no test specified\" && exit 0",
-    "fmt": "yarn prettier -w . ; yarn eslint --fix .",
+    "fmt": "yarn prettier -w . && yarn eslint --fix .",
     "check-types": "yarn tsc --project ./tsconfig.json --noemit && echo 'Server types are valid ✔︎'"
   },
   "dependencies": {

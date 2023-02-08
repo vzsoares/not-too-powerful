@@ -61,5 +61,6 @@
   "loopDetected": "508",
   "bandwidthLimitExceeded": "509",
   "notExtended": "510",
-  "networkAuthenticationRequired": "511"
+  "networkAuthenticationRequired": "511",
+  "error": "500"
 }

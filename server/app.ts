@@ -31,14 +31,11 @@ app.use(cookieParser(process.env.JWT_SECRET));
 app.use(responseEnhancer);
 
 app.get('/api/v1', (req, res) => {
-  // res.idada = 'asd';
-  // res.ok = 'asd';
-  res.json({ status: 201 });
+  res.ok({ msg: 'test' });
 });
 
 app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, '../client/dist', 'index.html'));
-  res['423'] = 'askdmasdk';
 });
 
 app.use(notFound);

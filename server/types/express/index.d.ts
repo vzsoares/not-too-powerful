@@ -3,11 +3,13 @@ import type STATUS_CODES from './responses.json';
 export {};
 
 type ReplyMethod = (
-  data?: Record<string, unknown>,
-  message?: string | string[],
+  data?: unknown | null,
+  message?: unknown | null,
+  error?: unknown | null,
+  code?: unknown | null,
 ) => void;
 
-type SafeResponseNames = Record<keyof typeof STATUS_CODES, ReplyMethod>;
+export type SafeResponseNames = Record<keyof typeof STATUS_CODES, ReplyMethod>;
 declare global {
   namespace Express {
     export interface Response extends SafeResponseNames {}
