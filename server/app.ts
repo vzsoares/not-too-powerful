@@ -8,6 +8,7 @@ import rateLimiter from 'express-rate-limit';
 import cookieParser from 'cookie-parser';
 
 import notFound from '@middleware/not-found';
+import responseEnhancer from '@middleware/responseEnhancer';
 
 dotenv.config();
 
@@ -27,8 +28,10 @@ app.use(
 );
 app.use(cookieParser(process.env.JWT_SECRET));
 
+app.use(responseEnhancer);
+
 app.get('/api/v1', (req, res) => {
-  res.send('ok');
+  res.ok({ msg: 'test' });
 });
 
 app.get('*', (req, res) => {
