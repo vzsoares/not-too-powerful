@@ -19,25 +19,8 @@ function responseEnhancer(req: Request, res: Response, next: NextFunction) {
   }));
 
   statuses.forEach(({ name, message: httpMsg, status }) => {
-    res[name] = function (
-      data: bodyT['data'],
-      message: bodyT['message'] = httpMsg,
-      code: bodyT['code'] = status,
-      error: bodyT['error'],
-    ) {
-      res.status(status);
-
-      // @ts-expect-error yes data is unknown
-      const toSendMsg = data.msg || data.message || message || httpMsg;
-      // @ts-expect-error yes code is unknown
-      const toSendCode = data.code || code || status;
-      // @ts-expect-error yes error is unknown
-      const toSendError = data.err || data.error || error;
-
-      if ([204, 304].includes(status)) {
-        res.json();
-      } else res.json(prepareBody(data, toSendMsg, toSendCode, toSendError));
-    };
+    res[name] = mapHttpResponses(res, httpMsg, status);
+    res[status] = mapHttpResponses(res, httpMsg, status);
   });
 
   next();
@@ -56,5 +39,30 @@ function prepareBody(
     message,
     code,
     error,
+  };
+}
+
+function mapHttpResponses(res: Response, httpMsg: string, status: number) {
+  return function (
+    data: bodyT['data'] = null,
+    message: bodyT['message'] = httpMsg,
+    code: bodyT['code'] = status,
+    error: bodyT['error'],
+  ) {
+    res.status(status);
+
+    const dataIsValidObject = typeof data === 'object' && data !== null;
+
+    const toSendMsg = dataIsValidObject
+      ? data['msg'] || data['message']
+      : message || httpMsg;
+    const toSendCode = dataIsValidObject ? data['code'] : code || status;
+    const toSendError = dataIsValidObject
+      ? data['err'] || data['error']
+      : error;
+
+    if ([204, 304].includes(status)) {
+      res.json();
+    } else res.json(prepareBody(data, toSendMsg, toSendCode, toSendError));
   };
 }

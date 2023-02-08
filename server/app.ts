@@ -7,7 +7,7 @@ import cors from 'cors';
 import rateLimiter from 'express-rate-limit';
 import cookieParser from 'cookie-parser';
 
-import notFound from '@middleware/not-found';
+import apiNotFound from '@middleware/not-found';
 import responseEnhancer from '@middleware/responseEnhancer';
 
 dotenv.config();
@@ -31,14 +31,14 @@ app.use(cookieParser(process.env.JWT_SECRET));
 app.use(responseEnhancer);
 
 app.get('/api/v1', (req, res) => {
-  res.ok({ msg: 'test' });
+  res.ok();
 });
+
+app.get('/api/*', apiNotFound);
 
 app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, '../client/dist', 'index.html'));
 });
-
-app.use(notFound);
 
 app.listen(port, () => {
   console.log(`listening on port ${port}`);
