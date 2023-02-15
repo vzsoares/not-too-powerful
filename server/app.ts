@@ -10,6 +10,7 @@ import cookieParser from 'cookie-parser';
 import apiNotFound from '@middleware/not-found';
 import responseEnhancer from '@middleware/responseEnhancer';
 import errorHandler, { CustomError } from '@middleware/error-handler';
+import logger from '@middleware/logger';
 
 dotenv.config();
 
@@ -36,10 +37,10 @@ app.get('/api/v1', (req, res) => {
     throw new CustomError(401);
   }
 
-  const aaf = {} as any
-
-  res.ok({ asd: aaf.asd.qiqwe });
+  res.ok();
 });
+
+app.use(logger);
 
 app.use(apiNotFound);
 app.use(errorHandler);

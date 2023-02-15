@@ -1,4 +1,4 @@
-import logger from './logger';
+// import winston from 'winston';
 
 import type { NextFunction, Request, Response } from 'express';
 
@@ -34,10 +34,6 @@ function errorHandler(
       : err.message;
 
   const toSendStatus = err.status ?? 500;
-
-  if (toSendStatus === 500) {
-    logger.error(`${err.message ?? ''} ${err?.stack ?? ''}`);
-  }
 
   res[toSendStatus](null, toSendMsg, err.code, err.error);
 }
