@@ -1,3 +1,5 @@
+import logger from './logger';
+
 import type { NextFunction, Request, Response } from 'express';
 
 export class CustomError extends Error {
@@ -30,7 +32,12 @@ function errorHandler(
     err.status !== 500 && err.message === CustomError.baseMsg
       ? null
       : err.message;
+
   const toSendStatus = err.status ?? 500;
+
+  if (toSendStatus === 500) {
+    logger.error(`${err.message ?? ''} ${err?.stack ?? ''}`);
+  }
 
   res[toSendStatus](null, toSendMsg, err.code, err.error);
 }

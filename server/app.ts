@@ -36,7 +36,9 @@ app.get('/api/v1', (req, res) => {
     throw new CustomError(401);
   }
 
-  res.ok();
+  const aaf = {} as any
+
+  res.ok({ asd: aaf.asd.qiqwe });
 });
 
 app.use(apiNotFound);
