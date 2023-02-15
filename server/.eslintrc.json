@@ -38,6 +38,8 @@
     "unused-imports/no-unused-imports": "error",
     "@typescript-eslint/strict-boolean-expressions": 0,
     "@typescript-eslint/dot-notation": 0,
+    "@typescript-eslint/no-useless-constructor": 0,
+    "n/handle-callback-err": 0,
     "unused-imports/no-unused-vars": [
       "error",
       {

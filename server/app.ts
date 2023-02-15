@@ -9,6 +9,7 @@ import cookieParser from 'cookie-parser';
 
 import apiNotFound from '@middleware/not-found';
 import responseEnhancer from '@middleware/responseEnhancer';
+import errorHandler, { CustomError } from '@middleware/error-handler';
 
 dotenv.config();
 
@@ -31,10 +32,15 @@ app.use(cookieParser(process.env.JWT_SECRET));
 app.use(responseEnhancer);
 
 app.get('/api/v1', (req, res) => {
+  if (typeof req === 'string') {
+    throw new CustomError(401);
+  }
+
   res.ok();
 });
 
-app.get('/api/*', apiNotFound);
+app.use(apiNotFound);
+app.use(errorHandler);
 
 app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, '../client/dist', 'index.html'));

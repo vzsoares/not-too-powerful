@@ -5,8 +5,8 @@ export {};
 type ReplyMethod = (
   data?: unknown | null,
   message?: unknown | null,
-  error?: unknown | null,
   code?: unknown | null,
+  error?: unknown | null,
 ) => void;
 
 export type SafeResponseNames = Record<keyof typeof STATUS_CODES, ReplyMethod>;
