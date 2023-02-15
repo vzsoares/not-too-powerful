@@ -6,6 +6,7 @@ import helmet from 'helmet';
 import cors from 'cors';
 import rateLimiter from 'express-rate-limit';
 import cookieParser from 'cookie-parser';
+import morgan from 'morgan';
 
 import apiNotFound from '@middleware/not-found';
 import responseEnhancer from '@middleware/responseEnhancer';
@@ -19,6 +20,7 @@ const port = process.env.PORT ?? 4000;
 
 app.use(express.static(path.resolve(__dirname, '../client/dist')));
 app.use(express.json());
+app.use(morgan('tiny'));
 app.use(express.urlencoded({ extended: false }));
 app.use(helmet());
 app.use(cors());
