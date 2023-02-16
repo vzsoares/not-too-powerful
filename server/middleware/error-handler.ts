@@ -1,5 +1,3 @@
-// import winston from 'winston';
-
 import type { NextFunction, Request, Response } from 'express';
 
 export class CustomError extends Error {
