@@ -13,6 +13,8 @@ import responseEnhancer from '@middleware/responseEnhancer';
 import errorHandler, { CustomError } from '@middleware/error-handler';
 import logger from '@middleware/logger';
 
+import discordBot from './discordBot';
+
 dotenv.config();
 
 const app = express();
@@ -34,7 +36,10 @@ app.use(cookieParser(process.env.JWT_SECRET));
 
 app.use(responseEnhancer);
 
+void discordBot();
+
 app.get('/api/v1', (req, res) => {
+  // error example
   if (typeof req === 'string') {
     throw new CustomError(401);
   }
