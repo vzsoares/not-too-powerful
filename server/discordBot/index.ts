@@ -4,6 +4,7 @@ import { Client, GatewayIntentBits } from 'discord.js';
 dotenv.config();
 
 async function DiscordBot() {
+  // TODO convert to /interaction http instead of gateway shenanigan
   const client = new Client({
     intents: [
       GatewayIntentBits.Guilds,
