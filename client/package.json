@@ -12,12 +12,16 @@
     "check-types": "yarn tsc --project ./tsconfig.json --noemit && echo 'Client types are valid ✔︎'"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/material": "^5.11.11",
     "@reduxjs/toolkit": "^1.9.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.8.2",
-    "redux-persist": "^6.0.0"
+    "redux-persist": "^6.0.0",
+    "vite-plugin-svgr": "^2.4.0"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.5",

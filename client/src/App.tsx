@@ -3,6 +3,7 @@ import { BrowserRouter, Outlet, Route, Routes } from 'react-router-dom';
 import { PersistGate } from 'redux-persist/integration/react';
 
 import { AppCtxProvider } from './context/appCtx';
+import SplashLoading from './SplashLoading';
 import store, { persistor } from './store';
 
 function App(): JSX.Element {
@@ -25,10 +26,6 @@ function App(): JSX.Element {
 }
 
 export default App;
-
-function SplashLoading() {
-  return <p>loading...</p>;
-}
 
 function Home() {
   return <p>Home</p>;
