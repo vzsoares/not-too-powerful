@@ -46,26 +46,26 @@ const theme = createTheme({
     },
   },
   palette: {
-    primary: { main: '#28534E' },
-    secondary: { main: '#4EA62F' },
+    primary: { main: '#5865F2' },
+    secondary: { main: '#23272A' },
     white: { main: '#FFFFFF' },
     gray: {
-      100: '#F7F7F7',
-      200: '#EEEEEE',
-      300: '#E6E6E6',
-      400: '#DDDDDD',
-      500: '#D5D5D5',
-      600: '#AAAAAA',
-      700: '#808080',
-      800: '#555555',
-      900: '#2B2B2B',
+      100: '#7b7d7f',
+      200: '#65686a',
+      300: '#4f5255',
+      400: '#393d3f',
+      500: '#23272a',
+      600: '#202326',
+      700: '#1c1f22',
+      800: '#191b1d',
+      900: '#151719',
     },
   },
   typography: {
     fontFamily: ['Figtree', 'Roboto', 'Helvetica', 'Arial', 'sans-serif'].join(
       ',',
     ),
-    allVariants: { color: '#2C2C2C' },
+    allVariants: { color: '#FFFFFF' },
   },
 });
 
