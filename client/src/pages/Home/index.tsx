@@ -1,6 +1,42 @@
 import { Box, Typography } from '@mui/material';
 
+import UploadBox from './UploadBox';
+
 function Home() {
+  return (
+    <>
+      <HeroTitle />
+      <UploadBox />
+      <HelpButton />
+    </>
+  );
+}
+
+export default Home;
+
+function HelpButton() {
+  return (
+    <Typography
+      textAlign='center'
+      color='primary'
+      sx={{
+        textDecoration: 'underline',
+        fontSize: { xs: '1rem', md: '1.5rem' },
+        cursor: 'pointer',
+        '&:hover': {
+          filter: 'opacity(0.85)',
+        },
+        '&:active': {
+          filter: 'opacity(0.55)',
+        },
+      }}
+    >
+      Help
+    </Typography>
+  );
+}
+
+function HeroTitle() {
   return (
     <Box>
       <Typography
@@ -27,5 +63,3 @@ function Home() {
     </Box>
   );
 }
-
-export default Home;

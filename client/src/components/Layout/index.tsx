@@ -20,14 +20,17 @@ export default Layout;
 
 function BodyContainer({ children }: { children: React.ReactElement }) {
   return (
-    <Box sx={{ flex: '1', bgcolor: 'secondary.main' }}>
+    <Box sx={{ flex: '1', bgcolor: 'secondary.main', display: 'flex' }}>
       <Box
         sx={{
           maxWidth: '1240px',
           margin: '0 auto',
           mt: '2rem',
-          mb: '5rem',
+          mb: '2rem',
           px: { xs: '1rem', md: '2rem' },
+          display: 'flex',
+          flex: 1,
+          flexDirection: 'column',
         }}
       >
         {children}
