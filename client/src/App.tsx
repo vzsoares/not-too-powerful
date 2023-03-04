@@ -1,12 +1,13 @@
-import { Box, Typography } from '@mui/material';
 import { Provider } from 'react-redux';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { PersistGate } from 'redux-persist/integration/react';
 
 import Layout from './components/Layout';
 import { AppCtxProvider } from './context/appCtx';
-import SplashLoading from './SplashLoading';
+import SplashLoading from './components/Layout/SplashLoading';
 import store, { persistor } from './store';
+import Home from './pages/Home';
+import Error from './pages/Error';
 
 function App(): JSX.Element {
   return (
@@ -17,8 +18,8 @@ function App(): JSX.Element {
             <Routes>
               <Route path='/' element={<Layout />}>
                 <Route index element={<Home />} />
-                <Route path='*' element={<Error />} />
               </Route>
+              <Route path='*' element={<Error />} />
             </Routes>
           </BrowserRouter>
         </AppCtxProvider>
@@ -28,42 +29,3 @@ function App(): JSX.Element {
 }
 
 export default App;
-
-function Home() {
-  return (
-    <Box>
-      <Typography
-        textAlign='center'
-        sx={{ fontSize: { xs: '2rem', md: '3rem', xl: '4rem' } }}
-      >
-        <Typography
-          component='span'
-          display='block'
-          variant='h1'
-          fontSize='inherit'
-        >
-          NOT&nbsp;TOO
-        </Typography>
-        {/* <Typography
-          component='span'
-          // display='block'
-          variant='h1'
-          fontSize='inherit'
-        >
-          TOO
-        </Typography> */}
-        <Typography
-          component='span'
-          display='block'
-          variant='h1'
-          fontSize='inherit'
-        >
-          POWERFUL
-        </Typography>
-      </Typography>
-    </Box>
-  );
-}
-function Error() {
-  return <p>Error</p>;
-}

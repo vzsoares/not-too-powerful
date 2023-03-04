@@ -1,7 +1,7 @@
 import { keyframes } from '@emotion/react';
 import { Box, styled, SvgIcon } from '@mui/material';
 
-import { ReactComponent as DiscordLogo } from '../assets/discord-icon.svg';
+import { ReactComponent as DiscordLogo } from '../../../assets/discord-icon.svg';
 
 function SplashLoading() {
   const pump = keyframes`
