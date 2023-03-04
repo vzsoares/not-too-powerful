@@ -13,16 +13,16 @@ function App(): JSX.Element {
   return (
     <Provider store={store}>
       <PersistGate loading={<SplashLoading />} persistor={persistor}>
-        <AppCtxProvider>
-          <BrowserRouter>
+        <BrowserRouter>
+          <AppCtxProvider>
             <Routes>
               <Route path='/' element={<Layout />}>
                 <Route index element={<Home />} />
               </Route>
               <Route path='*' element={<Error />} />
             </Routes>
-          </BrowserRouter>
-        </AppCtxProvider>
+          </AppCtxProvider>
+        </BrowserRouter>
       </PersistGate>
     </Provider>
   );
