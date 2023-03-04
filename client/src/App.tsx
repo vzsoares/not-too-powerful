@@ -1,3 +1,4 @@
+import { Box, Typography } from '@mui/material';
 import { Provider } from 'react-redux';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { PersistGate } from 'redux-persist/integration/react';
@@ -29,7 +30,39 @@ function App(): JSX.Element {
 export default App;
 
 function Home() {
-  return <p>Home</p>;
+  return (
+    <Box>
+      <Typography
+        textAlign='center'
+        sx={{ fontSize: { xs: '2rem', md: '3rem', xl: '4rem' } }}
+      >
+        <Typography
+          component='span'
+          display='block'
+          variant='h1'
+          fontSize='inherit'
+        >
+          NOT&nbsp;TOO
+        </Typography>
+        {/* <Typography
+          component='span'
+          // display='block'
+          variant='h1'
+          fontSize='inherit'
+        >
+          TOO
+        </Typography> */}
+        <Typography
+          component='span'
+          display='block'
+          variant='h1'
+          fontSize='inherit'
+        >
+          POWERFUL
+        </Typography>
+      </Typography>
+    </Box>
+  );
 }
 function Error() {
   return <p>Error</p>;

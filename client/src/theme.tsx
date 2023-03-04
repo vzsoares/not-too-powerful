@@ -62,10 +62,17 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: ['Figtree', 'Roboto', 'Helvetica', 'Arial', 'sans-serif'].join(
-      ',',
-    ),
+    fontFamily: [
+      'Roboto',
+      'Ginto-Nord',
+      'Helvetica',
+      'Arial',
+      'sans-serif',
+    ].join(','),
     allVariants: { color: '#FFFFFF' },
+    h1: { fontFamily: 'Ginto-Nord', fontWeight: 900, lineHeight: '80%' },
+    h3: { fontFamily: 'Ginto-Nord', fontWeight: 800, lineHeight: '110%' },
+    body1: { fontFamily: 'Roboto', fontWeight: 500 },
   },
 });
 
