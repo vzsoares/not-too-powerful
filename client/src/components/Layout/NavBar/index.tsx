@@ -1,11 +1,56 @@
 import { Button, IconButton, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import PersonIcon from '@mui/icons-material/Person';
+import { useEffect, useState } from 'react';
+
+import { discordGetUserCode } from '../../../../env';
 
 function Navbar() {
+  const [externalPopup, setExternalPopup] = useState<any>(null);
+
+  const handlePopup = () => {
+    const width = 500;
+    const height = 900;
+    const left = window.screenX + (window.outerWidth - width) / 2;
+    const top = window.screenY + (window.outerHeight - height) / 2.5;
+    const title = ``;
+    const url = discordGetUserCode;
+    const popup = window.open(
+      url,
+      title,
+      `width=${width},height=${height},left=${left},top=${top}`,
+    );
+    setExternalPopup(popup);
+  };
+
+  useEffect(() => {
+    if (!externalPopup) {
+      return;
+    }
+
+    const timer = setInterval(() => {
+      if (!externalPopup) {
+        timer && clearInterval(timer);
+        return;
+      }
+      const currentUrl = externalPopup.location.href;
+      if (!currentUrl) {
+        return;
+      }
+      const searchParams = new URL(currentUrl).searchParams;
+      const code = searchParams.get('code');
+      if (code) {
+        externalPopup.close();
+        // TODO SEND CODE TO API
+        console.warn(`The popup URL has URL code param = ${code}`);
+      }
+    }, 500);
+  }, [externalPopup]);
+
   return (
     <NavContainer>
       <Button
+        onClick={handlePopup}
         variant='contained'
         sx={{ py: { xs: '1rem', md: '1.5rem' }, height: 'fit-content' }}
       >
