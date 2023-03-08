@@ -15,6 +15,7 @@ import errorHandler from '@middleware/error-handler';
 import logger from '@middleware/logger';
 
 import authRouter from '@routes/authRoutes';
+import guildsRouter from '@routes/guildsRoutes';
 
 import discordBot from './discordBot';
 
@@ -42,6 +43,7 @@ app.use(responseEnhancer);
 void discordBot();
 
 app.use('/api/v1/auth', authRouter);
+app.use('/api/v1/guilds', guildsRouter);
 
 app.use(logger);
 

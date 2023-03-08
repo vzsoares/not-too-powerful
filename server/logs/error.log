@@ -1,0 +1,2956 @@
+{
+  meta: {
+    error: ZodError: [
+      {
+        "code": "invalid_type",
+        "expected": "string",
+        "received": "undefined",
+        "path": [
+          "code"
+        ],
+        "message": "Required"
+      }
+    ]
+        at handleResult (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:29:23)
+        at ZodObject.safeParse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:142:16)
+        at ZodObject.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:122:29)
+        at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:11:30)
+        at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)
+        at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)
+        at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)
+        at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)
+        at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)
+        at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5) {
+      issues: [
+        {
+          code: 'invalid_type',
+          expected: 'string',
+          received: 'undefined',
+          path: [ 'code' ],
+          message: 'Required'
+        }
+      ],
+      addIssue: [Function (anonymous)],
+      addIssues: [Function (anonymous)],
+      errors: [
+        {
+          code: 'invalid_type',
+          expected: 'string',
+          received: 'undefined',
+          path: [ 'code' ],
+          message: 'Required'
+        }
+      ]
+    },
+    level: 'error',
+    message: 'uncaughtException: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [\n' +
+      '      "code"\n' +
+      '    ],\n' +
+      '    "message": "Required"\n' +
+      '  }\n' +
+      ']\n' +
+      'ZodError: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [\n' +
+      '      "code"\n' +
+      '    ],\n' +
+      '    "message": "Required"\n' +
+      '  }\n' +
+      ']\n' +
+      '    at handleResult (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:29:23)\n' +
+      '    at ZodObject.safeParse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:142:16)\n' +
+      '    at ZodObject.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:122:29)\n' +
+      '    at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:11:30)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)\n' +
+      '    at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)',
+    stack: 'ZodError: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [\n' +
+      '      "code"\n' +
+      '    ],\n' +
+      '    "message": "Required"\n' +
+      '  }\n' +
+      ']\n' +
+      '    at handleResult (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:29:23)\n' +
+      '    at ZodObject.safeParse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:142:16)\n' +
+      '    at ZodObject.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:122:29)\n' +
+      '    at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:11:30)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)\n' +
+      '    at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)',
+    exception: true,
+    date: 'Tue Mar 07 2023 21:57:20 GMT-0300 (Brasilia Standard Time)',
+    process: {
+      pid: 73608,
+      uid: 1000,
+      gid: 1001,
+      cwd: '/home/zizmackrok/Desktop/Code/not-too-powerful/server',
+      execPath: '/home/zizmackrok/.nvm/versions/node/v18.12.1/bin/node',
+      version: 'v18.12.1',
+      argv: [
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/.bin/ts-node',
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/app.ts'
+      ],
+      memoryUsage: {
+        rss: 297787392,
+        heapTotal: 187494400,
+        heapUsed: 182022192,
+        external: 3558141,
+        arrayBuffers: 1948246
+      }
+    },
+    os: { loadavg: [ 1, 1.19, 1.08 ], uptime: 43158.56 },
+    trace: [
+      {
+        column: 23,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js',
+        function: 'handleResult',
+        line: 29,
+        method: null,
+        native: false
+      },
+      {
+        column: 16,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js',
+        function: 'ZodObject.safeParse',
+        line: 142,
+        method: 'safeParse',
+        native: false
+      },
+      {
+        column: 29,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js',
+        function: 'ZodObject.parse',
+        line: 122,
+        method: 'parse',
+        native: false
+      },
+      {
+        column: 30,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts',
+        function: 'getUserToken',
+        line: 11,
+        method: null,
+        native: false
+      },
+      {
+        column: 20,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      },
+      {
+        column: 13,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js',
+        function: 'next',
+        line: 144,
+        method: null,
+        native: false
+      },
+      {
+        column: 3,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js',
+        function: 'Route.dispatch',
+        line: 114,
+        method: 'dispatch',
+        native: false
+      },
+      {
+        column: 20,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      }
+    ],
+    req: {
+      url: '/api/v1/guilds/user',
+      headers: {
+        host: 'localhost:4000',
+        'user-agent': 'insomnia/2022.7.5',
+        authorization: 'OTgzOTI2MDkwODMxNjU5MDE4',
+        accept: '*/*',
+        'content-length': '44'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/api/v1/guilds/user',
+      query: {}
+    }
+  },
+  level: '\x1B[31merror\x1B[39m',
+  message: 'middlewareError',
+  timestamp: '2023-03-07 21:57:20:5720'
+}
+{
+  meta: {
+    error: ZodError: [
+      {
+        "code": "invalid_type",
+        "expected": "string",
+        "received": "undefined",
+        "path": [
+          "code"
+        ],
+        "message": "Required"
+      }
+    ]
+        at handleResult (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:29:23)
+        at ZodObject.safeParse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:142:16)
+        at ZodObject.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:122:29)
+        at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:11:30)
+        at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)
+        at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)
+        at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)
+        at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)
+        at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)
+        at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5) {
+      issues: [
+        {
+          code: 'invalid_type',
+          expected: 'string',
+          received: 'undefined',
+          path: [ 'code' ],
+          message: 'Required'
+        }
+      ],
+      addIssue: [Function (anonymous)],
+      addIssues: [Function (anonymous)],
+      errors: [
+        {
+          code: 'invalid_type',
+          expected: 'string',
+          received: 'undefined',
+          path: [ 'code' ],
+          message: 'Required'
+        }
+      ]
+    },
+    level: 'error',
+    message: 'uncaughtException: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [\n' +
+      '      "code"\n' +
+      '    ],\n' +
+      '    "message": "Required"\n' +
+      '  }\n' +
+      ']\n' +
+      'ZodError: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [\n' +
+      '      "code"\n' +
+      '    ],\n' +
+      '    "message": "Required"\n' +
+      '  }\n' +
+      ']\n' +
+      '    at handleResult (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:29:23)\n' +
+      '    at ZodObject.safeParse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:142:16)\n' +
+      '    at ZodObject.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:122:29)\n' +
+      '    at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:11:30)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)\n' +
+      '    at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)',
+    stack: 'ZodError: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [\n' +
+      '      "code"\n' +
+      '    ],\n' +
+      '    "message": "Required"\n' +
+      '  }\n' +
+      ']\n' +
+      '    at handleResult (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:29:23)\n' +
+      '    at ZodObject.safeParse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:142:16)\n' +
+      '    at ZodObject.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:122:29)\n' +
+      '    at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:11:30)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)\n' +
+      '    at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)',
+    exception: true,
+    date: 'Tue Mar 07 2023 21:58:42 GMT-0300 (Brasilia Standard Time)',
+    process: {
+      pid: 73608,
+      uid: 1000,
+      gid: 1001,
+      cwd: '/home/zizmackrok/Desktop/Code/not-too-powerful/server',
+      execPath: '/home/zizmackrok/.nvm/versions/node/v18.12.1/bin/node',
+      version: 'v18.12.1',
+      argv: [
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/.bin/ts-node',
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/app.ts'
+      ],
+      memoryUsage: {
+        rss: 297947136,
+        heapTotal: 187494400,
+        heapUsed: 182200776,
+        external: 3455013,
+        arrayBuffers: 1845078
+      }
+    },
+    os: { loadavg: [ 0.89, 1.07, 1.05 ], uptime: 43240.42 },
+    trace: [
+      {
+        column: 23,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js',
+        function: 'handleResult',
+        line: 29,
+        method: null,
+        native: false
+      },
+      {
+        column: 16,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js',
+        function: 'ZodObject.safeParse',
+        line: 142,
+        method: 'safeParse',
+        native: false
+      },
+      {
+        column: 29,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js',
+        function: 'ZodObject.parse',
+        line: 122,
+        method: 'parse',
+        native: false
+      },
+      {
+        column: 30,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts',
+        function: 'getUserToken',
+        line: 11,
+        method: null,
+        native: false
+      },
+      {
+        column: 20,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      },
+      {
+        column: 13,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js',
+        function: 'next',
+        line: 144,
+        method: null,
+        native: false
+      },
+      {
+        column: 3,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js',
+        function: 'Route.dispatch',
+        line: 114,
+        method: 'dispatch',
+        native: false
+      },
+      {
+        column: 20,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      }
+    ],
+    req: {
+      url: '/api/v1/guilds/user',
+      headers: {
+        host: 'localhost:4000',
+        'user-agent': 'insomnia/2022.7.5',
+        authorization: 'OTgzOTI2MDkwODMxNjU5MDE4',
+        accept: '*/*',
+        'content-length': '44'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/api/v1/guilds/user',
+      query: {}
+    }
+  },
+  level: '\x1B[31merror\x1B[39m',
+  message: 'middlewareError',
+  timestamp: '2023-03-07 21:58:42:5842'
+}
+{
+  meta: {
+    error: ZodError: [
+      {
+        "code": "invalid_type",
+        "expected": "string",
+        "received": "undefined",
+        "path": [
+          "code"
+        ],
+        "message": "Required"
+      }
+    ]
+        at handleResult (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:29:23)
+        at ZodObject.safeParse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:142:16)
+        at ZodObject.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:122:29)
+        at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:11:30)
+        at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)
+        at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)
+        at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)
+        at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)
+        at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)
+        at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5) {
+      issues: [
+        {
+          code: 'invalid_type',
+          expected: 'string',
+          received: 'undefined',
+          path: [ 'code' ],
+          message: 'Required'
+        }
+      ],
+      addIssue: [Function (anonymous)],
+      addIssues: [Function (anonymous)],
+      errors: [
+        {
+          code: 'invalid_type',
+          expected: 'string',
+          received: 'undefined',
+          path: [ 'code' ],
+          message: 'Required'
+        }
+      ]
+    },
+    level: 'error',
+    message: 'uncaughtException: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [\n' +
+      '      "code"\n' +
+      '    ],\n' +
+      '    "message": "Required"\n' +
+      '  }\n' +
+      ']\n' +
+      'ZodError: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [\n' +
+      '      "code"\n' +
+      '    ],\n' +
+      '    "message": "Required"\n' +
+      '  }\n' +
+      ']\n' +
+      '    at handleResult (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:29:23)\n' +
+      '    at ZodObject.safeParse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:142:16)\n' +
+      '    at ZodObject.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:122:29)\n' +
+      '    at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:11:30)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)\n' +
+      '    at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)',
+    stack: 'ZodError: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [\n' +
+      '      "code"\n' +
+      '    ],\n' +
+      '    "message": "Required"\n' +
+      '  }\n' +
+      ']\n' +
+      '    at handleResult (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:29:23)\n' +
+      '    at ZodObject.safeParse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:142:16)\n' +
+      '    at ZodObject.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:122:29)\n' +
+      '    at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:11:30)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)\n' +
+      '    at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)',
+    exception: true,
+    date: 'Tue Mar 07 2023 21:58:59 GMT-0300 (Brasilia Standard Time)',
+    process: {
+      pid: 73608,
+      uid: 1000,
+      gid: 1001,
+      cwd: '/home/zizmackrok/Desktop/Code/not-too-powerful/server',
+      execPath: '/home/zizmackrok/.nvm/versions/node/v18.12.1/bin/node',
+      version: 'v18.12.1',
+      argv: [
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/.bin/ts-node',
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/app.ts'
+      ],
+      memoryUsage: {
+        rss: 298192896,
+        heapTotal: 188018688,
+        heapUsed: 182807360,
+        external: 3455022,
+        arrayBuffers: 1845087
+      }
+    },
+    os: { loadavg: [ 1.03, 1.1, 1.06 ], uptime: 43257.75 },
+    trace: [
+      {
+        column: 23,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js',
+        function: 'handleResult',
+        line: 29,
+        method: null,
+        native: false
+      },
+      {
+        column: 16,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js',
+        function: 'ZodObject.safeParse',
+        line: 142,
+        method: 'safeParse',
+        native: false
+      },
+      {
+        column: 29,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js',
+        function: 'ZodObject.parse',
+        line: 122,
+        method: 'parse',
+        native: false
+      },
+      {
+        column: 30,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts',
+        function: 'getUserToken',
+        line: 11,
+        method: null,
+        native: false
+      },
+      {
+        column: 20,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      },
+      {
+        column: 13,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js',
+        function: 'next',
+        line: 144,
+        method: null,
+        native: false
+      },
+      {
+        column: 3,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js',
+        function: 'Route.dispatch',
+        line: 114,
+        method: 'dispatch',
+        native: false
+      },
+      {
+        column: 20,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      }
+    ],
+    req: {
+      url: '/api/v1/guilds/user',
+      headers: {
+        host: 'localhost:4000',
+        'user-agent': 'insomnia/2022.7.5',
+        authorization: 'OTgzOTI2MDkwODMxNjU5MDE4',
+        accept: '*/*',
+        'content-length': '44'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/api/v1/guilds/user',
+      query: {}
+    }
+  },
+  level: '\x1B[31merror\x1B[39m',
+  message: 'middlewareError',
+  timestamp: '2023-03-07 21:58:59:5859'
+}
+{
+  meta: {
+    error: ZodError: [
+      {
+        "code": "invalid_type",
+        "expected": "string",
+        "received": "undefined",
+        "path": [
+          "code"
+        ],
+        "message": "Required"
+      }
+    ]
+        at handleResult (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:29:23)
+        at ZodObject.safeParse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:142:16)
+        at ZodObject.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:122:29)
+        at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:11:30)
+        at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)
+        at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)
+        at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)
+        at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)
+        at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)
+        at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5) {
+      issues: [
+        {
+          code: 'invalid_type',
+          expected: 'string',
+          received: 'undefined',
+          path: [ 'code' ],
+          message: 'Required'
+        }
+      ],
+      addIssue: [Function (anonymous)],
+      addIssues: [Function (anonymous)],
+      errors: [
+        {
+          code: 'invalid_type',
+          expected: 'string',
+          received: 'undefined',
+          path: [ 'code' ],
+          message: 'Required'
+        }
+      ]
+    },
+    level: 'error',
+    message: 'uncaughtException: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [\n' +
+      '      "code"\n' +
+      '    ],\n' +
+      '    "message": "Required"\n' +
+      '  }\n' +
+      ']\n' +
+      'ZodError: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [\n' +
+      '      "code"\n' +
+      '    ],\n' +
+      '    "message": "Required"\n' +
+      '  }\n' +
+      ']\n' +
+      '    at handleResult (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:29:23)\n' +
+      '    at ZodObject.safeParse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:142:16)\n' +
+      '    at ZodObject.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:122:29)\n' +
+      '    at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:11:30)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)\n' +
+      '    at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)',
+    stack: 'ZodError: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [\n' +
+      '      "code"\n' +
+      '    ],\n' +
+      '    "message": "Required"\n' +
+      '  }\n' +
+      ']\n' +
+      '    at handleResult (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:29:23)\n' +
+      '    at ZodObject.safeParse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:142:16)\n' +
+      '    at ZodObject.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:122:29)\n' +
+      '    at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:11:30)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)\n' +
+      '    at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)',
+    exception: true,
+    date: 'Tue Mar 07 2023 21:59:16 GMT-0300 (Brasilia Standard Time)',
+    process: {
+      pid: 73608,
+      uid: 1000,
+      gid: 1001,
+      cwd: '/home/zizmackrok/Desktop/Code/not-too-powerful/server',
+      execPath: '/home/zizmackrok/.nvm/versions/node/v18.12.1/bin/node',
+      version: 'v18.12.1',
+      argv: [
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/.bin/ts-node',
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/app.ts'
+      ],
+      memoryUsage: {
+        rss: 297922560,
+        heapTotal: 188018688,
+        heapUsed: 182985720,
+        external: 3454983,
+        arrayBuffers: 1845048
+      }
+    },
+    os: { loadavg: [ 0.89, 1.06, 1.04 ], uptime: 43274.38 },
+    trace: [
+      {
+        column: 23,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js',
+        function: 'handleResult',
+        line: 29,
+        method: null,
+        native: false
+      },
+      {
+        column: 16,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js',
+        function: 'ZodObject.safeParse',
+        line: 142,
+        method: 'safeParse',
+        native: false
+      },
+      {
+        column: 29,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js',
+        function: 'ZodObject.parse',
+        line: 122,
+        method: 'parse',
+        native: false
+      },
+      {
+        column: 30,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts',
+        function: 'getUserToken',
+        line: 11,
+        method: null,
+        native: false
+      },
+      {
+        column: 20,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      },
+      {
+        column: 13,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js',
+        function: 'next',
+        line: 144,
+        method: null,
+        native: false
+      },
+      {
+        column: 3,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js',
+        function: 'Route.dispatch',
+        line: 114,
+        method: 'dispatch',
+        native: false
+      },
+      {
+        column: 20,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      }
+    ],
+    req: {
+      url: '/api/v1/guilds/user',
+      headers: {
+        host: 'localhost:4000',
+        'user-agent': 'insomnia/2022.7.5',
+        authorization: 'OTgzOTI2MDkwODMxNjU5MDE4',
+        accept: '*/*',
+        'content-length': '44'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/api/v1/guilds/user',
+      query: {}
+    }
+  },
+  level: '\x1B[31merror\x1B[39m',
+  message: 'middlewareError',
+  timestamp: '2023-03-07 21:59:16:5916'
+}
+{
+  meta: {
+    error: ZodError: [
+      {
+        "code": "invalid_type",
+        "expected": "string",
+        "received": "undefined",
+        "path": [
+          "code"
+        ],
+        "message": "Required"
+      }
+    ]
+        at handleResult (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:29:23)
+        at ZodObject.safeParse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:142:16)
+        at ZodObject.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:122:29)
+        at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:11:30)
+        at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)
+        at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)
+        at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)
+        at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)
+        at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)
+        at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5) {
+      issues: [
+        {
+          code: 'invalid_type',
+          expected: 'string',
+          received: 'undefined',
+          path: [ 'code' ],
+          message: 'Required'
+        }
+      ],
+      addIssue: [Function (anonymous)],
+      addIssues: [Function (anonymous)],
+      errors: [
+        {
+          code: 'invalid_type',
+          expected: 'string',
+          received: 'undefined',
+          path: [ 'code' ],
+          message: 'Required'
+        }
+      ]
+    },
+    level: 'error',
+    message: 'uncaughtException: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [\n' +
+      '      "code"\n' +
+      '    ],\n' +
+      '    "message": "Required"\n' +
+      '  }\n' +
+      ']\n' +
+      'ZodError: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [\n' +
+      '      "code"\n' +
+      '    ],\n' +
+      '    "message": "Required"\n' +
+      '  }\n' +
+      ']\n' +
+      '    at handleResult (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:29:23)\n' +
+      '    at ZodObject.safeParse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:142:16)\n' +
+      '    at ZodObject.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:122:29)\n' +
+      '    at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:11:30)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)\n' +
+      '    at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)',
+    stack: 'ZodError: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [\n' +
+      '      "code"\n' +
+      '    ],\n' +
+      '    "message": "Required"\n' +
+      '  }\n' +
+      ']\n' +
+      '    at handleResult (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:29:23)\n' +
+      '    at ZodObject.safeParse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:142:16)\n' +
+      '    at ZodObject.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:122:29)\n' +
+      '    at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:11:30)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)\n' +
+      '    at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)',
+    exception: true,
+    date: 'Tue Mar 07 2023 21:59:26 GMT-0300 (Brasilia Standard Time)',
+    process: {
+      pid: 73608,
+      uid: 1000,
+      gid: 1001,
+      cwd: '/home/zizmackrok/Desktop/Code/not-too-powerful/server',
+      execPath: '/home/zizmackrok/.nvm/versions/node/v18.12.1/bin/node',
+      version: 'v18.12.1',
+      argv: [
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/.bin/ts-node',
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/app.ts'
+      ],
+      memoryUsage: {
+        rss: 298217472,
+        heapTotal: 188280832,
+        heapUsed: 183163408,
+        external: 3454984,
+        arrayBuffers: 1845049
+      }
+    },
+    os: { loadavg: [ 1.13, 1.11, 1.06 ], uptime: 43284.39 },
+    trace: [
+      {
+        column: 23,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js',
+        function: 'handleResult',
+        line: 29,
+        method: null,
+        native: false
+      },
+      {
+        column: 16,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js',
+        function: 'ZodObject.safeParse',
+        line: 142,
+        method: 'safeParse',
+        native: false
+      },
+      {
+        column: 29,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js',
+        function: 'ZodObject.parse',
+        line: 122,
+        method: 'parse',
+        native: false
+      },
+      {
+        column: 30,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts',
+        function: 'getUserToken',
+        line: 11,
+        method: null,
+        native: false
+      },
+      {
+        column: 20,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      },
+      {
+        column: 13,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js',
+        function: 'next',
+        line: 144,
+        method: null,
+        native: false
+      },
+      {
+        column: 3,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js',
+        function: 'Route.dispatch',
+        line: 114,
+        method: 'dispatch',
+        native: false
+      },
+      {
+        column: 20,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      }
+    ],
+    req: {
+      url: '/api/v1/guilds/user',
+      headers: {
+        host: 'localhost:4000',
+        'user-agent': 'insomnia/2022.7.5',
+        authorization: 'OTgzOTI2MDkwODMxNjU5MDE4',
+        accept: '*/*',
+        'content-length': '44'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/api/v1/guilds/user',
+      query: {}
+    }
+  },
+  level: '\x1B[31merror\x1B[39m',
+  message: 'middlewareError',
+  timestamp: '2023-03-07 21:59:26:5926'
+}
+{
+  meta: {
+    error: ZodError: [
+      {
+        "code": "invalid_type",
+        "expected": "string",
+        "received": "undefined",
+        "path": [
+          "code"
+        ],
+        "message": "Required"
+      }
+    ]
+        at handleResult (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:29:23)
+        at ZodObject.safeParse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:142:16)
+        at ZodObject.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:122:29)
+        at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:11:30)
+        at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)
+        at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)
+        at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)
+        at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)
+        at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)
+        at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5) {
+      issues: [
+        {
+          code: 'invalid_type',
+          expected: 'string',
+          received: 'undefined',
+          path: [ 'code' ],
+          message: 'Required'
+        }
+      ],
+      addIssue: [Function (anonymous)],
+      addIssues: [Function (anonymous)],
+      errors: [
+        {
+          code: 'invalid_type',
+          expected: 'string',
+          received: 'undefined',
+          path: [ 'code' ],
+          message: 'Required'
+        }
+      ]
+    },
+    level: 'error',
+    message: 'uncaughtException: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [\n' +
+      '      "code"\n' +
+      '    ],\n' +
+      '    "message": "Required"\n' +
+      '  }\n' +
+      ']\n' +
+      'ZodError: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [\n' +
+      '      "code"\n' +
+      '    ],\n' +
+      '    "message": "Required"\n' +
+      '  }\n' +
+      ']\n' +
+      '    at handleResult (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:29:23)\n' +
+      '    at ZodObject.safeParse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:142:16)\n' +
+      '    at ZodObject.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:122:29)\n' +
+      '    at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:11:30)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)\n' +
+      '    at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)',
+    stack: 'ZodError: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [\n' +
+      '      "code"\n' +
+      '    ],\n' +
+      '    "message": "Required"\n' +
+      '  }\n' +
+      ']\n' +
+      '    at handleResult (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:29:23)\n' +
+      '    at ZodObject.safeParse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:142:16)\n' +
+      '    at ZodObject.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:122:29)\n' +
+      '    at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:11:30)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)\n' +
+      '    at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)',
+    exception: true,
+    date: 'Tue Mar 07 2023 22:00:11 GMT-0300 (Brasilia Standard Time)',
+    process: {
+      pid: 73608,
+      uid: 1000,
+      gid: 1001,
+      cwd: '/home/zizmackrok/Desktop/Code/not-too-powerful/server',
+      execPath: '/home/zizmackrok/.nvm/versions/node/v18.12.1/bin/node',
+      version: 'v18.12.1',
+      argv: [
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/.bin/ts-node',
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/app.ts'
+      ],
+      memoryUsage: {
+        rss: 298758144,
+        heapTotal: 188542976,
+        heapUsed: 183324976,
+        external: 3455022,
+        arrayBuffers: 1845087
+      }
+    },
+    os: { loadavg: [ 0.78, 1.01, 1.03 ], uptime: 43329.07 },
+    trace: [
+      {
+        column: 23,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js',
+        function: 'handleResult',
+        line: 29,
+        method: null,
+        native: false
+      },
+      {
+        column: 16,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js',
+        function: 'ZodObject.safeParse',
+        line: 142,
+        method: 'safeParse',
+        native: false
+      },
+      {
+        column: 29,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js',
+        function: 'ZodObject.parse',
+        line: 122,
+        method: 'parse',
+        native: false
+      },
+      {
+        column: 30,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts',
+        function: 'getUserToken',
+        line: 11,
+        method: null,
+        native: false
+      },
+      {
+        column: 20,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      },
+      {
+        column: 13,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js',
+        function: 'next',
+        line: 144,
+        method: null,
+        native: false
+      },
+      {
+        column: 3,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js',
+        function: 'Route.dispatch',
+        line: 114,
+        method: 'dispatch',
+        native: false
+      },
+      {
+        column: 20,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      }
+    ],
+    req: {
+      url: '/api/v1/guilds/user',
+      headers: {
+        host: 'localhost:4000',
+        'user-agent': 'insomnia/2022.7.5',
+        authorization: 'OTgzOTI2MDkwODMxNjU5MDE4',
+        accept: '*/*',
+        'content-length': '44'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/api/v1/guilds/user',
+      query: {}
+    }
+  },
+  level: '\x1B[31merror\x1B[39m',
+  message: 'middlewareError',
+  timestamp: '2023-03-07 22:00:11:011'
+}
+{
+  meta: {
+    error: ZodError: [
+      {
+        "code": "invalid_type",
+        "expected": "string",
+        "received": "undefined",
+        "path": [
+          "code"
+        ],
+        "message": "Required"
+      }
+    ]
+        at handleResult (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:29:23)
+        at ZodObject.safeParse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:142:16)
+        at ZodObject.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:122:29)
+        at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:11:30)
+        at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)
+        at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)
+        at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)
+        at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)
+        at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)
+        at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5) {
+      issues: [
+        {
+          code: 'invalid_type',
+          expected: 'string',
+          received: 'undefined',
+          path: [ 'code' ],
+          message: 'Required'
+        }
+      ],
+      addIssue: [Function (anonymous)],
+      addIssues: [Function (anonymous)],
+      errors: [
+        {
+          code: 'invalid_type',
+          expected: 'string',
+          received: 'undefined',
+          path: [ 'code' ],
+          message: 'Required'
+        }
+      ]
+    },
+    level: 'error',
+    message: 'uncaughtException: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [\n' +
+      '      "code"\n' +
+      '    ],\n' +
+      '    "message": "Required"\n' +
+      '  }\n' +
+      ']\n' +
+      'ZodError: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [\n' +
+      '      "code"\n' +
+      '    ],\n' +
+      '    "message": "Required"\n' +
+      '  }\n' +
+      ']\n' +
+      '    at handleResult (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:29:23)\n' +
+      '    at ZodObject.safeParse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:142:16)\n' +
+      '    at ZodObject.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:122:29)\n' +
+      '    at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:11:30)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)\n' +
+      '    at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)',
+    stack: 'ZodError: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [\n' +
+      '      "code"\n' +
+      '    ],\n' +
+      '    "message": "Required"\n' +
+      '  }\n' +
+      ']\n' +
+      '    at handleResult (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:29:23)\n' +
+      '    at ZodObject.safeParse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:142:16)\n' +
+      '    at ZodObject.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:122:29)\n' +
+      '    at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:11:30)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)\n' +
+      '    at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)',
+    exception: true,
+    date: 'Tue Mar 07 2023 22:00:33 GMT-0300 (Brasilia Standard Time)',
+    process: {
+      pid: 73608,
+      uid: 1000,
+      gid: 1001,
+      cwd: '/home/zizmackrok/Desktop/Code/not-too-powerful/server',
+      execPath: '/home/zizmackrok/.nvm/versions/node/v18.12.1/bin/node',
+      version: 'v18.12.1',
+      argv: [
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/.bin/ts-node',
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/app.ts'
+      ],
+      memoryUsage: {
+        rss: 298946560,
+        heapTotal: 189067264,
+        heapUsed: 183492192,
+        external: 3464444,
+        arrayBuffers: 1835702
+      }
+    },
+    os: { loadavg: [ 0.71, 0.98, 1.02 ], uptime: 43351.28 },
+    trace: [
+      {
+        column: 23,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js',
+        function: 'handleResult',
+        line: 29,
+        method: null,
+        native: false
+      },
+      {
+        column: 16,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js',
+        function: 'ZodObject.safeParse',
+        line: 142,
+        method: 'safeParse',
+        native: false
+      },
+      {
+        column: 29,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js',
+        function: 'ZodObject.parse',
+        line: 122,
+        method: 'parse',
+        native: false
+      },
+      {
+        column: 30,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts',
+        function: 'getUserToken',
+        line: 11,
+        method: null,
+        native: false
+      },
+      {
+        column: 20,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      },
+      {
+        column: 13,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js',
+        function: 'next',
+        line: 144,
+        method: null,
+        native: false
+      },
+      {
+        column: 3,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js',
+        function: 'Route.dispatch',
+        line: 114,
+        method: 'dispatch',
+        native: false
+      },
+      {
+        column: 20,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      }
+    ],
+    req: {
+      url: '/api/v1/guilds/user',
+      headers: {
+        host: 'localhost:4000',
+        'user-agent': 'insomnia/2022.7.5',
+        authorization: 'OTgzOTI2MDkwODMxNjU5MDE4',
+        accept: '*/*',
+        'content-length': '44'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/api/v1/guilds/user',
+      query: {}
+    }
+  },
+  level: '\x1B[31merror\x1B[39m',
+  message: 'middlewareError',
+  timestamp: '2023-03-07 22:00:33:033'
+}
+{
+  meta: {
+    error: ZodError: [
+      {
+        "code": "invalid_type",
+        "expected": "string",
+        "received": "undefined",
+        "path": [
+          "code"
+        ],
+        "message": "Required"
+      }
+    ]
+        at handleResult (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:29:23)
+        at ZodObject.safeParse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:142:16)
+        at ZodObject.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:122:29)
+        at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:11:30)
+        at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)
+        at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)
+        at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)
+        at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)
+        at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)
+        at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5) {
+      issues: [
+        {
+          code: 'invalid_type',
+          expected: 'string',
+          received: 'undefined',
+          path: [ 'code' ],
+          message: 'Required'
+        }
+      ],
+      addIssue: [Function (anonymous)],
+      addIssues: [Function (anonymous)],
+      errors: [
+        {
+          code: 'invalid_type',
+          expected: 'string',
+          received: 'undefined',
+          path: [ 'code' ],
+          message: 'Required'
+        }
+      ]
+    },
+    level: 'error',
+    message: 'uncaughtException: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [\n' +
+      '      "code"\n' +
+      '    ],\n' +
+      '    "message": "Required"\n' +
+      '  }\n' +
+      ']\n' +
+      'ZodError: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [\n' +
+      '      "code"\n' +
+      '    ],\n' +
+      '    "message": "Required"\n' +
+      '  }\n' +
+      ']\n' +
+      '    at handleResult (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:29:23)\n' +
+      '    at ZodObject.safeParse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:142:16)\n' +
+      '    at ZodObject.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:122:29)\n' +
+      '    at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:11:30)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)\n' +
+      '    at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)',
+    stack: 'ZodError: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [\n' +
+      '      "code"\n' +
+      '    ],\n' +
+      '    "message": "Required"\n' +
+      '  }\n' +
+      ']\n' +
+      '    at handleResult (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:29:23)\n' +
+      '    at ZodObject.safeParse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:142:16)\n' +
+      '    at ZodObject.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:122:29)\n' +
+      '    at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:11:30)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)\n' +
+      '    at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)',
+    exception: true,
+    date: 'Tue Mar 07 2023 22:01:19 GMT-0300 (Brasilia Standard Time)',
+    process: {
+      pid: 74682,
+      uid: 1000,
+      gid: 1001,
+      cwd: '/home/zizmackrok/Desktop/Code/not-too-powerful/server',
+      execPath: '/home/zizmackrok/.nvm/versions/node/v18.12.1/bin/node',
+      version: 'v18.12.1',
+      argv: [
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/.bin/ts-node',
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/app.ts'
+      ],
+      memoryUsage: {
+        rss: 334278656,
+        heapTotal: 225505280,
+        heapUsed: 200422824,
+        external: 4077914,
+        arrayBuffers: 2464422
+      }
+    },
+    os: { loadavg: [ 0.64, 0.92, 0.99 ], uptime: 43397.15 },
+    trace: [
+      {
+        column: 23,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js',
+        function: 'handleResult',
+        line: 29,
+        method: null,
+        native: false
+      },
+      {
+        column: 16,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js',
+        function: 'ZodObject.safeParse',
+        line: 142,
+        method: 'safeParse',
+        native: false
+      },
+      {
+        column: 29,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js',
+        function: 'ZodObject.parse',
+        line: 122,
+        method: 'parse',
+        native: false
+      },
+      {
+        column: 30,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts',
+        function: 'getUserToken',
+        line: 11,
+        method: null,
+        native: false
+      },
+      {
+        column: 20,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      },
+      {
+        column: 13,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js',
+        function: 'next',
+        line: 144,
+        method: null,
+        native: false
+      },
+      {
+        column: 3,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js',
+        function: 'Route.dispatch',
+        line: 114,
+        method: 'dispatch',
+        native: false
+      },
+      {
+        column: 20,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      }
+    ],
+    req: {
+      url: '/api/v1/guilds/user',
+      headers: {
+        host: 'localhost:4000',
+        'user-agent': 'insomnia/2022.7.5',
+        authorization: 'OTgzOTI2MDkwODMxNjU5MDE4',
+        accept: '*/*',
+        'content-length': '44'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/api/v1/guilds/user',
+      query: {}
+    }
+  },
+  level: '\x1B[31merror\x1B[39m',
+  message: 'middlewareError',
+  timestamp: '2023-03-07 22:01:19:119'
+}
+{
+  meta: {
+    error: ZodError: [
+      {
+        "code": "invalid_type",
+        "expected": "string",
+        "received": "undefined",
+        "path": [
+          "code"
+        ],
+        "message": "Required"
+      }
+    ]
+        at handleResult (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:29:23)
+        at ZodObject.safeParse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:142:16)
+        at ZodObject.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:122:29)
+        at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:11:30)
+        at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)
+        at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)
+        at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)
+        at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)
+        at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)
+        at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5) {
+      issues: [
+        {
+          code: 'invalid_type',
+          expected: 'string',
+          received: 'undefined',
+          path: [ 'code' ],
+          message: 'Required'
+        }
+      ],
+      addIssue: [Function (anonymous)],
+      addIssues: [Function (anonymous)],
+      errors: [
+        {
+          code: 'invalid_type',
+          expected: 'string',
+          received: 'undefined',
+          path: [ 'code' ],
+          message: 'Required'
+        }
+      ]
+    },
+    level: 'error',
+    message: 'uncaughtException: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [\n' +
+      '      "code"\n' +
+      '    ],\n' +
+      '    "message": "Required"\n' +
+      '  }\n' +
+      ']\n' +
+      'ZodError: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [\n' +
+      '      "code"\n' +
+      '    ],\n' +
+      '    "message": "Required"\n' +
+      '  }\n' +
+      ']\n' +
+      '    at handleResult (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:29:23)\n' +
+      '    at ZodObject.safeParse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:142:16)\n' +
+      '    at ZodObject.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:122:29)\n' +
+      '    at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:11:30)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)\n' +
+      '    at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)',
+    stack: 'ZodError: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [\n' +
+      '      "code"\n' +
+      '    ],\n' +
+      '    "message": "Required"\n' +
+      '  }\n' +
+      ']\n' +
+      '    at handleResult (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:29:23)\n' +
+      '    at ZodObject.safeParse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:142:16)\n' +
+      '    at ZodObject.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:122:29)\n' +
+      '    at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:11:30)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)\n' +
+      '    at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)',
+    exception: true,
+    date: 'Tue Mar 07 2023 22:01:51 GMT-0300 (Brasilia Standard Time)',
+    process: {
+      pid: 74682,
+      uid: 1000,
+      gid: 1001,
+      cwd: '/home/zizmackrok/Desktop/Code/not-too-powerful/server',
+      execPath: '/home/zizmackrok/.nvm/versions/node/v18.12.1/bin/node',
+      version: 'v18.12.1',
+      argv: [
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/.bin/ts-node',
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/app.ts'
+      ],
+      memoryUsage: {
+        rss: 296173568,
+        heapTotal: 187232256,
+        heapUsed: 181876384,
+        external: 3437369,
+        arrayBuffers: 1827434
+      }
+    },
+    os: { loadavg: [ 0.6, 0.88, 0.98 ], uptime: 43429.63 },
+    trace: [
+      {
+        column: 23,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js',
+        function: 'handleResult',
+        line: 29,
+        method: null,
+        native: false
+      },
+      {
+        column: 16,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js',
+        function: 'ZodObject.safeParse',
+        line: 142,
+        method: 'safeParse',
+        native: false
+      },
+      {
+        column: 29,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js',
+        function: 'ZodObject.parse',
+        line: 122,
+        method: 'parse',
+        native: false
+      },
+      {
+        column: 30,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts',
+        function: 'getUserToken',
+        line: 11,
+        method: null,
+        native: false
+      },
+      {
+        column: 20,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      },
+      {
+        column: 13,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js',
+        function: 'next',
+        line: 144,
+        method: null,
+        native: false
+      },
+      {
+        column: 3,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js',
+        function: 'Route.dispatch',
+        line: 114,
+        method: 'dispatch',
+        native: false
+      },
+      {
+        column: 20,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      }
+    ],
+    req: {
+      url: '/api/v1/guilds/user',
+      headers: {
+        host: 'localhost:4000',
+        'user-agent': 'insomnia/2022.7.5',
+        authorization: 'OTgzOTI2MDkwODMxNjU5MDE4',
+        accept: '*/*',
+        'content-length': '44'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/api/v1/guilds/user',
+      query: {}
+    }
+  },
+  level: '\x1B[31merror\x1B[39m',
+  message: 'middlewareError',
+  timestamp: '2023-03-07 22:01:51:151'
+}
+{
+  meta: {
+    error: ZodError: [
+      {
+        "code": "invalid_type",
+        "expected": "string",
+        "received": "undefined",
+        "path": [
+          "code"
+        ],
+        "message": "Required"
+      }
+    ]
+        at handleResult (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:29:23)
+        at ZodObject.safeParse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:142:16)
+        at ZodObject.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:122:29)
+        at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:11:30)
+        at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)
+        at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)
+        at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)
+        at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)
+        at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)
+        at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5) {
+      issues: [
+        {
+          code: 'invalid_type',
+          expected: 'string',
+          received: 'undefined',
+          path: [ 'code' ],
+          message: 'Required'
+        }
+      ],
+      addIssue: [Function (anonymous)],
+      addIssues: [Function (anonymous)],
+      errors: [
+        {
+          code: 'invalid_type',
+          expected: 'string',
+          received: 'undefined',
+          path: [ 'code' ],
+          message: 'Required'
+        }
+      ]
+    },
+    level: 'error',
+    message: 'uncaughtException: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [\n' +
+      '      "code"\n' +
+      '    ],\n' +
+      '    "message": "Required"\n' +
+      '  }\n' +
+      ']\n' +
+      'ZodError: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [\n' +
+      '      "code"\n' +
+      '    ],\n' +
+      '    "message": "Required"\n' +
+      '  }\n' +
+      ']\n' +
+      '    at handleResult (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:29:23)\n' +
+      '    at ZodObject.safeParse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:142:16)\n' +
+      '    at ZodObject.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:122:29)\n' +
+      '    at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:11:30)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)\n' +
+      '    at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)',
+    stack: 'ZodError: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [\n' +
+      '      "code"\n' +
+      '    ],\n' +
+      '    "message": "Required"\n' +
+      '  }\n' +
+      ']\n' +
+      '    at handleResult (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:29:23)\n' +
+      '    at ZodObject.safeParse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:142:16)\n' +
+      '    at ZodObject.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:122:29)\n' +
+      '    at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:11:30)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)\n' +
+      '    at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)',
+    exception: true,
+    date: 'Tue Mar 07 2023 22:02:25 GMT-0300 (Brasilia Standard Time)',
+    process: {
+      pid: 74682,
+      uid: 1000,
+      gid: 1001,
+      cwd: '/home/zizmackrok/Desktop/Code/not-too-powerful/server',
+      execPath: '/home/zizmackrok/.nvm/versions/node/v18.12.1/bin/node',
+      version: 'v18.12.1',
+      argv: [
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/.bin/ts-node',
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/app.ts'
+      ],
+      memoryUsage: {
+        rss: 296280064,
+        heapTotal: 187494400,
+        heapUsed: 182264496,
+        external: 3446790,
+        arrayBuffers: 1827472
+      }
+    },
+    os: { loadavg: [ 1.8, 1.12, 1.05 ], uptime: 43463.67 },
+    trace: [
+      {
+        column: 23,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js',
+        function: 'handleResult',
+        line: 29,
+        method: null,
+        native: false
+      },
+      {
+        column: 16,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js',
+        function: 'ZodObject.safeParse',
+        line: 142,
+        method: 'safeParse',
+        native: false
+      },
+      {
+        column: 29,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js',
+        function: 'ZodObject.parse',
+        line: 122,
+        method: 'parse',
+        native: false
+      },
+      {
+        column: 30,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts',
+        function: 'getUserToken',
+        line: 11,
+        method: null,
+        native: false
+      },
+      {
+        column: 20,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      },
+      {
+        column: 13,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js',
+        function: 'next',
+        line: 144,
+        method: null,
+        native: false
+      },
+      {
+        column: 3,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js',
+        function: 'Route.dispatch',
+        line: 114,
+        method: 'dispatch',
+        native: false
+      },
+      {
+        column: 20,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      }
+    ],
+    req: {
+      url: '/api/v1/guilds/user',
+      headers: {
+        host: 'localhost:4000',
+        'user-agent': 'insomnia/2022.7.5',
+        authorization: 'OTgzOTI2MDkwODMxNjU5MDE4',
+        accept: '*/*',
+        'content-length': '44'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/api/v1/guilds/user',
+      query: {}
+    }
+  },
+  level: '\x1B[31merror\x1B[39m',
+  message: 'middlewareError',
+  timestamp: '2023-03-07 22:02:25:225'
+}
+{
+  meta: {
+    error: ZodError: [
+      {
+        "code": "invalid_type",
+        "expected": "string",
+        "received": "undefined",
+        "path": [
+          "code"
+        ],
+        "message": "Required"
+      }
+    ]
+        at handleResult (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:29:23)
+        at ZodObject.safeParse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:142:16)
+        at ZodObject.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:122:29)
+        at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:11:30)
+        at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)
+        at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)
+        at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)
+        at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)
+        at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)
+        at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5) {
+      issues: [
+        {
+          code: 'invalid_type',
+          expected: 'string',
+          received: 'undefined',
+          path: [ 'code' ],
+          message: 'Required'
+        }
+      ],
+      addIssue: [Function (anonymous)],
+      addIssues: [Function (anonymous)],
+      errors: [
+        {
+          code: 'invalid_type',
+          expected: 'string',
+          received: 'undefined',
+          path: [ 'code' ],
+          message: 'Required'
+        }
+      ]
+    },
+    level: 'error',
+    message: 'uncaughtException: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [\n' +
+      '      "code"\n' +
+      '    ],\n' +
+      '    "message": "Required"\n' +
+      '  }\n' +
+      ']\n' +
+      'ZodError: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [\n' +
+      '      "code"\n' +
+      '    ],\n' +
+      '    "message": "Required"\n' +
+      '  }\n' +
+      ']\n' +
+      '    at handleResult (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:29:23)\n' +
+      '    at ZodObject.safeParse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:142:16)\n' +
+      '    at ZodObject.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:122:29)\n' +
+      '    at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:11:30)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)\n' +
+      '    at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)',
+    stack: 'ZodError: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [\n' +
+      '      "code"\n' +
+      '    ],\n' +
+      '    "message": "Required"\n' +
+      '  }\n' +
+      ']\n' +
+      '    at handleResult (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:29:23)\n' +
+      '    at ZodObject.safeParse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:142:16)\n' +
+      '    at ZodObject.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:122:29)\n' +
+      '    at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:11:30)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)\n' +
+      '    at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)',
+    exception: true,
+    date: 'Tue Mar 07 2023 22:02:44 GMT-0300 (Brasilia Standard Time)',
+    process: {
+      pid: 74682,
+      uid: 1000,
+      gid: 1001,
+      cwd: '/home/zizmackrok/Desktop/Code/not-too-powerful/server',
+      execPath: '/home/zizmackrok/.nvm/versions/node/v18.12.1/bin/node',
+      version: 'v18.12.1',
+      argv: [
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/.bin/ts-node',
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/app.ts'
+      ],
+      memoryUsage: {
+        rss: 296321024,
+        heapTotal: 188018688,
+        heapUsed: 182487264,
+        external: 3446828,
+        arrayBuffers: 1827472
+      }
+    },
+    os: { loadavg: [ 1.29, 1.05, 1.03 ], uptime: 43482.05 },
+    trace: [
+      {
+        column: 23,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js',
+        function: 'handleResult',
+        line: 29,
+        method: null,
+        native: false
+      },
+      {
+        column: 16,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js',
+        function: 'ZodObject.safeParse',
+        line: 142,
+        method: 'safeParse',
+        native: false
+      },
+      {
+        column: 29,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js',
+        function: 'ZodObject.parse',
+        line: 122,
+        method: 'parse',
+        native: false
+      },
+      {
+        column: 30,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts',
+        function: 'getUserToken',
+        line: 11,
+        method: null,
+        native: false
+      },
+      {
+        column: 20,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      },
+      {
+        column: 13,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js',
+        function: 'next',
+        line: 144,
+        method: null,
+        native: false
+      },
+      {
+        column: 3,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js',
+        function: 'Route.dispatch',
+        line: 114,
+        method: 'dispatch',
+        native: false
+      },
+      {
+        column: 20,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      }
+    ],
+    req: {
+      url: '/api/v1/guilds/user',
+      headers: {
+        host: 'localhost:4000',
+        'user-agent': 'insomnia/2022.7.5',
+        authorization: 'OTgzOTI2MDkwODMxNjU5MDE4',
+        accept: '*/*',
+        'content-length': '44'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/api/v1/guilds/user',
+      query: {}
+    }
+  },
+  level: '\x1B[31merror\x1B[39m',
+  message: 'middlewareError',
+  timestamp: '2023-03-07 22:02:44:244'
+}
+{
+  meta: {
+    error: ZodError: [
+      {
+        "code": "invalid_type",
+        "expected": "string",
+        "received": "undefined",
+        "path": [
+          "code"
+        ],
+        "message": "Required"
+      }
+    ]
+        at handleResult (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:29:23)
+        at ZodObject.safeParse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:142:16)
+        at ZodObject.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:122:29)
+        at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:11:30)
+        at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)
+        at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)
+        at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)
+        at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)
+        at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)
+        at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5) {
+      issues: [
+        {
+          code: 'invalid_type',
+          expected: 'string',
+          received: 'undefined',
+          path: [ 'code' ],
+          message: 'Required'
+        }
+      ],
+      addIssue: [Function (anonymous)],
+      addIssues: [Function (anonymous)],
+      errors: [
+        {
+          code: 'invalid_type',
+          expected: 'string',
+          received: 'undefined',
+          path: [ 'code' ],
+          message: 'Required'
+        }
+      ]
+    },
+    level: 'error',
+    message: 'uncaughtException: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [\n' +
+      '      "code"\n' +
+      '    ],\n' +
+      '    "message": "Required"\n' +
+      '  }\n' +
+      ']\n' +
+      'ZodError: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [\n' +
+      '      "code"\n' +
+      '    ],\n' +
+      '    "message": "Required"\n' +
+      '  }\n' +
+      ']\n' +
+      '    at handleResult (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:29:23)\n' +
+      '    at ZodObject.safeParse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:142:16)\n' +
+      '    at ZodObject.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:122:29)\n' +
+      '    at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:11:30)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)\n' +
+      '    at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)',
+    stack: 'ZodError: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [\n' +
+      '      "code"\n' +
+      '    ],\n' +
+      '    "message": "Required"\n' +
+      '  }\n' +
+      ']\n' +
+      '    at handleResult (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:29:23)\n' +
+      '    at ZodObject.safeParse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:142:16)\n' +
+      '    at ZodObject.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:122:29)\n' +
+      '    at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:11:30)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)\n' +
+      '    at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)',
+    exception: true,
+    date: 'Tue Mar 07 2023 22:04:54 GMT-0300 (Brasilia Standard Time)',
+    process: {
+      pid: 75100,
+      uid: 1000,
+      gid: 1001,
+      cwd: '/home/zizmackrok/Desktop/Code/not-too-powerful/server',
+      execPath: '/home/zizmackrok/.nvm/versions/node/v18.12.1/bin/node',
+      version: 'v18.12.1',
+      argv: [
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/.bin/ts-node',
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/app.ts'
+      ],
+      memoryUsage: {
+        rss: 335089664,
+        heapTotal: 225767424,
+        heapUsed: 200766808,
+        external: 4125959,
+        arrayBuffers: 2512467
+      }
+    },
+    os: { loadavg: [ 1.51, 1.09, 1.04 ], uptime: 43612.9 },
+    trace: [
+      {
+        column: 23,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js',
+        function: 'handleResult',
+        line: 29,
+        method: null,
+        native: false
+      },
+      {
+        column: 16,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js',
+        function: 'ZodObject.safeParse',
+        line: 142,
+        method: 'safeParse',
+        native: false
+      },
+      {
+        column: 29,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js',
+        function: 'ZodObject.parse',
+        line: 122,
+        method: 'parse',
+        native: false
+      },
+      {
+        column: 30,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts',
+        function: 'getUserToken',
+        line: 11,
+        method: null,
+        native: false
+      },
+      {
+        column: 20,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      },
+      {
+        column: 13,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js',
+        function: 'next',
+        line: 144,
+        method: null,
+        native: false
+      },
+      {
+        column: 3,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js',
+        function: 'Route.dispatch',
+        line: 114,
+        method: 'dispatch',
+        native: false
+      },
+      {
+        column: 20,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      }
+    ],
+    req: {
+      url: '/api/v1/guilds/user',
+      headers: {
+        host: 'localhost:4000',
+        'user-agent': 'insomnia/2022.7.5',
+        authorization: 'OTgzOTI2MDkwODMxNjU5MDE4',
+        accept: '*/*',
+        'content-length': '44'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/api/v1/guilds/user',
+      query: {}
+    }
+  },
+  level: '\x1B[31merror\x1B[39m',
+  message: 'middlewareError',
+  timestamp: '2023-03-07 22:04:54:454'
+}
+{
+  meta: {
+    error: CustomError: Something wrong happened ):
+        at getUserGuilds (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/guildsController/index.ts:22:37)
+        at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+      status: 401,
+      error: [],
+      code: undefined
+    },
+    level: 'error',
+    message: 'uncaughtException: Something wrong happened ):\n' +
+      'Error: Something wrong happened ):\n' +
+      '    at getUserGuilds (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/guildsController/index.ts:22:37)\n' +
+      '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+    stack: 'Error: Something wrong happened ):\n' +
+      '    at getUserGuilds (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/guildsController/index.ts:22:37)\n' +
+      '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+    exception: true,
+    date: 'Tue Mar 07 2023 22:06:49 GMT-0300 (Brasilia Standard Time)',
+    process: {
+      pid: 75503,
+      uid: 1000,
+      gid: 1001,
+      cwd: '/home/zizmackrok/Desktop/Code/not-too-powerful/server',
+      execPath: '/home/zizmackrok/.nvm/versions/node/v18.12.1/bin/node',
+      version: 'v18.12.1',
+      argv: [
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/.bin/ts-node',
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/app.ts'
+      ],
+      memoryUsage: {
+        rss: 340627456,
+        heapTotal: 228651008,
+        heapUsed: 193054072,
+        external: 4535506,
+        arrayBuffers: 1890764
+      }
+    },
+    os: { loadavg: [ 1.46, 1.19, 1.08 ], uptime: 43727.44 },
+    trace: [
+      {
+        column: 37,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/guildsController/index.ts',
+        function: 'getUserGuilds',
+        line: 22,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: 'node:internal/process/task_queues',
+        function: 'processTicksAndRejections',
+        line: 95,
+        method: null,
+        native: false
+      }
+    ],
+    req: {
+      url: '/api/v1/guilds/user',
+      headers: {
+        host: 'localhost:4000',
+        'user-agent': 'insomnia/2022.7.5',
+        authorization: 'OTgzOTI2MDkwODMxNjU5MDE4',
+        accept: '*/*',
+        'content-length': '44'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/api/v1/guilds/user',
+      query: {}
+    }
+  },
+  level: '\x1B[31merror\x1B[39m',
+  message: 'middlewareError',
+  timestamp: '2023-03-07 22:06:49:649'
+}
+{
+  meta: {
+    error: CustomError: Something wrong happened ):
+        at getUserGuilds (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/guildsController/index.ts:22:37)
+        at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+      status: 401,
+      error: [],
+      code: undefined
+    },
+    level: 'error',
+    message: 'uncaughtException: Something wrong happened ):\n' +
+      'Error: Something wrong happened ):\n' +
+      '    at getUserGuilds (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/guildsController/index.ts:22:37)\n' +
+      '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+    stack: 'Error: Something wrong happened ):\n' +
+      '    at getUserGuilds (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/guildsController/index.ts:22:37)\n' +
+      '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+    exception: true,
+    date: 'Tue Mar 07 2023 22:07:50 GMT-0300 (Brasilia Standard Time)',
+    process: {
+      pid: 75748,
+      uid: 1000,
+      gid: 1001,
+      cwd: '/home/zizmackrok/Desktop/Code/not-too-powerful/server',
+      execPath: '/home/zizmackrok/.nvm/versions/node/v18.12.1/bin/node',
+      version: 'v18.12.1',
+      argv: [
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/.bin/ts-node',
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/app.ts'
+      ],
+      memoryUsage: {
+        rss: 332853248,
+        heapTotal: 226029568,
+        heapUsed: 200327832,
+        external: 5083996,
+        arrayBuffers: 2439254
+      }
+    },
+    os: { loadavg: [ 1.03, 1.1, 1.05 ], uptime: 43788.39 },
+    trace: [
+      {
+        column: 37,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/guildsController/index.ts',
+        function: 'getUserGuilds',
+        line: 22,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: 'node:internal/process/task_queues',
+        function: 'processTicksAndRejections',
+        line: 95,
+        method: null,
+        native: false
+      }
+    ],
+    req: {
+      url: '/api/v1/guilds/user',
+      headers: {
+        host: 'localhost:4000',
+        'user-agent': 'insomnia/2022.7.5',
+        authorization: 'OTgzOTI2MDkwODMxNjU5MDE4',
+        accept: '*/*',
+        'content-length': '44'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/api/v1/guilds/user',
+      query: {}
+    }
+  },
+  level: '\x1B[31merror\x1B[39m',
+  message: 'middlewareError',
+  timestamp: '2023-03-07 22:07:50:750'
+}
+{
+  meta: {
+    error: CustomError: Something wrong happened ):
+        at getUserGuilds (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/guildsController/index.ts:22:37)
+        at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+      status: 401,
+      error: [],
+      code: undefined
+    },
+    level: 'error',
+    message: 'uncaughtException: Something wrong happened ):\n' +
+      'Error: Something wrong happened ):\n' +
+      '    at getUserGuilds (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/guildsController/index.ts:22:37)\n' +
+      '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+    stack: 'Error: Something wrong happened ):\n' +
+      '    at getUserGuilds (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/guildsController/index.ts:22:37)\n' +
+      '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+    exception: true,
+    date: 'Tue Mar 07 2023 22:09:05 GMT-0300 (Brasilia Standard Time)',
+    process: {
+      pid: 75861,
+      uid: 1000,
+      gid: 1001,
+      cwd: '/home/zizmackrok/Desktop/Code/not-too-powerful/server',
+      execPath: '/home/zizmackrok/.nvm/versions/node/v18.12.1/bin/node',
+      version: 'v18.12.1',
+      argv: [
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/.bin/ts-node',
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/app.ts'
+      ],
+      memoryUsage: {
+        rss: 334905344,
+        heapTotal: 225243136,
+        heapUsed: 202027784,
+        external: 5236529,
+        arrayBuffers: 2591787
+      }
+    },
+    os: { loadavg: [ 1.22, 1.12, 1.06 ], uptime: 43863.6 },
+    trace: [
+      {
+        column: 37,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/guildsController/index.ts',
+        function: 'getUserGuilds',
+        line: 22,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: 'node:internal/process/task_queues',
+        function: 'processTicksAndRejections',
+        line: 95,
+        method: null,
+        native: false
+      }
+    ],
+    req: {
+      url: '/api/v1/guilds/user',
+      headers: {
+        host: 'localhost:4000',
+        'user-agent': 'insomnia/2022.7.5',
+        authorization: 'OTgzOTI2MDkwODMxNjU5MDE4',
+        accept: '*/*',
+        'content-length': '44'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/api/v1/guilds/user',
+      query: {}
+    }
+  },
+  level: '\x1B[31merror\x1B[39m',
+  message: 'middlewareError',
+  timestamp: '2023-03-07 22:09:05:95'
+}
+{
+  meta: {
+    error: CustomError: Something wrong happened ):
+        at getUserGuilds (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/guildsController/index.ts:22:37)
+        at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+      status: 401,
+      error: [],
+      code: undefined
+    },
+    level: 'error',
+    message: 'uncaughtException: Something wrong happened ):\n' +
+      'Error: Something wrong happened ):\n' +
+      '    at getUserGuilds (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/guildsController/index.ts:22:37)\n' +
+      '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+    stack: 'Error: Something wrong happened ):\n' +
+      '    at getUserGuilds (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/guildsController/index.ts:22:37)\n' +
+      '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+    exception: true,
+    date: 'Tue Mar 07 2023 22:09:25 GMT-0300 (Brasilia Standard Time)',
+    process: {
+      pid: 75861,
+      uid: 1000,
+      gid: 1001,
+      cwd: '/home/zizmackrok/Desktop/Code/not-too-powerful/server',
+      execPath: '/home/zizmackrok/.nvm/versions/node/v18.12.1/bin/node',
+      version: 'v18.12.1',
+      argv: [
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/.bin/ts-node',
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/app.ts'
+      ],
+      memoryUsage: {
+        rss: 297627648,
+        heapTotal: 188280832,
+        heapUsed: 182767712,
+        external: 4485228,
+        arrayBuffers: 1844043
+      }
+    },
+    os: { loadavg: [ 1.13, 1.12, 1.06 ], uptime: 43883.42 },
+    trace: [
+      {
+        column: 37,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/guildsController/index.ts',
+        function: 'getUserGuilds',
+        line: 22,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: 'node:internal/process/task_queues',
+        function: 'processTicksAndRejections',
+        line: 95,
+        method: null,
+        native: false
+      }
+    ],
+    req: {
+      url: '/api/v1/guilds/user',
+      headers: {
+        host: 'localhost:4000',
+        'user-agent': 'insomnia/2022.7.5',
+        authorization: 'QCngjG2VOoB8pO08j5U7D2wEDthyaz',
+        accept: '*/*',
+        'content-length': '44'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/api/v1/guilds/user',
+      query: {}
+    }
+  },
+  level: '\x1B[31merror\x1B[39m',
+  message: 'middlewareError',
+  timestamp: '2023-03-07 22:09:25:925'
+}
