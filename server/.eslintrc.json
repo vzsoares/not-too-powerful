@@ -46,13 +46,7 @@
         "checksVoidReturn": false
       }
     ],
-    "n/no-unpublished-import": [
-      "error",
-      {
-        "allowModules": ["express-async-errors"],
-        "convertPath": null
-      }
-    ],
+    "n/no-unpublished-import": "off",
     "unused-imports/no-unused-vars": [
       "error",
       {

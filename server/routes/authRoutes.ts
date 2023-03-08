@@ -1,5 +1,6 @@
-import { getUserToken } from '@controllers/discordAuth';
 import express from 'express';
+
+import { getUserToken } from '@controllers/discordAuth';
 
 const authRouter = express.Router();
 

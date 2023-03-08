@@ -1,6 +1,8 @@
-import { CustomError } from '@middleware/error-handler';
-import { Request, Response } from 'express';
 import * as z from 'zod';
+
+import { CustomError } from '@middleware/error-handler';
+
+import type { Request, Response } from 'express';
 
 export const getUserToken = async (req: Request, res: Response) => {
   const bodySchema = z.object({

@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 import { discordGetUserCode } from '../../../../env';
 
 function Navbar() {
-  const [externalPopup, setExternalPopup] = useState<any>(null);
+  const [externalPopup, setExternalPopup] = useState<Window | null>(null);
 
   const handlePopup = () => {
     const width = 500;

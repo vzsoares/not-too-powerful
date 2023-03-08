@@ -1,4 +1,5 @@
 import path from 'path';
+
 import 'express-async-errors';
 import dotenv from 'dotenv';
 import express from 'express';
@@ -13,8 +14,9 @@ import responseEnhancer from '@middleware/responseEnhancer';
 import errorHandler from '@middleware/error-handler';
 import logger from '@middleware/logger';
 
-import discordBot from './discordBot';
 import authRouter from '@routes/authRoutes';
+
+import discordBot from './discordBot';
 
 dotenv.config();
 
