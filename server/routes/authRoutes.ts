@@ -4,6 +4,6 @@ import { getUserToken } from '@controllers/discordAuth';
 
 const authRouter = express.Router();
 
-authRouter.route('/userToken').get(getUserToken);
+authRouter.route('/d/userToken').get(getUserToken);
 
 export default authRouter;

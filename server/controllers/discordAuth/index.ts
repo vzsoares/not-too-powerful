@@ -26,5 +26,6 @@ export const getUserToken = async (req: Request, res: Response) => {
   const request = await fetch('https://discord.com/api/oauth2/token', options);
   if (request.status !== 200) throw new CustomError(401);
   const data = await request.json();
-  res.ok({ data: data.data });
+
+  res.ok(data);
 };
