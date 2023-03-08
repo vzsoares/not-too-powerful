@@ -55,3 +55,23 @@ export const getBotMatches = async (req: Request, res: Response) => {
 
   res.ok(match);
 };
+
+export const getGuildsChannels = async (req: Request, res: Response) => {
+  const idSchema = z.string().min(4).max(40);
+
+  const id = idSchema.parse(req.query.guild_id);
+
+  const options = {
+    method: 'GET',
+    headers: { authorization: `Bot ${process.env.CLIENT_TOKEN ?? ''}` },
+  };
+  const request = await fetch(
+    `https://discordapp.com/api/guilds/${id}/channels`,
+    options,
+  );
+
+  if (request.status !== 200) throw new CustomError(401);
+  const data = await request.json();
+
+  res.ok(data);
+};
