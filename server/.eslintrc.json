@@ -40,6 +40,19 @@
     "@typescript-eslint/dot-notation": 0,
     "@typescript-eslint/no-useless-constructor": 0,
     "n/handle-callback-err": 0,
+    "@typescript-eslint/no-misused-promises": [
+      "error",
+      {
+        "checksVoidReturn": false
+      }
+    ],
+    "n/no-unpublished-import": [
+      "error",
+      {
+        "allowModules": ["express-async-errors"],
+        "convertPath": null
+      }
+    ],
     "unused-imports/no-unused-vars": [
       "error",
       {

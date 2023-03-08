@@ -1,5 +1,5 @@
 import path from 'path';
-
+import 'express-async-errors';
 import dotenv from 'dotenv';
 import express from 'express';
 import helmet from 'helmet';
@@ -10,10 +10,11 @@ import morgan from 'morgan';
 
 import apiNotFound from '@middleware/not-found';
 import responseEnhancer from '@middleware/responseEnhancer';
-import errorHandler, { CustomError } from '@middleware/error-handler';
+import errorHandler from '@middleware/error-handler';
 import logger from '@middleware/logger';
 
 import discordBot from './discordBot';
+import authRouter from '@routes/authRoutes';
 
 dotenv.config();
 
@@ -38,14 +39,7 @@ app.use(responseEnhancer);
 
 void discordBot();
 
-app.get('/api/v1', (req, res) => {
-  // error example
-  if (typeof req === 'string') {
-    throw new CustomError(401);
-  }
-
-  res.ok();
-});
+app.use('/api/v1/auth', authRouter);
 
 app.use(logger);
 
