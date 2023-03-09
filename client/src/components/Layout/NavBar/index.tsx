@@ -3,15 +3,19 @@ import { Box, darken } from '@mui/system';
 import PersonIcon from '@mui/icons-material/Person';
 import { useEffect, useState } from 'react';
 
-import { discordGetUserCode } from '../../../../env';
+import { discordAddBotToBot, discordGetUserCode } from '../../../../env';
 import { useLazyGetTokenQuery } from '../../../api/auth.api';
 import { useAppDispatch, useAppSelector } from '../../../hooks';
 import { setAuth } from '../../../store/user';
+import { Toast } from '../../Toast/Toast';
 
 function Navbar() {
   return (
     <NavContainer>
       <Button
+        onClick={() => {
+          window.open(discordAddBotToBot, '_blank', '');
+        }}
         variant='contained'
         sx={{ py: { xs: '1rem', md: '1.5rem' }, height: 'fit-content' }}
       >
@@ -100,10 +104,20 @@ function UserPopOver({ children }: { children: React.ReactElement }) {
           .then((r) => {
             dispatch(setAuth(r.data));
             // TODO success toast
+            Toast.show({
+              title: 'Success !!',
+              message: 'Logged in',
+              type: 'success',
+            });
           })
           .catch((e) => {
             // TODO
             console.error('error login in', e);
+            Toast.show({
+              title: 'Error !!',
+              message: 'Failed logging in',
+              type: 'error',
+            });
           });
       }
     }, 500);

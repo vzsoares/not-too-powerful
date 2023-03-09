@@ -1,6 +1,8 @@
 import { Box } from '@mui/system';
 import { Outlet } from 'react-router-dom';
 
+import { Toast } from '../Toast/Toast';
+
 import Footer from './Footer';
 import Navbar from './NavBar';
 
@@ -11,6 +13,8 @@ function Layout() {
       <BodyContainer>
         <Outlet />
       </BodyContainer>
+      {/* @ts-expect-error yeah */}
+      <Toast />
       <Footer />
     </>
   );
