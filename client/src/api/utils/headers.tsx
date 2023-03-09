@@ -4,9 +4,9 @@ export const authenticationHeader = (
   headers: Headers,
   { getState }: { getState: () => unknown },
 ) => {
-  const { token } = (getState() as RootState).user;
-  if (token) {
-    headers.set('authorization', `Bearer ${token}`);
+  const { auth } = (getState() as RootState).user;
+  if (auth) {
+    headers.set('authorization', `Bearer ${auth.access_token}`);
   }
 
   headers.set('profile', 'realtor');

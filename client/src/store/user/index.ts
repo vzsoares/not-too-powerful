@@ -3,15 +3,21 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 interface User {
   name: string;
 }
-
+interface AuthOjb {
+  access_token: string;
+  expires_in: number;
+  refresh_token: string;
+  scope: string;
+  token_type: string;
+}
 interface UserState {
   user?: User;
-  token: string;
+  auth?: AuthOjb;
 }
 
 const initialState: UserState = {
   user: undefined,
-  token: '',
+  auth: undefined,
 };
 
 const userSlice = createSlice({
@@ -21,19 +27,19 @@ const userSlice = createSlice({
     setUser: (state, action: PayloadAction<User | undefined>) => {
       state.user = action.payload;
     },
-    setAuthToken: (state, action: PayloadAction<string>) => {
-      state.token = action.payload;
+    setAuth: (state, action: PayloadAction<AuthOjb>) => {
+      state.auth = action.payload;
     },
     setCredentials: (
       state,
-      action: PayloadAction<{ user: User; token: string }>,
+      action: PayloadAction<{ user: User; auth: AuthOjb }>,
     ) => {
-      state.token = action.payload.token;
+      state.auth = action.payload.auth;
       state.user = action.payload.user;
     },
   },
 });
 
-export const { setUser, setAuthToken, setCredentials } = userSlice.actions;
+export const { setUser, setCredentials, setAuth } = userSlice.actions;
 
 export default userSlice.reducer;

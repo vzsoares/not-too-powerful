@@ -12,9 +12,15 @@ import {
 } from 'redux-persist';
 import localStorage from 'redux-persist/lib/storage';
 
+import { authApi } from '../api/auth.api';
+
 import userReducer from './user';
 
-const reducer = combineReducers({ user: userReducer });
+const reducer = combineReducers({
+  user: userReducer,
+  [authApi.reducerPath]: authApi.reducer,
+});
+const customMiddleware = [authApi.middleware];
 
 const rootReducer = (
   state: ReturnType<typeof reducer> | undefined,
@@ -29,7 +35,7 @@ const rootReducer = (
 const persistConfig: PersistConfig<ReturnType<typeof rootReducer>> = {
   key: 'root',
   storage: localStorage,
-  // TODO configure api blacklist https://redux-toolkit.js.org/usage/usage-guide#use-with-redux-persist
+  whitelist: ['user'],
   timeout: 0,
 };
 
@@ -42,7 +48,7 @@ const store = configureStore({
       serializableCheck: {
         ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
       },
-    }),
+    }).concat(customMiddleware),
 });
 
 export const persistor = persistStore(store);

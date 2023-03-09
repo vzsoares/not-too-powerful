@@ -4,9 +4,13 @@ import PersonIcon from '@mui/icons-material/Person';
 import { useEffect, useState } from 'react';
 
 import { discordGetUserCode } from '../../../../env';
+import { useLazyGetTokenQuery } from '../../../api/auth.api';
+import { useAppDispatch } from '../../../hooks';
+import { setAuth } from '../../../store/user';
 
 function Navbar() {
   const [externalPopup, setExternalPopup] = useState<Window | null>(null);
+  const dispatch = useAppDispatch();
 
   const handlePopup = () => {
     const width = 500;
@@ -22,6 +26,8 @@ function Navbar() {
     );
     setExternalPopup(popup);
   };
+
+  const [verifyToken] = useLazyGetTokenQuery();
 
   useEffect(() => {
     if (!externalPopup) {
@@ -41,11 +47,19 @@ function Navbar() {
       const code = searchParams.get('code');
       if (code) {
         externalPopup.close();
-        // TODO SEND CODE TO API
+        verifyToken(code)
+          .unwrap()
+          .then((r) => {
+            dispatch(setAuth(r.data));
+          })
+          .catch((e) => {
+            // TODO
+            console.error('error login in', e);
+          });
         console.warn(`The popup URL has URL code param = ${code}`);
       }
     }, 500);
-  }, [externalPopup]);
+  }, [externalPopup, dispatch, verifyToken]);
 
   return (
     <NavContainer>

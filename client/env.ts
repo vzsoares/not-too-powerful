@@ -12,4 +12,4 @@ export const discordAuthorize = {
   ],
 };
 
-export const API_BASE = 'localhost:4000';
+export const API_BASE = 'http://localhost:4000';
