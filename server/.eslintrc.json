@@ -46,6 +46,14 @@
         "checksVoidReturn": false
       }
     ],
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": ["variable"],
+        "modifiers": ["const"],
+        "format": ["UPPER_CASE", "camelCase", "PascalCase", "snake_case"]
+      }
+    ],
     "n/no-unpublished-import": "off",
     "unused-imports/no-unused-vars": [
       "error",

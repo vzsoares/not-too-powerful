@@ -75,3 +75,18 @@ export const getGuildsChannels = async (req: Request, res: Response) => {
 
   res.ok(data);
 };
+
+// var input = document.querySelector('input[type="file"]')
+
+// var data = new FormData()
+// data.append('file', input.files[0])
+// data.append('user', 'hubot')
+
+// fetch('/avatars', {
+//   method: 'POST',
+//   body: data
+// })
+
+// https://stackoverflow.com/questions/36067767/how-do-i-upload-a-file-with-the-js-fetch-api
+
+// compressor js

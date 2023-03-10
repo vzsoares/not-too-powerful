@@ -1,78 +1,37 @@
-// import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
-// import { API_BASE } from 'env';
+import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
-// import { authenticationHeader } from './utils/headers';
-export {};
-// export interface ClientTiny {
-//   name: string;
-//   id: number;
-// }
-// export interface AgrupamentoTiny {
-//   name: string;
-// }
-// export interface EmpreditoTiny {
-//   id: number;
-//   nome: string;
-// }
-// export interface EmpreditoUnidadeDetails {
-//   id: number;
-//   empreendimentos_id: number;
-//   disponibilidade: number;
-//   tipo: string;
-//   agrupamento: string;
-//   andar: string;
-//   garden: number;
-//   luz_solar: string;
-//   numero: string;
-//   quartos: number;
-//   banheiros: number;
-//   suites: number;
-//   vagas: number;
-//   pne: number;
-//   metragem: string;
-//   valor_venda: string;
-//   valor_aval: string;
-//   comissao_corretor: string;
-//   enquadramento: string;
-//   pro_soluto: string;
-//   anual_parcelas: number;
-//   anual_regra: string;
-//   pos_parcelas: number;
-//   pos_regra: string;
-//   mensal_parcelas: number;
-//   mensal_regra: string;
-//   createdAt: string;
-//   updatedAt: string;
-//   deletedAt: string;
-// }
+import { API_BASE } from '../../env';
 
-// export const empreendimentoApi = createApi({
-//   baseQuery: fetchBaseQuery({
-//     baseUrl: `${API_BASE}/simulador/`,
-//     prepareHeaders: authenticationHeader,
-//   }),
-//   reducerPath: 'empreendimento-api',
-//   tagTypes: [],
-//   endpoints: (builder) => ({
-//     getEmpreendimentosList: builder.query<EmpreditoTiny[], unknown>({
-//       query: () => `empreendimentos/`,
-//     }),
-//     getEmpreditoAgrupamentosList: builder.query<AgrupamentoTiny[], number>({
-//       query: (empreditoId: number) =>
-//         `agrupamentos?empreeendimentoId=${empreditoId}`,
-//     }),
-//     getEmpreditoUnidadesList: builder.query<
-//       EmpreditoUnidadeDetails[],
-//       { empreditoId: number; agrupamento: string }
-//     >({
-//       query: ({ empreditoId, agrupamento }) =>
-//         `unidades?empreeendimentoId=${empreditoId}&agrupamento=${agrupamento}`,
-//     }),
-//   }),
-// });
+import { authenticationHeader } from './utils/headers';
 
-// export const {
-//   useGetEmpreendimentosListQuery,
-//   useGetEmpreditoAgrupamentosListQuery,
-//   useGetEmpreditoUnidadesListQuery,
-// } = empreendimentoApi;
+export const authApi = createApi({
+  baseQuery: fetchBaseQuery({
+    baseUrl: `${API_BASE}/`,
+    prepareHeaders: authenticationHeader,
+  }),
+  reducerPath: 'auth-api',
+  tagTypes: [],
+  endpoints: (build) => ({
+    getGuildMatches: build.query<API_RESULT<unknown>, undefined>({
+      query: () => ({
+        url: 'api/v1/guilds/matches',
+      }),
+    }),
+    getGuildChannels: build.query<API_RESULT<unknown>, undefined>({
+      query: (guild_id) => ({
+        url: 'api/v1/guilds/channels',
+        params: { guild_id },
+      }),
+    }),
+  }),
+});
+// TODO identify user
+
+export const { useGetGuildMatchesQuery, useGetGuildChannelsQuery } = authApi;
+
+interface API_RESULT<T> {
+  data: T;
+  message: string | null;
+  code: string | null;
+  error: string | null;
+}

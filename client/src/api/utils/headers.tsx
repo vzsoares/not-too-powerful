@@ -9,8 +9,6 @@ export const authenticationHeader = (
     headers.set('authorization', `Bearer ${auth.access_token}`);
   }
 
-  headers.set('profile', 'realtor');
-
   if (!headers.has('Content-type')) {
     headers.set('Content-Type', 'application/json');
   }
