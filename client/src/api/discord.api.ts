@@ -4,15 +4,25 @@ import { API_BASE } from '../../env';
 
 import { authenticationHeader } from './utils/headers';
 
-export const authApi = createApi({
+export interface GuildSummary {
+  id: string;
+  name: string;
+  icon: string | null;
+  owner: boolean;
+  permissions: number;
+  features: string[];
+  permissions_new: string;
+}
+
+export const discordApi = createApi({
   baseQuery: fetchBaseQuery({
     baseUrl: `${API_BASE}/`,
     prepareHeaders: authenticationHeader,
   }),
-  reducerPath: 'auth-api',
+  reducerPath: 'discord-api',
   tagTypes: [],
   endpoints: (build) => ({
-    getGuildMatches: build.query<API_RESULT<unknown>, undefined>({
+    getGuildMatches: build.query<API_RESULT<GuildSummary[]>, undefined>({
       query: () => ({
         url: 'api/v1/guilds/matches',
       }),
@@ -27,7 +37,7 @@ export const authApi = createApi({
 });
 // TODO identify user
 
-export const { useGetGuildMatchesQuery, useGetGuildChannelsQuery } = authApi;
+export const { useGetGuildMatchesQuery, useGetGuildChannelsQuery } = discordApi;
 
 interface API_RESULT<T> {
   data: T;

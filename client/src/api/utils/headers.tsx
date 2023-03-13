@@ -5,8 +5,9 @@ export const authenticationHeader = (
   { getState }: { getState: () => unknown },
 ) => {
   const { auth } = (getState() as RootState).user;
+
   if (auth) {
-    headers.set('authorization', `Bearer ${auth.access_token}`);
+    headers.set('authorization', `${auth.access_token}`);
   }
 
   if (!headers.has('Content-type')) {

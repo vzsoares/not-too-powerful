@@ -12,6 +12,7 @@ import {
 } from 'redux-persist';
 import localStorage from 'redux-persist/lib/storage';
 
+import { discordApi } from '../api/discord.api';
 import { authApi } from '../api/auth.api';
 
 import userReducer from './user';
@@ -19,8 +20,9 @@ import userReducer from './user';
 const reducer = combineReducers({
   user: userReducer,
   [authApi.reducerPath]: authApi.reducer,
+  [discordApi.reducerPath]: discordApi.reducer,
 });
-const customMiddleware = [authApi.middleware];
+const customMiddleware = [authApi.middleware, discordApi.middleware];
 
 const rootReducer = (
   state: ReturnType<typeof reducer> | undefined,

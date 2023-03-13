@@ -52,6 +52,7 @@ export const getBotMatches = async (req: Request, res: Response) => {
   const match = botGuilds.filter((x: anyJ) =>
     userGuilds.find((z: anyJ) => z.id === x.id),
   );
+  console.log(match);
 
   res.ok(match);
 };
