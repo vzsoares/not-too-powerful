@@ -3,7 +3,10 @@ import ImageIcon from '@mui/icons-material/Image';
 import { useRef, useState } from 'react';
 
 import useEnhancedTheme from '../../../hooks/useEnhancedTheme';
-import { useGetGuildMatchesQuery } from '../../../api/discord.api';
+import {
+  GuildSummary,
+  useGetGuildMatchesQuery,
+} from '../../../api/discord.api';
 import { useAppSelector } from '../../../hooks';
 
 function UploadBox() {
@@ -18,6 +21,7 @@ function UploadBox() {
 
   const [selectGuidOpen, setSelectGuidOpen] = useState(true);
   const handleClose = () => setSelectGuidOpen(false);
+  const [selectedGuild, setSelectedGuild] = useState<GuildSummary | null>();
 
   return (
     <Box
@@ -69,7 +73,11 @@ function UploadBox() {
                   key={i}
                   evenOdd={isOdd}
                   name={el?.name}
-                  selected={Array.isArray([]) === !!el?.id}
+                  selected={selectedGuild?.id === el?.id}
+                  onClick={() => {
+                    if (selectedGuild?.id === el?.id) setSelectedGuild(null);
+                    else setSelectedGuild(el);
+                  }}
                 />
               );
             })}
@@ -90,15 +98,18 @@ function ListItem({
   evenOdd,
   name,
   selected,
+  onClick,
 }: {
   evenOdd: boolean;
   name: string;
   selected: boolean;
+  onClick: () => void;
 }) {
   const { theme } = useEnhancedTheme();
   const secondary600 = lighten(theme.palette.secondary.main, 0.7);
   return (
     <Box
+      onClick={onClick}
       sx={{
         bgcolor: selected
           ? 'primary.main'
