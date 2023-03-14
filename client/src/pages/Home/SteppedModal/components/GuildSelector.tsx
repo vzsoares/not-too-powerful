@@ -9,6 +9,7 @@ import useEnhancedTheme from '../../../../hooks/useEnhancedTheme';
 import {
   setSelectedGuild,
   setSelectedGuildChannel,
+  setStep,
 } from '../../../../store/upload';
 
 function GuildSelector() {
@@ -71,8 +72,9 @@ function GuildSelector() {
         variant='contained'
         sx={{ ml: 'auto', mt: 2, py: 1.5, px: 3.5 }}
         disabled={!upload.selectedGuildChannel || !upload.selectedGuild}
+        onClick={() => dispatch(setStep(3))}
       >
-        Send
+        Next
       </Button>
     </>
   );

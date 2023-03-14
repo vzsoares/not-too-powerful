@@ -69,7 +69,7 @@ function Stepper() {
               <Box
                 sx={{
                   border: '1px solid',
-                  borderColor: completedPrev ? 'success.main' : 'gray.400',
+                  borderColor: completedPrev ? 'success.main' : 'white.main',
                   height: 0,
                   flex: 1,
                 }}
@@ -87,7 +87,7 @@ function Stepper() {
               <Box
                 sx={{
                   border: '1px solid',
-                  borderColor: progressing ? 'success.main' : 'gray.400',
+                  borderColor: progressing ? 'success.main' : 'white.main',
                   height: 0,
                   flex: 1,
                 }}
