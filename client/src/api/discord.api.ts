@@ -14,6 +14,17 @@ export interface GuildSummary {
   permissions_new: string;
 }
 
+export interface GuildChannelSummary {
+  id: string;
+  type: number;
+  name: string;
+  position: number;
+  flags: number;
+  parent_id: string | null;
+  guild_id: string;
+  permission_overwrites: string[] | null;
+}
+
 export const discordApi = createApi({
   baseQuery: fetchBaseQuery({
     baseUrl: `${API_BASE}/`,
@@ -27,7 +38,10 @@ export const discordApi = createApi({
         url: 'api/v1/guilds/matches',
       }),
     }),
-    getGuildChannels: build.query<API_RESULT<unknown>, undefined>({
+    getGuildChannels: build.query<
+      API_RESULT<GuildChannelSummary[]>,
+      GuildSummary['id']
+    >({
       query: (guild_id) => ({
         url: 'api/v1/guilds/channels',
         params: { guild_id },

@@ -1,4 +1,4 @@
-import { Box, lighten, Dialog, Typography } from '@mui/material';
+import { Box, lighten, Dialog, Typography, Button } from '@mui/material';
 import ImageIcon from '@mui/icons-material/Image';
 import { useRef, useState } from 'react';
 
@@ -6,22 +6,28 @@ import useEnhancedTheme from '../../../hooks/useEnhancedTheme';
 import {
   GuildSummary,
   useGetGuildMatchesQuery,
+  useGetGuildChannelsQuery,
+  GuildChannelSummary,
 } from '../../../api/discord.api';
 import { useAppSelector } from '../../../hooks';
 
 function UploadBox() {
   const user = useAppSelector((x) => x.user);
-  const { data } = useGetGuildMatchesQuery(undefined, {
+  const { data: guild_matches } = useGetGuildMatchesQuery(undefined, {
     skip: !user.auth?.access_token,
   });
-  // const data = data2?.data;
-  // console.log(data);
-  // console.log(data2);
-  // console.log(user);
 
   const [selectGuidOpen, setSelectGuidOpen] = useState(true);
   const handleClose = () => setSelectGuidOpen(false);
   const [selectedGuild, setSelectedGuild] = useState<GuildSummary | null>();
+  const { data: guild_channels } = useGetGuildChannelsQuery(
+    selectedGuild?.id ?? '',
+    {
+      skip: !selectedGuild?.id,
+    },
+  );
+  const [selectedGuildChannel, setSelectedGuildChannel] =
+    useState<GuildChannelSummary | null>();
 
   return (
     <Box
@@ -62,11 +68,14 @@ function UploadBox() {
           },
         }}
       >
-        <Typography>choose your server</Typography>
+        <Typography variant='h3' fontSize='2rem'>
+          Guild Selector
+        </Typography>
         {/* <RadioSelector data={data?.data} /> */}
-        <Box sx={{ display: 'flex' }}>
+        <Box sx={{ display: 'flex', my: 2 }}>
           <Box sx={{ display: 'flex', flexDirection: 'column', flex: 1 }}>
-            {data?.data.map((el, i) => {
+            <Typography>Server:</Typography>
+            {guild_matches?.data.map((el, i) => {
               const isOdd = !!(i % 2);
               return (
                 <ListItem
@@ -82,13 +91,33 @@ function UploadBox() {
               );
             })}
           </Box>
-          {/* <Box sx={{ display: 'flex', flexDirection: 'column', flex: 1 }}>
-            {[...Array(5)].map((_, i) => {
+          <Box sx={{ display: 'flex', flexDirection: 'column', flex: 1 }}>
+            <Typography>Channel:</Typography>
+            {guild_channels?.data.map((el, i) => {
               const isEven = !(i % 2);
-              return <ListItem key={i} evenOdd={isEven} />;
+              return (
+                <ListItem
+                  key={i}
+                  evenOdd={isEven}
+                  name={el?.name}
+                  selected={selectedGuildChannel?.id === el?.id}
+                  onClick={() => {
+                    if (selectedGuildChannel?.id === el?.id)
+                      setSelectedGuildChannel(null);
+                    else setSelectedGuildChannel(el);
+                  }}
+                />
+              );
             })}
-          </Box> */}
+          </Box>
         </Box>
+        <Button
+          variant='contained'
+          sx={{ marginLeft: 'auto' }}
+          disabled={!selectedGuildChannel || !selectedGuild}
+        >
+          Send
+        </Button>
       </Dialog>
     </Box>
   );

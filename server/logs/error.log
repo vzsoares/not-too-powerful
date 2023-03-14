@@ -6669,3 +6669,249 @@
   message: 'middlewareError',
   timestamp: '2023-03-10 19:41:20:4120'
 }
+{
+  meta: {
+    error: ZodError: [
+      {
+        "code": "too_small",
+        "minimum": 4,
+        "type": "string",
+        "inclusive": true,
+        "exact": false,
+        "message": "String must contain at least 4 character(s)",
+        "path": []
+      }
+    ]
+        at handleResult (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:29:23)
+        at ZodString.safeParse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:142:16)
+        at ZodString.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:122:29)
+        at getGuildsChannels (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/guildsController/index.ts:63:23)
+        at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)
+        at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)
+        at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)
+        at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)
+        at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)
+        at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5) {
+      issues: [
+        {
+          code: 'too_small',
+          minimum: 4,
+          type: 'string',
+          inclusive: true,
+          exact: false,
+          message: 'String must contain at least 4 character(s)',
+          path: []
+        }
+      ],
+      addIssue: [Function (anonymous)],
+      addIssues: [Function (anonymous)],
+      errors: [
+        {
+          code: 'too_small',
+          minimum: 4,
+          type: 'string',
+          inclusive: true,
+          exact: false,
+          message: 'String must contain at least 4 character(s)',
+          path: []
+        }
+      ]
+    },
+    level: 'error',
+    message: 'uncaughtException: [\n' +
+      '  {\n' +
+      '    "code": "too_small",\n' +
+      '    "minimum": 4,\n' +
+      '    "type": "string",\n' +
+      '    "inclusive": true,\n' +
+      '    "exact": false,\n' +
+      '    "message": "String must contain at least 4 character(s)",\n' +
+      '    "path": []\n' +
+      '  }\n' +
+      ']\n' +
+      'ZodError: [\n' +
+      '  {\n' +
+      '    "code": "too_small",\n' +
+      '    "minimum": 4,\n' +
+      '    "type": "string",\n' +
+      '    "inclusive": true,\n' +
+      '    "exact": false,\n' +
+      '    "message": "String must contain at least 4 character(s)",\n' +
+      '    "path": []\n' +
+      '  }\n' +
+      ']\n' +
+      '    at handleResult (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:29:23)\n' +
+      '    at ZodString.safeParse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:142:16)\n' +
+      '    at ZodString.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:122:29)\n' +
+      '    at getGuildsChannels (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/guildsController/index.ts:63:23)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)\n' +
+      '    at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)',
+    stack: 'ZodError: [\n' +
+      '  {\n' +
+      '    "code": "too_small",\n' +
+      '    "minimum": 4,\n' +
+      '    "type": "string",\n' +
+      '    "inclusive": true,\n' +
+      '    "exact": false,\n' +
+      '    "message": "String must contain at least 4 character(s)",\n' +
+      '    "path": []\n' +
+      '  }\n' +
+      ']\n' +
+      '    at handleResult (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:29:23)\n' +
+      '    at ZodString.safeParse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:142:16)\n' +
+      '    at ZodString.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:122:29)\n' +
+      '    at getGuildsChannels (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/guildsController/index.ts:63:23)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)\n' +
+      '    at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)',
+    exception: true,
+    date: 'Mon Mar 13 2023 21:13:06 GMT-0300 (Brasilia Standard Time)',
+    process: {
+      pid: 82898,
+      uid: 1000,
+      gid: 1001,
+      cwd: '/home/zizmackrok/Desktop/Code/not-too-powerful/server',
+      execPath: '/home/zizmackrok/.nvm/versions/node/v18.12.1/bin/node',
+      version: 'v18.12.1',
+      argv: [
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/.bin/ts-node',
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/app.ts'
+      ],
+      memoryUsage: {
+        rss: 298049536,
+        heapTotal: 190115840,
+        heapUsed: 185257952,
+        external: 4833829,
+        arrayBuffers: 2192684
+      }
+    },
+    os: { loadavg: [ 1.81, 1.48, 1.22 ], uptime: 41979.7 },
+    trace: [
+      {
+        column: null,
+        file: null,
+        function: null,
+        line: null,
+        method: null,
+        native: false
+      },
+      {
+        column: 23,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js',
+        function: 'handleResult',
+        line: 29,
+        method: null,
+        native: false
+      },
+      {
+        column: 16,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js',
+        function: 'ZodString.safeParse',
+        line: 142,
+        method: 'safeParse',
+        native: false
+      },
+      {
+        column: 29,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js',
+        function: 'ZodString.parse',
+        line: 122,
+        method: 'parse',
+        native: false
+      },
+      {
+        column: 23,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/guildsController/index.ts',
+        function: 'getGuildsChannels',
+        line: 63,
+        method: null,
+        native: false
+      },
+      {
+        column: 20,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      },
+      {
+        column: 13,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js',
+        function: 'next',
+        line: 144,
+        method: null,
+        native: false
+      },
+      {
+        column: 3,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js',
+        function: 'Route.dispatch',
+        line: 114,
+        method: 'dispatch',
+        native: false
+      },
+      {
+        column: 20,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      }
+    ],
+    req: {
+      url: '/api/v1/guilds/channels?guild_id=',
+      headers: {
+        host: 'localhost:4000',
+        connection: 'keep-alive',
+        pragma: 'no-cache',
+        'cache-control': 'no-cache',
+        'sec-ch-ua': '"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"',
+        'content-type': 'application/json',
+        'sec-ch-ua-mobile': '?0',
+        authorization: 'R4WTN848qyH4TM42yvbkNGRhWGgYu8',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+        'sec-ch-ua-platform': '"Linux"',
+        accept: '*/*',
+        origin: 'http://localhost:5173',
+        'sec-fetch-site': 'same-site',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-dest': 'empty',
+        referer: 'http://localhost:5173/',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'en-US,en;q=0.9,pt-BR;q=0.8,pt;q=0.7,es;q=0.6'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/api/v1/guilds/channels?guild_id=',
+      query: { guild_id: '' }
+    }
+  },
+  level: '\x1B[31merror\x1B[39m',
+  message: 'middlewareError',
+  timestamp: '2023-03-13 21:13:06:136'
+}
