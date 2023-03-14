@@ -8,7 +8,7 @@ import SplashLoading from './components/Layout/SplashLoading';
 import store, { persistor } from './store';
 import Home from './pages/Home';
 import Error from './pages/Error';
-import GuildSelectorModal from './pages/Home/GuildSelector';
+import GuildSelectorModal from './pages/Home/SteppedModal';
 
 function App(): JSX.Element {
   return (

@@ -49,6 +49,8 @@ const theme = createTheme({
     primary: { main: '#5865F2' },
     secondary: { main: '#23272A' },
     white: { main: '#FFFFFF' },
+    success: { main: '#57F287' },
+    error: { main: '#ED4245' },
     gray: {
       100: '#7b7d7f',
       200: '#65686a',
