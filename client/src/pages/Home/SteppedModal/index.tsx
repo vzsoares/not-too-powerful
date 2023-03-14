@@ -5,7 +5,7 @@ import { setModalOpen } from '../../../store/upload';
 import { useAppDispatch, useAppSelector } from '../../../hooks';
 
 import GuildSelector from './components/GuildSelector';
-// import AuthStep from './components/AuthStep';
+import AuthStep from './components/AuthStep';
 
 // TODO stepped modal, login/server.channel/img/send
 function SteppedModal() {
@@ -14,6 +14,8 @@ function SteppedModal() {
 
   const modalOpen = upload.modalOpen;
   const handleClose = () => dispatch(setModalOpen(false));
+
+  const step = upload.step;
 
   return (
     <Dialog
@@ -33,8 +35,13 @@ function SteppedModal() {
       <Stepper />
 
       <Box sx={{ display: 'flex', flexDirection: 'column', mt: 4, flex: 1 }}>
-        <GuildSelector />
-        {/* <AuthStep /> */}
+        {step === 1 ? (
+          <AuthStep />
+        ) : step === 2 ? (
+          <GuildSelector />
+        ) : (
+          <Box>Upload</Box>
+        )}
       </Box>
     </Dialog>
   );
@@ -43,7 +50,7 @@ function SteppedModal() {
 export default SteppedModal;
 
 function Stepper() {
-  const step = 1;
+  const step = useAppSelector((x) => x.upload.step);
   const steps = ['Log In', 'Select channel', 'Select image'];
   return (
     <Box

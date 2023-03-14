@@ -5,12 +5,14 @@ interface uploadState {
   selectedGuild: GuildSummary | null;
   selectedGuildChannel: GuildChannelSummary | null;
   modalOpen: boolean;
+  step: number;
 }
 
 const initialState: uploadState = {
   selectedGuild: null,
   selectedGuildChannel: null,
   modalOpen: true,
+  step: 1,
 };
 
 const uploadSlice = createSlice({
@@ -32,10 +34,17 @@ const uploadSlice = createSlice({
     setModalOpen: (state, action: PayloadAction<uploadState['modalOpen']>) => {
       state.modalOpen = action.payload;
     },
+    setStep: (state, action: PayloadAction<uploadState['step']>) => {
+      state.step = action.payload;
+    },
   },
 });
 
-export const { setSelectedGuild, setSelectedGuildChannel, setModalOpen } =
-  uploadSlice.actions;
+export const {
+  setSelectedGuild,
+  setSelectedGuildChannel,
+  setModalOpen,
+  setStep,
+} = uploadSlice.actions;
 
 export default uploadSlice.reducer;

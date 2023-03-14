@@ -1,13 +1,11 @@
 import { Button, IconButton, Popover, Typography } from '@mui/material';
 import { Box, darken } from '@mui/system';
 import PersonIcon from '@mui/icons-material/Person';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
-import { discordAddBotToBot, discordGetUserCode } from '../../../../env';
-import { useLazyGetTokenQuery } from '../../../api/auth.api';
+import { discordAddBotToBot } from '../../../../env';
 import { useAppDispatch, useAppSelector } from '../../../hooks';
-import { setAuth } from '../../../store/user';
-import { Toast } from '../../Toast/Toast';
+import useAuthPopup from '../../../hooks/useAuthPopup';
 
 function Navbar() {
   return (
@@ -62,66 +60,7 @@ function UserPopOver({ children }: { children: React.ReactElement }) {
   const open = Boolean(anchorEl);
   const id = open ? 'simple-popover' : undefined;
 
-  const [externalPopup, setExternalPopup] = useState<Window | null>(null);
-
-  const handlePopup = () => {
-    const width = 500;
-    const height = 900;
-    const left = window.screenX + (window.outerWidth - width) / 2;
-    const top = window.screenY + (window.outerHeight - height) / 2.5;
-    const title = ``;
-    const url = discordGetUserCode;
-    const popup = window.open(
-      url,
-      title,
-      `width=${width},height=${height},left=${left},top=${top}`,
-    );
-    setExternalPopup(popup);
-  };
-
-  const [verifyToken] = useLazyGetTokenQuery();
-
-  useEffect(() => {
-    if (!externalPopup) {
-      return;
-    }
-
-    const timer = setInterval(() => {
-      if (!externalPopup) {
-        timer && clearInterval(timer);
-        return;
-      }
-      const currentUrl = externalPopup.location.href;
-      if (!currentUrl) {
-        return;
-      }
-      const searchParams = new URL(currentUrl).searchParams;
-      const code = searchParams.get('code');
-      if (code) {
-        externalPopup.close();
-        verifyToken(code)
-          .unwrap()
-          .then((r) => {
-            dispatch(setAuth(r.data));
-            // TODO success toast
-            Toast.show({
-              title: 'Success !!',
-              message: 'Logged in',
-              type: 'success',
-            });
-          })
-          .catch((e) => {
-            // TODO
-            console.error('error login in', e);
-            Toast.show({
-              title: 'Error !!',
-              message: 'Failed logging in',
-              type: 'error',
-            });
-          });
-      }
-    }, 500);
-  }, [externalPopup, dispatch, verifyToken]);
+  const [handleAuthPopup] = useAuthPopup();
 
   return (
     <Box>
@@ -174,7 +113,7 @@ function UserPopOver({ children }: { children: React.ReactElement }) {
         ) : (
           <Typography
             onClick={() => {
-              handlePopup();
+              handleAuthPopup();
               handleClose();
             }}
             sx={{
