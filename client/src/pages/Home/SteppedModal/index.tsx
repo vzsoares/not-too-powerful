@@ -6,6 +6,7 @@ import { useAppDispatch, useAppSelector } from '../../../hooks';
 
 import GuildSelector from './components/GuildSelector';
 import AuthStep from './components/AuthStep';
+import FileSelectorStep from './components/FileSelectorStep';
 
 // TODO stepped modal, login/server.channel/img/send
 function SteppedModal() {
@@ -40,7 +41,7 @@ function SteppedModal() {
         ) : step === 2 ? (
           <GuildSelector />
         ) : (
-          <Box>Upload</Box>
+          <FileSelectorStep />
         )}
       </Box>
     </Dialog>
