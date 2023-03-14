@@ -1,10 +1,11 @@
 import { Fragment } from 'react';
-import { Dialog, Typography, Box, Button } from '@mui/material';
+import { Dialog, Typography, Box } from '@mui/material';
 
 import { setModalOpen } from '../../../store/upload';
 import { useAppDispatch, useAppSelector } from '../../../hooks';
 
 import GuildSelector from './components/GuildSelector';
+// import AuthStep from './components/AuthStep';
 
 // TODO stepped modal, login/server.channel/img/send
 function SteppedModal() {
@@ -31,16 +32,10 @@ function SteppedModal() {
     >
       <Stepper />
 
-      <Box sx={{ display: 'flex', mt: 4, mb: 2 }}>
+      <Box sx={{ display: 'flex', flexDirection: 'column', mt: 4, flex: 1 }}>
         <GuildSelector />
+        {/* <AuthStep /> */}
       </Box>
-      <Button
-        variant='contained'
-        sx={{ ml: 'auto', mt: 'auto', py: 1.5, px: 3.5 }}
-        disabled={!upload.selectedGuildChannel || !upload.selectedGuild}
-      >
-        Send
-      </Button>
     </Dialog>
   );
 }

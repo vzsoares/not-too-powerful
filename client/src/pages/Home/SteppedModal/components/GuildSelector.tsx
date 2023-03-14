@@ -1,4 +1,4 @@
-import { Box, Typography, lighten } from '@mui/material';
+import { Box, Typography, lighten, Button } from '@mui/material';
 
 import {
   useGetGuildMatchesQuery,
@@ -27,44 +27,53 @@ function GuildSelector() {
   );
   return (
     <>
-      <Box sx={{ display: 'flex', flexDirection: 'column', flex: 1 }}>
-        <Typography>Server:</Typography>
-        {guild_matches?.data.map((el, i) => {
-          const isOdd = !!(i % 2);
-          return (
-            <ListItem
-              key={i}
-              evenOdd={isOdd}
-              name={el?.name}
-              selected={upload.selectedGuild?.id === el?.id}
-              onClick={() => {
-                if (upload.selectedGuild?.id === el?.id)
-                  dispatch(setSelectedGuild(null));
-                else dispatch(setSelectedGuild(el));
-              }}
-            />
-          );
-        })}
+      <Box sx={{ display: 'flex', flex: 1 }}>
+        <Box sx={{ display: 'flex', flexDirection: 'column', flex: 1 }}>
+          <Typography>Server:</Typography>
+          {guild_matches?.data.map((el, i) => {
+            const isOdd = !!(i % 2);
+            return (
+              <ListItem
+                key={i}
+                evenOdd={isOdd}
+                name={el?.name}
+                selected={upload.selectedGuild?.id === el?.id}
+                onClick={() => {
+                  if (upload.selectedGuild?.id === el?.id)
+                    dispatch(setSelectedGuild(null));
+                  else dispatch(setSelectedGuild(el));
+                }}
+              />
+            );
+          })}
+        </Box>
+        <Box sx={{ display: 'flex', flexDirection: 'column', flex: 1 }}>
+          <Typography>Channel:</Typography>
+          {guild_channels?.data.map((el, i) => {
+            const isEven = !(i % 2);
+            return (
+              <ListItem
+                key={i}
+                evenOdd={isEven}
+                name={el?.name}
+                selected={upload.selectedGuildChannel?.id === el?.id}
+                onClick={() => {
+                  if (upload.selectedGuildChannel?.id === el?.id)
+                    dispatch(setSelectedGuildChannel(null));
+                  else dispatch(setSelectedGuildChannel(el));
+                }}
+              />
+            );
+          })}
+        </Box>
       </Box>
-      <Box sx={{ display: 'flex', flexDirection: 'column', flex: 1 }}>
-        <Typography>Channel:</Typography>
-        {guild_channels?.data.map((el, i) => {
-          const isEven = !(i % 2);
-          return (
-            <ListItem
-              key={i}
-              evenOdd={isEven}
-              name={el?.name}
-              selected={upload.selectedGuildChannel?.id === el?.id}
-              onClick={() => {
-                if (upload.selectedGuildChannel?.id === el?.id)
-                  dispatch(setSelectedGuildChannel(null));
-                else dispatch(setSelectedGuildChannel(el));
-              }}
-            />
-          );
-        })}
-      </Box>
+      <Button
+        variant='contained'
+        sx={{ ml: 'auto', mt: 2, py: 1.5, px: 3.5 }}
+        disabled={!upload.selectedGuildChannel || !upload.selectedGuild}
+      >
+        Send
+      </Button>
     </>
   );
 }
