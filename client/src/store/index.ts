@@ -16,9 +16,11 @@ import { discordApi } from '../api/discord.api';
 import { authApi } from '../api/auth.api';
 
 import userReducer from './user';
+import uploadReducer from './upload';
 
 const reducer = combineReducers({
   user: userReducer,
+  upload: uploadReducer,
   [authApi.reducerPath]: authApi.reducer,
   [discordApi.reducerPath]: discordApi.reducer,
 });

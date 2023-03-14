@@ -8,6 +8,7 @@ import SplashLoading from './components/Layout/SplashLoading';
 import store, { persistor } from './store';
 import Home from './pages/Home';
 import Error from './pages/Error';
+import GuildSelectorModal from './pages/Home/GuildSelector';
 
 function App(): JSX.Element {
   return (
@@ -21,6 +22,7 @@ function App(): JSX.Element {
               </Route>
               <Route path='*' element={<Error />} />
             </Routes>
+            <GuildSelectorModal />
           </AppCtxProvider>
         </BrowserRouter>
       </PersistGate>
