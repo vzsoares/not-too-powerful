@@ -1,4 +1,8 @@
+import { createReadStream } from 'fs';
+
 import * as z from 'zod';
+import FormData from 'form-data';
+import axios from 'axios';
 
 import { CustomError } from '@middleware/error-handler';
 
@@ -52,7 +56,6 @@ export const getBotMatches = async (req: Request, res: Response) => {
   const match = botGuilds.filter((x: anyJ) =>
     userGuilds.find((z: anyJ) => z.id === x.id),
   );
-  console.log(match);
 
   res.ok(match);
 };
@@ -77,17 +80,36 @@ export const getGuildsChannels = async (req: Request, res: Response) => {
   res.ok(data);
 };
 
-// var input = document.querySelector('input[type="file"]')
+export const postImage = async (req: Request, res: Response) => {
+  const ipath =
+    '/home/zizmackrok/Desktop/Code/not-too-powerful/server/image.jpg';
+  const form = new FormData();
+  form.append('attachments', createReadStream(ipath));
 
-// var data = new FormData()
-// data.append('file', input.files[0])
-// data.append('user', 'hubot')
+  const response = await axios.post(
+    'https://discordapp.com/api/channels/1067968693017002047/messages',
+    form,
+    {
+      headers: {
+        ...form.getHeaders(),
+        authorization: `Bot ${process.env.CLIENT_TOKEN ?? ''}`,
+      },
+    },
+  );
 
-// fetch('/avatars', {
-//   method: 'POST',
-//   body: data
-// })
+  if (response.status !== 200) throw new CustomError(401);
+
+  res.ok(response.data);
+};
 
 // https://stackoverflow.com/questions/36067767/how-do-i-upload-a-file-with-the-js-fetch-api
 
 // compressor js
+
+// https://dev.to/franciscomendes10866/image-compression-with-node-js-4d7h
+
+// https://www.npmjs.com/package/express-fileupload
+// https://www.npmjs.com/package/multer
+// https://sharp.pixelplumbing.com/api-output#tobuffer
+
+// https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c
