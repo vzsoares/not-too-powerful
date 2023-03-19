@@ -1,5 +1,3 @@
-import { createReadStream } from 'fs';
-
 import * as z from 'zod';
 import FormData from 'form-data';
 import axios from 'axios';
@@ -81,10 +79,14 @@ export const getGuildsChannels = async (req: Request, res: Response) => {
 };
 
 export const postImage = async (req: Request, res: Response) => {
-  const ipath =
-    '/home/zizmackrok/Desktop/Code/not-too-powerful/server/image.jpg';
+  if (!req.files || Object.keys(req.files).length === 0) {
+    return res.status(400).send('No files were uploaded.');
+  }
+  const file = req.files['attachments'];
+
   const form = new FormData();
-  form.append('attachments', createReadStream(ipath));
+
+  form.append('attachments', file['data'], { filename: file['name'] });
 
   const response = await axios.post(
     'https://discordapp.com/api/channels/1067968693017002047/messages',

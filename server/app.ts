@@ -8,6 +8,7 @@ import cors from 'cors';
 import rateLimiter from 'express-rate-limit';
 import cookieParser from 'cookie-parser';
 import morgan from 'morgan';
+import fileUpload from 'express-fileupload';
 
 import apiNotFound from '@middleware/not-found';
 import responseEnhancer from '@middleware/responseEnhancer';
@@ -28,6 +29,7 @@ app.use(express.static(path.resolve(__dirname, '../client/dist')));
 app.use(express.json());
 app.use(morgan('tiny'));
 app.use(express.urlencoded({ extended: false }));
+app.use(fileUpload());
 app.use(helmet());
 app.use(cors());
 app.use(
