@@ -4,6 +4,9 @@ import axios from 'axios';
 
 import { CustomError } from '@middleware/error-handler';
 
+import { ProcessImage } from '@utils/processImage';
+
+import type { UploadedFile } from 'express-fileupload';
 import type { anyJ } from 'types/types';
 import type { Request, Response } from 'express';
 
@@ -82,12 +85,15 @@ export const postImage = async (req: Request, res: Response) => {
   if (!req.files || Object.keys(req.files).length === 0) {
     return res.status(400).send('No files were uploaded.');
   }
-  const file = req.files['attachments'];
+  const file = req.files['attachments'] as UploadedFile;
+
+  const processedFile = await ProcessImage(file['data']);
 
   const form = new FormData();
 
-  form.append('attachments', file['data'], { filename: file['name'] });
-
+  form.append('attachments', processedFile, {
+    filename: `${file['name'].split('.')[0]}.webp`,
+  });
   const response = await axios.post(
     'https://discordapp.com/api/channels/1067968693017002047/messages',
     form,
@@ -105,13 +111,4 @@ export const postImage = async (req: Request, res: Response) => {
 };
 
 // https://stackoverflow.com/questions/36067767/how-do-i-upload-a-file-with-the-js-fetch-api
-
 // compressor js
-
-// https://dev.to/franciscomendes10866/image-compression-with-node-js-4d7h
-
-// https://www.npmjs.com/package/express-fileupload
-// https://www.npmjs.com/package/multer
-// https://sharp.pixelplumbing.com/api-output#tobuffer
-
-// https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c
