@@ -1,0 +1,1704 @@
+{
+  meta: {
+    error: ZodError: [
+      {
+        "code": "invalid_type",
+        "expected": "string",
+        "received": "undefined",
+        "path": [],
+        "message": "Required"
+      }
+    ]
+        at Object.get error [as error] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:43:31)
+        at ZodString.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:141:22)
+        at postImage (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/guildsController/index.ts:93:31)
+        at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)
+        at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)
+        at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)
+        at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)
+        at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)
+        at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)
+        at /home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/index.js:284:15 {
+      issues: [
+        {
+          code: 'invalid_type',
+          expected: 'string',
+          received: 'undefined',
+          path: [],
+          message: 'Required'
+        }
+      ],
+      addIssue: [Function (anonymous)],
+      addIssues: [Function (anonymous)],
+      errors: [
+        {
+          code: 'invalid_type',
+          expected: 'string',
+          received: 'undefined',
+          path: [],
+          message: 'Required'
+        }
+      ]
+    },
+    level: 'error',
+    message: 'uncaughtException: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [],\n' +
+      '    "message": "Required"\n' +
+      '  }\n' +
+      ']\n' +
+      'ZodError: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [],\n' +
+      '    "message": "Required"\n' +
+      '  }\n' +
+      ']\n' +
+      '    at Object.get error [as error] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:43:31)\n' +
+      '    at ZodString.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:141:22)\n' +
+      '    at postImage (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/guildsController/index.ts:93:31)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)\n' +
+      '    at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at /home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/index.js:284:15',
+    stack: 'ZodError: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [],\n' +
+      '    "message": "Required"\n' +
+      '  }\n' +
+      ']\n' +
+      '    at Object.get error [as error] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:43:31)\n' +
+      '    at ZodString.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:141:22)\n' +
+      '    at postImage (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/guildsController/index.ts:93:31)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)\n' +
+      '    at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at /home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/index.js:284:15',
+    exception: true,
+    date: 'Mon Mar 20 2023 20:23:12 GMT-0300 (Brasilia Standard Time)',
+    process: {
+      pid: 35807,
+      uid: 1000,
+      gid: 1001,
+      cwd: '/home/zizmackrok/Desktop/Code/not-too-powerful/server',
+      execPath: '/home/zizmackrok/.nvm/versions/node/v18.15.0/bin/node',
+      version: 'v18.15.0',
+      argv: [
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/.bin/ts-node',
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/app.ts'
+      ],
+      memoryUsage: {
+        rss: 349777920,
+        heapTotal: 191664128,
+        heapUsed: 186028504,
+        external: 9691820,
+        arrayBuffers: 6050225
+      }
+    },
+    os: { loadavg: [ 0.76, 1.01, 0.93 ], uptime: 37694.6 },
+    trace: [
+      {
+        column: 31,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js',
+        function: 'Object.get error [as error]',
+        line: 43,
+        method: 'get error [as error]',
+        native: false
+      },
+      {
+        column: 22,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js',
+        function: 'ZodString.parse',
+        line: 141,
+        method: 'parse',
+        native: false
+      },
+      {
+        column: 31,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/guildsController/index.ts',
+        function: 'postImage',
+        line: 93,
+        method: null,
+        native: false
+      },
+      {
+        column: 20,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      },
+      {
+        column: 13,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js',
+        function: 'next',
+        line: 144,
+        method: null,
+        native: false
+      },
+      {
+        column: 3,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js',
+        function: 'Route.dispatch',
+        line: 114,
+        method: 'dispatch',
+        native: false
+      },
+      {
+        column: 20,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      },
+      {
+        column: 15,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/index.js',
+        function: null,
+        line: 284,
+        method: null,
+        native: false
+      }
+    ],
+    req: {
+      url: '/api/v1/guilds/sendMessage',
+      headers: {
+        host: 'localhost:4000',
+        'user-agent': 'insomnia/2022.7.5',
+        'content-type': 'multipart/form-data; boundary=X-INSOMNIA-BOUNDARY',
+        accept: '*/*',
+        'content-length': '766989'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/v1/guilds/sendMessage',
+      query: {}
+    }
+  },
+  level: '\x1B[31merror\x1B[39m',
+  message: 'middlewareError',
+  timestamp: '2023-03-20 20:23:12:2312'
+}
+{
+  meta: {
+    error: ZodError: [
+      {
+        "code": "invalid_type",
+        "expected": "string",
+        "received": "undefined",
+        "path": [],
+        "message": "Required"
+      }
+    ]
+        at Object.get error [as error] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:43:31)
+        at ZodString.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:141:22)
+        at postImage (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/guildsController/index.ts:93:31)
+        at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)
+        at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)
+        at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)
+        at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)
+        at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)
+        at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)
+        at /home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/index.js:284:15 {
+      issues: [
+        {
+          code: 'invalid_type',
+          expected: 'string',
+          received: 'undefined',
+          path: [],
+          message: 'Required'
+        }
+      ],
+      addIssue: [Function (anonymous)],
+      addIssues: [Function (anonymous)],
+      errors: [
+        {
+          code: 'invalid_type',
+          expected: 'string',
+          received: 'undefined',
+          path: [],
+          message: 'Required'
+        }
+      ]
+    },
+    level: 'error',
+    message: 'uncaughtException: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [],\n' +
+      '    "message": "Required"\n' +
+      '  }\n' +
+      ']\n' +
+      'ZodError: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [],\n' +
+      '    "message": "Required"\n' +
+      '  }\n' +
+      ']\n' +
+      '    at Object.get error [as error] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:43:31)\n' +
+      '    at ZodString.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:141:22)\n' +
+      '    at postImage (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/guildsController/index.ts:93:31)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)\n' +
+      '    at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at /home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/index.js:284:15',
+    stack: 'ZodError: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [],\n' +
+      '    "message": "Required"\n' +
+      '  }\n' +
+      ']\n' +
+      '    at Object.get error [as error] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:43:31)\n' +
+      '    at ZodString.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:141:22)\n' +
+      '    at postImage (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/guildsController/index.ts:93:31)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)\n' +
+      '    at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at /home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/index.js:284:15',
+    exception: true,
+    date: 'Mon Mar 20 2023 20:25:12 GMT-0300 (Brasilia Standard Time)',
+    process: {
+      pid: 36113,
+      uid: 1000,
+      gid: 1001,
+      cwd: '/home/zizmackrok/Desktop/Code/not-too-powerful/server',
+      execPath: '/home/zizmackrok/.nvm/versions/node/v18.15.0/bin/node',
+      version: 'v18.15.0',
+      argv: [
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/.bin/ts-node',
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/app.ts'
+      ],
+      memoryUsage: {
+        rss: 356401152,
+        heapTotal: 231772160,
+        heapUsed: 198357560,
+        external: 6953172,
+        arrayBuffers: 5324926
+      }
+    },
+    os: { loadavg: [ 0.61, 0.82, 0.87 ], uptime: 37815.27 },
+    trace: [
+      {
+        column: 31,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js',
+        function: 'Object.get error [as error]',
+        line: 43,
+        method: 'get error [as error]',
+        native: false
+      },
+      {
+        column: 22,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js',
+        function: 'ZodString.parse',
+        line: 141,
+        method: 'parse',
+        native: false
+      },
+      {
+        column: 31,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/guildsController/index.ts',
+        function: 'postImage',
+        line: 93,
+        method: null,
+        native: false
+      },
+      {
+        column: 20,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      },
+      {
+        column: 13,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js',
+        function: 'next',
+        line: 144,
+        method: null,
+        native: false
+      },
+      {
+        column: 3,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js',
+        function: 'Route.dispatch',
+        line: 114,
+        method: 'dispatch',
+        native: false
+      },
+      {
+        column: 20,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      },
+      {
+        column: 15,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/index.js',
+        function: null,
+        line: 284,
+        method: null,
+        native: false
+      }
+    ],
+    req: {
+      url: '/api/v1/guilds/sendMessage',
+      headers: {
+        host: 'localhost:4000',
+        'user-agent': 'insomnia/2022.7.5',
+        'content-type': 'multipart/form-data; boundary=X-INSOMNIA-BOUNDARY',
+        accept: '*/*',
+        'content-length': '766989'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/v1/guilds/sendMessage',
+      query: {}
+    }
+  },
+  level: '\x1B[31merror\x1B[39m',
+  message: 'middlewareError',
+  timestamp: '2023-03-20 20:25:12:2512'
+}
+{
+  meta: {
+    error: ZodError: [
+      {
+        "code": "invalid_type",
+        "expected": "string",
+        "received": "undefined",
+        "path": [],
+        "message": "Required"
+      }
+    ]
+        at Object.get error [as error] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:43:31)
+        at ZodString.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:141:22)
+        at postImage (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/guildsController/index.ts:93:31)
+        at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)
+        at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)
+        at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)
+        at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)
+        at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)
+        at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)
+        at /home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/index.js:284:15 {
+      issues: [
+        {
+          code: 'invalid_type',
+          expected: 'string',
+          received: 'undefined',
+          path: [],
+          message: 'Required'
+        }
+      ],
+      addIssue: [Function (anonymous)],
+      addIssues: [Function (anonymous)],
+      errors: [
+        {
+          code: 'invalid_type',
+          expected: 'string',
+          received: 'undefined',
+          path: [],
+          message: 'Required'
+        }
+      ]
+    },
+    level: 'error',
+    message: 'uncaughtException: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [],\n' +
+      '    "message": "Required"\n' +
+      '  }\n' +
+      ']\n' +
+      'ZodError: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [],\n' +
+      '    "message": "Required"\n' +
+      '  }\n' +
+      ']\n' +
+      '    at Object.get error [as error] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:43:31)\n' +
+      '    at ZodString.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:141:22)\n' +
+      '    at postImage (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/guildsController/index.ts:93:31)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)\n' +
+      '    at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at /home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/index.js:284:15',
+    stack: 'ZodError: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [],\n' +
+      '    "message": "Required"\n' +
+      '  }\n' +
+      ']\n' +
+      '    at Object.get error [as error] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:43:31)\n' +
+      '    at ZodString.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:141:22)\n' +
+      '    at postImage (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/guildsController/index.ts:93:31)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)\n' +
+      '    at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at /home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/index.js:284:15',
+    exception: true,
+    date: 'Mon Mar 20 2023 20:25:16 GMT-0300 (Brasilia Standard Time)',
+    process: {
+      pid: 36113,
+      uid: 1000,
+      gid: 1001,
+      cwd: '/home/zizmackrok/Desktop/Code/not-too-powerful/server',
+      execPath: '/home/zizmackrok/.nvm/versions/node/v18.15.0/bin/node',
+      version: 'v18.15.0',
+      argv: [
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/.bin/ts-node',
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/app.ts'
+      ],
+      memoryUsage: {
+        rss: 358072320,
+        heapTotal: 232296448,
+        heapUsed: 200857544,
+        external: 8544449,
+        arrayBuffers: 6916163
+      }
+    },
+    os: { loadavg: [ 0.72, 0.84, 0.88 ], uptime: 37818.94 },
+    trace: [
+      {
+        column: 31,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js',
+        function: 'Object.get error [as error]',
+        line: 43,
+        method: 'get error [as error]',
+        native: false
+      },
+      {
+        column: 22,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js',
+        function: 'ZodString.parse',
+        line: 141,
+        method: 'parse',
+        native: false
+      },
+      {
+        column: 31,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/guildsController/index.ts',
+        function: 'postImage',
+        line: 93,
+        method: null,
+        native: false
+      },
+      {
+        column: 20,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      },
+      {
+        column: 13,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js',
+        function: 'next',
+        line: 144,
+        method: null,
+        native: false
+      },
+      {
+        column: 3,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js',
+        function: 'Route.dispatch',
+        line: 114,
+        method: 'dispatch',
+        native: false
+      },
+      {
+        column: 20,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      },
+      {
+        column: 15,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/index.js',
+        function: null,
+        line: 284,
+        method: null,
+        native: false
+      }
+    ],
+    req: {
+      url: '/api/v1/guilds/sendMessage',
+      headers: {
+        host: 'localhost:4000',
+        'user-agent': 'insomnia/2022.7.5',
+        'content-type': 'multipart/form-data; boundary=X-INSOMNIA-BOUNDARY',
+        accept: '*/*',
+        'content-length': '766989'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/v1/guilds/sendMessage',
+      query: {}
+    }
+  },
+  level: '\x1B[31merror\x1B[39m',
+  message: 'middlewareError',
+  timestamp: '2023-03-20 20:25:16:2516'
+}
+{
+  meta: {
+    error: ZodError: [
+      {
+        "code": "invalid_type",
+        "expected": "string",
+        "received": "undefined",
+        "path": [],
+        "message": "Required"
+      }
+    ]
+        at Object.get error [as error] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:43:31)
+        at ZodString.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:141:22)
+        at postImage (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/guildsController/index.ts:93:31)
+        at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)
+        at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)
+        at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)
+        at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)
+        at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)
+        at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)
+        at /home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/index.js:284:15 {
+      issues: [
+        {
+          code: 'invalid_type',
+          expected: 'string',
+          received: 'undefined',
+          path: [],
+          message: 'Required'
+        }
+      ],
+      addIssue: [Function (anonymous)],
+      addIssues: [Function (anonymous)],
+      errors: [
+        {
+          code: 'invalid_type',
+          expected: 'string',
+          received: 'undefined',
+          path: [],
+          message: 'Required'
+        }
+      ]
+    },
+    level: 'error',
+    message: 'uncaughtException: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [],\n' +
+      '    "message": "Required"\n' +
+      '  }\n' +
+      ']\n' +
+      'ZodError: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [],\n' +
+      '    "message": "Required"\n' +
+      '  }\n' +
+      ']\n' +
+      '    at Object.get error [as error] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:43:31)\n' +
+      '    at ZodString.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:141:22)\n' +
+      '    at postImage (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/guildsController/index.ts:93:31)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)\n' +
+      '    at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at /home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/index.js:284:15',
+    stack: 'ZodError: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [],\n' +
+      '    "message": "Required"\n' +
+      '  }\n' +
+      ']\n' +
+      '    at Object.get error [as error] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:43:31)\n' +
+      '    at ZodString.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:141:22)\n' +
+      '    at postImage (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/guildsController/index.ts:93:31)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)\n' +
+      '    at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at /home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/index.js:284:15',
+    exception: true,
+    date: 'Mon Mar 20 2023 20:26:45 GMT-0300 (Brasilia Standard Time)',
+    process: {
+      pid: 36282,
+      uid: 1000,
+      gid: 1001,
+      cwd: '/home/zizmackrok/Desktop/Code/not-too-powerful/server',
+      execPath: '/home/zizmackrok/.nvm/versions/node/v18.15.0/bin/node',
+      version: 'v18.15.0',
+      argv: [
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/.bin/ts-node',
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/app.ts'
+      ],
+      memoryUsage: {
+        rss: 353320960,
+        heapTotal: 228888576,
+        heapUsed: 205325240,
+        external: 7408584,
+        arrayBuffers: 5780338
+      }
+    },
+    os: { loadavg: [ 0.39, 0.7, 0.82 ], uptime: 37907.82 },
+    trace: [
+      {
+        column: 31,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js',
+        function: 'Object.get error [as error]',
+        line: 43,
+        method: 'get error [as error]',
+        native: false
+      },
+      {
+        column: 22,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js',
+        function: 'ZodString.parse',
+        line: 141,
+        method: 'parse',
+        native: false
+      },
+      {
+        column: 31,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/guildsController/index.ts',
+        function: 'postImage',
+        line: 93,
+        method: null,
+        native: false
+      },
+      {
+        column: 20,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      },
+      {
+        column: 13,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js',
+        function: 'next',
+        line: 144,
+        method: null,
+        native: false
+      },
+      {
+        column: 3,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js',
+        function: 'Route.dispatch',
+        line: 114,
+        method: 'dispatch',
+        native: false
+      },
+      {
+        column: 20,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      },
+      {
+        column: 15,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/index.js',
+        function: null,
+        line: 284,
+        method: null,
+        native: false
+      }
+    ],
+    req: {
+      url: '/api/v1/guilds/sendMessage',
+      headers: {
+        host: 'localhost:4000',
+        'user-agent': 'insomnia/2022.7.5',
+        'content-type': 'multipart/form-data; boundary=X-INSOMNIA-BOUNDARY',
+        accept: '*/*',
+        'content-length': '766989'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/v1/guilds/sendMessage',
+      query: {}
+    }
+  },
+  level: '\x1B[31merror\x1B[39m',
+  message: 'middlewareError',
+  timestamp: '2023-03-20 20:26:45:2645'
+}
+{
+  meta: {
+    error: ZodError: [
+      {
+        "code": "invalid_type",
+        "expected": "string",
+        "received": "undefined",
+        "path": [],
+        "message": "Required"
+      }
+    ]
+        at Object.get error [as error] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:43:31)
+        at ZodString.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:141:22)
+        at postImage (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/guildsController/index.ts:93:31)
+        at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)
+        at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)
+        at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)
+        at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)
+        at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)
+        at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)
+        at /home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/index.js:284:15 {
+      issues: [
+        {
+          code: 'invalid_type',
+          expected: 'string',
+          received: 'undefined',
+          path: [],
+          message: 'Required'
+        }
+      ],
+      addIssue: [Function (anonymous)],
+      addIssues: [Function (anonymous)],
+      errors: [
+        {
+          code: 'invalid_type',
+          expected: 'string',
+          received: 'undefined',
+          path: [],
+          message: 'Required'
+        }
+      ]
+    },
+    level: 'error',
+    message: 'uncaughtException: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [],\n' +
+      '    "message": "Required"\n' +
+      '  }\n' +
+      ']\n' +
+      'ZodError: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [],\n' +
+      '    "message": "Required"\n' +
+      '  }\n' +
+      ']\n' +
+      '    at Object.get error [as error] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:43:31)\n' +
+      '    at ZodString.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:141:22)\n' +
+      '    at postImage (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/guildsController/index.ts:93:31)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)\n' +
+      '    at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at /home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/index.js:284:15',
+    stack: 'ZodError: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [],\n' +
+      '    "message": "Required"\n' +
+      '  }\n' +
+      ']\n' +
+      '    at Object.get error [as error] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:43:31)\n' +
+      '    at ZodString.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:141:22)\n' +
+      '    at postImage (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/guildsController/index.ts:93:31)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)\n' +
+      '    at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at /home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/index.js:284:15',
+    exception: true,
+    date: 'Mon Mar 20 2023 20:26:46 GMT-0300 (Brasilia Standard Time)',
+    process: {
+      pid: 36282,
+      uid: 1000,
+      gid: 1001,
+      cwd: '/home/zizmackrok/Desktop/Code/not-too-powerful/server',
+      execPath: '/home/zizmackrok/.nvm/versions/node/v18.15.0/bin/node',
+      version: 'v18.15.0',
+      argv: [
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/.bin/ts-node',
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/app.ts'
+      ],
+      memoryUsage: {
+        rss: 357625856,
+        heapTotal: 232296448,
+        heapUsed: 198036328,
+        external: 8321019,
+        arrayBuffers: 6692733
+      }
+    },
+    os: { loadavg: [ 0.39, 0.7, 0.82 ], uptime: 37908.78 },
+    trace: [
+      {
+        column: 31,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js',
+        function: 'Object.get error [as error]',
+        line: 43,
+        method: 'get error [as error]',
+        native: false
+      },
+      {
+        column: 22,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js',
+        function: 'ZodString.parse',
+        line: 141,
+        method: 'parse',
+        native: false
+      },
+      {
+        column: 31,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/guildsController/index.ts',
+        function: 'postImage',
+        line: 93,
+        method: null,
+        native: false
+      },
+      {
+        column: 20,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      },
+      {
+        column: 13,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js',
+        function: 'next',
+        line: 144,
+        method: null,
+        native: false
+      },
+      {
+        column: 3,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js',
+        function: 'Route.dispatch',
+        line: 114,
+        method: 'dispatch',
+        native: false
+      },
+      {
+        column: 20,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      },
+      {
+        column: 15,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/index.js',
+        function: null,
+        line: 284,
+        method: null,
+        native: false
+      }
+    ],
+    req: {
+      url: '/api/v1/guilds/sendMessage',
+      headers: {
+        host: 'localhost:4000',
+        'user-agent': 'insomnia/2022.7.5',
+        'content-type': 'multipart/form-data; boundary=X-INSOMNIA-BOUNDARY',
+        accept: '*/*',
+        'content-length': '766989'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/v1/guilds/sendMessage',
+      query: {}
+    }
+  },
+  level: '\x1B[31merror\x1B[39m',
+  message: 'middlewareError',
+  timestamp: '2023-03-20 20:26:46:2646'
+}
+{
+  meta: {
+    error: ZodError: [
+      {
+        "code": "invalid_type",
+        "expected": "string",
+        "received": "undefined",
+        "path": [],
+        "message": "userId is required"
+      }
+    ]
+        at Object.get error [as error] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:43:31)
+        at ZodString.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:141:22)
+        at postImage (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/guildsController/index.ts:95:31)
+        at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)
+        at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)
+        at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)
+        at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)
+        at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)
+        at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)
+        at /home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/index.js:284:15 {
+      issues: [
+        {
+          code: 'invalid_type',
+          expected: 'string',
+          received: 'undefined',
+          path: [],
+          message: 'userId is required'
+        }
+      ],
+      addIssue: [Function (anonymous)],
+      addIssues: [Function (anonymous)],
+      errors: [
+        {
+          code: 'invalid_type',
+          expected: 'string',
+          received: 'undefined',
+          path: [],
+          message: 'userId is required'
+        }
+      ]
+    },
+    level: 'error',
+    message: 'uncaughtException: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [],\n' +
+      '    "message": "userId is required"\n' +
+      '  }\n' +
+      ']\n' +
+      'ZodError: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [],\n' +
+      '    "message": "userId is required"\n' +
+      '  }\n' +
+      ']\n' +
+      '    at Object.get error [as error] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:43:31)\n' +
+      '    at ZodString.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:141:22)\n' +
+      '    at postImage (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/guildsController/index.ts:95:31)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)\n' +
+      '    at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at /home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/index.js:284:15',
+    stack: 'ZodError: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [],\n' +
+      '    "message": "userId is required"\n' +
+      '  }\n' +
+      ']\n' +
+      '    at Object.get error [as error] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:43:31)\n' +
+      '    at ZodString.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:141:22)\n' +
+      '    at postImage (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/guildsController/index.ts:95:31)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)\n' +
+      '    at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at /home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/index.js:284:15',
+    exception: true,
+    date: 'Mon Mar 20 2023 20:28:13 GMT-0300 (Brasilia Standard Time)',
+    process: {
+      pid: 36394,
+      uid: 1000,
+      gid: 1001,
+      cwd: '/home/zizmackrok/Desktop/Code/not-too-powerful/server',
+      execPath: '/home/zizmackrok/.nvm/versions/node/v18.15.0/bin/node',
+      version: 'v18.15.0',
+      argv: [
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/.bin/ts-node',
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/app.ts'
+      ],
+      memoryUsage: {
+        rss: 357244928,
+        heapTotal: 230461440,
+        heapUsed: 197039264,
+        external: 6947944,
+        arrayBuffers: 5319698
+      }
+    },
+    os: { loadavg: [ 0.6, 0.7, 0.81 ], uptime: 37995.62 },
+    trace: [
+      {
+        column: 31,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js',
+        function: 'Object.get error [as error]',
+        line: 43,
+        method: 'get error [as error]',
+        native: false
+      },
+      {
+        column: 22,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js',
+        function: 'ZodString.parse',
+        line: 141,
+        method: 'parse',
+        native: false
+      },
+      {
+        column: 31,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/guildsController/index.ts',
+        function: 'postImage',
+        line: 95,
+        method: null,
+        native: false
+      },
+      {
+        column: 20,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      },
+      {
+        column: 13,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js',
+        function: 'next',
+        line: 144,
+        method: null,
+        native: false
+      },
+      {
+        column: 3,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js',
+        function: 'Route.dispatch',
+        line: 114,
+        method: 'dispatch',
+        native: false
+      },
+      {
+        column: 20,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      },
+      {
+        column: 15,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/index.js',
+        function: null,
+        line: 284,
+        method: null,
+        native: false
+      }
+    ],
+    req: {
+      url: '/api/v1/guilds/sendMessage',
+      headers: {
+        host: 'localhost:4000',
+        'user-agent': 'insomnia/2022.7.5',
+        'content-type': 'multipart/form-data; boundary=X-INSOMNIA-BOUNDARY',
+        accept: '*/*',
+        'content-length': '766989'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/v1/guilds/sendMessage',
+      query: {}
+    }
+  },
+  level: '\x1B[31merror\x1B[39m',
+  message: 'middlewareError',
+  timestamp: '2023-03-20 20:28:13:2813'
+}
+{
+  meta: {
+    error: ZodError: [
+      {
+        "code": "invalid_type",
+        "expected": "string",
+        "received": "undefined",
+        "path": [],
+        "message": "userId is required"
+      }
+    ]
+        at Object.get error [as error] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:43:31)
+        at ZodString.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:141:22)
+        at postImage (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/guildsController/index.ts:95:31)
+        at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)
+        at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)
+        at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)
+        at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)
+        at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)
+        at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)
+        at /home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/index.js:284:15 {
+      issues: [
+        {
+          code: 'invalid_type',
+          expected: 'string',
+          received: 'undefined',
+          path: [],
+          message: 'userId is required'
+        }
+      ],
+      addIssue: [Function (anonymous)],
+      addIssues: [Function (anonymous)],
+      errors: [
+        {
+          code: 'invalid_type',
+          expected: 'string',
+          received: 'undefined',
+          path: [],
+          message: 'userId is required'
+        }
+      ]
+    },
+    level: 'error',
+    message: 'uncaughtException: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [],\n' +
+      '    "message": "userId is required"\n' +
+      '  }\n' +
+      ']\n' +
+      'ZodError: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [],\n' +
+      '    "message": "userId is required"\n' +
+      '  }\n' +
+      ']\n' +
+      '    at Object.get error [as error] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:43:31)\n' +
+      '    at ZodString.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:141:22)\n' +
+      '    at postImage (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/guildsController/index.ts:95:31)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)\n' +
+      '    at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at /home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/index.js:284:15',
+    stack: 'ZodError: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [],\n' +
+      '    "message": "userId is required"\n' +
+      '  }\n' +
+      ']\n' +
+      '    at Object.get error [as error] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:43:31)\n' +
+      '    at ZodString.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:141:22)\n' +
+      '    at postImage (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/guildsController/index.ts:95:31)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)\n' +
+      '    at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at /home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/index.js:284:15',
+    exception: true,
+    date: 'Mon Mar 20 2023 20:28:15 GMT-0300 (Brasilia Standard Time)',
+    process: {
+      pid: 36394,
+      uid: 1000,
+      gid: 1001,
+      cwd: '/home/zizmackrok/Desktop/Code/not-too-powerful/server',
+      execPath: '/home/zizmackrok/.nvm/versions/node/v18.15.0/bin/node',
+      version: 'v18.15.0',
+      argv: [
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/.bin/ts-node',
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/app.ts'
+      ],
+      memoryUsage: {
+        rss: 358912000,
+        heapTotal: 230723584,
+        heapUsed: 199434792,
+        external: 8496162,
+        arrayBuffers: 6867876
+      }
+    },
+    os: { loadavg: [ 0.6, 0.7, 0.81 ], uptime: 37997.64 },
+    trace: [
+      {
+        column: 31,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js',
+        function: 'Object.get error [as error]',
+        line: 43,
+        method: 'get error [as error]',
+        native: false
+      },
+      {
+        column: 22,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js',
+        function: 'ZodString.parse',
+        line: 141,
+        method: 'parse',
+        native: false
+      },
+      {
+        column: 31,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/guildsController/index.ts',
+        function: 'postImage',
+        line: 95,
+        method: null,
+        native: false
+      },
+      {
+        column: 20,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      },
+      {
+        column: 13,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js',
+        function: 'next',
+        line: 144,
+        method: null,
+        native: false
+      },
+      {
+        column: 3,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js',
+        function: 'Route.dispatch',
+        line: 114,
+        method: 'dispatch',
+        native: false
+      },
+      {
+        column: 20,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      },
+      {
+        column: 15,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/index.js',
+        function: null,
+        line: 284,
+        method: null,
+        native: false
+      }
+    ],
+    req: {
+      url: '/api/v1/guilds/sendMessage',
+      headers: {
+        host: 'localhost:4000',
+        'user-agent': 'insomnia/2022.7.5',
+        'content-type': 'multipart/form-data; boundary=X-INSOMNIA-BOUNDARY',
+        accept: '*/*',
+        'content-length': '766989'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/v1/guilds/sendMessage',
+      query: {}
+    }
+  },
+  level: '\x1B[31merror\x1B[39m',
+  message: 'middlewareError',
+  timestamp: '2023-03-20 20:28:15:2815'
+}
+{
+  meta: {
+    error: ZodError: [
+      {
+        "code": "invalid_type",
+        "expected": "string",
+        "received": "undefined",
+        "path": [],
+        "message": "'userId' is required"
+      }
+    ]
+        at Object.get error [as error] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:43:31)
+        at ZodString.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:141:22)
+        at postImage (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/guildsController/index.ts:95:31)
+        at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)
+        at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)
+        at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)
+        at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)
+        at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)
+        at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)
+        at /home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/index.js:284:15 {
+      issues: [
+        {
+          code: 'invalid_type',
+          expected: 'string',
+          received: 'undefined',
+          path: [],
+          message: "'userId' is required"
+        }
+      ],
+      addIssue: [Function (anonymous)],
+      addIssues: [Function (anonymous)],
+      errors: [
+        {
+          code: 'invalid_type',
+          expected: 'string',
+          received: 'undefined',
+          path: [],
+          message: "'userId' is required"
+        }
+      ]
+    },
+    level: 'error',
+    message: 'uncaughtException: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [],\n' +
+      `    "message": "'userId' is required"\n` +
+      '  }\n' +
+      ']\n' +
+      'ZodError: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [],\n' +
+      `    "message": "'userId' is required"\n` +
+      '  }\n' +
+      ']\n' +
+      '    at Object.get error [as error] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:43:31)\n' +
+      '    at ZodString.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:141:22)\n' +
+      '    at postImage (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/guildsController/index.ts:95:31)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)\n' +
+      '    at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at /home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/index.js:284:15',
+    stack: 'ZodError: [\n' +
+      '  {\n' +
+      '    "code": "invalid_type",\n' +
+      '    "expected": "string",\n' +
+      '    "received": "undefined",\n' +
+      '    "path": [],\n' +
+      `    "message": "'userId' is required"\n` +
+      '  }\n' +
+      ']\n' +
+      '    at Object.get error [as error] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:43:31)\n' +
+      '    at ZodString.parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js:141:22)\n' +
+      '    at postImage (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/guildsController/index.ts:95:31)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:144:13)\n' +
+      '    at Route.dispatch (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js:114:3)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at /home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/index.js:284:15',
+    exception: true,
+    date: 'Mon Mar 20 2023 20:28:50 GMT-0300 (Brasilia Standard Time)',
+    process: {
+      pid: 36499,
+      uid: 1000,
+      gid: 1001,
+      cwd: '/home/zizmackrok/Desktop/Code/not-too-powerful/server',
+      execPath: '/home/zizmackrok/.nvm/versions/node/v18.15.0/bin/node',
+      version: 'v18.15.0',
+      argv: [
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/.bin/ts-node',
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/app.ts'
+      ],
+      memoryUsage: {
+        rss: 356638720,
+        heapTotal: 233082880,
+        heapUsed: 187072120,
+        external: 6933064,
+        arrayBuffers: 5308415
+      }
+    },
+    os: { loadavg: [ 0.49, 0.65, 0.79 ], uptime: 38032.58 },
+    trace: [
+      {
+        column: 31,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js',
+        function: 'Object.get error [as error]',
+        line: 43,
+        method: 'get error [as error]',
+        native: false
+      },
+      {
+        column: 22,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/zod/lib/types.js',
+        function: 'ZodString.parse',
+        line: 141,
+        method: 'parse',
+        native: false
+      },
+      {
+        column: 31,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/guildsController/index.ts',
+        function: 'postImage',
+        line: 95,
+        method: null,
+        native: false
+      },
+      {
+        column: 20,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      },
+      {
+        column: 13,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js',
+        function: 'next',
+        line: 144,
+        method: null,
+        native: false
+      },
+      {
+        column: 3,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/route.js',
+        function: 'Route.dispatch',
+        line: 114,
+        method: 'dispatch',
+        native: false
+      },
+      {
+        column: 20,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      },
+      {
+        column: 15,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/index.js',
+        function: null,
+        line: 284,
+        method: null,
+        native: false
+      }
+    ],
+    req: {
+      url: '/api/v1/guilds/sendMessage',
+      headers: {
+        host: 'localhost:4000',
+        'user-agent': 'insomnia/2022.7.5',
+        'content-type': 'multipart/form-data; boundary=X-INSOMNIA-BOUNDARY',
+        accept: '*/*',
+        'content-length': '766989'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/v1/guilds/sendMessage',
+      query: {}
+    }
+  },
+  level: '\x1B[31merror\x1B[39m',
+  message: 'middlewareError',
+  timestamp: '2023-03-20 20:28:50:2850'
+}

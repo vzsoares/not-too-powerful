@@ -82,18 +82,27 @@ export const getGuildsChannels = async (req: Request, res: Response) => {
 };
 
 export const postImage = async (req: Request, res: Response) => {
+  const userIdSchema = z
+    .string({ required_error: "'userId' is required" })
+    .min(5);
   if (!req.files || Object.keys(req.files).length === 0) {
     return res.status(400).send('No files were uploaded.');
   }
+
   const file = req.files['attachments'] as UploadedFile;
+  const form = new FormData();
+
+  const message = req.body?.content as string | undefined;
+  const userId = userIdSchema.parse(req.body?.userId);
 
   const processedFile = await ProcessImage(file['data']);
 
-  const form = new FormData();
+  form.append('content', `<@${userId}>${message ? '\n' + message : ''}`);
 
   form.append('attachments', processedFile, {
     filename: `${file['name'].split('.')[0]}.webp`,
   });
+
   const response = await axios.post(
     'https://discordapp.com/api/channels/1067968693017002047/messages',
     form,
