@@ -1702,3 +1702,2337 @@
   message: 'middlewareError',
   timestamp: '2023-03-20 20:28:50:2850'
 }
+{
+  meta: {
+    error: SyntaxError: Unexpected token - in JSON at position 0
+        at JSON.parse (<anonymous>)
+        at createStrictSyntaxError (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/types/json.js:160:10)
+        at parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/types/json.js:83:15)
+        at /home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/read.js:128:18
+        at AsyncResource.runInAsyncScope (node:async_hooks:204:9)
+        at invokeCallback (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js:231:16)
+        at done (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js:220:7)
+        at IncomingMessage.onEnd (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js:280:7)
+        at IncomingMessage.emit (node:events:513:28)
+        at IncomingMessage.emit (node:domain:489:12) {
+      expose: true,
+      statusCode: 400,
+      status: 400,
+      body: '------WebKitFormBoundaryFnFbfq7OQuE51LyL\r\n' +
+        'Content-Disposition: form-data; name="content"\r\n' +
+        '\r\n' +
+        '123123\r\n' +
+        '------WebKitFormBoundaryFnFbfq7OQuE51LyL\r\n' +
+        'Content-Disposition: form-data; name="attachments"; filename="blob"\r\n' +
+        'Content-Type: image/webp\r\n' +
+        '\r\n' +
+        'RIFF>7\x01\x00WEBPVP8X\n' +
+        '\x00\x00\x00 \x00\x00\x00d\x04\x00r\x02\x00ICCP�\x01\x00\x00\x00\x00\x01�\x00\x00\x00\x00\x040\x00\x00mntrRGB XYZ \x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00acsp\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00��\x00\x01\x00\x00\x00\x00�-\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\tdesc\x00\x00\x00�\x00\x00\x00$rXYZ\x00\x00\x01\x14\x00\x00\x00\x14gXYZ\x00\x00\x01(\x00\x00\x00\x14bXYZ\x00\x00\x01<\x00\x00\x00\x14wtpt\x00\x00\x01P\x00\x00\x00\x14rTRC\x00\x00\x01d\x00\x00\x00(gTRC\x00\x00\x01d\x00\x00\x00(bTRC\x00\x00\x01d\x00\x00\x00(cprt\x00\x00\x01�\x00\x00\x00<mluc\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\fenUS\x00\x00\x00\b\x00\x00\x00\x1C\x00s\x00R\x00G\x00BXYZ \x00\x00\x00\x00\x00\x00o�\x00\x008�\x00\x00\x03�XYZ \x00\x00\x00\x00\x00\x00b�\x00\x00��\x00\x00\x18�XYZ \x00\x00\x00\x00\x00\x00$�\x00\x00\x0F�\x00\x00��XYZ \x00\x00\x00\x00\x00\x00��\x00\x01\x00\x00\x00\x00�-para\x00\x00\x00\x00\x00\x04\x00\x00\x00\x02ff\x00\x00�\x00\x00\rY\x00\x00\x13�\x00\x00\n' +
+        '[\x00\x00\x00\x00\x00\x00\x00\x00mluc\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\fenUS\x00\x00\x00 \x00\x00\x00\x1C\x00G\x00o\x00o\x00g\x00l\x00e\x00 \x00I\x00n\x00c\x00.\x00 \x002\x000\x001\x006VP8 P5\x01\x00�f\x05�\x01*e\x04s\x02>1\x16�C"!!\x15j-� \x03\x04���߃�5�d�k�>P�\x0F������-ʿ��F�\x14���_d��|E���\x01���?�����>h~�?��\x1F������._���q�S�_�\x7F��w���g��;=��/�\x1F�_��?�������?��)�����\x03���\x7F�o�\x1F�O�_�\x1F�?���}W���������\x7Fm�c��_������������g�������;���O�o�����:�=������w����K�\x0F���_�\x1F`��\x7F��+��������\x0F翖�\x7F�g�S���Gϟ���~S{3���?����O�0�����/�\x17���ΐ�����W���!�s��寷/�~������?c\x0F�����dz�\x7F�������_����#�9�w���O�w�\x0F�\x7F�?)\f|\x0Bv����.%�2��\x7F\x05`��$\x12B��`���\x07$�w�\x0B\x02�m���x�-��r���:8�49$b�#`drc��\x1DY�%�6(\x10r�\x16î\x1C��\b�8Qo%�O\x00{\x05I�W+<�\rjGx�o�T\x1B}�����>1qQE���p<@��^\x14�\x02�k\x18^�\x1B\x07=_�o�^��������ָ\'}[��Dz�D��\r��K\x06�Vw�N��\t+\x1B`�����\x1F�|?a5+H#y��u��\x1C\f�\x7F��\tm\x01 ���1��`ڒ.]�"�H0\r\x01��kg\x01����\x05��\x02\x7F�D˾��Y$b\x10<�\x0BF��&\x01\f�\x0E"�.(v�\x7F��m)�,%..�څ���S\x11\x16 �\x0B^OC�,\x12�(cg\x01.a_���3�\x00$~\r�\x1C�\x7FV�!�I�K�sɚ����\x13���G�S�!꿆\x1C����\x11��q\x06W�J0Ie\x071F=���M�X��&\x13\x18\x0F�C�:��G�<\x14U\x13ԁmgO\x10��\x13�����8��q��I�5����u���\'��4�oI���L���\x19��H�b(if\x00���L����ϻ˷\x13\r��^�\b��\\�F�ɿl3����H_����\x18�@\tbh�0\x04\x15��\rH�\b�}�)��$�\x1C\n' +
+        '\x19j~:�"i܈�l\x0Fcu�� N\t�SO�\r\t��<��P�\x01Qz�\x151;`f�/�\x0B�ڧlC>9̘\x1D�\'�:�}�,�l]qi�7X��:ে����\x17�@\x11�VЏ���ek�\\�墶3��澈#�7�8\x17 L�1n*0��]\x00r9n�\x1E\t\x1A����Z�}3|P�ne�j��x�1c<1\tt�\x0B�\x01\x05�̴�6�\x07�,�_C�jF�Uy�ju��jn��ÌޚO��\x15��\x13�J�12\x12�L�W;��7� ��~�ƾL�7��b�*�\x17�TuZ�f8s�����G.\fw���ܧ���F��\x1E�\t��sy+���he�1�\x03���J�\x04�o�t{�.���\x11�u[�{Ak��W�^D2f�Zg�\x173\x16\x1F�F�q�p\x05S$8�I���\x1D��\x7F\x1BI��M�������N�e�7�@���|�暸c#��;.�\'!��HqX�\t��>kT�U K��q\x1A�������xW�]�+�I�7J#ʡZ�xю+��������\x04Q�E\x0B\x01V\x18�\x1D�Τ��K�X��o��]\x00A��*�����\x1B��_\x1CtO/N�n��\x11����q�\x1E��b� $�<5�3W���*w&�\x0E :SVb\x05�]s8��\n' +
+        '�>|�3��Enp�\x11�|�\x10:��^�\x1A\x0BW���i����͟���١���\x10�ݱ�Y�y\x1B1�xN\x0F\x1E)Q=آ����\n' +
+        "�o0#ϰ�\t������Ϩ���\x01��b�'n\x0B/\x1C�kn�����\to��HM��;�?$nn\x18fPf��R<va\x13��s�:��qƇ��ǻ9�ڜ\x07���\x1B�o�a�!�B}����,Ъ\x18�u{�)����p�L�������[�F�Q5�W�m\x1Bg\x07\n" +
+        '���O%\x00�T�W�`�\x14`��ҕ�G�\\��LW�gZA�?��GH���j�p�\x10�9�W`\x1F\x04`Tgd3�\x05����#����dH銢��`�*��ځ\\�\n' +
+        '\fR�ᑫD����\\Z�V���O�|*4~�B��S\x07��\x06�|Hb\x11y�4S\x07\x06�\x00#ie\x7F�_c&������\x1Cr\x10j�e��[*��a>�����\f\r �7�E�z[�`��\\\x03�ʔ���\x1A\x1DP\x1F$���w@�k�#��c����{��\f\x19��4��\x0B/�xɈ\f�D�s̑a��\x00\x7FI��\x05\x1FVj���N�YJ=���H���\x1B\x1A��Ud�Q�]r,\x13]b\x01�\'ӿEq\x0E��\x12�^\x03�\x7F\x01<(rSA6��^\x11��Y4�H\x19I�J\x18��\x14��\x03F��\x16�^Y�\x0F��\x7F�,\x00d�lB����G$��p��h��\x15\x13O�ĺ6�\x0F���\x00w��\x7F*u\x0F�k�c�q)\x00\x13�u\f��\x1E$�\x13�f���1bv�|\\���^\x17\x04�,�]�dM��E}��*)�Y�]��+�0�\x05ߜ\x7F�J�t��.�Ԫ\x19k���n%�\x1B�:\x19�)�\x16\f4�����vs����s@���d��\x11\x01�\x10�5���1K�H�B��1�U���\x05\b��5�o^�\x1D�6O\x1F�-=���U��L�o�l�_��\x1F�*ኲ�M�~�m�K�9�����\x7F�z�hj\x1F��V\x7F�W~���v\x0B�����;:f�*���\x1C�\x00��-��T\x1F-B����ץb��ok��\bQ��\x1B���\x07����&!�v�v��)�\x17�k�"ܲר\n' +
+        '�������[M4���L\x01{(�_�׎�\x07B\x1E�^m�֒�#\x1E2�\x0E�h��y�W\x15��Sa ��=�v��Q�(᲏D�X$0��G���ʾ\x0BI��1TctQ�����򸸯��Xs��q\x1B߹P�\x16SI[?���`�\x17^���<aL�\ry�A\x07\x07,�\x0F�[\x01��gI���Dp�bqͱ�p\x14ߌ�lY\x07<\x04��=���2�Uq��Y�\x1Eq�� I!f8*�aE����7/7��\x07�N����S6�\x00�Յ1\x1A��ݝ��& ,k`1<�|\x0Bl�[5��\'x�ꌸ��Y\x1DE��q5te�Q��C8\x03P�\b��\x1Dc\x15�~!\x0Bz�\x18]�\x00�(�*�h\x03��(��t6!���8�_\x13_{dWW��Gs\x174m������t����H=�!쬬���ˀJ뵔����,8�L[\x17�]�Ա�6s\x01f?_��\x10!�s$���ϴ=J�x\x14��W�5��6����T?�v��\x07v��i|��f��(��\x16Ƚp-�}�S�\x12�\\�9\x1C\x01\\���\t�^��hK]\rzl�G1��v[����u\x1E<\x0F�2�J+��\x05�\x19b����\x06|l�z����1�\x13��G����H1�\x04�y\x00����ќ\x01��2O�_���"��\r鳵�f���kB���k?:���U��hV:\b�N<���\x16�Ĩ\x06\x0E���?\x04h����\x00�?�۫��g$�EK�V�R">#��xɫ�\x10c\\\x17�^�\x05˅D~U\x15��:��\x18a&��p"7�{�PFy�[�.V\x19\x03�\b�{\x00m�\x1F��w�N��Ix?�R\x13u�04��X��[�k��$�uk�\x1F���\x0F\x12���\x18�0\x1A��o�(υ�<�E\x16�o�g�SP����\f:�R�\x15� 9�i��;(�\x02����\x1F��\x13\x05\r\x1D�F�ۺ�\r*)\x05�u�G~��v���1ॄ�>���Gz>}�z��n�~r\n' +
+        '��߯D�_�f�\x0F!γ,�au Zt�6Ԋ�\x14�YQ\x16.��Ċ�\x16�8�\x14��2�~,2��n�\x19������\x1E`/�3���\x05��\\�\x0B�QY��#�)�\r\x0E7�s�Ќ�#�g�m\x0EzCC�\x0B\x10�\x14�\x00o\x1F���Od\x16Jn?��w�b4\x16�Kbͭ�U�\n' +
+        '��\\*#-�g��> �\x05���3o{\x7Fb��\x1Bl��{y)��\x1E;��\x12kF��?ɰ�\x03��\x12ֹ�\x0F��\x10�5��p��,ѕd�\t�X{\x0F{/��7��� ���3w\x00-H�`Kw\x12\x1F�,p��=\x1C\x1F�x߀��H�8��oD���>�ɧ>���\b�|��d�\x19��wt�7M�I�,\x02�l�\x02"�z�h��R޸Z.׎�\x19����-XϷ�p���~^\x1C�\x1B�2��Dv2�"��\x0B��y��\x10\x14�~"9\x1B�\x1C3��p��yZ�\x7Fn�X�-y�\x06�R\x13ݫ��FL\b[��\x18��/�dS\x1A8Ph���=�6�\\��~2��-��\x1Bф��\x05���\n' +
+        '(p"�g����u�1ф\x10A������k뙅�Q=\x10�tV*L;��k\x10�\\�ƩZ���mNP�q9Fx�g�=��4:��88����Ĳ\x13\f��N<�HW�]\x01�5޶�q�Y�3M-��D6u�N��!5��\x07�\x17(���nd9�\x00\x7F\x01��2��p��67[�Ri��\n' +
+        '�,�xI\x0EI�\x02P\x0F��s_(�\x03z��ao+�zG\x13/��2\x11��\x1AU\x19�\x19{u��Et"+8��l��@\x1D�q�%�Uv\x1E^\x1B\x7FN��-�\\6n��aNƣb�0\x0B\x06����ұ\x07Z��)���MG\f%ž��\x1F@\x19޴k�J#��f�ƾ6q)\x1BC��64��\x0B\x0E�T��\t��4n/kR=���J�xV;��r��V�r�\f=�RC���\x15/%1�\x01vp?��\x16՚o+�<��Aw>�w>=nUĞ�".���R�\x7F]�[�\x16by\x01��Gh\x05%�2i{iGc���A\x1D�����t�\x14\x18�����\x7Fdj4�\x1F�f�8n\x18\b\t���\x12ia�\x18o���1��Vߍ�L1�Z�j�H�֎�\x04`K\x0B�m\x0EƓ\x1F�`F\x13��W񜰩�X��l��X&�\x1Dz���� \x12\x07��\x12XU#�\x10sTjY \x0FX�-�[Z�%�[�i��Ƴ��\x1A]�wxd�����3�+؟����-6�\x14�{T9~���y~��!�V�g��t�qޖB�v�\x11\x13GM7n�gl\x18��\x1C� �d`\'A{tkW�\x0B�i��g���"�/1!��e9 �\x0F�y0���O�\r�p���:�J�����\x13VU)D��;�E>h���z�\x06�&6��\x02@y�<2-z5v+zh�{����n|�R�kt\x1B��\x02�C���}��^�m^���]��$w1\x0E%\\:@\x05��9IY�����=qD\x1D\x11E���9�}ˢ����ˢ�N�Y�\x7F����-�^g�\x14�4:Y���Nwq�d\x1A�˿X�@D�~8�V�\x12*��ʋ\x1E�i�_2m�]ۥ�T�7�V3؛K\x1D���\b��\x19+Z5�ej�\x1BGO���\\Q��Z�)/�\x102�j�\b��m��K��N�,Zz\x07�Dk&<�ʹJE�1��\x067�FOI\x1C_�6d{|\x14&A<�{%a�\x15\x15\x00\x18hT0\x12��^^bi@)t�e\x1C��\x0E�U��\x19\tP\x10%�C��!��\x17Ag%1Y\x00�����\x1DlA\\X�����ekx���[�$��%\rՐ�\x00Q9\x0B��h��Vo��\x1C��ߺT*�))w\x1F�z������\x1C�<mR��r�}���śͳ1|����\x14<ȟ��v\x7FT���u�0�����\n' +
+        'HX�2P��D�y\x18)j�露�5�+�I�*��\t�\x01un\f�_�klY\x12�7(߿��\x1F�\x9A�@�>�C�~ϫFd�7�\x11�e\x0F�4\x16@5�ڣ����욺�.Σ:a���Br�Fs\x050޼)�N%��^��T1)�8�V&tj\x1C�\x02��[Q�\x10\x1DP\n' +
+        '<�1N\'�w�gw1-��IwA� \x10�z�G�5?�e���q�;(q!l�j��y+��\x17��\x1C\x7F��\x18�\x1E\x1C�/\x0B�\x05�M\x15\x1F�`\x02K��\x00xR��R��耶�@���޼�Mo�|�\x13�\x138c�+\f��umQt\x02j~P��\x0E�0{?��V��\b����zGT|c���i\x1C�tΖ�]0S���-��\x07aE\x04s\x01ʰ��\x0B\t�hm\x1A�)&�D��\x16�8 �/�S�-O��Q�\x0B�¿���B��h�+Z[2^\t�C�N��SS�֭%Y�}R�\'+\x0ENͩ|���Ǚ��\x04�%��~\\9�\x11��a�\x02m��l\x014a\x0Eu�uYF���\x06�\x19L痘@;�-<�2S2��8�У\r�0\x01��\x1Eib�c����p�T+\x01\x7FM��\x001���\x03�mGh\x17^�q*\x1A�iB�>�^@�L��f�\x12*\x1A6o�\\�.�_8G��T2�Ź4���\\\x17��� ;� S[*��\x00�(ޔ<B�q�bk�}�9��ϏE%BZ�J\x17藠b\x04F�\x7F��s��h�\x04���wp�W��\x05|�W�ܚ�N�1�<���e�Ռ�7O�G��ա��׫�\x00�7�~��Cڵz���aΆ�@$UD\x10�\x1C7\x15\'����:;�8��Q\x0BY�D:�$�[�U�w��`�:�y�h.��`\x13~87�b&�z\x0FS�: �\x15�������P\x1E+J+��ͬ6\r�4�\x02��4�GKM�L�\x1C�x�f,�?��db(峜�!�0�C�ti�j�\x1A\x12��t�\x1FHZ�\x14.�ʐʜP04��t��dz|���\b_Eit�N�\x14���E�F7U"��u��Cʀ�s5\x0F�WvA�6͵ �㌛\x10RH��_��;m�Q\bڄ�46�2b�ۑ�A\x16�@\x1F���{[4��E��i\x11\x05%�+�-n�\f�nLEݱ�z&��>K�n�+�Ծ�A�j�(4\x11]M�\x00�F��\x18%�\x1E�8aeǳ�`���M���RSD�\x01\b\b~�G��Mg\x0E//��Ě����F���\x067�,,\x02\x03��j���0�F\t�or\x13Ŋ�M�2���\x11�Ka�9궹\x1B"���׷�|z=�� GܯL\x00��\x0B\x05\x0E����ܽmN\n' +
+        '8�\x03P\n' +
+        '��y\x1A-u#�k�\x7F��=��Ry!q�r��1]�\x14a/F��\f�#b���@\x12\n' +
+        `\r\x01C�\x00@E���S0b��@����2v\x1D�\x0F��S��n�SME���x��\x11�h\f���\x14���'�&,�\r3\x17$�B/��\x07 �(�ZA\x00X!QQ@�US_Jj\x1D<��^#�摒��Z!��\x1ER\x15M�\x199���T�h�)�\x01�\x15?�响T?��\x10�����7ӳ��\x17�U�^-�\x10�J\x11��].X�=��S�����T�\x7F�g\x01�\r�\x043kS�k�p\x1F�r���!W�&siX\x07\x05Y\x1A9�B����Y��ڢ���\x14'6'�G�jH���U\x15��ֈ\rM�w%�\x13���\f\x7F\be�I�!�\x1A�����\x0E�:�4����\x02w��S2d\x02�a\x00��H\x19��ta�T�zt��\rlwg�����ߦ��X�\x139��Aw9"�K�nrpNn���{�K�/A\x02.\x06d���>\r�,��=�Џ>\\\x05�F�:i\x1C�Z}-��0g\x10rzا��v��ޯ�Nn��V�\x0E�JQ�'M\x16��FTxǸ\x15Ѳf��;\x0E�\x851��А\x01v��H8o\x1E\x07���6\n` +
+        '\x13tj�\x07B\f��U�\x17�9�~�#�T�3Kj�9o\x02=�൘\x0Fuz\\�te���\tO�kU@W�k�vr�ќ�,�j$P���\fE�����\x1B��3�U���\x02�F-d�\x196��"t�٠���e��\n' +
+        `h�V�\x04�<�����-�����[8E&{V&\x1B\x14�oL\x16S�FQ�w��\x06�\f}U��.�O�X�5\b��Za��^��ǯ\tX�ҍ\x7F\x1C_>G9�TG����"\x19\b�V"��\x00�\x14A�w���O��eE�FmeSdw�_�v2x��\x19�0e�"�z�'\x04��$\x12\x14O�3n,I�8.\f�i32�U�T��Ȅ�\x1A�H���\x10�u���0G\f�M{��@pU0�$x�\n` +
+        '~#>3��Jy��[@ǭ�G��w�؛6�r����\tR=��ѧB ��t���\x1Bø��T_����n�&��)Y��z[����5�)\x1D|\x1FU��\x04\x02F!Hf\f�\x0EBá�r���ž)~S~%�3/Y=�Lf�_��\x14�+\x042aWk�C#�\x0B�y��\x1D8M(��\x16�\x06��\x017"��Ģ�\x1B\x16�\x17�s����iX�\t�jY��.Zq\x07 v��L�\x19�\x05x�~�e�\n' +
+        '� 7N\x11i�-\x02�pW���jV�ʎ!\x1D��0�ɬ���W��p��ھ"�?�=�\x14�"}�\x1C�w\x7Fd\x1C�ݸ���jئ��\b��F�u\x01�Ū��l��|L�*�=\x00{�fhp�{я����J��\x05J��\f��\x1ArI�:��.4��\x1B��\x18�\f�0!�}2P�\x05�嬧\x03\x06��\x1D\x11\x04�i���u&��d�#\x01�\x1E ����(�h�%C5Ծ\x03�\r��\x11\x1D�F�;��C����0�G�h�C(�g2e�&)[��\x10\n' +
+        '�k�\x7F7M���%�Q��5\x10V�\x186�\x0Fb\x12�\b��vu�\x07������4Jc�\x04ڥ������3\t�&\x17]��q��iv"4^\x19s��F���Z�;uu\x1Cx\x7F���@�\x13�Ή�<\x18�\f�~n�喿��\x10�ܤ�L\x7F\x1EJ۷��\b)4�#\tb�&H��60N��еɜMW��\x04��\x04d�Alݖ\x04��m(1*�Z�`\x11�s5��W)��\x05K&\x1D�CX���sV#\x10W}����\x05�|�7\x01�\x02\x0Fܗc�o�\x01c0`\x7F\x13`��x\x7F\x02\x01��ud}\x06]\x19:�Oὺ��;�B��i�.���\x05H��̿��R(\x1D��/��$!\x04��D.��\x01�!ʑW\x18��f����m\x0B+\x16Qaנ6��Gg���p,"mk\n' +
+        'E��E\x0F���)��O5i�\tV%��\x15a\n' +
+        '���\x10Fc���\x07�!x�(h��>�*�(\x19�Ñ�� �\x00��� !��;*��M�(��㾠��\x13{Շz��-Њ\x0B�vm��Y.��xX\\�\b6f�\x16*�D�v�S��\x0E\n' +
+        "���\x19|s�Ni<��ug\x12�\x11�[����J\x10r-\x17����;c�\x17�eUR6a8�\x17\x1A�� ��\x19�:rU�zILz�\x19:>��\x06}�N�����!\x02�=\x19�e��*V'��ۄB�9\x17�.;@d�-J7G�\x13Sx\x1AcMy��>�\r0\x11�\f��`7cm#�J\n" +
+        'i�wa�n�H\x15\x1Ff�.f_ј\x18[,��\n' +
+        "�n\x07)˱ݶ��e\x1D�\x04�w$R���\x03��@\x1EЄ�?�\x02�a��2��ahq\x16U(\x14�\x00���:�����Kl~\fźw>D=9�\x06�o���HF\x10;��í��\x06p}D$��a=7r\x07C]n%SNHg��ƾd��M�\x1B����o���\x10��:�\x10�lI,�S\x15�}-g�\x1Ee����\x1D^п���=������\x10~����b�\t���_-���WxhW�N\t=����%>��$���8���i�F��a�\\ݗ\x17nӏ�ب��\x1D\x05\x1BZ\b'�\x00�\x18sJ�y'���T�\t�N�ժ-�d�h�Wӂ���a\x12��\x03<^9\n" +
+        '��\'�\x16��!p��-�\x0F\x1C|\x14հ�\x12����j�%\x06�3�K�ͱC���K+S\t\x05�4�tz>��F�\x10�n��\x1E��V���$>Y�ޕ�ΐ3\b]ڱ��\x07 \t��"\x03\x7F\x161�|�¾$@���3�֩\x0Eް��\x031���Zh�\x03Ø\x14��\x1E�m�Ư�(Nvh��\f<�M�\x07��%J.�\x16.�-��[؀��I�s�L`R��#�\x18\x1A%G\x04uH\x01Z~\n' +
+        '{�^h�+�[<�(V�+���yy\x00\x12_����\x14�*��2@\x17��I� <b�I\x17l�R&=���8;��\x1C|�\x00�<<�\x1C\x18�^\x06�]���\rw�N�H��a�\x17����Ka��\x07{��9#&v�\tS\x13��\x10\x05vV�E�u\x1D�\x19�Pb�\x1A��/�@�0�½�g�O\ti\b�(��y\x16(i#\x13���&��j�#���\x06&/\x07k�I��\x1C�q��\x146��.4��:=��o���0w\r���ꎐ��F�P\x05��ʘ\\��?\n' +
+        '3�nA6����9�\x07H\x02\x07a9�_\x16�G��\x0B\x00D�\x0B�zz#�\x10�T�ȇ���\x7F��a�p��\\�\x01w\x07��\t�b��w^e�\x03PO\x00рq^�B��;IX����&5ӛ���@�"���\x1Eπ���\x1F�%B�1���bǌu&Q�?\x12�T3������Xu�B��������c�Z�|_#7y�\bFi%U\x0Bn��^��\b�-���\r\x18\x16\x11�I�L���?�\x13��a&F�(\x05�ҋ\x07��M�(\x13�?�E67\x1C�Z����\x07j��W̏��\x002;P�\x18�o�A\x14\x0F \x01te�P�t���a\x181WY��Ga�4���:\x00㴁\x0E���\x06�\x7F\n' +
+        `,�ˉ�fN�*Hߡ�~\f\\�<W�LQ�����8�\x06\x1B���\x10��_fh\x07��3��\x02�\x16p�\x16d#�Ӧ\x0F\x0E��\x0FR\x06\x1C \x11X�k*qd�t��l�T�i\x00ԏ_Z8�(�4X��}�������k�?}��;\x1F���;R&�!���$^�Y�"Xq\r���P-��� ��\x17\x10�ߥ\x15\r�����\x01�F�-C&\x1C�����އ\x05���X�\x1Dy\x05��o��~񌆹Y�ҳ߉�x�'Y�\x1C��*���Q<\x16�������nf�\x1C-�\x0B�V�\x1B\x05d�J\x7F�xP��\b8�B�\bZ$5�D��\x06r�h���\x0F\x13�m$\\C�Bb�/\t�^��\x1C4�\x18\x1349���+�Z�\x02�B_\x8E\x1B�&9��С�9���Ø�uH3\\�O?;\\j[G\x11\x0F\fsZ\x12��\x00%�\x05\x17��\x15H���\x11�dk/�3�\x1D�z6�\x143�=���)e2����V�Z=Gpp�\x0B���3\\�9�#J\rMi\x11��\x1E�U�R�)��\x13T�\x1D�z3CE{\x0F��=����\x7F}S��&\x04�9<(ުe�cYu��j�K�@\x11��>\x132�;|n<,)ܞ-�\x05\x18H8'|��\x01�X�'�'J\x12�M;ab>��Mff�+����l�'^Z�\n` +
+        "�3}�`��\x10c�<J�}��-��g���z��aάI�W�v��Q4�~�0ʭ\x15Ұ�y�\x16�7� 0E��ۣ�����H��\x18�F��tۗ\x06��8����C�Uu�\x19c��\x12�z�ݨ�\x0E�=:����6hW!m�5\x13-+>f�_�?\x16\x0E�/g<�\x14\b\x01\x13a�dj�e�\x17W�\b�C��\x1A��ts\x15һ(�2\x14A�Q�6Q�2E����yo�J\x7F�H�[�\x1C��^=w\x06�r,�\x1BwI����\r\r�\x7FM8O\x05�h���\x10��ѫ����\t���쳙�\x0EO\x10QC�A ڴ���d�$h+ i%G��� w�վ�^E��Vƌ��.NTz�A�e\x07���\x12�m\x19g���d�5\x10�z�:$\b\x02/\x1F�؉\x1D��\x01�f���ظ�'?̮��\x1C<���\x7F.�kȩ�O��#\x17����Ϸ�:2���\x05�����\x16-����4�V\x19�\b����&�סt�\n" +
+        'H��|o>{}=/9���j�#\x0F�������责�\x7F��3���2�\x15S�W�\x7F�\x1B���5�>���y�f|�XRU�_��T�p\x16��\x11\x0By\x1B�F����GGˮ\x18�Ơ=\x00Rʹ�����\f\n' +
+        '\x1A=�*b�\x16h:����i��\x0E �O���&�\x11�e�] Z�N�\x1D�y\x03n\x01�g>\x02ˁY\x00t�ǨA��G�Y�c��\x10�����\x12u��\x12}�.��G�c��1\x17MoV�&6X�ֳ��\x7FUo�؆�3�\x1E0;�\n' +
+        "\x141��v,�\x125���'�;�%C��\n" +
+        'F����\f�W~�7j����8\x15{q��\x07;�o�\x15�Y`\x7F���\x18h��6K� ��4\x03Kԫ#\x11?M#���\x01�x��ųx��\b0��=y%\x15\x0E5u�=\x00�\x12\x12(\x00�\x1FT��N\b�.--"�\x04�l��\t�\x12\x1Fς���hV�����J�I��\x7Fg%wL\x1C,�\x14�ETʌ���!H�J�c�q�\x0Eܭ��|���R�N��H\f���o��=~�s�%N�Rg\x0B�ٸ�����2sb6�����f=�����)�sY�F?�[��R�����|��)��\x1D��\x15\x14\b�Sy�Q��a/Z�sj�*�k%�^���'... 65845 more characters,
+      type: 'entity.parse.failed'
+    },
+    level: 'error',
+    message: 'uncaughtException: Unexpected token - in JSON at position 0\n' +
+      'SyntaxError: Unexpected token - in JSON at position 0\n' +
+      '    at JSON.parse (<anonymous>)\n' +
+      '    at createStrictSyntaxError (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/types/json.js:160:10)\n' +
+      '    at parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/types/json.js:83:15)\n' +
+      '    at /home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/read.js:128:18\n' +
+      '    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)\n' +
+      '    at invokeCallback (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js:231:16)\n' +
+      '    at done (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js:220:7)\n' +
+      '    at IncomingMessage.onEnd (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js:280:7)\n' +
+      '    at IncomingMessage.emit (node:events:513:28)\n' +
+      '    at IncomingMessage.emit (node:domain:489:12)',
+    stack: 'SyntaxError: Unexpected token - in JSON at position 0\n' +
+      '    at JSON.parse (<anonymous>)\n' +
+      '    at createStrictSyntaxError (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/types/json.js:160:10)\n' +
+      '    at parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/types/json.js:83:15)\n' +
+      '    at /home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/read.js:128:18\n' +
+      '    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)\n' +
+      '    at invokeCallback (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js:231:16)\n' +
+      '    at done (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js:220:7)\n' +
+      '    at IncomingMessage.onEnd (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js:280:7)\n' +
+      '    at IncomingMessage.emit (node:events:513:28)\n' +
+      '    at IncomingMessage.emit (node:domain:489:12)',
+    exception: true,
+    date: 'Mon Mar 20 2023 21:31:21 GMT-0300 (Brasilia Standard Time)',
+    process: {
+      pid: 39637,
+      uid: 1000,
+      gid: 1001,
+      cwd: '/home/zizmackrok/Desktop/Code/not-too-powerful/server',
+      execPath: '/home/zizmackrok/.nvm/versions/node/v18.15.0/bin/node',
+      version: 'v18.15.0',
+      argv: [
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/.bin/ts-node',
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/app.ts'
+      ],
+      memoryUsage: {
+        rss: 320675840,
+        heapTotal: 194707456,
+        heapUsed: 189328824,
+        external: 6964405,
+        arrayBuffers: 4224122
+      }
+    },
+    os: { loadavg: [ 1.5, 1.43, 1.27 ], uptime: 41783.68 },
+    trace: [
+      {
+        column: null,
+        file: null,
+        function: 'JSON.parse',
+        line: null,
+        method: 'parse',
+        native: false
+      },
+      {
+        column: 10,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/types/json.js',
+        function: 'createStrictSyntaxError',
+        line: 160,
+        method: null,
+        native: false
+      },
+      {
+        column: 15,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/types/json.js',
+        function: 'parse',
+        line: 83,
+        method: null,
+        native: false
+      },
+      {
+        column: 18,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/read.js',
+        function: null,
+        line: 128,
+        method: null,
+        native: false
+      },
+      {
+        column: 9,
+        file: 'node:async_hooks',
+        function: 'AsyncResource.runInAsyncScope',
+        line: 204,
+        method: 'runInAsyncScope',
+        native: false
+      },
+      {
+        column: 16,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js',
+        function: 'invokeCallback',
+        line: 231,
+        method: null,
+        native: false
+      },
+      {
+        column: 7,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js',
+        function: 'done',
+        line: 220,
+        method: null,
+        native: false
+      },
+      {
+        column: 7,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js',
+        function: 'IncomingMessage.onEnd',
+        line: 280,
+        method: 'onEnd',
+        native: false
+      },
+      {
+        column: 28,
+        file: 'node:events',
+        function: 'IncomingMessage.emit',
+        line: 513,
+        method: 'emit',
+        native: false
+      },
+      {
+        column: 12,
+        file: 'node:domain',
+        function: 'IncomingMessage.emit',
+        line: 489,
+        method: 'emit',
+        native: false
+      }
+    ],
+    req: {
+      url: '/api/v1/guilds/sendMessage',
+      headers: {
+        host: 'localhost:4000',
+        connection: 'keep-alive',
+        'content-length': '80082',
+        pragma: 'no-cache',
+        'cache-control': 'no-cache',
+        'sec-ch-ua': '"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"',
+        'content-type': 'application/json',
+        'sec-ch-ua-mobile': '?0',
+        authorization: 'R4WTN848qyH4TM42yvbkNGRhWGgYu8',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+        'sec-ch-ua-platform': '"Linux"',
+        accept: '*/*',
+        origin: 'http://localhost:5173',
+        'sec-fetch-site': 'same-site',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-dest': 'empty',
+        referer: 'http://localhost:5173/',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'en-US,en;q=0.9,pt-BR;q=0.8,pt;q=0.7,es;q=0.6'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/v1/guilds/sendMessage',
+      query: {}
+    }
+  },
+  level: '\x1B[31merror\x1B[39m',
+  message: 'middlewareError',
+  timestamp: '2023-03-20 21:31:21:3121'
+}
+{
+  meta: {
+    error: PayloadTooLargeError: request entity too large
+        at readStream (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js:156:17)
+        at getRawBody (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js:109:12)
+        at read (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/read.js:79:3)
+        at jsonParser (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/types/json.js:135:5)
+        at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)
+        at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)
+        at trim_prefix (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/index.js:328:13)
+        at /home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/index.js:286:9
+        at Function.process_params (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/index.js:346:12)
+        at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/index.js:280:10) {
+      expected: 854612,
+      length: 854612,
+      limit: 102400,
+      type: 'entity.too.large'
+    },
+    level: 'error',
+    message: 'uncaughtException: request entity too large\n' +
+      'PayloadTooLargeError: request entity too large\n' +
+      '    at readStream (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js:156:17)\n' +
+      '    at getRawBody (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js:109:12)\n' +
+      '    at read (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/read.js:79:3)\n' +
+      '    at jsonParser (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/types/json.js:135:5)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at trim_prefix (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/index.js:328:13)\n' +
+      '    at /home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/index.js:286:9\n' +
+      '    at Function.process_params (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/index.js:346:12)\n' +
+      '    at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/index.js:280:10)',
+    stack: 'PayloadTooLargeError: request entity too large\n' +
+      '    at readStream (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js:156:17)\n' +
+      '    at getRawBody (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js:109:12)\n' +
+      '    at read (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/read.js:79:3)\n' +
+      '    at jsonParser (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/types/json.js:135:5)\n' +
+      '    at newFn (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js:16:20)\n' +
+      '    at Layer.handle [as handle_request] (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at trim_prefix (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/index.js:328:13)\n' +
+      '    at /home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/index.js:286:9\n' +
+      '    at Function.process_params (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/index.js:346:12)\n' +
+      '    at next (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/index.js:280:10)',
+    exception: true,
+    date: 'Mon Mar 20 2023 21:33:49 GMT-0300 (Brasilia Standard Time)',
+    process: {
+      pid: 39637,
+      uid: 1000,
+      gid: 1001,
+      cwd: '/home/zizmackrok/Desktop/Code/not-too-powerful/server',
+      execPath: '/home/zizmackrok/.nvm/versions/node/v18.15.0/bin/node',
+      version: 'v18.15.0',
+      argv: [
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/.bin/ts-node',
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/app.ts'
+      ],
+      memoryUsage: {
+        rss: 321736704,
+        heapTotal: 195231744,
+        heapUsed: 190422856,
+        external: 7843665,
+        arrayBuffers: 5103342
+      }
+    },
+    os: { loadavg: [ 0.61, 1.06, 1.15 ], uptime: 41932.06 },
+    trace: [
+      {
+        column: 17,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js',
+        function: 'readStream',
+        line: 156,
+        method: null,
+        native: false
+      },
+      {
+        column: 12,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js',
+        function: 'getRawBody',
+        line: 109,
+        method: null,
+        native: false
+      },
+      {
+        column: 3,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/read.js',
+        function: 'read',
+        line: 79,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/types/json.js',
+        function: 'jsonParser',
+        line: 135,
+        method: null,
+        native: false
+      },
+      {
+        column: 20,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express-async-errors/index.js',
+        function: 'newFn',
+        line: 16,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      },
+      {
+        column: 13,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/index.js',
+        function: 'trim_prefix',
+        line: 328,
+        method: null,
+        native: false
+      },
+      {
+        column: 9,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/index.js',
+        function: null,
+        line: 286,
+        method: null,
+        native: false
+      },
+      {
+        column: 12,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/index.js',
+        function: 'Function.process_params',
+        line: 346,
+        method: 'process_params',
+        native: false
+      },
+      {
+        column: 10,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/express/lib/router/index.js',
+        function: 'next',
+        line: 280,
+        method: null,
+        native: false
+      }
+    ],
+    req: {
+      url: '/api/v1/guilds/sendMessage',
+      headers: {
+        host: 'localhost:4000',
+        connection: 'keep-alive',
+        'content-length': '854612',
+        pragma: 'no-cache',
+        'cache-control': 'no-cache',
+        'sec-ch-ua': '"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"',
+        'content-type': 'application/json',
+        'sec-ch-ua-mobile': '?0',
+        authorization: 'R4WTN848qyH4TM42yvbkNGRhWGgYu8',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+        'sec-ch-ua-platform': '"Linux"',
+        accept: '*/*',
+        origin: 'http://localhost:5173',
+        'sec-fetch-site': 'same-site',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-dest': 'empty',
+        referer: 'http://localhost:5173/',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'en-US,en;q=0.9,pt-BR;q=0.8,pt;q=0.7,es;q=0.6'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/v1/guilds/sendMessage',
+      query: {}
+    }
+  },
+  level: '\x1B[31merror\x1B[39m',
+  message: 'middlewareError',
+  timestamp: '2023-03-20 21:33:49:3349'
+}
+{
+  meta: {
+    error: SyntaxError: Unexpected token - in JSON at position 0
+        at JSON.parse (<anonymous>)
+        at createStrictSyntaxError (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/types/json.js:160:10)
+        at parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/types/json.js:83:15)
+        at /home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/read.js:128:18
+        at AsyncResource.runInAsyncScope (node:async_hooks:204:9)
+        at invokeCallback (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js:231:16)
+        at done (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js:220:7)
+        at IncomingMessage.onEnd (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js:280:7)
+        at IncomingMessage.emit (node:events:513:28)
+        at IncomingMessage.emit (node:domain:489:12) {
+      expose: true,
+      statusCode: 400,
+      status: 400,
+      body: '------WebKitFormBoundaryI9JRDvWSMABMBO2P\r\n' +
+        'Content-Disposition: form-data; name="content"\r\n' +
+        '\r\n' +
+        '\r\n' +
+        '------WebKitFormBoundaryI9JRDvWSMABMBO2P\r\n' +
+        'Content-Disposition: form-data; name="attachments"; filename="blob"\r\n' +
+        'Content-Type: image/webp\r\n' +
+        '\r\n' +
+        'RIFF<R\x01\x00WEBPVP8X\n' +
+        '\x00\x00\x00 \x00\x00\x00�\x03\x00�\x03\x00ICCP�\x01\x00\x00\x00\x00\x01�\x00\x00\x00\x00\x040\x00\x00mntrRGB XYZ \x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00acsp\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00��\x00\x01\x00\x00\x00\x00�-\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\tdesc\x00\x00\x00�\x00\x00\x00$rXYZ\x00\x00\x01\x14\x00\x00\x00\x14gXYZ\x00\x00\x01(\x00\x00\x00\x14bXYZ\x00\x00\x01<\x00\x00\x00\x14wtpt\x00\x00\x01P\x00\x00\x00\x14rTRC\x00\x00\x01d\x00\x00\x00(gTRC\x00\x00\x01d\x00\x00\x00(bTRC\x00\x00\x01d\x00\x00\x00(cprt\x00\x00\x01�\x00\x00\x00<mluc\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\fenUS\x00\x00\x00\b\x00\x00\x00\x1C\x00s\x00R\x00G\x00BXYZ \x00\x00\x00\x00\x00\x00o�\x00\x008�\x00\x00\x03�XYZ \x00\x00\x00\x00\x00\x00b�\x00\x00��\x00\x00\x18�XYZ \x00\x00\x00\x00\x00\x00$�\x00\x00\x0F�\x00\x00��XYZ \x00\x00\x00\x00\x00\x00��\x00\x01\x00\x00\x00\x00�-para\x00\x00\x00\x00\x00\x04\x00\x00\x00\x02ff\x00\x00�\x00\x00\rY\x00\x00\x13�\x00\x00\n' +
+        '[\x00\x00\x00\x00\x00\x00\x00\x00mluc\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\fenUS\x00\x00\x00 \x00\x00\x00\x1C\x00G\x00o\x00o\x00g\x00l\x00e\x00 \x00I\x00n\x00c\x00.\x00 \x002\x000\x001\x006VP8 NP\x01\x00�\t\x06�\x01*�\x03�\x03>1\x16�C"!"�y�D(\x03\x04��}�\f���\x18��{)�)��.e�%\'\f^���{�f��\r���o#\x1F���p�ë�I��x}e�\x1C��W�\x1E_���/�O���~�]=="t�y{��[���w������\x7F����\x03�S��\t=����\x1F����-���O���_ݏ�?����������\x7F����M�M�\x7F�o���\x7Fp\x7F�~��S�\x1F�߱�����������\x12�\x1F�/s?C�\x7F��ܻ���O��X������\x7F��{���G��������J��\x7F0���\x1F�����B��vB��vB��vB��vB��vB��vB��vB��vB��vB��rR9�`渙`kt��<e��\x01�ߞu����KG�<��\x03R�\x03R�\x02��W[��b�1Ѫב\x10)O�T�!�\x7F7U�\x02�\t\x06��T�9���5\\\x0F��\x1F�����\\\x15�b�؛��z��X�\x0E�����\x12Z�Qs�9��IFWT:N?�|\x1A�?|\x13�\x03��\x05�T��e�v\x1Bp~\x07,<D86�/c��\x1D�?�!q�s\x1F�P���%�8\x0B��}�ani#�C��E;����]�\n' +
+        'ʜ^��޲Y�^<@\x19e|Ks�HŁl5^\x12\x02ݲ\x00g^vm��}��j]��h���c ��w��zc\x12<?C\x14|�\x05D�\x19\x1E=#\t^��D�5p�b%f�Կ�Ue��\f.�\x16>zݖ��P�~�S��-8��+\x10AEVzO�\x10\x1C�-�\x10\r���g�\x00��<��\n' +
+        '�`4�W�,h\'\fO���ǁ\x00d\x15���t�l�s\x03�U�=���G� \x03��a@\r�\x02i!��\x14�9Bd̻\\\f\x03�]\x10Q�Z�G�]�{:tPɬ�\x1Bj�\x18/\x1D\x15��Ƃ�! �\x0En6�!�\x05龅m�� -�� -�� -j��2U\f )[�>���i\x11�ͲT\rעB�t��}�\x04�|^\x14ee4g5��M�\x03J�\f\x03}Ѧ���{3��\x032X\x18�L;\x06~P��~2��Ǹ{q\x02E����A�����\x9A4��<��#0O��QS\x07\x07�P/-[,��d�S����:H6���\x07\x12\x14�~��/sHQa�Q$��2F����\\mm{#��S\x1D�`��;��\r\x1CX�A\t{�����NG��+�o8��5��\f8&\x06ps��\x14\rK�\x14\rK��>dg\x17X�p=�����ޠ�t���������\x01�(6�>b\x00ҳ\x13R��C8m\x1A�fms�5�\b1\x01m�1\x01m�1\x01m�1\x01m�%.���C��ٟݝ�@�xFB\x1Bّl\x18�w�1�̴\x03��C��<����\x1Ev�~(��\x19���B�?<��M���T9&�r��b�{�����a\x12H�*?�<%\x1A�"J�O\x0Be;��\n' +
+        '2\x1F�X��r��N�$��\x19,\x11�=��_d(\x1A�d(\x1A�d(\x1A�d(\x1A��\x05��w��\x02J6���x�\x01^?b\x15p0�b��.��\\�\x04+�e�v��T��߬�˙�3v\x02Xrr��<y��mK7\t\x1C�C�p2�̤\x7F\x11X�-wi�o)��t7� ^����L���Ր7K/}��j\x03p齁\x10}/���:�!@Ի!@Ի!7�I3� \x01+�\x07L�I��9[<\x01e�gV��$`jzLhRn�p�-(恸��Q�\x03�\x7F̑�lٖ�}�W^�\x1A��\r g����\x19��sѬv�w��\x16R��\r�}\x00��N�ٲV�5(83Z\x1B��\x17\x0Bs[��:\x01׾ I��@�E�\x01��/\x01\x15����vn��rS\x18��8&��\x05\x15�Ac+\x1C\\i`�_d(\x1A�c�4V5�0��V\x07YP��g����{����<�\x00�\x06�\x01:e�U�2�#\x1E\x11�\x0E��o�\x01\x0B�\n' +
+        '�\x11�f�c�e�\x03n^��1�\x1B�^��#fz�\x13�\x13�.��p����~�${�k$:��\f&U��1\x1E�(�k\x06Q�,Ik��#��|9+�p\fQz�6\x7F��ڳ�\x16%b\x0F\\����y�6��W\x10��\x14E\'n_�w!߱Ϋ\x03�O�\x17��?\x13��=��_d(\x1A�_c%c��\x05�Л�Q��&K�jjb\x03��qvc\x0F�U��0��@�\x01fs���3\x04\x019nو�\x0B�B�\x11\b��ē�%>D�;��y��>Ӌ�BE-�t\x18���\x05uf��"�i�|��{�Q�FI��\f�"Kí\x1Eޘ���7�BVV�+1�G����=V���9�q;"R�&Q�J��\x1A�$u9\x7F(\x7F����U���W\x03g��z�\r\x16IzA\x18\x00�/L���U4E�y)3�g�>u�B��vB���0����I����\x1C"\x16�iRR&JxD$\x11�\x1E�ްy\x10�A����R�\x01�V�\x1E��Y�ޝ�A@֖Iy̳�5=\x1D�N(�\x17��7�7��\x1C`R?,\x7F@\x10h��XCT��\x16�c�cA-j;�t����ȳ^�@�\'�6��`3�F�!����F��\x7Fx\'�\t\x1B\x195��b�4\x1E\x02,�\x07c��>p\x1B\x1D\x1BS\baO�n��Y�\'\x13r�\b�f%.D�\b\x11��ձ��P�o��\x0Eu�B��n��T�gk\b��9o�?"�@�@|�#&�6��.3�QA��dX ���x�zm�8�\x16tu�\x06\x1B�Q\x13��{�>�U>�`�2\r\t\x03��\x14\x0Bt2 �ݘ��5�M\b\x0Ft��F\n' +
+        "LC#xa�8\x18�\x14v�fuS\x17[�{�R�D\x1D��8ؐ�\b|�KZ\x02���_B\x06�(d��u�<�K���n:��\x1BS7>m\x03&b��\f>\x12e\x06/�����ڞַI��̵cʽo7\x0E,��\x03��˲�4��Zԇ׻S�c�@[c�?6�.�VV���\x12�ǖ���5\x7Fs \x1Cމ�4(�RA���F\x0Bf��\x131�ӄ�LG�U\x03�1\x1C���BdR�ϫ��u�,ʎw��GD�A\x1C�\fD�ì�z\x18�H3�Y���D*O\x05�\x0F-�Kۨ���)\t\x1C��~-�0�OF�p\x7FS=;�[��M� hqx�\x11f�NCqt�\x1C��\b��]޷c���(���k��tF���l^n�\x1At��<%�&V2>o���ݛ=��dr\x1Cp*�ˆ�!��m���\f��_d(\x1A�АjI]�.ߺ��\x03��D�d��g\x0F����r��3��)5���b�\x1EN'\b2�'>(��\x0F�{/ૢ6]�sB\x17wt��\x06�\x16����\x15��\x05��-�`�en�!��`6Y[��\x02tH�Um�\x13\x17�b \x16�U\x03�Q9X6xET�g1��'P�=�R�\x11O*}��YWԐ�{\x1BUvE%����\x1EC\t�U�}����ms��ۻ�\x12\x01\x07%����B�%�\x10�S�~�~y���y5j\x16��cMSY�o�\t6P\x0E�9��o\x01\x1CY�rst\t.\\$��\x1B.�f�M>0�\x16N^�u?I�ԐM�\x06�0(�\x05Ŷn�[��Z�\x1B�]\x0Fѭ��<\x1D��*\x7F�#xhG\x19���g}����h^\x13���IOӭH��0��P�n!&����ʎ��\x06��%8�o=�����}a�rC\x15��<\x07��m�0Mf�X�P���M0�\x16e��\x1E\x01�ŉ�f�2�(*\\\x1A��G���/�8�\x14w_�j$)���)�����1\x01m�1\x019 \x170iC\x1A�\x1F���ٿ\x06��o�ۓ��(�g�E\x10\x1A�ڨ��<~�S�V`f\x16Խ\x14iC���x�R6��\x16pc\x1Cc}4b���%�%w*\x7F�<>\x00�w�c����\x1B@\x15�EN�t���\x04�\r% ��\t�n��Cc;;��{��\x0F�j\x04�ؔ�j\x15+�2.Ra �<v����JX_���<��Ϯ�]\x0B�b��2���G�{Q�3�$��\x7F�Vژ�\x0F\x05������ttp�'β��)\x0E=��Tq�݆h�b�\x1F�\x0B�k21�^�^�J\x7F���r�n��s��\x14\rK��g���R&�B��}ؚ����K����D�Mz�CV\x19Y02QK˃\x1D�\fN�ͬLF����\x14�׶٪�zh��T����-tv��\x01�Pv<n�3b\b��\x96n�\x16�Xq��V�'\x7F�\x7FVVɽ��\x1D;�\x02U\fc\x11�)�Y�W6:og�ԯu�n�O<�b�\x1F\x00P����ں�ǜ@~5���<d\x0Fg�y�7�ۮ����\x0F\x03\rT�u��d>W_Y-�\x0F��5@\x03��\x12E�>f|\x0F\n" +
+        "H��.!�'�[Y��g�R?26�C��.\t��9��\n" +
+        '\x06����S�N=1d�ң���G�\x1B��6�38V\t4�{v\x0FJяض#�?���\x1C.���*\x1A�� o\x18���6ź��Y�+���km)N|��(�t���?̥�׿\x17ܮ�}ټ\x01\b\x16�=���\f*�(��\'�\x1ETG©&��`ڞ�L�wl�@Po�����tT\x1B\x15�\\�1�e��]��Edi���\x12d�\x7Fyn��K-��EƠ�֝0e��&C�\x15y�0`��D�\x01��YH�^�\x10�ݙ\x7F�]�{�j\x07�\x1A\x1C\x1C\x1B#hv���T�{�ξ�P5\f͘\x17�a˝��\x1B�xd\x02��\x06a���>�0l�\x01��C��\x14�\x12�`v,���hU���f>�\x06�J�z�&\x7F�4h�e�h�x�g\x7FG��7:��L�E�8ۭq�%����o_\x18gE\x04\x11�\x1F\x10dl�E���*�\x1F��O\fO�_��\f��-N̶�ړ�PN\x0F�I\r\x15�\x7F��⊘#�y�\x07��%��ٱ��r��."}aCذ�\x04=�Ďae�&�g4�����\x02Ҵ\x1E\x01��a\x16�\x01\x17�Q8�U=�8�\x05�8��}�\x05\x00�\x0Eţ��]S\x03����\x7F\x13�s-cIlnV:W�cX`P��q�հ�J�[#\x10�T�u[���WuY:�\r\r_7�\x7F��<��@�b�bq���\x1A�j"\x0F�o�,u�ۘG�q\x01�]\x1A?O\n' +
+        '6��K��o��\'}��\re�S\tC�G�\x04\x0F\x1B��\x19�F�]\x17�O�o�3m��!�\x0F��\x00l?�qg <��\x05�h@Q07Uf�)pe~g�ҝ�T��\x18�<��.X��\x1A[�C�m��W�ZP�u�B��vB���:@�(-�����um^����-d������\x16\x1D��\'t\r_Ip�Çt���@F�i����6Bj�1��\x03D�L�\x16\b\']�\x03�w�tZ��\x14��!T\x07ND\x1E���n��2���\x02"\x1B�\x12�w��\x12u\x0B4��-Y\x02:DsO�sc�����S|��"\f\x1Du��\'��^��s�\b�x�Q9�\x13*S S@\\F\x00]�w��1\x04]/?#Tp��y�\x02?\x13�i|�\bas�{�}�=\x10��V}la�����޸�\x02\x02�\x1Cb\x02�\x1Ca\x1D6�GJm�O!t�R�\x18Ҟ��5j��[��\x19�����[*\x17@�_D_���\x1C.�Lg�\x19G�yh����օ�����o`��\x07�� vI�U��K�$�\x18���>�1�\\2]\'["^\x13��c!���h�$���S�Ȳe��U�\f�.�-\x1C�)To�kb΅�������I?�>l�\x1F�����9}߰�����\x11&�Ǚ/�N��P�.6�wS\x14�ӯ����ȩG�Yg\\��8i��\x1E���,��)u�\f�P�ثc03��}��j/�Ю�f�X��)g\x13�q>�c��]�5�*�$��x��\x1F\x1F{hxS\x13�x�\x1C�4�P�\x1A+Yކ�cʘ\x00�K�GP�(r;�2�tY\x0BD�|`c(l߂�V�\x17\x15��p\x1B?\x02�\x1D�~}�)�\x1C��=�5�\x14/�D\ff�T�B&#��=�<�JT$\x1B�����FRr��?J�"<4��]�ɡ�WIW��v�gr��\'\x11wr�$�\'\x18�\x10G4\x07����\x07\x19)77�>\x14�\tD*)ؓk���K��W���s��MҬ���\x10\x16��\x10\x16�rq��Y��Y��%�Ӵ|���b�g�N6a��\x04\bk��r)�{�\x05x._�\x7F2w6�\x1F�Z\x12K2��]Qi�~�\x15����Q�7x�\n' +
+        "2�\x0F��ICa���ۨ\x15�\x07\x13\x03����o���A�\x07�;�U\x04� �\x19�r���\x03��嚚7#\x17���}�бB�%*\x16n�x9���y.f�����\x1A\\m�\x1CA�4\x0F\x0F<X�� \x0Bj�?<��Y�;Pn��K-\t\x10�{Pc��\x11�H�j�D�@'��\x12����~\r0�1y�UI��$�#ߞu�B��n�������\x0F �*WgQ��\x05��č{����پW���\tj�j|�E0�\x14\\� f�HK�;��\\ćo�\x1Ao�y�CY(�C;6`�jBܓF��uH�b\x01'�9\x01�;1��>�\x12_\x0B�ً��η\x066���ކ)�R\x15���\x04��b�\x16��\x19CE\x16��R\x17��#\x05�c]J��^/����c�t�>���gJ\x17�\x18��\n" +
+        "�\x16\x1E��X���<�j\x1D�j�k\x1ETn\x07���$Ԕ\x1A3.�'�uE����$\x7F��\x1D{���\x12��x��x��E\x04�9��\n" +
+        '\x06���f�����}]0�O�/Q.�!ʈJ�Fp\x1D\x1B�\x0E|J���eh�\x1C�K��-)\x7F�\x13�/���\x112>�L�[^\x0F�-��k�����<Q�jh\x10X\x14By\x02�y�v/��讵l���i�<���C�U�\x1A?Iܼ�Z���\x04�^��J�b���ۆ_݄�S\x07GG��$�?�UE�2L�Y�����OV/8�\x19�����{G�Q�\rd�/�P����Z�CS\x026�m2��L�ѓ*3�8�ߣߞu�B���T\x12����C\x02o"\x14h�>i��0\x02eh�j�\x18���^ܰ�\x0F��\x0B����K�{\x07^�\x07��\x17�^j\x16�>c�M���@�$���>U/�E[ŖV!�Ad៖�u\\ÿx�z�D���x^�4Oդ ����K$�\rR�\x1B\x0F�WnIa_�|UK���ՏR�\\�E�����\x0B\x03�@�;�(�r\x13ڱNƺIS\x04��(\x16\\���BHE\x16r�Up�\\_$�*\n' +
+        'c�f\\�\t�Jf>�\x18R���:�!@�d>�V!RbMkb��n��y�\x17y\x1A\x15��\\\x11r�ߢ�*(eI�w\x0B��U\x13�\x1D�X\n' +
+        `O�xr���Zx�laٵ���Ώ\fϱ\x7F���q���&9��\x0Fz��S�\x1E\x0FC�\x1C,�؞��\x00/hIk�,y�L��g{����\x19ڨ\x00�\x0Bۏ�\x0F����"[\x1A�H���%%�"�j��;���:���\x18�\x1D��tD'3]\x1F�%��M\x11�,g\x1B�{:�ܩk\x04f�'2�5\x1C��iR�\x03gY-Ɛ�#���P5.�P5-�q��f�]��C�Gx\x1Anۑ�b��M��_\x1CA��r��\x0E\x19�ʚ�\f�J��h \\߲߉F\x11�:qjذ�\x18!����~�\\�U�\r�,\x1A~u<5�����݉�K7\x06�y\\������ϒ�C\b;�h��s"��D��\x1AT�������K�U�ep�l\t\x05�V�(��eelm�S���\x02�M���m�����m����FĿ��2y��Ė���!�\x14"\t���\bxM�\x19\b�X�g�~����Z=��_d(\x1A�g��\x0E\x04</�$�C'�\x0B�H�����lO1��}0�{6�I��z�֩\x0B���\x1DQ\x16�M+jo�n�\x11?s%<��v��\x1B��yC\x1D�+1[��@S\r4�5�s�k��\x0B�\x7F� ��ͪ\x15\x17���ûD�]\x05��\x17i7\x0BV7��N�\x05�n���ԅ�nϮI����Rkq�\x1B�\x18�#\x1Ek5r���L�؍VDTt\x04�,�y%\x1A5\f\x15���!��!\x13\x12*(�=���\x06�\rK�\x14\rK�\x14\x02\x11\x1BC�����\fs\x17�ht"\t% ��Ua\x1A�*�\x0F���A�\x0B�I��;�(M.�Um\x0B�\x1F�rl������\x07�$��x�}R\x16^H�ϺE\x1CP�\x07xC�\x02\x19Çۓ�\x12��=��Zmˀ�_|Ώo�N�d�P��\x03\x03\x16��pc�����6�m��'�\x1E�P�ߛ�k�\x0E\x1B\x1F\x1Fj�ivE\t�Kw>u\\�_:w�\x03�neg��\x05M\x04VS����T�\x01�1��\x16��/��03��}��c��\x0ENЫk����+�k6:2���\n` +
+        'x`�>��\x1An�eO޳�\x13[��9��>\x12B�\\�A�C`$�v<81l\x1E�D<V\x0B\x06��<�\x7F0�%3�Y\f�4y�خ6͏G/?����O��\x04N��Q1\x15R.���p2��\x008�!����\x15��f\x1E�3\x02���(ԐeP��2i@��ݨՍ�<~��\x7F\x07&>\f�,�*<z��E� �T���\x10\x16��\x0F̚��\x7F��QEC\x1D\x10"�3`I\x1Fd��)���k�V�\x1E��\x1C��Gr��x�\t������Md�Ƞ��K>6hG\x0B�������I߬����\x06=���\x1B�\f���\x10�Rf9h\x19�\x07U�y�,� �U��,E`�)���G\x1B;;1-�\x0B\x14��\n' +
+        '��D\x1C�M@\x1F��\x17]}��j]��f`�g\x0E�΄�\f�v+mr�\x19]�"A����j�\x1CV\x02�g\x7F���\x06\x1E\x0B���3�2<>=�S���B�\x1B\x1C�\x1C\x12��|\fqà�������f��r�i��<�O_�\x16\x04?N�\x03\x19q^^��p\x7F�LS@�\f��,���h��:����\x00\x03\x17��0�fu��\x04YM�:�Q�\f#���\x0B\x07�\tY_\n' +
+        '�\x1E\r�6�6�ξ�P5.Ą0�_Kb\b�Z/\x04��9-�|j���+��ea�i\x11\t�9��\x05m\x0B�\x17���)�0ѷ�? �K��Wk\x1D}ϳ٣�\x17\'N3�9�h�\r�r\x07�1s�\x12O�"c�y������:]Q�?\x1E�T-$�\t��H\x0F���\x0F�M/o�\b��)�}��ԐKE0�n/1-il.��+\x12a8\x190<\x03O��L\t�}I���\x14\rK�]\x06D\x1A?\fҴ"W���\r_\x00��)��<�M���|8{��r�o̅�ݖ��q��\x0B�=�$N\x1Bs9ߔ\\sB�V�3���z\x1DJ|�$���D@Q\x0B貱��fu�����\fp{C�۬v;\x01\x02��X1�/\f\x1B\f��uB2����{\f~�ǋ\x0F��\x07\x19w�34�8�U��Gq�h��׸����P�!��\x06� -�� -�����Ѱ���\x11�4\x1AM\r\\�������\x7Ff�\\��s����=\x1E�\b!\x159ї,\x170-�}\x0E\x0F�r�\x06³.��2e�\x01��X�.��<��=�^�\x05\x15�\x15�+�=��:�0G�:�o��f�����숪~ ЯG�\x01`\f��x�"4�:�0��A+|�݄��<�;>�Y��_�)\x10�\x1E`�8\x07\x07��\x0F:c\x13q\\.�\f��\b̙ˋ]\x19��9\x01O��5(8\t�0���:�!@Ի\x1FU6�1�쮍cP���A��\'Jf�\'\x10;����9\x00\x12vLKy���(\x11�\x05ȣm���C��7�\x04/u}�_�-�\x0E�����s戳}MZ�{\x13aS�$=����N�wh�k�$�\x0B�@��\x05\x03���o\x02\r�Hn��\x7F\x12��T����\x1A��TT9x�,:�!_�\x0B\x19��!�23��#Bp�S�8��Xݍt1�«���\x18\x03����\x05�\x1A�$�7�w��I�&��6���\f��l#ߞu�B��tG���}_���\x17�2&ž�7�\x17@0\'�.�+�h\bX�N�\x1D/R�6/\x1B���N�vE�mg�Y�:i�$6�\x0E+<����t�T[��\x13!��啼w<h��8G��\x1D�Xr�b鮇\x1Ef�����UtO\x1FG\x1DD�y*V��H���\x1E;0�xS^���i��6\ft5�a��:&䋄Ǵ���ϩ��\x19�d�E�\x1F�֭ F_�FB�-c�\x04�\x1B��r\bf�\x0E���2\x01\f\x03x0n��P?A�D����@�� -�� -���,�kU�\x06}�\x12�O\x18\x0F��\t�e\x03a�].\x07��[$q3�T�;A��\t@/�}n��N,�{[N��o��o\x03\x07\x04 ���2x=�]\x06��q@�s7j�(E\x1Cm*\b�R�\x02�\x07���PQ���W\x18�Ao�\x10ϱA��L�\x1A\x1EMfϯ_Rb~R��\x0E��;9���\x18h8�N��q�����H���\\ \x17\x12y�H����:F����r��\n' +
+        '��z�h\x12"��\x16\x1D�Ž\x06��\x19�uM�K�M��0�g��R\x15O�\x071�\x19�ξ�P5&\x01.{�RU�\x11ن\fscky�=�$�q����_[��?�����֝z��P�uO-s\x03<ܡ�h]"��-8w���c��S\x1A\x15�\x11�\x05\x0B\x1395�MQ���Ș�4�HVܙ�E\x02�d�\x11��#s�_M�7�"���r�\x12W�"��\b��g�:\x1Ag�N�.��ER;i��5�u�\x04lq�i���?��\t\x13�*�o�綎��f �E\x18���ZC���A3\x1A/�\x7F���`\b �Kt��d0\x10>�\x1E��\x14\r^\tr����U��o\x1BK�^�[׸w0.�����\x00�\x19�\x17R\n' +
+        '�^�Px�]u@I�q\x0F\b�}Ďm{�?�\x058��h}0\f{f��\x7FB\x13������%q\f�#ӨS�!�hovv#ڬ_\x17R\x1E�\x07\x0E��,耀%�S�gP�H�z���%Q<�W�h7ւ�i��p�f�]>����\r���ZRfu\x01<�_\\�\x06A4\x15\x10����v;���dJ\x16�\x05��d�A�����J\f\x1F&A�s�|��E\x0F�]V1\x01m�1\x01m�+#�\x1C����d�Y���\x1Aq.<a?���\x05>�a\t2�K׆�j�1��6���?�Y��\x1D>����w\x1C ���㍶*)$�h��Bjy��$^6�Ko\x13���\t����S��s�y�\x1A��\x1F\x7F�&��%̥�M]Oɍ�6�*xıa�&�˯��U-�����R��\r�ȑvp���\x0BY\n' +
+        '\x0F\x16ٵ�=\x05\x19|P�\x13����}Q�i�ܼK{��ٯ�\x05\x17+�ۢ�\x1Ek��\x13D�Ðh�t\b\x88g����\n' +
+        "�l��\x00�u\x14�kM��>h�]d;]}��j]��i\x1E\x01e��\x1Atm;!�\x7F�8��fϽ�o��p��i�\x1A��]��w��<�M��m�˾'��8���\x18l����m,8�uo\x07�۩�\x198&sa�hWΗ��~�\x1F���og\ta=t4\t_y(S4$�Dxh��q��C��K�y\x1C�0 � V���G���\x1F �\x1B����e_�lYҫ�1��z\n" +
+        '���G�f�Y\x07?��bn��~�%"PgraA�����~�\x1A\x02�o�a��\x1A�~���\'_\x10C���\x13�\x17��F�j�je\x15̓�O!\x1F\x16a���xFS�\x13yM�I��=���i.\x1F�!��If7G\x01���\x18���\x18���6B/�ڑ\b~Z�b?�\x7F>����\x13�\x1A�(\x02*,\x00\x1E+1��{�\x16�qQG\x1E�,C��=Q�H����{�t7��ʕX\x01��a�77\x06�\f\x1CO�\x13D\x01�ĚL\x1FZx��1\x10Y\x7F�D\x02z\x15����\x19\x18�ѵ�� ��X\x1E"\x00�>;߆�\x03E�(���ك��w\x12\f��j�xV�Q>.\x12�`�V\x15m=9���\x1A�\x1B\'\x1F�Ӎ\x03ԍ�\r�/.�#�\x1Af��e����i�]�E�����\x10�&\r��\x1Bzk��}�����\x1B�\x16��)�����0��.\x14F\x07�@�z\b+QR��\x1D�=��_d$ɩjP票\x0B�N/�GL7�۔\x18�;�=Mi,m���<�hL%��okC�-n*\x0E��D�Oǔ�\x1C�B��a\n' +
+        'Y�iUYK��\x07���m����ךSv\x19f�8}k�w�3N�<\x13��4�\x00\x1C\x0E\x0F˨J\x17O�OH���0�ļ��,���\x01�\x11β�\x19�l�.�\f6\x07�N�z�߶w\x06���$��\x1A�=�K��L�"W��\x0E�?�SU��CG��ML��;\n' +
+        `\x1C�+��h\x05h\t��D�\x1D\x1E/1��\t\x1D\t\x04��2��e%�KU�\x06F?�C�\x12��I�\x7F����'�;]�z�b˺\x02�\x1Cb\x02�\x1Ca��S0\x10ѝ\x07oP�Z��5�\x06�̕b�G�O��\x00�\\�"T�[]���o�\x04\x01�����\x16nf2S�\x95G��uV�C\x15�C!A�3����É[*�O\x05$��\x0Bw���̿0\x02d��"��G\x13yQή��P�\x01�,��DN}a��q\x18f���s�#�"��;�\x11jBِ�,\x0F�`... 72492 more characters,
+      type: 'entity.parse.failed'
+    },
+    level: 'error',
+    message: 'uncaughtException: Unexpected token - in JSON at position 0\n' +
+      'SyntaxError: Unexpected token - in JSON at position 0\n' +
+      '    at JSON.parse (<anonymous>)\n' +
+      '    at createStrictSyntaxError (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/types/json.js:160:10)\n' +
+      '    at parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/types/json.js:83:15)\n' +
+      '    at /home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/read.js:128:18\n' +
+      '    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)\n' +
+      '    at invokeCallback (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js:231:16)\n' +
+      '    at done (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js:220:7)\n' +
+      '    at IncomingMessage.onEnd (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js:280:7)\n' +
+      '    at IncomingMessage.emit (node:events:513:28)\n' +
+      '    at IncomingMessage.emit (node:domain:489:12)',
+    stack: 'SyntaxError: Unexpected token - in JSON at position 0\n' +
+      '    at JSON.parse (<anonymous>)\n' +
+      '    at createStrictSyntaxError (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/types/json.js:160:10)\n' +
+      '    at parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/types/json.js:83:15)\n' +
+      '    at /home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/read.js:128:18\n' +
+      '    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)\n' +
+      '    at invokeCallback (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js:231:16)\n' +
+      '    at done (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js:220:7)\n' +
+      '    at IncomingMessage.onEnd (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js:280:7)\n' +
+      '    at IncomingMessage.emit (node:events:513:28)\n' +
+      '    at IncomingMessage.emit (node:domain:489:12)',
+    exception: true,
+    date: 'Mon Mar 20 2023 21:44:50 GMT-0300 (Brasilia Standard Time)',
+    process: {
+      pid: 39637,
+      uid: 1000,
+      gid: 1001,
+      cwd: '/home/zizmackrok/Desktop/Code/not-too-powerful/server',
+      execPath: '/home/zizmackrok/.nvm/versions/node/v18.15.0/bin/node',
+      version: 'v18.15.0',
+      argv: [
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/.bin/ts-node',
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/app.ts'
+      ],
+      memoryUsage: {
+        rss: 380329984,
+        heapTotal: 197238784,
+        heapUsed: 191717136,
+        external: 9561894,
+        arrayBuffers: 6821571
+      }
+    },
+    os: { loadavg: [ 2.66, 1.2, 1.08 ], uptime: 42593.35 },
+    trace: [
+      {
+        column: null,
+        file: null,
+        function: 'JSON.parse',
+        line: null,
+        method: 'parse',
+        native: false
+      },
+      {
+        column: 10,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/types/json.js',
+        function: 'createStrictSyntaxError',
+        line: 160,
+        method: null,
+        native: false
+      },
+      {
+        column: 15,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/types/json.js',
+        function: 'parse',
+        line: 83,
+        method: null,
+        native: false
+      },
+      {
+        column: 18,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/read.js',
+        function: null,
+        line: 128,
+        method: null,
+        native: false
+      },
+      {
+        column: 9,
+        file: 'node:async_hooks',
+        function: 'AsyncResource.runInAsyncScope',
+        line: 204,
+        method: 'runInAsyncScope',
+        native: false
+      },
+      {
+        column: 16,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js',
+        function: 'invokeCallback',
+        line: 231,
+        method: null,
+        native: false
+      },
+      {
+        column: 7,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js',
+        function: 'done',
+        line: 220,
+        method: null,
+        native: false
+      },
+      {
+        column: 7,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js',
+        function: 'IncomingMessage.onEnd',
+        line: 280,
+        method: 'onEnd',
+        native: false
+      },
+      {
+        column: 28,
+        file: 'node:events',
+        function: 'IncomingMessage.emit',
+        line: 513,
+        method: 'emit',
+        native: false
+      },
+      {
+        column: 12,
+        file: 'node:domain',
+        function: 'IncomingMessage.emit',
+        line: 489,
+        method: 'emit',
+        native: false
+      }
+    ],
+    req: {
+      url: '/api/v1/guilds/sendMessage',
+      headers: {
+        host: 'localhost:4000',
+        connection: 'keep-alive',
+        'content-length': '86986',
+        pragma: 'no-cache',
+        'cache-control': 'no-cache',
+        'sec-ch-ua': '"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"',
+        'content-type': 'application/json',
+        'sec-ch-ua-mobile': '?0',
+        authorization: 'R4WTN848qyH4TM42yvbkNGRhWGgYu8',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+        'sec-ch-ua-platform': '"Linux"',
+        accept: '*/*',
+        origin: 'http://localhost:5173',
+        'sec-fetch-site': 'same-site',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-dest': 'empty',
+        referer: 'http://localhost:5173/',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'en-US,en;q=0.9,pt-BR;q=0.8,pt;q=0.7,es;q=0.6'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/v1/guilds/sendMessage',
+      query: {}
+    }
+  },
+  level: '\x1B[31merror\x1B[39m',
+  message: 'middlewareError',
+  timestamp: '2023-03-20 21:44:50:4450'
+}
+{
+  meta: {
+    error: SyntaxError: Unexpected token - in JSON at position 0
+        at JSON.parse (<anonymous>)
+        at createStrictSyntaxError (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/types/json.js:160:10)
+        at parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/types/json.js:83:15)
+        at /home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/read.js:128:18
+        at AsyncResource.runInAsyncScope (node:async_hooks:204:9)
+        at invokeCallback (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js:231:16)
+        at done (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js:220:7)
+        at IncomingMessage.onEnd (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js:280:7)
+        at IncomingMessage.emit (node:events:513:28)
+        at IncomingMessage.emit (node:domain:489:12) {
+      expose: true,
+      statusCode: 400,
+      status: 400,
+      body: '------WebKitFormBoundaryEvcwuOqplLDBpf0G\r\n' +
+        'Content-Disposition: form-data; name="content"\r\n' +
+        '\r\n' +
+        '\r\n' +
+        '------WebKitFormBoundaryEvcwuOqplLDBpf0G\r\n' +
+        'Content-Disposition: form-data; name="attachments"; filename="blob"\r\n' +
+        'Content-Type: image/webp\r\n' +
+        '\r\n' +
+        'RIFF<R\x01\x00WEBPVP8X\n' +
+        '\x00\x00\x00 \x00\x00\x00�\x03\x00�\x03\x00ICCP�\x01\x00\x00\x00\x00\x01�\x00\x00\x00\x00\x040\x00\x00mntrRGB XYZ \x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00acsp\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00��\x00\x01\x00\x00\x00\x00�-\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\tdesc\x00\x00\x00�\x00\x00\x00$rXYZ\x00\x00\x01\x14\x00\x00\x00\x14gXYZ\x00\x00\x01(\x00\x00\x00\x14bXYZ\x00\x00\x01<\x00\x00\x00\x14wtpt\x00\x00\x01P\x00\x00\x00\x14rTRC\x00\x00\x01d\x00\x00\x00(gTRC\x00\x00\x01d\x00\x00\x00(bTRC\x00\x00\x01d\x00\x00\x00(cprt\x00\x00\x01�\x00\x00\x00<mluc\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\fenUS\x00\x00\x00\b\x00\x00\x00\x1C\x00s\x00R\x00G\x00BXYZ \x00\x00\x00\x00\x00\x00o�\x00\x008�\x00\x00\x03�XYZ \x00\x00\x00\x00\x00\x00b�\x00\x00��\x00\x00\x18�XYZ \x00\x00\x00\x00\x00\x00$�\x00\x00\x0F�\x00\x00��XYZ \x00\x00\x00\x00\x00\x00��\x00\x01\x00\x00\x00\x00�-para\x00\x00\x00\x00\x00\x04\x00\x00\x00\x02ff\x00\x00�\x00\x00\rY\x00\x00\x13�\x00\x00\n' +
+        '[\x00\x00\x00\x00\x00\x00\x00\x00mluc\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\fenUS\x00\x00\x00 \x00\x00\x00\x1C\x00G\x00o\x00o\x00g\x00l\x00e\x00 \x00I\x00n\x00c\x00.\x00 \x002\x000\x001\x006VP8 NP\x01\x00�\t\x06�\x01*�\x03�\x03>1\x16�C"!"�y�D(\x03\x04��}�\f���\x18��{)�)��.e�%\'\f^���{�f��\r���o#\x1F���p�ë�I��x}e�\x1C��W�\x1E_���/�O���~�]=="t�y{��[���w������\x7F����\x03�S��\t=����\x1F����-���O���_ݏ�?����������\x7F����M�M�\x7F�o���\x7Fp\x7F�~��S�\x1F�߱�����������\x12�\x1F�/s?C�\x7F��ܻ���O��X������\x7F��{���G��������J��\x7F0���\x1F�����B��vB��vB��vB��vB��vB��vB��vB��vB��vB��rR9�`渙`kt��<e��\x01�ߞu����KG�<��\x03R�\x03R�\x02��W[��b�1Ѫב\x10)O�T�!�\x7F7U�\x02�\t\x06��T�9���5\\\x0F��\x1F�����\\\x15�b�؛��z��X�\x0E�����\x12Z�Qs�9��IFWT:N?�|\x1A�?|\x13�\x03��\x05�T��e�v\x1Bp~\x07,<D86�/c��\x1D�?�!q�s\x1F�P���%�8\x0B��}�ani#�C��E;����]�\n' +
+        'ʜ^��޲Y�^<@\x19e|Ks�HŁl5^\x12\x02ݲ\x00g^vm��}��j]��h���c ��w��zc\x12<?C\x14|�\x05D�\x19\x1E=#\t^��D�5p�b%f�Կ�Ue��\f.�\x16>zݖ��P�~�S��-8��+\x10AEVzO�\x10\x1C�-�\x10\r���g�\x00��<��\n' +
+        '�`4�W�,h\'\fO���ǁ\x00d\x15���t�l�s\x03�U�=���G� \x03��a@\r�\x02i!��\x14�9Bd̻\\\f\x03�]\x10Q�Z�G�]�{:tPɬ�\x1Bj�\x18/\x1D\x15��Ƃ�! �\x0En6�!�\x05龅m�� -�� -�� -j��2U\f )[�>���i\x11�ͲT\rעB�t��}�\x04�|^\x14ee4g5��M�\x03J�\f\x03}Ѧ���{3��\x032X\x18�L;\x06~P��~2��Ǹ{q\x02E����A�����\x9A4��<��#0O��QS\x07\x07�P/-[,��d�S����:H6���\x07\x12\x14�~��/sHQa�Q$��2F����\\mm{#��S\x1D�`��;��\r\x1CX�A\t{�����NG��+�o8��5��\f8&\x06ps��\x14\rK�\x14\rK��>dg\x17X�p=�����ޠ�t���������\x01�(6�>b\x00ҳ\x13R��C8m\x1A�fms�5�\b1\x01m�1\x01m�1\x01m�1\x01m�%.���C��ٟݝ�@�xFB\x1Bّl\x18�w�1�̴\x03��C��<����\x1Ev�~(��\x19���B�?<��M���T9&�r��b�{�����a\x12H�*?�<%\x1A�"J�O\x0Be;��\n' +
+        '2\x1F�X��r��N�$��\x19,\x11�=��_d(\x1A�d(\x1A�d(\x1A�d(\x1A��\x05��w��\x02J6���x�\x01^?b\x15p0�b��.��\\�\x04+�e�v��T��߬�˙�3v\x02Xrr��<y��mK7\t\x1C�C�p2�̤\x7F\x11X�-wi�o)��t7� ^����L���Ր7K/}��j\x03p齁\x10}/���:�!@Ի!@Ի!7�I3� \x01+�\x07L�I��9[<\x01e�gV��$`jzLhRn�p�-(恸��Q�\x03�\x7F̑�lٖ�}�W^�\x1A��\r g����\x19��sѬv�w��\x16R��\r�}\x00��N�ٲV�5(83Z\x1B��\x17\x0Bs[��:\x01׾ I��@�E�\x01��/\x01\x15����vn��rS\x18��8&��\x05\x15�Ac+\x1C\\i`�_d(\x1A�c�4V5�0��V\x07YP��g����{����<�\x00�\x06�\x01:e�U�2�#\x1E\x11�\x0E��o�\x01\x0B�\n' +
+        '�\x11�f�c�e�\x03n^��1�\x1B�^��#fz�\x13�\x13�.��p����~�${�k$:��\f&U��1\x1E�(�k\x06Q�,Ik��#��|9+�p\fQz�6\x7F��ڳ�\x16%b\x0F\\����y�6��W\x10��\x14E\'n_�w!߱Ϋ\x03�O�\x17��?\x13��=��_d(\x1A�_c%c��\x05�Л�Q��&K�jjb\x03��qvc\x0F�U��0��@�\x01fs���3\x04\x019nو�\x0B�B�\x11\b��ē�%>D�;��y��>Ӌ�BE-�t\x18���\x05uf��"�i�|��{�Q�FI��\f�"Kí\x1Eޘ���7�BVV�+1�G����=V���9�q;"R�&Q�J��\x1A�$u9\x7F(\x7F����U���W\x03g��z�\r\x16IzA\x18\x00�/L���U4E�y)3�g�>u�B��vB���0����I����\x1C"\x16�iRR&JxD$\x11�\x1E�ްy\x10�A����R�\x01�V�\x1E��Y�ޝ�A@֖Iy̳�5=\x1D�N(�\x17��7�7��\x1C`R?,\x7F@\x10h��XCT��\x16�c�cA-j;�t����ȳ^�@�\'�6��`3�F�!����F��\x7Fx\'�\t\x1B\x195��b�4\x1E\x02,�\x07c��>p\x1B\x1D\x1BS\baO�n��Y�\'\x13r�\b�f%.D�\b\x11��ձ��P�o��\x0Eu�B��n��T�gk\b��9o�?"�@�@|�#&�6��.3�QA��dX ���x�zm�8�\x16tu�\x06\x1B�Q\x13��{�>�U>�`�2\r\t\x03��\x14\x0Bt2 �ݘ��5�M\b\x0Ft��F\n' +
+        "LC#xa�8\x18�\x14v�fuS\x17[�{�R�D\x1D��8ؐ�\b|�KZ\x02���_B\x06�(d��u�<�K���n:��\x1BS7>m\x03&b��\f>\x12e\x06/�����ڞַI��̵cʽo7\x0E,��\x03��˲�4��Zԇ׻S�c�@[c�?6�.�VV���\x12�ǖ���5\x7Fs \x1Cމ�4(�RA���F\x0Bf��\x131�ӄ�LG�U\x03�1\x1C���BdR�ϫ��u�,ʎw��GD�A\x1C�\fD�ì�z\x18�H3�Y���D*O\x05�\x0F-�Kۨ���)\t\x1C��~-�0�OF�p\x7FS=;�[��M� hqx�\x11f�NCqt�\x1C��\b��]޷c���(���k��tF���l^n�\x1At��<%�&V2>o���ݛ=��dr\x1Cp*�ˆ�!��m���\f��_d(\x1A�АjI]�.ߺ��\x03��D�d��g\x0F����r��3��)5���b�\x1EN'\b2�'>(��\x0F�{/ૢ6]�sB\x17wt��\x06�\x16����\x15��\x05��-�`�en�!��`6Y[��\x02tH�Um�\x13\x17�b \x16�U\x03�Q9X6xET�g1��'P�=�R�\x11O*}��YWԐ�{\x1BUvE%����\x1EC\t�U�}����ms��ۻ�\x12\x01\x07%����B�%�\x10�S�~�~y���y5j\x16��cMSY�o�\t6P\x0E�9��o\x01\x1CY�rst\t.\\$��\x1B.�f�M>0�\x16N^�u?I�ԐM�\x06�0(�\x05Ŷn�[��Z�\x1B�]\x0Fѭ��<\x1D��*\x7F�#xhG\x19���g}����h^\x13���IOӭH��0��P�n!&����ʎ��\x06��%8�o=�����}a�rC\x15��<\x07��m�0Mf�X�P���M0�\x16e��\x1E\x01�ŉ�f�2�(*\\\x1A��G���/�8�\x14w_�j$)���)�����1\x01m�1\x019 \x170iC\x1A�\x1F���ٿ\x06��o�ۓ��(�g�E\x10\x1A�ڨ��<~�S�V`f\x16Խ\x14iC���x�R6��\x16pc\x1Cc}4b���%�%w*\x7F�<>\x00�w�c����\x1B@\x15�EN�t���\x04�\r% ��\t�n��Cc;;��{��\x0F�j\x04�ؔ�j\x15+�2.Ra �<v����JX_���<��Ϯ�]\x0B�b��2���G�{Q�3�$��\x7F�Vژ�\x0F\x05������ttp�'β��)\x0E=��Tq�݆h�b�\x1F�\x0B�k21�^�^�J\x7F���r�n��s��\x14\rK��g���R&�B��}ؚ����K����D�Mz�CV\x19Y02QK˃\x1D�\fN�ͬLF����\x14�׶٪�zh��T����-tv��\x01�Pv<n�3b\b��\x96n�\x16�Xq��V�'\x7F�\x7FVVɽ��\x1D;�\x02U\fc\x11�)�Y�W6:og�ԯu�n�O<�b�\x1F\x00P����ں�ǜ@~5���<d\x0Fg�y�7�ۮ����\x0F\x03\rT�u��d>W_Y-�\x0F��5@\x03��\x12E�>f|\x0F\n" +
+        "H��.!�'�[Y��g�R?26�C��.\t��9��\n" +
+        '\x06����S�N=1d�ң���G�\x1B��6�38V\t4�{v\x0FJяض#�?���\x1C.���*\x1A�� o\x18���6ź��Y�+���km)N|��(�t���?̥�׿\x17ܮ�}ټ\x01\b\x16�=���\f*�(��\'�\x1ETG©&��`ڞ�L�wl�@Po�����tT\x1B\x15�\\�1�e��]��Edi���\x12d�\x7Fyn��K-��EƠ�֝0e��&C�\x15y�0`��D�\x01��YH�^�\x10�ݙ\x7F�]�{�j\x07�\x1A\x1C\x1C\x1B#hv���T�{�ξ�P5\f͘\x17�a˝��\x1B�xd\x02��\x06a���>�0l�\x01��C��\x14�\x12�`v,���hU���f>�\x06�J�z�&\x7F�4h�e�h�x�g\x7FG��7:��L�E�8ۭq�%����o_\x18gE\x04\x11�\x1F\x10dl�E���*�\x1F��O\fO�_��\f��-N̶�ړ�PN\x0F�I\r\x15�\x7F��⊘#�y�\x07��%��ٱ��r��."}aCذ�\x04=�Ďae�&�g4�����\x02Ҵ\x1E\x01��a\x16�\x01\x17�Q8�U=�8�\x05�8��}�\x05\x00�\x0Eţ��]S\x03����\x7F\x13�s-cIlnV:W�cX`P��q�հ�J�[#\x10�T�u[���WuY:�\r\r_7�\x7F��<��@�b�bq���\x1A�j"\x0F�o�,u�ۘG�q\x01�]\x1A?O\n' +
+        '6��K��o��\'}��\re�S\tC�G�\x04\x0F\x1B��\x19�F�]\x17�O�o�3m��!�\x0F��\x00l?�qg <��\x05�h@Q07Uf�)pe~g�ҝ�T��\x18�<��.X��\x1A[�C�m��W�ZP�u�B��vB���:@�(-�����um^����-d������\x16\x1D��\'t\r_Ip�Çt���@F�i����6Bj�1��\x03D�L�\x16\b\']�\x03�w�tZ��\x14��!T\x07ND\x1E���n��2���\x02"\x1B�\x12�w��\x12u\x0B4��-Y\x02:DsO�sc�����S|��"\f\x1Du��\'��^��s�\b�x�Q9�\x13*S S@\\F\x00]�w��1\x04]/?#Tp��y�\x02?\x13�i|�\bas�{�}�=\x10��V}la�����޸�\x02\x02�\x1Cb\x02�\x1Ca\x1D6�GJm�O!t�R�\x18Ҟ��5j��[��\x19�����[*\x17@�_D_���\x1C.�Lg�\x19G�yh����օ�����o`��\x07�� vI�U��K�$�\x18���>�1�\\2]\'["^\x13��c!���h�$���S�Ȳe��U�\f�.�-\x1C�)To�kb΅�������I?�>l�\x1F�����9}߰�����\x11&�Ǚ/�N��P�.6�wS\x14�ӯ����ȩG�Yg\\��8i��\x1E���,��)u�\f�P�ثc03��}��j/�Ю�f�X��)g\x13�q>�c��]�5�*�$��x��\x1F\x1F{hxS\x13�x�\x1C�4�P�\x1A+Yކ�cʘ\x00�K�GP�(r;�2�tY\x0BD�|`c(l߂�V�\x17\x15��p\x1B?\x02�\x1D�~}�)�\x1C��=�5�\x14/�D\ff�T�B&#��=�<�JT$\x1B�����FRr��?J�"<4��]�ɡ�WIW��v�gr��\'\x11wr�$�\'\x18�\x10G4\x07����\x07\x19)77�>\x14�\tD*)ؓk���K��W���s��MҬ���\x10\x16��\x10\x16�rq��Y��Y��%�Ӵ|���b�g�N6a��\x04\bk��r)�{�\x05x._�\x7F2w6�\x1F�Z\x12K2��]Qi�~�\x15����Q�7x�\n' +
+        "2�\x0F��ICa���ۨ\x15�\x07\x13\x03����o���A�\x07�;�U\x04� �\x19�r���\x03��嚚7#\x17���}�бB�%*\x16n�x9���y.f�����\x1A\\m�\x1CA�4\x0F\x0F<X�� \x0Bj�?<��Y�;Pn��K-\t\x10�{Pc��\x11�H�j�D�@'��\x12����~\r0�1y�UI��$�#ߞu�B��n�������\x0F �*WgQ��\x05��č{����پW���\tj�j|�E0�\x14\\� f�HK�;��\\ćo�\x1Ao�y�CY(�C;6`�jBܓF��uH�b\x01'�9\x01�;1��>�\x12_\x0B�ً��η\x066���ކ)�R\x15���\x04��b�\x16��\x19CE\x16��R\x17��#\x05�c]J��^/����c�t�>���gJ\x17�\x18��\n" +
+        "�\x16\x1E��X���<�j\x1D�j�k\x1ETn\x07���$Ԕ\x1A3.�'�uE����$\x7F��\x1D{���\x12��x��x��E\x04�9��\n" +
+        '\x06���f�����}]0�O�/Q.�!ʈJ�Fp\x1D\x1B�\x0E|J���eh�\x1C�K��-)\x7F�\x13�/���\x112>�L�[^\x0F�-��k�����<Q�jh\x10X\x14By\x02�y�v/��讵l���i�<���C�U�\x1A?Iܼ�Z���\x04�^��J�b���ۆ_݄�S\x07GG��$�?�UE�2L�Y�����OV/8�\x19�����{G�Q�\rd�/�P����Z�CS\x026�m2��L�ѓ*3�8�ߣߞu�B���T\x12����C\x02o"\x14h�>i��0\x02eh�j�\x18���^ܰ�\x0F��\x0B����K�{\x07^�\x07��\x17�^j\x16�>c�M���@�$���>U/�E[ŖV!�Ad៖�u\\ÿx�z�D���x^�4Oդ ����K$�\rR�\x1B\x0F�WnIa_�|UK���ՏR�\\�E�����\x0B\x03�@�;�(�r\x13ڱNƺIS\x04��(\x16\\���BHE\x16r�Up�\\_$�*\n' +
+        'c�f\\�\t�Jf>�\x18R���:�!@�d>�V!RbMkb��n��y�\x17y\x1A\x15��\\\x11r�ߢ�*(eI�w\x0B��U\x13�\x1D�X\n' +
+        `O�xr���Zx�laٵ���Ώ\fϱ\x7F���q���&9��\x0Fz��S�\x1E\x0FC�\x1C,�؞��\x00/hIk�,y�L��g{����\x19ڨ\x00�\x0Bۏ�\x0F����"[\x1A�H���%%�"�j��;���:���\x18�\x1D��tD'3]\x1F�%��M\x11�,g\x1B�{:�ܩk\x04f�'2�5\x1C��iR�\x03gY-Ɛ�#���P5.�P5-�q��f�]��C�Gx\x1Anۑ�b��M��_\x1CA��r��\x0E\x19�ʚ�\f�J��h \\߲߉F\x11�:qjذ�\x18!����~�\\�U�\r�,\x1A~u<5�����݉�K7\x06�y\\������ϒ�C\b;�h��s"��D��\x1AT�������K�U�ep�l\t\x05�V�(��eelm�S���\x02�M���m�����m����FĿ��2y��Ė���!�\x14"\t���\bxM�\x19\b�X�g�~����Z=��_d(\x1A�g��\x0E\x04</�$�C'�\x0B�H�����lO1��}0�{6�I��z�֩\x0B���\x1DQ\x16�M+jo�n�\x11?s%<��v��\x1B��yC\x1D�+1[��@S\r4�5�s�k��\x0B�\x7F� ��ͪ\x15\x17���ûD�]\x05��\x17i7\x0BV7��N�\x05�n���ԅ�nϮI����Rkq�\x1B�\x18�#\x1Ek5r���L�؍VDTt\x04�,�y%\x1A5\f\x15���!��!\x13\x12*(�=���\x06�\rK�\x14\rK�\x14\x02\x11\x1BC�����\fs\x17�ht"\t% ��Ua\x1A�*�\x0F���A�\x0B�I��;�(M.�Um\x0B�\x1F�rl������\x07�$��x�}R\x16^H�ϺE\x1CP�\x07xC�\x02\x19Çۓ�\x12��=��Zmˀ�_|Ώo�N�d�P��\x03\x03\x16��pc�����6�m��'�\x1E�P�ߛ�k�\x0E\x1B\x1F\x1Fj�ivE\t�Kw>u\\�_:w�\x03�neg��\x05M\x04VS����T�\x01�1��\x16��/��03��}��c��\x0ENЫk����+�k6:2���\n` +
+        'x`�>��\x1An�eO޳�\x13[��9��>\x12B�\\�A�C`$�v<81l\x1E�D<V\x0B\x06��<�\x7F0�%3�Y\f�4y�خ6͏G/?����O��\x04N��Q1\x15R.���p2��\x008�!����\x15��f\x1E�3\x02���(ԐeP��2i@��ݨՍ�<~��\x7F\x07&>\f�,�*<z��E� �T���\x10\x16��\x0F̚��\x7F��QEC\x1D\x10"�3`I\x1Fd��)���k�V�\x1E��\x1C��Gr��x�\t������Md�Ƞ��K>6hG\x0B�������I߬����\x06=���\x1B�\f���\x10�Rf9h\x19�\x07U�y�,� �U��,E`�)���G\x1B;;1-�\x0B\x14��\n' +
+        '��D\x1C�M@\x1F��\x17]}��j]��f`�g\x0E�΄�\f�v+mr�\x19]�"A����j�\x1CV\x02�g\x7F���\x06\x1E\x0B���3�2<>=�S���B�\x1B\x1C�\x1C\x12��|\fqà�������f��r�i��<�O_�\x16\x04?N�\x03\x19q^^��p\x7F�LS@�\f��,���h��:����\x00\x03\x17��0�fu��\x04YM�:�Q�\f#���\x0B\x07�\tY_\n' +
+        '�\x1E\r�6�6�ξ�P5.Ą0�_Kb\b�Z/\x04��9-�|j���+��ea�i\x11\t�9��\x05m\x0B�\x17���)�0ѷ�? �K��Wk\x1D}ϳ٣�\x17\'N3�9�h�\r�r\x07�1s�\x12O�"c�y������:]Q�?\x1E�T-$�\t��H\x0F���\x0F�M/o�\b��)�}��ԐKE0�n/1-il.��+\x12a8\x190<\x03O��L\t�}I���\x14\rK�]\x06D\x1A?\fҴ"W���\r_\x00��)��<�M���|8{��r�o̅�ݖ��q��\x0B�=�$N\x1Bs9ߔ\\sB�V�3���z\x1DJ|�$���D@Q\x0B貱��fu�����\fp{C�۬v;\x01\x02��X1�/\f\x1B\f��uB2����{\f~�ǋ\x0F��\x07\x19w�34�8�U��Gq�h��׸����P�!��\x06� -�� -�����Ѱ���\x11�4\x1AM\r\\�������\x7Ff�\\��s����=\x1E�\b!\x159ї,\x170-�}\x0E\x0F�r�\x06³.��2e�\x01��X�.��<��=�^�\x05\x15�\x15�+�=��:�0G�:�o��f�����숪~ ЯG�\x01`\f��x�"4�:�0��A+|�݄��<�;>�Y��_�)\x10�\x1E`�8\x07\x07��\x0F:c\x13q\\.�\f��\b̙ˋ]\x19��9\x01O��5(8\t�0���:�!@Ի\x1FU6�1�쮍cP���A��\'Jf�\'\x10;����9\x00\x12vLKy���(\x11�\x05ȣm���C��7�\x04/u}�_�-�\x0E�����s戳}MZ�{\x13aS�$=����N�wh�k�$�\x0B�@��\x05\x03���o\x02\r�Hn��\x7F\x12��T����\x1A��TT9x�,:�!_�\x0B\x19��!�23��#Bp�S�8��Xݍt1�«���\x18\x03����\x05�\x1A�$�7�w��I�&��6���\f��l#ߞu�B��tG���}_���\x17�2&ž�7�\x17@0\'�.�+�h\bX�N�\x1D/R�6/\x1B���N�vE�mg�Y�:i�$6�\x0E+<����t�T[��\x13!��啼w<h��8G��\x1D�Xr�b鮇\x1Ef�����UtO\x1FG\x1DD�y*V��H���\x1E;0�xS^���i��6\ft5�a��:&䋄Ǵ���ϩ��\x19�d�E�\x1F�֭ F_�FB�-c�\x04�\x1B��r\bf�\x0E���2\x01\f\x03x0n��P?A�D����@�� -�� -���,�kU�\x06}�\x12�O\x18\x0F��\t�e\x03a�].\x07��[$q3�T�;A��\t@/�}n��N,�{[N��o��o\x03\x07\x04 ���2x=�]\x06��q@�s7j�(E\x1Cm*\b�R�\x02�\x07���PQ���W\x18�Ao�\x10ϱA��L�\x1A\x1EMfϯ_Rb~R��\x0E��;9���\x18h8�N��q�����H���\\ \x17\x12y�H����:F����r��\n' +
+        '��z�h\x12"��\x16\x1D�Ž\x06��\x19�uM�K�M��0�g��R\x15O�\x071�\x19�ξ�P5&\x01.{�RU�\x11ن\fscky�=�$�q����_[��?�����֝z��P�uO-s\x03<ܡ�h]"��-8w���c��S\x1A\x15�\x11�\x05\x0B\x1395�MQ���Ș�4�HVܙ�E\x02�d�\x11��#s�_M�7�"���r�\x12W�"��\b��g�:\x1Ag�N�.��ER;i��5�u�\x04lq�i���?��\t\x13�*�o�綎��f �E\x18���ZC���A3\x1A/�\x7F���`\b �Kt��d0\x10>�\x1E��\x14\r^\tr����U��o\x1BK�^�[׸w0.�����\x00�\x19�\x17R\n' +
+        '�^�Px�]u@I�q\x0F\b�}Ďm{�?�\x058��h}0\f{f��\x7FB\x13������%q\f�#ӨS�!�hovv#ڬ_\x17R\x1E�\x07\x0E��,耀%�S�gP�H�z���%Q<�W�h7ւ�i��p�f�]>����\r���ZRfu\x01<�_\\�\x06A4\x15\x10����v;���dJ\x16�\x05��d�A�����J\f\x1F&A�s�|��E\x0F�]V1\x01m�1\x01m�+#�\x1C����d�Y���\x1Aq.<a?���\x05>�a\t2�K׆�j�1��6���?�Y��\x1D>����w\x1C ���㍶*)$�h��Bjy��$^6�Ko\x13���\t����S��s�y�\x1A��\x1F\x7F�&��%̥�M]Oɍ�6�*xıa�&�˯��U-�����R��\r�ȑvp���\x0BY\n' +
+        '\x0F\x16ٵ�=\x05\x19|P�\x13����}Q�i�ܼK{��ٯ�\x05\x17+�ۢ�\x1Ek��\x13D�Ðh�t\b\x88g����\n' +
+        "�l��\x00�u\x14�kM��>h�]d;]}��j]��i\x1E\x01e��\x1Atm;!�\x7F�8��fϽ�o��p��i�\x1A��]��w��<�M��m�˾'��8���\x18l����m,8�uo\x07�۩�\x198&sa�hWΗ��~�\x1F���og\ta=t4\t_y(S4$�Dxh��q��C��K�y\x1C�0 � V���G���\x1F �\x1B����e_�lYҫ�1��z\n" +
+        '���G�f�Y\x07?��bn��~�%"PgraA�����~�\x1A\x02�o�a��\x1A�~���\'_\x10C���\x13�\x17��F�j�je\x15̓�O!\x1F\x16a���xFS�\x13yM�I��=���i.\x1F�!��If7G\x01���\x18���\x18���6B/�ڑ\b~Z�b?�\x7F>����\x13�\x1A�(\x02*,\x00\x1E+1��{�\x16�qQG\x1E�,C��=Q�H����{�t7��ʕX\x01��a�77\x06�\f\x1CO�\x13D\x01�ĚL\x1FZx��1\x10Y\x7F�D\x02z\x15����\x19\x18�ѵ�� ��X\x1E"\x00�>;߆�\x03E�(���ك��w\x12\f��j�xV�Q>.\x12�`�V\x15m=9���\x1A�\x1B\'\x1F�Ӎ\x03ԍ�\r�/.�#�\x1Af��e����i�]�E�����\x10�&\r��\x1Bzk��}�����\x1B�\x16��)�����0��.\x14F\x07�@�z\b+QR��\x1D�=��_d$ɩjP票\x0B�N/�GL7�۔\x18�;�=Mi,m���<�hL%��okC�-n*\x0E��D�Oǔ�\x1C�B��a\n' +
+        'Y�iUYK��\x07���m����ךSv\x19f�8}k�w�3N�<\x13��4�\x00\x1C\x0E\x0F˨J\x17O�OH���0�ļ��,���\x01�\x11β�\x19�l�.�\f6\x07�N�z�߶w\x06���$��\x1A�=�K��L�"W��\x0E�?�SU��CG��ML��;\n' +
+        `\x1C�+��h\x05h\t��D�\x1D\x1E/1��\t\x1D\t\x04��2��e%�KU�\x06F?�C�\x12��I�\x7F����'�;]�z�b˺\x02�\x1Cb\x02�\x1Ca��S0\x10ѝ\x07oP�Z��5�\x06�̕b�G�O��\x00�\\�"T�[]���o�\x04\x01�����\x16nf2S�\x95G��uV�C\x15�C!A�3����É[*�O\x05$��\x0Bw���̿0\x02d��"��G\x13yQή��P�\x01�,��DN}a��q\x18f���s�#�"��;�\x11jBِ�,\x0F�`... 72492 more characters,
+      type: 'entity.parse.failed'
+    },
+    level: 'error',
+    message: 'uncaughtException: Unexpected token - in JSON at position 0\n' +
+      'SyntaxError: Unexpected token - in JSON at position 0\n' +
+      '    at JSON.parse (<anonymous>)\n' +
+      '    at createStrictSyntaxError (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/types/json.js:160:10)\n' +
+      '    at parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/types/json.js:83:15)\n' +
+      '    at /home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/read.js:128:18\n' +
+      '    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)\n' +
+      '    at invokeCallback (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js:231:16)\n' +
+      '    at done (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js:220:7)\n' +
+      '    at IncomingMessage.onEnd (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js:280:7)\n' +
+      '    at IncomingMessage.emit (node:events:513:28)\n' +
+      '    at IncomingMessage.emit (node:domain:489:12)',
+    stack: 'SyntaxError: Unexpected token - in JSON at position 0\n' +
+      '    at JSON.parse (<anonymous>)\n' +
+      '    at createStrictSyntaxError (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/types/json.js:160:10)\n' +
+      '    at parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/types/json.js:83:15)\n' +
+      '    at /home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/read.js:128:18\n' +
+      '    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)\n' +
+      '    at invokeCallback (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js:231:16)\n' +
+      '    at done (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js:220:7)\n' +
+      '    at IncomingMessage.onEnd (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js:280:7)\n' +
+      '    at IncomingMessage.emit (node:events:513:28)\n' +
+      '    at IncomingMessage.emit (node:domain:489:12)',
+    exception: true,
+    date: 'Mon Mar 20 2023 21:45:18 GMT-0300 (Brasilia Standard Time)',
+    process: {
+      pid: 39637,
+      uid: 1000,
+      gid: 1001,
+      cwd: '/home/zizmackrok/Desktop/Code/not-too-powerful/server',
+      execPath: '/home/zizmackrok/.nvm/versions/node/v18.15.0/bin/node',
+      version: 'v18.15.0',
+      argv: [
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/.bin/ts-node',
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/app.ts'
+      ],
+      memoryUsage: {
+        rss: 380928000,
+        heapTotal: 197410816,
+        heapUsed: 192349552,
+        external: 9625473,
+        arrayBuffers: 6885150
+      }
+    },
+    os: { loadavg: [ 2.63, 1.32, 1.12 ], uptime: 42620.79 },
+    trace: [
+      {
+        column: null,
+        file: null,
+        function: 'JSON.parse',
+        line: null,
+        method: 'parse',
+        native: false
+      },
+      {
+        column: 10,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/types/json.js',
+        function: 'createStrictSyntaxError',
+        line: 160,
+        method: null,
+        native: false
+      },
+      {
+        column: 15,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/types/json.js',
+        function: 'parse',
+        line: 83,
+        method: null,
+        native: false
+      },
+      {
+        column: 18,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/read.js',
+        function: null,
+        line: 128,
+        method: null,
+        native: false
+      },
+      {
+        column: 9,
+        file: 'node:async_hooks',
+        function: 'AsyncResource.runInAsyncScope',
+        line: 204,
+        method: 'runInAsyncScope',
+        native: false
+      },
+      {
+        column: 16,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js',
+        function: 'invokeCallback',
+        line: 231,
+        method: null,
+        native: false
+      },
+      {
+        column: 7,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js',
+        function: 'done',
+        line: 220,
+        method: null,
+        native: false
+      },
+      {
+        column: 7,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js',
+        function: 'IncomingMessage.onEnd',
+        line: 280,
+        method: 'onEnd',
+        native: false
+      },
+      {
+        column: 28,
+        file: 'node:events',
+        function: 'IncomingMessage.emit',
+        line: 513,
+        method: 'emit',
+        native: false
+      },
+      {
+        column: 12,
+        file: 'node:domain',
+        function: 'IncomingMessage.emit',
+        line: 489,
+        method: 'emit',
+        native: false
+      }
+    ],
+    req: {
+      url: '/api/v1/guilds/sendMessage',
+      headers: {
+        host: 'localhost:4000',
+        connection: 'keep-alive',
+        'content-length': '86986',
+        pragma: 'no-cache',
+        'cache-control': 'no-cache',
+        'sec-ch-ua': '"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"',
+        'content-type': 'application/json',
+        'sec-ch-ua-mobile': '?0',
+        authorization: 'R4WTN848qyH4TM42yvbkNGRhWGgYu8',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+        'sec-ch-ua-platform': '"Linux"',
+        accept: '*/*',
+        origin: 'http://localhost:5173',
+        'sec-fetch-site': 'same-site',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-dest': 'empty',
+        referer: 'http://localhost:5173/',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'en-US,en;q=0.9,pt-BR;q=0.8,pt;q=0.7,es;q=0.6'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/v1/guilds/sendMessage',
+      query: {}
+    }
+  },
+  level: '\x1B[31merror\x1B[39m',
+  message: 'middlewareError',
+  timestamp: '2023-03-20 21:45:18:4518'
+}
+{
+  meta: {
+    error: SyntaxError: Unexpected token - in JSON at position 0
+        at JSON.parse (<anonymous>)
+        at createStrictSyntaxError (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/types/json.js:160:10)
+        at parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/types/json.js:83:15)
+        at /home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/read.js:128:18
+        at AsyncResource.runInAsyncScope (node:async_hooks:204:9)
+        at invokeCallback (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js:231:16)
+        at done (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js:220:7)
+        at IncomingMessage.onEnd (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js:280:7)
+        at IncomingMessage.emit (node:events:513:28)
+        at IncomingMessage.emit (node:domain:489:12) {
+      expose: true,
+      statusCode: 400,
+      status: 400,
+      body: '------WebKitFormBoundary922q1v9lS9Wplblo\r\n' +
+        'Content-Disposition: form-data; name="content"\r\n' +
+        '\r\n' +
+        '\r\n' +
+        '------WebKitFormBoundary922q1v9lS9Wplblo\r\n' +
+        'Content-Disposition: form-data; name="attachments"; filename="blob"\r\n' +
+        'Content-Type: image/webp\r\n' +
+        '\r\n' +
+        'RIFF<R\x01\x00WEBPVP8X\n' +
+        '\x00\x00\x00 \x00\x00\x00�\x03\x00�\x03\x00ICCP�\x01\x00\x00\x00\x00\x01�\x00\x00\x00\x00\x040\x00\x00mntrRGB XYZ \x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00acsp\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00��\x00\x01\x00\x00\x00\x00�-\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\tdesc\x00\x00\x00�\x00\x00\x00$rXYZ\x00\x00\x01\x14\x00\x00\x00\x14gXYZ\x00\x00\x01(\x00\x00\x00\x14bXYZ\x00\x00\x01<\x00\x00\x00\x14wtpt\x00\x00\x01P\x00\x00\x00\x14rTRC\x00\x00\x01d\x00\x00\x00(gTRC\x00\x00\x01d\x00\x00\x00(bTRC\x00\x00\x01d\x00\x00\x00(cprt\x00\x00\x01�\x00\x00\x00<mluc\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\fenUS\x00\x00\x00\b\x00\x00\x00\x1C\x00s\x00R\x00G\x00BXYZ \x00\x00\x00\x00\x00\x00o�\x00\x008�\x00\x00\x03�XYZ \x00\x00\x00\x00\x00\x00b�\x00\x00��\x00\x00\x18�XYZ \x00\x00\x00\x00\x00\x00$�\x00\x00\x0F�\x00\x00��XYZ \x00\x00\x00\x00\x00\x00��\x00\x01\x00\x00\x00\x00�-para\x00\x00\x00\x00\x00\x04\x00\x00\x00\x02ff\x00\x00�\x00\x00\rY\x00\x00\x13�\x00\x00\n' +
+        '[\x00\x00\x00\x00\x00\x00\x00\x00mluc\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\fenUS\x00\x00\x00 \x00\x00\x00\x1C\x00G\x00o\x00o\x00g\x00l\x00e\x00 \x00I\x00n\x00c\x00.\x00 \x002\x000\x001\x006VP8 NP\x01\x00�\t\x06�\x01*�\x03�\x03>1\x16�C"!"�y�D(\x03\x04��}�\f���\x18��{)�)��.e�%\'\f^���{�f��\r���o#\x1F���p�ë�I��x}e�\x1C��W�\x1E_���/�O���~�]=="t�y{��[���w������\x7F����\x03�S��\t=����\x1F����-���O���_ݏ�?����������\x7F����M�M�\x7F�o���\x7Fp\x7F�~��S�\x1F�߱�����������\x12�\x1F�/s?C�\x7F��ܻ���O��X������\x7F��{���G��������J��\x7F0���\x1F�����B��vB��vB��vB��vB��vB��vB��vB��vB��vB��rR9�`渙`kt��<e��\x01�ߞu����KG�<��\x03R�\x03R�\x02��W[��b�1Ѫב\x10)O�T�!�\x7F7U�\x02�\t\x06��T�9���5\\\x0F��\x1F�����\\\x15�b�؛��z��X�\x0E�����\x12Z�Qs�9��IFWT:N?�|\x1A�?|\x13�\x03��\x05�T��e�v\x1Bp~\x07,<D86�/c��\x1D�?�!q�s\x1F�P���%�8\x0B��}�ani#�C��E;����]�\n' +
+        'ʜ^��޲Y�^<@\x19e|Ks�HŁl5^\x12\x02ݲ\x00g^vm��}��j]��h���c ��w��zc\x12<?C\x14|�\x05D�\x19\x1E=#\t^��D�5p�b%f�Կ�Ue��\f.�\x16>zݖ��P�~�S��-8��+\x10AEVzO�\x10\x1C�-�\x10\r���g�\x00��<��\n' +
+        '�`4�W�,h\'\fO���ǁ\x00d\x15���t�l�s\x03�U�=���G� \x03��a@\r�\x02i!��\x14�9Bd̻\\\f\x03�]\x10Q�Z�G�]�{:tPɬ�\x1Bj�\x18/\x1D\x15��Ƃ�! �\x0En6�!�\x05龅m�� -�� -�� -j��2U\f )[�>���i\x11�ͲT\rעB�t��}�\x04�|^\x14ee4g5��M�\x03J�\f\x03}Ѧ���{3��\x032X\x18�L;\x06~P��~2��Ǹ{q\x02E����A�����\x9A4��<��#0O��QS\x07\x07�P/-[,��d�S����:H6���\x07\x12\x14�~��/sHQa�Q$��2F����\\mm{#��S\x1D�`��;��\r\x1CX�A\t{�����NG��+�o8��5��\f8&\x06ps��\x14\rK�\x14\rK��>dg\x17X�p=�����ޠ�t���������\x01�(6�>b\x00ҳ\x13R��C8m\x1A�fms�5�\b1\x01m�1\x01m�1\x01m�1\x01m�%.���C��ٟݝ�@�xFB\x1Bّl\x18�w�1�̴\x03��C��<����\x1Ev�~(��\x19���B�?<��M���T9&�r��b�{�����a\x12H�*?�<%\x1A�"J�O\x0Be;��\n' +
+        '2\x1F�X��r��N�$��\x19,\x11�=��_d(\x1A�d(\x1A�d(\x1A�d(\x1A��\x05��w��\x02J6���x�\x01^?b\x15p0�b��.��\\�\x04+�e�v��T��߬�˙�3v\x02Xrr��<y��mK7\t\x1C�C�p2�̤\x7F\x11X�-wi�o)��t7� ^����L���Ր7K/}��j\x03p齁\x10}/���:�!@Ի!@Ի!7�I3� \x01+�\x07L�I��9[<\x01e�gV��$`jzLhRn�p�-(恸��Q�\x03�\x7F̑�lٖ�}�W^�\x1A��\r g����\x19��sѬv�w��\x16R��\r�}\x00��N�ٲV�5(83Z\x1B��\x17\x0Bs[��:\x01׾ I��@�E�\x01��/\x01\x15����vn��rS\x18��8&��\x05\x15�Ac+\x1C\\i`�_d(\x1A�c�4V5�0��V\x07YP��g����{����<�\x00�\x06�\x01:e�U�2�#\x1E\x11�\x0E��o�\x01\x0B�\n' +
+        '�\x11�f�c�e�\x03n^��1�\x1B�^��#fz�\x13�\x13�.��p����~�${�k$:��\f&U��1\x1E�(�k\x06Q�,Ik��#��|9+�p\fQz�6\x7F��ڳ�\x16%b\x0F\\����y�6��W\x10��\x14E\'n_�w!߱Ϋ\x03�O�\x17��?\x13��=��_d(\x1A�_c%c��\x05�Л�Q��&K�jjb\x03��qvc\x0F�U��0��@�\x01fs���3\x04\x019nو�\x0B�B�\x11\b��ē�%>D�;��y��>Ӌ�BE-�t\x18���\x05uf��"�i�|��{�Q�FI��\f�"Kí\x1Eޘ���7�BVV�+1�G����=V���9�q;"R�&Q�J��\x1A�$u9\x7F(\x7F����U���W\x03g��z�\r\x16IzA\x18\x00�/L���U4E�y)3�g�>u�B��vB���0����I����\x1C"\x16�iRR&JxD$\x11�\x1E�ްy\x10�A����R�\x01�V�\x1E��Y�ޝ�A@֖Iy̳�5=\x1D�N(�\x17��7�7��\x1C`R?,\x7F@\x10h��XCT��\x16�c�cA-j;�t����ȳ^�@�\'�6��`3�F�!����F��\x7Fx\'�\t\x1B\x195��b�4\x1E\x02,�\x07c��>p\x1B\x1D\x1BS\baO�n��Y�\'\x13r�\b�f%.D�\b\x11��ձ��P�o��\x0Eu�B��n��T�gk\b��9o�?"�@�@|�#&�6��.3�QA��dX ���x�zm�8�\x16tu�\x06\x1B�Q\x13��{�>�U>�`�2\r\t\x03��\x14\x0Bt2 �ݘ��5�M\b\x0Ft��F\n' +
+        "LC#xa�8\x18�\x14v�fuS\x17[�{�R�D\x1D��8ؐ�\b|�KZ\x02���_B\x06�(d��u�<�K���n:��\x1BS7>m\x03&b��\f>\x12e\x06/�����ڞַI��̵cʽo7\x0E,��\x03��˲�4��Zԇ׻S�c�@[c�?6�.�VV���\x12�ǖ���5\x7Fs \x1Cމ�4(�RA���F\x0Bf��\x131�ӄ�LG�U\x03�1\x1C���BdR�ϫ��u�,ʎw��GD�A\x1C�\fD�ì�z\x18�H3�Y���D*O\x05�\x0F-�Kۨ���)\t\x1C��~-�0�OF�p\x7FS=;�[��M� hqx�\x11f�NCqt�\x1C��\b��]޷c���(���k��tF���l^n�\x1At��<%�&V2>o���ݛ=��dr\x1Cp*�ˆ�!��m���\f��_d(\x1A�АjI]�.ߺ��\x03��D�d��g\x0F����r��3��)5���b�\x1EN'\b2�'>(��\x0F�{/ૢ6]�sB\x17wt��\x06�\x16����\x15��\x05��-�`�en�!��`6Y[��\x02tH�Um�\x13\x17�b \x16�U\x03�Q9X6xET�g1��'P�=�R�\x11O*}��YWԐ�{\x1BUvE%����\x1EC\t�U�}����ms��ۻ�\x12\x01\x07%����B�%�\x10�S�~�~y���y5j\x16��cMSY�o�\t6P\x0E�9��o\x01\x1CY�rst\t.\\$��\x1B.�f�M>0�\x16N^�u?I�ԐM�\x06�0(�\x05Ŷn�[��Z�\x1B�]\x0Fѭ��<\x1D��*\x7F�#xhG\x19���g}����h^\x13���IOӭH��0��P�n!&����ʎ��\x06��%8�o=�����}a�rC\x15��<\x07��m�0Mf�X�P���M0�\x16e��\x1E\x01�ŉ�f�2�(*\\\x1A��G���/�8�\x14w_�j$)���)�����1\x01m�1\x019 \x170iC\x1A�\x1F���ٿ\x06��o�ۓ��(�g�E\x10\x1A�ڨ��<~�S�V`f\x16Խ\x14iC���x�R6��\x16pc\x1Cc}4b���%�%w*\x7F�<>\x00�w�c����\x1B@\x15�EN�t���\x04�\r% ��\t�n��Cc;;��{��\x0F�j\x04�ؔ�j\x15+�2.Ra �<v����JX_���<��Ϯ�]\x0B�b��2���G�{Q�3�$��\x7F�Vژ�\x0F\x05������ttp�'β��)\x0E=��Tq�݆h�b�\x1F�\x0B�k21�^�^�J\x7F���r�n��s��\x14\rK��g���R&�B��}ؚ����K����D�Mz�CV\x19Y02QK˃\x1D�\fN�ͬLF����\x14�׶٪�zh��T����-tv��\x01�Pv<n�3b\b��\x96n�\x16�Xq��V�'\x7F�\x7FVVɽ��\x1D;�\x02U\fc\x11�)�Y�W6:og�ԯu�n�O<�b�\x1F\x00P����ں�ǜ@~5���<d\x0Fg�y�7�ۮ����\x0F\x03\rT�u��d>W_Y-�\x0F��5@\x03��\x12E�>f|\x0F\n" +
+        "H��.!�'�[Y��g�R?26�C��.\t��9��\n" +
+        '\x06����S�N=1d�ң���G�\x1B��6�38V\t4�{v\x0FJяض#�?���\x1C.���*\x1A�� o\x18���6ź��Y�+���km)N|��(�t���?̥�׿\x17ܮ�}ټ\x01\b\x16�=���\f*�(��\'�\x1ETG©&��`ڞ�L�wl�@Po�����tT\x1B\x15�\\�1�e��]��Edi���\x12d�\x7Fyn��K-��EƠ�֝0e��&C�\x15y�0`��D�\x01��YH�^�\x10�ݙ\x7F�]�{�j\x07�\x1A\x1C\x1C\x1B#hv���T�{�ξ�P5\f͘\x17�a˝��\x1B�xd\x02��\x06a���>�0l�\x01��C��\x14�\x12�`v,���hU���f>�\x06�J�z�&\x7F�4h�e�h�x�g\x7FG��7:��L�E�8ۭq�%����o_\x18gE\x04\x11�\x1F\x10dl�E���*�\x1F��O\fO�_��\f��-N̶�ړ�PN\x0F�I\r\x15�\x7F��⊘#�y�\x07��%��ٱ��r��."}aCذ�\x04=�Ďae�&�g4�����\x02Ҵ\x1E\x01��a\x16�\x01\x17�Q8�U=�8�\x05�8��}�\x05\x00�\x0Eţ��]S\x03����\x7F\x13�s-cIlnV:W�cX`P��q�հ�J�[#\x10�T�u[���WuY:�\r\r_7�\x7F��<��@�b�bq���\x1A�j"\x0F�o�,u�ۘG�q\x01�]\x1A?O\n' +
+        '6��K��o��\'}��\re�S\tC�G�\x04\x0F\x1B��\x19�F�]\x17�O�o�3m��!�\x0F��\x00l?�qg <��\x05�h@Q07Uf�)pe~g�ҝ�T��\x18�<��.X��\x1A[�C�m��W�ZP�u�B��vB���:@�(-�����um^����-d������\x16\x1D��\'t\r_Ip�Çt���@F�i����6Bj�1��\x03D�L�\x16\b\']�\x03�w�tZ��\x14��!T\x07ND\x1E���n��2���\x02"\x1B�\x12�w��\x12u\x0B4��-Y\x02:DsO�sc�����S|��"\f\x1Du��\'��^��s�\b�x�Q9�\x13*S S@\\F\x00]�w��1\x04]/?#Tp��y�\x02?\x13�i|�\bas�{�}�=\x10��V}la�����޸�\x02\x02�\x1Cb\x02�\x1Ca\x1D6�GJm�O!t�R�\x18Ҟ��5j��[��\x19�����[*\x17@�_D_���\x1C.�Lg�\x19G�yh����օ�����o`��\x07�� vI�U��K�$�\x18���>�1�\\2]\'["^\x13��c!���h�$���S�Ȳe��U�\f�.�-\x1C�)To�kb΅�������I?�>l�\x1F�����9}߰�����\x11&�Ǚ/�N��P�.6�wS\x14�ӯ����ȩG�Yg\\��8i��\x1E���,��)u�\f�P�ثc03��}��j/�Ю�f�X��)g\x13�q>�c��]�5�*�$��x��\x1F\x1F{hxS\x13�x�\x1C�4�P�\x1A+Yކ�cʘ\x00�K�GP�(r;�2�tY\x0BD�|`c(l߂�V�\x17\x15��p\x1B?\x02�\x1D�~}�)�\x1C��=�5�\x14/�D\ff�T�B&#��=�<�JT$\x1B�����FRr��?J�"<4��]�ɡ�WIW��v�gr��\'\x11wr�$�\'\x18�\x10G4\x07����\x07\x19)77�>\x14�\tD*)ؓk���K��W���s��MҬ���\x10\x16��\x10\x16�rq��Y��Y��%�Ӵ|���b�g�N6a��\x04\bk��r)�{�\x05x._�\x7F2w6�\x1F�Z\x12K2��]Qi�~�\x15����Q�7x�\n' +
+        "2�\x0F��ICa���ۨ\x15�\x07\x13\x03����o���A�\x07�;�U\x04� �\x19�r���\x03��嚚7#\x17���}�бB�%*\x16n�x9���y.f�����\x1A\\m�\x1CA�4\x0F\x0F<X�� \x0Bj�?<��Y�;Pn��K-\t\x10�{Pc��\x11�H�j�D�@'��\x12����~\r0�1y�UI��$�#ߞu�B��n�������\x0F �*WgQ��\x05��č{����پW���\tj�j|�E0�\x14\\� f�HK�;��\\ćo�\x1Ao�y�CY(�C;6`�jBܓF��uH�b\x01'�9\x01�;1��>�\x12_\x0B�ً��η\x066���ކ)�R\x15���\x04��b�\x16��\x19CE\x16��R\x17��#\x05�c]J��^/����c�t�>���gJ\x17�\x18��\n" +
+        "�\x16\x1E��X���<�j\x1D�j�k\x1ETn\x07���$Ԕ\x1A3.�'�uE����$\x7F��\x1D{���\x12��x��x��E\x04�9��\n" +
+        '\x06���f�����}]0�O�/Q.�!ʈJ�Fp\x1D\x1B�\x0E|J���eh�\x1C�K��-)\x7F�\x13�/���\x112>�L�[^\x0F�-��k�����<Q�jh\x10X\x14By\x02�y�v/��讵l���i�<���C�U�\x1A?Iܼ�Z���\x04�^��J�b���ۆ_݄�S\x07GG��$�?�UE�2L�Y�����OV/8�\x19�����{G�Q�\rd�/�P����Z�CS\x026�m2��L�ѓ*3�8�ߣߞu�B���T\x12����C\x02o"\x14h�>i��0\x02eh�j�\x18���^ܰ�\x0F��\x0B����K�{\x07^�\x07��\x17�^j\x16�>c�M���@�$���>U/�E[ŖV!�Ad៖�u\\ÿx�z�D���x^�4Oդ ����K$�\rR�\x1B\x0F�WnIa_�|UK���ՏR�\\�E�����\x0B\x03�@�;�(�r\x13ڱNƺIS\x04��(\x16\\���BHE\x16r�Up�\\_$�*\n' +
+        'c�f\\�\t�Jf>�\x18R���:�!@�d>�V!RbMkb��n��y�\x17y\x1A\x15��\\\x11r�ߢ�*(eI�w\x0B��U\x13�\x1D�X\n' +
+        `O�xr���Zx�laٵ���Ώ\fϱ\x7F���q���&9��\x0Fz��S�\x1E\x0FC�\x1C,�؞��\x00/hIk�,y�L��g{����\x19ڨ\x00�\x0Bۏ�\x0F����"[\x1A�H���%%�"�j��;���:���\x18�\x1D��tD'3]\x1F�%��M\x11�,g\x1B�{:�ܩk\x04f�'2�5\x1C��iR�\x03gY-Ɛ�#���P5.�P5-�q��f�]��C�Gx\x1Anۑ�b��M��_\x1CA��r��\x0E\x19�ʚ�\f�J��h \\߲߉F\x11�:qjذ�\x18!����~�\\�U�\r�,\x1A~u<5�����݉�K7\x06�y\\������ϒ�C\b;�h��s"��D��\x1AT�������K�U�ep�l\t\x05�V�(��eelm�S���\x02�M���m�����m����FĿ��2y��Ė���!�\x14"\t���\bxM�\x19\b�X�g�~����Z=��_d(\x1A�g��\x0E\x04</�$�C'�\x0B�H�����lO1��}0�{6�I��z�֩\x0B���\x1DQ\x16�M+jo�n�\x11?s%<��v��\x1B��yC\x1D�+1[��@S\r4�5�s�k��\x0B�\x7F� ��ͪ\x15\x17���ûD�]\x05��\x17i7\x0BV7��N�\x05�n���ԅ�nϮI����Rkq�\x1B�\x18�#\x1Ek5r���L�؍VDTt\x04�,�y%\x1A5\f\x15���!��!\x13\x12*(�=���\x06�\rK�\x14\rK�\x14\x02\x11\x1BC�����\fs\x17�ht"\t% ��Ua\x1A�*�\x0F���A�\x0B�I��;�(M.�Um\x0B�\x1F�rl������\x07�$��x�}R\x16^H�ϺE\x1CP�\x07xC�\x02\x19Çۓ�\x12��=��Zmˀ�_|Ώo�N�d�P��\x03\x03\x16��pc�����6�m��'�\x1E�P�ߛ�k�\x0E\x1B\x1F\x1Fj�ivE\t�Kw>u\\�_:w�\x03�neg��\x05M\x04VS����T�\x01�1��\x16��/��03��}��c��\x0ENЫk����+�k6:2���\n` +
+        'x`�>��\x1An�eO޳�\x13[��9��>\x12B�\\�A�C`$�v<81l\x1E�D<V\x0B\x06��<�\x7F0�%3�Y\f�4y�خ6͏G/?����O��\x04N��Q1\x15R.���p2��\x008�!����\x15��f\x1E�3\x02���(ԐeP��2i@��ݨՍ�<~��\x7F\x07&>\f�,�*<z��E� �T���\x10\x16��\x0F̚��\x7F��QEC\x1D\x10"�3`I\x1Fd��)���k�V�\x1E��\x1C��Gr��x�\t������Md�Ƞ��K>6hG\x0B�������I߬����\x06=���\x1B�\f���\x10�Rf9h\x19�\x07U�y�,� �U��,E`�)���G\x1B;;1-�\x0B\x14��\n' +
+        '��D\x1C�M@\x1F��\x17]}��j]��f`�g\x0E�΄�\f�v+mr�\x19]�"A����j�\x1CV\x02�g\x7F���\x06\x1E\x0B���3�2<>=�S���B�\x1B\x1C�\x1C\x12��|\fqà�������f��r�i��<�O_�\x16\x04?N�\x03\x19q^^��p\x7F�LS@�\f��,���h��:����\x00\x03\x17��0�fu��\x04YM�:�Q�\f#���\x0B\x07�\tY_\n' +
+        '�\x1E\r�6�6�ξ�P5.Ą0�_Kb\b�Z/\x04��9-�|j���+��ea�i\x11\t�9��\x05m\x0B�\x17���)�0ѷ�? �K��Wk\x1D}ϳ٣�\x17\'N3�9�h�\r�r\x07�1s�\x12O�"c�y������:]Q�?\x1E�T-$�\t��H\x0F���\x0F�M/o�\b��)�}��ԐKE0�n/1-il.��+\x12a8\x190<\x03O��L\t�}I���\x14\rK�]\x06D\x1A?\fҴ"W���\r_\x00��)��<�M���|8{��r�o̅�ݖ��q��\x0B�=�$N\x1Bs9ߔ\\sB�V�3���z\x1DJ|�$���D@Q\x0B貱��fu�����\fp{C�۬v;\x01\x02��X1�/\f\x1B\f��uB2����{\f~�ǋ\x0F��\x07\x19w�34�8�U��Gq�h��׸����P�!��\x06� -�� -�����Ѱ���\x11�4\x1AM\r\\�������\x7Ff�\\��s����=\x1E�\b!\x159ї,\x170-�}\x0E\x0F�r�\x06³.��2e�\x01��X�.��<��=�^�\x05\x15�\x15�+�=��:�0G�:�o��f�����숪~ ЯG�\x01`\f��x�"4�:�0��A+|�݄��<�;>�Y��_�)\x10�\x1E`�8\x07\x07��\x0F:c\x13q\\.�\f��\b̙ˋ]\x19��9\x01O��5(8\t�0���:�!@Ի\x1FU6�1�쮍cP���A��\'Jf�\'\x10;����9\x00\x12vLKy���(\x11�\x05ȣm���C��7�\x04/u}�_�-�\x0E�����s戳}MZ�{\x13aS�$=����N�wh�k�$�\x0B�@��\x05\x03���o\x02\r�Hn��\x7F\x12��T����\x1A��TT9x�,:�!_�\x0B\x19��!�23��#Bp�S�8��Xݍt1�«���\x18\x03����\x05�\x1A�$�7�w��I�&��6���\f��l#ߞu�B��tG���}_���\x17�2&ž�7�\x17@0\'�.�+�h\bX�N�\x1D/R�6/\x1B���N�vE�mg�Y�:i�$6�\x0E+<����t�T[��\x13!��啼w<h��8G��\x1D�Xr�b鮇\x1Ef�����UtO\x1FG\x1DD�y*V��H���\x1E;0�xS^���i��6\ft5�a��:&䋄Ǵ���ϩ��\x19�d�E�\x1F�֭ F_�FB�-c�\x04�\x1B��r\bf�\x0E���2\x01\f\x03x0n��P?A�D����@�� -�� -���,�kU�\x06}�\x12�O\x18\x0F��\t�e\x03a�].\x07��[$q3�T�;A��\t@/�}n��N,�{[N��o��o\x03\x07\x04 ���2x=�]\x06��q@�s7j�(E\x1Cm*\b�R�\x02�\x07���PQ���W\x18�Ao�\x10ϱA��L�\x1A\x1EMfϯ_Rb~R��\x0E��;9���\x18h8�N��q�����H���\\ \x17\x12y�H����:F����r��\n' +
+        '��z�h\x12"��\x16\x1D�Ž\x06��\x19�uM�K�M��0�g��R\x15O�\x071�\x19�ξ�P5&\x01.{�RU�\x11ن\fscky�=�$�q����_[��?�����֝z��P�uO-s\x03<ܡ�h]"��-8w���c��S\x1A\x15�\x11�\x05\x0B\x1395�MQ���Ș�4�HVܙ�E\x02�d�\x11��#s�_M�7�"���r�\x12W�"��\b��g�:\x1Ag�N�.��ER;i��5�u�\x04lq�i���?��\t\x13�*�o�綎��f �E\x18���ZC���A3\x1A/�\x7F���`\b �Kt��d0\x10>�\x1E��\x14\r^\tr����U��o\x1BK�^�[׸w0.�����\x00�\x19�\x17R\n' +
+        '�^�Px�]u@I�q\x0F\b�}Ďm{�?�\x058��h}0\f{f��\x7FB\x13������%q\f�#ӨS�!�hovv#ڬ_\x17R\x1E�\x07\x0E��,耀%�S�gP�H�z���%Q<�W�h7ւ�i��p�f�]>����\r���ZRfu\x01<�_\\�\x06A4\x15\x10����v;���dJ\x16�\x05��d�A�����J\f\x1F&A�s�|��E\x0F�]V1\x01m�1\x01m�+#�\x1C����d�Y���\x1Aq.<a?���\x05>�a\t2�K׆�j�1��6���?�Y��\x1D>����w\x1C ���㍶*)$�h��Bjy��$^6�Ko\x13���\t����S��s�y�\x1A��\x1F\x7F�&��%̥�M]Oɍ�6�*xıa�&�˯��U-�����R��\r�ȑvp���\x0BY\n' +
+        '\x0F\x16ٵ�=\x05\x19|P�\x13����}Q�i�ܼK{��ٯ�\x05\x17+�ۢ�\x1Ek��\x13D�Ðh�t\b\x88g����\n' +
+        "�l��\x00�u\x14�kM��>h�]d;]}��j]��i\x1E\x01e��\x1Atm;!�\x7F�8��fϽ�o��p��i�\x1A��]��w��<�M��m�˾'��8���\x18l����m,8�uo\x07�۩�\x198&sa�hWΗ��~�\x1F���og\ta=t4\t_y(S4$�Dxh��q��C��K�y\x1C�0 � V���G���\x1F �\x1B����e_�lYҫ�1��z\n" +
+        '���G�f�Y\x07?��bn��~�%"PgraA�����~�\x1A\x02�o�a��\x1A�~���\'_\x10C���\x13�\x17��F�j�je\x15̓�O!\x1F\x16a���xFS�\x13yM�I��=���i.\x1F�!��If7G\x01���\x18���\x18���6B/�ڑ\b~Z�b?�\x7F>����\x13�\x1A�(\x02*,\x00\x1E+1��{�\x16�qQG\x1E�,C��=Q�H����{�t7��ʕX\x01��a�77\x06�\f\x1CO�\x13D\x01�ĚL\x1FZx��1\x10Y\x7F�D\x02z\x15����\x19\x18�ѵ�� ��X\x1E"\x00�>;߆�\x03E�(���ك��w\x12\f��j�xV�Q>.\x12�`�V\x15m=9���\x1A�\x1B\'\x1F�Ӎ\x03ԍ�\r�/.�#�\x1Af��e����i�]�E�����\x10�&\r��\x1Bzk��}�����\x1B�\x16��)�����0��.\x14F\x07�@�z\b+QR��\x1D�=��_d$ɩjP票\x0B�N/�GL7�۔\x18�;�=Mi,m���<�hL%��okC�-n*\x0E��D�Oǔ�\x1C�B��a\n' +
+        'Y�iUYK��\x07���m����ךSv\x19f�8}k�w�3N�<\x13��4�\x00\x1C\x0E\x0F˨J\x17O�OH���0�ļ��,���\x01�\x11β�\x19�l�.�\f6\x07�N�z�߶w\x06���$��\x1A�=�K��L�"W��\x0E�?�SU��CG��ML��;\n' +
+        `\x1C�+��h\x05h\t��D�\x1D\x1E/1��\t\x1D\t\x04��2��e%�KU�\x06F?�C�\x12��I�\x7F����'�;]�z�b˺\x02�\x1Cb\x02�\x1Ca��S0\x10ѝ\x07oP�Z��5�\x06�̕b�G�O��\x00�\\�"T�[]���o�\x04\x01�����\x16nf2S�\x95G��uV�C\x15�C!A�3����É[*�O\x05$��\x0Bw���̿0\x02d��"��G\x13yQή��P�\x01�,��DN}a��q\x18f���s�#�"��;�\x11jBِ�,\x0F�`... 72492 more characters,
+      type: 'entity.parse.failed'
+    },
+    level: 'error',
+    message: 'uncaughtException: Unexpected token - in JSON at position 0\n' +
+      'SyntaxError: Unexpected token - in JSON at position 0\n' +
+      '    at JSON.parse (<anonymous>)\n' +
+      '    at createStrictSyntaxError (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/types/json.js:160:10)\n' +
+      '    at parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/types/json.js:83:15)\n' +
+      '    at /home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/read.js:128:18\n' +
+      '    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)\n' +
+      '    at invokeCallback (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js:231:16)\n' +
+      '    at done (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js:220:7)\n' +
+      '    at IncomingMessage.onEnd (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js:280:7)\n' +
+      '    at IncomingMessage.emit (node:events:513:28)\n' +
+      '    at IncomingMessage.emit (node:domain:489:12)',
+    stack: 'SyntaxError: Unexpected token - in JSON at position 0\n' +
+      '    at JSON.parse (<anonymous>)\n' +
+      '    at createStrictSyntaxError (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/types/json.js:160:10)\n' +
+      '    at parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/types/json.js:83:15)\n' +
+      '    at /home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/read.js:128:18\n' +
+      '    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)\n' +
+      '    at invokeCallback (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js:231:16)\n' +
+      '    at done (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js:220:7)\n' +
+      '    at IncomingMessage.onEnd (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js:280:7)\n' +
+      '    at IncomingMessage.emit (node:events:513:28)\n' +
+      '    at IncomingMessage.emit (node:domain:489:12)',
+    exception: true,
+    date: 'Mon Mar 20 2023 21:45:32 GMT-0300 (Brasilia Standard Time)',
+    process: {
+      pid: 39637,
+      uid: 1000,
+      gid: 1001,
+      cwd: '/home/zizmackrok/Desktop/Code/not-too-powerful/server',
+      execPath: '/home/zizmackrok/.nvm/versions/node/v18.15.0/bin/node',
+      version: 'v18.15.0',
+      argv: [
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/.bin/ts-node',
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/app.ts'
+      ],
+      memoryUsage: {
+        rss: 381014016,
+        heapTotal: 198115328,
+        heapUsed: 192527448,
+        external: 9679865,
+        arrayBuffers: 6848065
+      }
+    },
+    os: { loadavg: [ 2.39, 1.34, 1.13 ], uptime: 42634.88 },
+    trace: [
+      {
+        column: null,
+        file: null,
+        function: 'JSON.parse',
+        line: null,
+        method: 'parse',
+        native: false
+      },
+      {
+        column: 10,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/types/json.js',
+        function: 'createStrictSyntaxError',
+        line: 160,
+        method: null,
+        native: false
+      },
+      {
+        column: 15,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/types/json.js',
+        function: 'parse',
+        line: 83,
+        method: null,
+        native: false
+      },
+      {
+        column: 18,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/read.js',
+        function: null,
+        line: 128,
+        method: null,
+        native: false
+      },
+      {
+        column: 9,
+        file: 'node:async_hooks',
+        function: 'AsyncResource.runInAsyncScope',
+        line: 204,
+        method: 'runInAsyncScope',
+        native: false
+      },
+      {
+        column: 16,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js',
+        function: 'invokeCallback',
+        line: 231,
+        method: null,
+        native: false
+      },
+      {
+        column: 7,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js',
+        function: 'done',
+        line: 220,
+        method: null,
+        native: false
+      },
+      {
+        column: 7,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js',
+        function: 'IncomingMessage.onEnd',
+        line: 280,
+        method: 'onEnd',
+        native: false
+      },
+      {
+        column: 28,
+        file: 'node:events',
+        function: 'IncomingMessage.emit',
+        line: 513,
+        method: 'emit',
+        native: false
+      },
+      {
+        column: 12,
+        file: 'node:domain',
+        function: 'IncomingMessage.emit',
+        line: 489,
+        method: 'emit',
+        native: false
+      }
+    ],
+    req: {
+      url: '/api/v1/guilds/sendMessage',
+      headers: {
+        host: 'localhost:4000',
+        connection: 'keep-alive',
+        'content-length': '86986',
+        pragma: 'no-cache',
+        'cache-control': 'no-cache',
+        'sec-ch-ua': '"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"',
+        'content-type': 'application/json',
+        'sec-ch-ua-mobile': '?0',
+        authorization: 'R4WTN848qyH4TM42yvbkNGRhWGgYu8',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+        'sec-ch-ua-platform': '"Linux"',
+        accept: '*/*',
+        origin: 'http://localhost:5173',
+        'sec-fetch-site': 'same-site',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-dest': 'empty',
+        referer: 'http://localhost:5173/',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'en-US,en;q=0.9,pt-BR;q=0.8,pt;q=0.7,es;q=0.6'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/v1/guilds/sendMessage',
+      query: {}
+    }
+  },
+  level: '\x1B[31merror\x1B[39m',
+  message: 'middlewareError',
+  timestamp: '2023-03-20 21:45:32:4532'
+}
+{
+  meta: {
+    error: SyntaxError: Unexpected token - in JSON at position 0
+        at JSON.parse (<anonymous>)
+        at createStrictSyntaxError (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/types/json.js:160:10)
+        at parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/types/json.js:83:15)
+        at /home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/read.js:128:18
+        at AsyncResource.runInAsyncScope (node:async_hooks:204:9)
+        at invokeCallback (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js:231:16)
+        at done (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js:220:7)
+        at IncomingMessage.onEnd (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js:280:7)
+        at IncomingMessage.emit (node:events:513:28)
+        at IncomingMessage.emit (node:domain:489:12) {
+      expose: true,
+      statusCode: 400,
+      status: 400,
+      body: '------WebKitFormBoundaryIpZJjPN0NYhQmh20\r\n' +
+        'Content-Disposition: form-data; name="content"\r\n' +
+        '\r\n' +
+        '\r\n' +
+        '------WebKitFormBoundaryIpZJjPN0NYhQmh20\r\n' +
+        'Content-Disposition: form-data; name="attachments"; filename="blob"\r\n' +
+        'Content-Type: image/webp\r\n' +
+        '\r\n' +
+        'RIFF<R\x01\x00WEBPVP8X\n' +
+        '\x00\x00\x00 \x00\x00\x00�\x03\x00�\x03\x00ICCP�\x01\x00\x00\x00\x00\x01�\x00\x00\x00\x00\x040\x00\x00mntrRGB XYZ \x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00acsp\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00��\x00\x01\x00\x00\x00\x00�-\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\tdesc\x00\x00\x00�\x00\x00\x00$rXYZ\x00\x00\x01\x14\x00\x00\x00\x14gXYZ\x00\x00\x01(\x00\x00\x00\x14bXYZ\x00\x00\x01<\x00\x00\x00\x14wtpt\x00\x00\x01P\x00\x00\x00\x14rTRC\x00\x00\x01d\x00\x00\x00(gTRC\x00\x00\x01d\x00\x00\x00(bTRC\x00\x00\x01d\x00\x00\x00(cprt\x00\x00\x01�\x00\x00\x00<mluc\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\fenUS\x00\x00\x00\b\x00\x00\x00\x1C\x00s\x00R\x00G\x00BXYZ \x00\x00\x00\x00\x00\x00o�\x00\x008�\x00\x00\x03�XYZ \x00\x00\x00\x00\x00\x00b�\x00\x00��\x00\x00\x18�XYZ \x00\x00\x00\x00\x00\x00$�\x00\x00\x0F�\x00\x00��XYZ \x00\x00\x00\x00\x00\x00��\x00\x01\x00\x00\x00\x00�-para\x00\x00\x00\x00\x00\x04\x00\x00\x00\x02ff\x00\x00�\x00\x00\rY\x00\x00\x13�\x00\x00\n' +
+        '[\x00\x00\x00\x00\x00\x00\x00\x00mluc\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\fenUS\x00\x00\x00 \x00\x00\x00\x1C\x00G\x00o\x00o\x00g\x00l\x00e\x00 \x00I\x00n\x00c\x00.\x00 \x002\x000\x001\x006VP8 NP\x01\x00�\t\x06�\x01*�\x03�\x03>1\x16�C"!"�y�D(\x03\x04��}�\f���\x18��{)�)��.e�%\'\f^���{�f��\r���o#\x1F���p�ë�I��x}e�\x1C��W�\x1E_���/�O���~�]=="t�y{��[���w������\x7F����\x03�S��\t=����\x1F����-���O���_ݏ�?����������\x7F����M�M�\x7F�o���\x7Fp\x7F�~��S�\x1F�߱�����������\x12�\x1F�/s?C�\x7F��ܻ���O��X������\x7F��{���G��������J��\x7F0���\x1F�����B��vB��vB��vB��vB��vB��vB��vB��vB��vB��rR9�`渙`kt��<e��\x01�ߞu����KG�<��\x03R�\x03R�\x02��W[��b�1Ѫב\x10)O�T�!�\x7F7U�\x02�\t\x06��T�9���5\\\x0F��\x1F�����\\\x15�b�؛��z��X�\x0E�����\x12Z�Qs�9��IFWT:N?�|\x1A�?|\x13�\x03��\x05�T��e�v\x1Bp~\x07,<D86�/c��\x1D�?�!q�s\x1F�P���%�8\x0B��}�ani#�C��E;����]�\n' +
+        'ʜ^��޲Y�^<@\x19e|Ks�HŁl5^\x12\x02ݲ\x00g^vm��}��j]��h���c ��w��zc\x12<?C\x14|�\x05D�\x19\x1E=#\t^��D�5p�b%f�Կ�Ue��\f.�\x16>zݖ��P�~�S��-8��+\x10AEVzO�\x10\x1C�-�\x10\r���g�\x00��<��\n' +
+        '�`4�W�,h\'\fO���ǁ\x00d\x15���t�l�s\x03�U�=���G� \x03��a@\r�\x02i!��\x14�9Bd̻\\\f\x03�]\x10Q�Z�G�]�{:tPɬ�\x1Bj�\x18/\x1D\x15��Ƃ�! �\x0En6�!�\x05龅m�� -�� -�� -j��2U\f )[�>���i\x11�ͲT\rעB�t��}�\x04�|^\x14ee4g5��M�\x03J�\f\x03}Ѧ���{3��\x032X\x18�L;\x06~P��~2��Ǹ{q\x02E����A�����\x9A4��<��#0O��QS\x07\x07�P/-[,��d�S����:H6���\x07\x12\x14�~��/sHQa�Q$��2F����\\mm{#��S\x1D�`��;��\r\x1CX�A\t{�����NG��+�o8��5��\f8&\x06ps��\x14\rK�\x14\rK��>dg\x17X�p=�����ޠ�t���������\x01�(6�>b\x00ҳ\x13R��C8m\x1A�fms�5�\b1\x01m�1\x01m�1\x01m�1\x01m�%.���C��ٟݝ�@�xFB\x1Bّl\x18�w�1�̴\x03��C��<����\x1Ev�~(��\x19���B�?<��M���T9&�r��b�{�����a\x12H�*?�<%\x1A�"J�O\x0Be;��\n' +
+        '2\x1F�X��r��N�$��\x19,\x11�=��_d(\x1A�d(\x1A�d(\x1A�d(\x1A��\x05��w��\x02J6���x�\x01^?b\x15p0�b��.��\\�\x04+�e�v��T��߬�˙�3v\x02Xrr��<y��mK7\t\x1C�C�p2�̤\x7F\x11X�-wi�o)��t7� ^����L���Ր7K/}��j\x03p齁\x10}/���:�!@Ի!@Ի!7�I3� \x01+�\x07L�I��9[<\x01e�gV��$`jzLhRn�p�-(恸��Q�\x03�\x7F̑�lٖ�}�W^�\x1A��\r g����\x19��sѬv�w��\x16R��\r�}\x00��N�ٲV�5(83Z\x1B��\x17\x0Bs[��:\x01׾ I��@�E�\x01��/\x01\x15����vn��rS\x18��8&��\x05\x15�Ac+\x1C\\i`�_d(\x1A�c�4V5�0��V\x07YP��g����{����<�\x00�\x06�\x01:e�U�2�#\x1E\x11�\x0E��o�\x01\x0B�\n' +
+        '�\x11�f�c�e�\x03n^��1�\x1B�^��#fz�\x13�\x13�.��p����~�${�k$:��\f&U��1\x1E�(�k\x06Q�,Ik��#��|9+�p\fQz�6\x7F��ڳ�\x16%b\x0F\\����y�6��W\x10��\x14E\'n_�w!߱Ϋ\x03�O�\x17��?\x13��=��_d(\x1A�_c%c��\x05�Л�Q��&K�jjb\x03��qvc\x0F�U��0��@�\x01fs���3\x04\x019nو�\x0B�B�\x11\b��ē�%>D�;��y��>Ӌ�BE-�t\x18���\x05uf��"�i�|��{�Q�FI��\f�"Kí\x1Eޘ���7�BVV�+1�G����=V���9�q;"R�&Q�J��\x1A�$u9\x7F(\x7F����U���W\x03g��z�\r\x16IzA\x18\x00�/L���U4E�y)3�g�>u�B��vB���0����I����\x1C"\x16�iRR&JxD$\x11�\x1E�ްy\x10�A����R�\x01�V�\x1E��Y�ޝ�A@֖Iy̳�5=\x1D�N(�\x17��7�7��\x1C`R?,\x7F@\x10h��XCT��\x16�c�cA-j;�t����ȳ^�@�\'�6��`3�F�!����F��\x7Fx\'�\t\x1B\x195��b�4\x1E\x02,�\x07c��>p\x1B\x1D\x1BS\baO�n��Y�\'\x13r�\b�f%.D�\b\x11��ձ��P�o��\x0Eu�B��n��T�gk\b��9o�?"�@�@|�#&�6��.3�QA��dX ���x�zm�8�\x16tu�\x06\x1B�Q\x13��{�>�U>�`�2\r\t\x03��\x14\x0Bt2 �ݘ��5�M\b\x0Ft��F\n' +
+        "LC#xa�8\x18�\x14v�fuS\x17[�{�R�D\x1D��8ؐ�\b|�KZ\x02���_B\x06�(d��u�<�K���n:��\x1BS7>m\x03&b��\f>\x12e\x06/�����ڞַI��̵cʽo7\x0E,��\x03��˲�4��Zԇ׻S�c�@[c�?6�.�VV���\x12�ǖ���5\x7Fs \x1Cމ�4(�RA���F\x0Bf��\x131�ӄ�LG�U\x03�1\x1C���BdR�ϫ��u�,ʎw��GD�A\x1C�\fD�ì�z\x18�H3�Y���D*O\x05�\x0F-�Kۨ���)\t\x1C��~-�0�OF�p\x7FS=;�[��M� hqx�\x11f�NCqt�\x1C��\b��]޷c���(���k��tF���l^n�\x1At��<%�&V2>o���ݛ=��dr\x1Cp*�ˆ�!��m���\f��_d(\x1A�АjI]�.ߺ��\x03��D�d��g\x0F����r��3��)5���b�\x1EN'\b2�'>(��\x0F�{/ૢ6]�sB\x17wt��\x06�\x16����\x15��\x05��-�`�en�!��`6Y[��\x02tH�Um�\x13\x17�b \x16�U\x03�Q9X6xET�g1��'P�=�R�\x11O*}��YWԐ�{\x1BUvE%����\x1EC\t�U�}����ms��ۻ�\x12\x01\x07%����B�%�\x10�S�~�~y���y5j\x16��cMSY�o�\t6P\x0E�9��o\x01\x1CY�rst\t.\\$��\x1B.�f�M>0�\x16N^�u?I�ԐM�\x06�0(�\x05Ŷn�[��Z�\x1B�]\x0Fѭ��<\x1D��*\x7F�#xhG\x19���g}����h^\x13���IOӭH��0��P�n!&����ʎ��\x06��%8�o=�����}a�rC\x15��<\x07��m�0Mf�X�P���M0�\x16e��\x1E\x01�ŉ�f�2�(*\\\x1A��G���/�8�\x14w_�j$)���)�����1\x01m�1\x019 \x170iC\x1A�\x1F���ٿ\x06��o�ۓ��(�g�E\x10\x1A�ڨ��<~�S�V`f\x16Խ\x14iC���x�R6��\x16pc\x1Cc}4b���%�%w*\x7F�<>\x00�w�c����\x1B@\x15�EN�t���\x04�\r% ��\t�n��Cc;;��{��\x0F�j\x04�ؔ�j\x15+�2.Ra �<v����JX_���<��Ϯ�]\x0B�b��2���G�{Q�3�$��\x7F�Vژ�\x0F\x05������ttp�'β��)\x0E=��Tq�݆h�b�\x1F�\x0B�k21�^�^�J\x7F���r�n��s��\x14\rK��g���R&�B��}ؚ����K����D�Mz�CV\x19Y02QK˃\x1D�\fN�ͬLF����\x14�׶٪�zh��T����-tv��\x01�Pv<n�3b\b��\x96n�\x16�Xq��V�'\x7F�\x7FVVɽ��\x1D;�\x02U\fc\x11�)�Y�W6:og�ԯu�n�O<�b�\x1F\x00P����ں�ǜ@~5���<d\x0Fg�y�7�ۮ����\x0F\x03\rT�u��d>W_Y-�\x0F��5@\x03��\x12E�>f|\x0F\n" +
+        "H��.!�'�[Y��g�R?26�C��.\t��9��\n" +
+        '\x06����S�N=1d�ң���G�\x1B��6�38V\t4�{v\x0FJяض#�?���\x1C.���*\x1A�� o\x18���6ź��Y�+���km)N|��(�t���?̥�׿\x17ܮ�}ټ\x01\b\x16�=���\f*�(��\'�\x1ETG©&��`ڞ�L�wl�@Po�����tT\x1B\x15�\\�1�e��]��Edi���\x12d�\x7Fyn��K-��EƠ�֝0e��&C�\x15y�0`��D�\x01��YH�^�\x10�ݙ\x7F�]�{�j\x07�\x1A\x1C\x1C\x1B#hv���T�{�ξ�P5\f͘\x17�a˝��\x1B�xd\x02��\x06a���>�0l�\x01��C��\x14�\x12�`v,���hU���f>�\x06�J�z�&\x7F�4h�e�h�x�g\x7FG��7:��L�E�8ۭq�%����o_\x18gE\x04\x11�\x1F\x10dl�E���*�\x1F��O\fO�_��\f��-N̶�ړ�PN\x0F�I\r\x15�\x7F��⊘#�y�\x07��%��ٱ��r��."}aCذ�\x04=�Ďae�&�g4�����\x02Ҵ\x1E\x01��a\x16�\x01\x17�Q8�U=�8�\x05�8��}�\x05\x00�\x0Eţ��]S\x03����\x7F\x13�s-cIlnV:W�cX`P��q�հ�J�[#\x10�T�u[���WuY:�\r\r_7�\x7F��<��@�b�bq���\x1A�j"\x0F�o�,u�ۘG�q\x01�]\x1A?O\n' +
+        '6��K��o��\'}��\re�S\tC�G�\x04\x0F\x1B��\x19�F�]\x17�O�o�3m��!�\x0F��\x00l?�qg <��\x05�h@Q07Uf�)pe~g�ҝ�T��\x18�<��.X��\x1A[�C�m��W�ZP�u�B��vB���:@�(-�����um^����-d������\x16\x1D��\'t\r_Ip�Çt���@F�i����6Bj�1��\x03D�L�\x16\b\']�\x03�w�tZ��\x14��!T\x07ND\x1E���n��2���\x02"\x1B�\x12�w��\x12u\x0B4��-Y\x02:DsO�sc�����S|��"\f\x1Du��\'��^��s�\b�x�Q9�\x13*S S@\\F\x00]�w��1\x04]/?#Tp��y�\x02?\x13�i|�\bas�{�}�=\x10��V}la�����޸�\x02\x02�\x1Cb\x02�\x1Ca\x1D6�GJm�O!t�R�\x18Ҟ��5j��[��\x19�����[*\x17@�_D_���\x1C.�Lg�\x19G�yh����օ�����o`��\x07�� vI�U��K�$�\x18���>�1�\\2]\'["^\x13��c!���h�$���S�Ȳe��U�\f�.�-\x1C�)To�kb΅�������I?�>l�\x1F�����9}߰�����\x11&�Ǚ/�N��P�.6�wS\x14�ӯ����ȩG�Yg\\��8i��\x1E���,��)u�\f�P�ثc03��}��j/�Ю�f�X��)g\x13�q>�c��]�5�*�$��x��\x1F\x1F{hxS\x13�x�\x1C�4�P�\x1A+Yކ�cʘ\x00�K�GP�(r;�2�tY\x0BD�|`c(l߂�V�\x17\x15��p\x1B?\x02�\x1D�~}�)�\x1C��=�5�\x14/�D\ff�T�B&#��=�<�JT$\x1B�����FRr��?J�"<4��]�ɡ�WIW��v�gr��\'\x11wr�$�\'\x18�\x10G4\x07����\x07\x19)77�>\x14�\tD*)ؓk���K��W���s��MҬ���\x10\x16��\x10\x16�rq��Y��Y��%�Ӵ|���b�g�N6a��\x04\bk��r)�{�\x05x._�\x7F2w6�\x1F�Z\x12K2��]Qi�~�\x15����Q�7x�\n' +
+        "2�\x0F��ICa���ۨ\x15�\x07\x13\x03����o���A�\x07�;�U\x04� �\x19�r���\x03��嚚7#\x17���}�бB�%*\x16n�x9���y.f�����\x1A\\m�\x1CA�4\x0F\x0F<X�� \x0Bj�?<��Y�;Pn��K-\t\x10�{Pc��\x11�H�j�D�@'��\x12����~\r0�1y�UI��$�#ߞu�B��n�������\x0F �*WgQ��\x05��č{����پW���\tj�j|�E0�\x14\\� f�HK�;��\\ćo�\x1Ao�y�CY(�C;6`�jBܓF��uH�b\x01'�9\x01�;1��>�\x12_\x0B�ً��η\x066���ކ)�R\x15���\x04��b�\x16��\x19CE\x16��R\x17��#\x05�c]J��^/����c�t�>���gJ\x17�\x18��\n" +
+        "�\x16\x1E��X���<�j\x1D�j�k\x1ETn\x07���$Ԕ\x1A3.�'�uE����$\x7F��\x1D{���\x12��x��x��E\x04�9��\n" +
+        '\x06���f�����}]0�O�/Q.�!ʈJ�Fp\x1D\x1B�\x0E|J���eh�\x1C�K��-)\x7F�\x13�/���\x112>�L�[^\x0F�-��k�����<Q�jh\x10X\x14By\x02�y�v/��讵l���i�<���C�U�\x1A?Iܼ�Z���\x04�^��J�b���ۆ_݄�S\x07GG��$�?�UE�2L�Y�����OV/8�\x19�����{G�Q�\rd�/�P����Z�CS\x026�m2��L�ѓ*3�8�ߣߞu�B���T\x12����C\x02o"\x14h�>i��0\x02eh�j�\x18���^ܰ�\x0F��\x0B����K�{\x07^�\x07��\x17�^j\x16�>c�M���@�$���>U/�E[ŖV!�Ad៖�u\\ÿx�z�D���x^�4Oդ ����K$�\rR�\x1B\x0F�WnIa_�|UK���ՏR�\\�E�����\x0B\x03�@�;�(�r\x13ڱNƺIS\x04��(\x16\\���BHE\x16r�Up�\\_$�*\n' +
+        'c�f\\�\t�Jf>�\x18R���:�!@�d>�V!RbMkb��n��y�\x17y\x1A\x15��\\\x11r�ߢ�*(eI�w\x0B��U\x13�\x1D�X\n' +
+        `O�xr���Zx�laٵ���Ώ\fϱ\x7F���q���&9��\x0Fz��S�\x1E\x0FC�\x1C,�؞��\x00/hIk�,y�L��g{����\x19ڨ\x00�\x0Bۏ�\x0F����"[\x1A�H���%%�"�j��;���:���\x18�\x1D��tD'3]\x1F�%��M\x11�,g\x1B�{:�ܩk\x04f�'2�5\x1C��iR�\x03gY-Ɛ�#���P5.�P5-�q��f�]��C�Gx\x1Anۑ�b��M��_\x1CA��r��\x0E\x19�ʚ�\f�J��h \\߲߉F\x11�:qjذ�\x18!����~�\\�U�\r�,\x1A~u<5�����݉�K7\x06�y\\������ϒ�C\b;�h��s"��D��\x1AT�������K�U�ep�l\t\x05�V�(��eelm�S���\x02�M���m�����m����FĿ��2y��Ė���!�\x14"\t���\bxM�\x19\b�X�g�~����Z=��_d(\x1A�g��\x0E\x04</�$�C'�\x0B�H�����lO1��}0�{6�I��z�֩\x0B���\x1DQ\x16�M+jo�n�\x11?s%<��v��\x1B��yC\x1D�+1[��@S\r4�5�s�k��\x0B�\x7F� ��ͪ\x15\x17���ûD�]\x05��\x17i7\x0BV7��N�\x05�n���ԅ�nϮI����Rkq�\x1B�\x18�#\x1Ek5r���L�؍VDTt\x04�,�y%\x1A5\f\x15���!��!\x13\x12*(�=���\x06�\rK�\x14\rK�\x14\x02\x11\x1BC�����\fs\x17�ht"\t% ��Ua\x1A�*�\x0F���A�\x0B�I��;�(M.�Um\x0B�\x1F�rl������\x07�$��x�}R\x16^H�ϺE\x1CP�\x07xC�\x02\x19Çۓ�\x12��=��Zmˀ�_|Ώo�N�d�P��\x03\x03\x16��pc�����6�m��'�\x1E�P�ߛ�k�\x0E\x1B\x1F\x1Fj�ivE\t�Kw>u\\�_:w�\x03�neg��\x05M\x04VS����T�\x01�1��\x16��/��03��}��c��\x0ENЫk����+�k6:2���\n` +
+        'x`�>��\x1An�eO޳�\x13[��9��>\x12B�\\�A�C`$�v<81l\x1E�D<V\x0B\x06��<�\x7F0�%3�Y\f�4y�خ6͏G/?����O��\x04N��Q1\x15R.���p2��\x008�!����\x15��f\x1E�3\x02���(ԐeP��2i@��ݨՍ�<~��\x7F\x07&>\f�,�*<z��E� �T���\x10\x16��\x0F̚��\x7F��QEC\x1D\x10"�3`I\x1Fd��)���k�V�\x1E��\x1C��Gr��x�\t������Md�Ƞ��K>6hG\x0B�������I߬����\x06=���\x1B�\f���\x10�Rf9h\x19�\x07U�y�,� �U��,E`�)���G\x1B;;1-�\x0B\x14��\n' +
+        '��D\x1C�M@\x1F��\x17]}��j]��f`�g\x0E�΄�\f�v+mr�\x19]�"A����j�\x1CV\x02�g\x7F���\x06\x1E\x0B���3�2<>=�S���B�\x1B\x1C�\x1C\x12��|\fqà�������f��r�i��<�O_�\x16\x04?N�\x03\x19q^^��p\x7F�LS@�\f��,���h��:����\x00\x03\x17��0�fu��\x04YM�:�Q�\f#���\x0B\x07�\tY_\n' +
+        '�\x1E\r�6�6�ξ�P5.Ą0�_Kb\b�Z/\x04��9-�|j���+��ea�i\x11\t�9��\x05m\x0B�\x17���)�0ѷ�? �K��Wk\x1D}ϳ٣�\x17\'N3�9�h�\r�r\x07�1s�\x12O�"c�y������:]Q�?\x1E�T-$�\t��H\x0F���\x0F�M/o�\b��)�}��ԐKE0�n/1-il.��+\x12a8\x190<\x03O��L\t�}I���\x14\rK�]\x06D\x1A?\fҴ"W���\r_\x00��)��<�M���|8{��r�o̅�ݖ��q��\x0B�=�$N\x1Bs9ߔ\\sB�V�3���z\x1DJ|�$���D@Q\x0B貱��fu�����\fp{C�۬v;\x01\x02��X1�/\f\x1B\f��uB2����{\f~�ǋ\x0F��\x07\x19w�34�8�U��Gq�h��׸����P�!��\x06� -�� -�����Ѱ���\x11�4\x1AM\r\\�������\x7Ff�\\��s����=\x1E�\b!\x159ї,\x170-�}\x0E\x0F�r�\x06³.��2e�\x01��X�.��<��=�^�\x05\x15�\x15�+�=��:�0G�:�o��f�����숪~ ЯG�\x01`\f��x�"4�:�0��A+|�݄��<�;>�Y��_�)\x10�\x1E`�8\x07\x07��\x0F:c\x13q\\.�\f��\b̙ˋ]\x19��9\x01O��5(8\t�0���:�!@Ի\x1FU6�1�쮍cP���A��\'Jf�\'\x10;����9\x00\x12vLKy���(\x11�\x05ȣm���C��7�\x04/u}�_�-�\x0E�����s戳}MZ�{\x13aS�$=����N�wh�k�$�\x0B�@��\x05\x03���o\x02\r�Hn��\x7F\x12��T����\x1A��TT9x�,:�!_�\x0B\x19��!�23��#Bp�S�8��Xݍt1�«���\x18\x03����\x05�\x1A�$�7�w��I�&��6���\f��l#ߞu�B��tG���}_���\x17�2&ž�7�\x17@0\'�.�+�h\bX�N�\x1D/R�6/\x1B���N�vE�mg�Y�:i�$6�\x0E+<����t�T[��\x13!��啼w<h��8G��\x1D�Xr�b鮇\x1Ef�����UtO\x1FG\x1DD�y*V��H���\x1E;0�xS^���i��6\ft5�a��:&䋄Ǵ���ϩ��\x19�d�E�\x1F�֭ F_�FB�-c�\x04�\x1B��r\bf�\x0E���2\x01\f\x03x0n��P?A�D����@�� -�� -���,�kU�\x06}�\x12�O\x18\x0F��\t�e\x03a�].\x07��[$q3�T�;A��\t@/�}n��N,�{[N��o��o\x03\x07\x04 ���2x=�]\x06��q@�s7j�(E\x1Cm*\b�R�\x02�\x07���PQ���W\x18�Ao�\x10ϱA��L�\x1A\x1EMfϯ_Rb~R��\x0E��;9���\x18h8�N��q�����H���\\ \x17\x12y�H����:F����r��\n' +
+        '��z�h\x12"��\x16\x1D�Ž\x06��\x19�uM�K�M��0�g��R\x15O�\x071�\x19�ξ�P5&\x01.{�RU�\x11ن\fscky�=�$�q����_[��?�����֝z��P�uO-s\x03<ܡ�h]"��-8w���c��S\x1A\x15�\x11�\x05\x0B\x1395�MQ���Ș�4�HVܙ�E\x02�d�\x11��#s�_M�7�"���r�\x12W�"��\b��g�:\x1Ag�N�.��ER;i��5�u�\x04lq�i���?��\t\x13�*�o�綎��f �E\x18���ZC���A3\x1A/�\x7F���`\b �Kt��d0\x10>�\x1E��\x14\r^\tr����U��o\x1BK�^�[׸w0.�����\x00�\x19�\x17R\n' +
+        '�^�Px�]u@I�q\x0F\b�}Ďm{�?�\x058��h}0\f{f��\x7FB\x13������%q\f�#ӨS�!�hovv#ڬ_\x17R\x1E�\x07\x0E��,耀%�S�gP�H�z���%Q<�W�h7ւ�i��p�f�]>����\r���ZRfu\x01<�_\\�\x06A4\x15\x10����v;���dJ\x16�\x05��d�A�����J\f\x1F&A�s�|��E\x0F�]V1\x01m�1\x01m�+#�\x1C����d�Y���\x1Aq.<a?���\x05>�a\t2�K׆�j�1��6���?�Y��\x1D>����w\x1C ���㍶*)$�h��Bjy��$^6�Ko\x13���\t����S��s�y�\x1A��\x1F\x7F�&��%̥�M]Oɍ�6�*xıa�&�˯��U-�����R��\r�ȑvp���\x0BY\n' +
+        '\x0F\x16ٵ�=\x05\x19|P�\x13����}Q�i�ܼK{��ٯ�\x05\x17+�ۢ�\x1Ek��\x13D�Ðh�t\b\x88g����\n' +
+        "�l��\x00�u\x14�kM��>h�]d;]}��j]��i\x1E\x01e��\x1Atm;!�\x7F�8��fϽ�o��p��i�\x1A��]��w��<�M��m�˾'��8���\x18l����m,8�uo\x07�۩�\x198&sa�hWΗ��~�\x1F���og\ta=t4\t_y(S4$�Dxh��q��C��K�y\x1C�0 � V���G���\x1F �\x1B����e_�lYҫ�1��z\n" +
+        '���G�f�Y\x07?��bn��~�%"PgraA�����~�\x1A\x02�o�a��\x1A�~���\'_\x10C���\x13�\x17��F�j�je\x15̓�O!\x1F\x16a���xFS�\x13yM�I��=���i.\x1F�!��If7G\x01���\x18���\x18���6B/�ڑ\b~Z�b?�\x7F>����\x13�\x1A�(\x02*,\x00\x1E+1��{�\x16�qQG\x1E�,C��=Q�H����{�t7��ʕX\x01��a�77\x06�\f\x1CO�\x13D\x01�ĚL\x1FZx��1\x10Y\x7F�D\x02z\x15����\x19\x18�ѵ�� ��X\x1E"\x00�>;߆�\x03E�(���ك��w\x12\f��j�xV�Q>.\x12�`�V\x15m=9���\x1A�\x1B\'\x1F�Ӎ\x03ԍ�\r�/.�#�\x1Af��e����i�]�E�����\x10�&\r��\x1Bzk��}�����\x1B�\x16��)�����0��.\x14F\x07�@�z\b+QR��\x1D�=��_d$ɩjP票\x0B�N/�GL7�۔\x18�;�=Mi,m���<�hL%��okC�-n*\x0E��D�Oǔ�\x1C�B��a\n' +
+        'Y�iUYK��\x07���m����ךSv\x19f�8}k�w�3N�<\x13��4�\x00\x1C\x0E\x0F˨J\x17O�OH���0�ļ��,���\x01�\x11β�\x19�l�.�\f6\x07�N�z�߶w\x06���$��\x1A�=�K��L�"W��\x0E�?�SU��CG��ML��;\n' +
+        `\x1C�+��h\x05h\t��D�\x1D\x1E/1��\t\x1D\t\x04��2��e%�KU�\x06F?�C�\x12��I�\x7F����'�;]�z�b˺\x02�\x1Cb\x02�\x1Ca��S0\x10ѝ\x07oP�Z��5�\x06�̕b�G�O��\x00�\\�"T�[]���o�\x04\x01�����\x16nf2S�\x95G��uV�C\x15�C!A�3����É[*�O\x05$��\x0Bw���̿0\x02d��"��G\x13yQή��P�\x01�,��DN}a��q\x18f���s�#�"��;�\x11jBِ�,\x0F�`... 72492 more characters,
+      type: 'entity.parse.failed'
+    },
+    level: 'error',
+    message: 'uncaughtException: Unexpected token - in JSON at position 0\n' +
+      'SyntaxError: Unexpected token - in JSON at position 0\n' +
+      '    at JSON.parse (<anonymous>)\n' +
+      '    at createStrictSyntaxError (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/types/json.js:160:10)\n' +
+      '    at parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/types/json.js:83:15)\n' +
+      '    at /home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/read.js:128:18\n' +
+      '    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)\n' +
+      '    at invokeCallback (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js:231:16)\n' +
+      '    at done (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js:220:7)\n' +
+      '    at IncomingMessage.onEnd (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js:280:7)\n' +
+      '    at IncomingMessage.emit (node:events:513:28)\n' +
+      '    at IncomingMessage.emit (node:domain:489:12)',
+    stack: 'SyntaxError: Unexpected token - in JSON at position 0\n' +
+      '    at JSON.parse (<anonymous>)\n' +
+      '    at createStrictSyntaxError (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/types/json.js:160:10)\n' +
+      '    at parse (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/types/json.js:83:15)\n' +
+      '    at /home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/read.js:128:18\n' +
+      '    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)\n' +
+      '    at invokeCallback (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js:231:16)\n' +
+      '    at done (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js:220:7)\n' +
+      '    at IncomingMessage.onEnd (/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js:280:7)\n' +
+      '    at IncomingMessage.emit (node:events:513:28)\n' +
+      '    at IncomingMessage.emit (node:domain:489:12)',
+    exception: true,
+    date: 'Mon Mar 20 2023 21:46:28 GMT-0300 (Brasilia Standard Time)',
+    process: {
+      pid: 39637,
+      uid: 1000,
+      gid: 1001,
+      cwd: '/home/zizmackrok/Desktop/Code/not-too-powerful/server',
+      execPath: '/home/zizmackrok/.nvm/versions/node/v18.15.0/bin/node',
+      version: 'v18.15.0',
+      argv: [
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/.bin/ts-node',
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/app.ts'
+      ],
+      memoryUsage: {
+        rss: 382152704,
+        heapTotal: 199073792,
+        heapUsed: 193603840,
+        external: 9829575,
+        arrayBuffers: 7035602
+      }
+    },
+    os: { loadavg: [ 1.44, 1.24, 1.1 ], uptime: 42690.43 },
+    trace: [
+      {
+        column: null,
+        file: null,
+        function: 'JSON.parse',
+        line: null,
+        method: 'parse',
+        native: false
+      },
+      {
+        column: 10,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/types/json.js',
+        function: 'createStrictSyntaxError',
+        line: 160,
+        method: null,
+        native: false
+      },
+      {
+        column: 15,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/types/json.js',
+        function: 'parse',
+        line: 83,
+        method: null,
+        native: false
+      },
+      {
+        column: 18,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/body-parser/lib/read.js',
+        function: null,
+        line: 128,
+        method: null,
+        native: false
+      },
+      {
+        column: 9,
+        file: 'node:async_hooks',
+        function: 'AsyncResource.runInAsyncScope',
+        line: 204,
+        method: 'runInAsyncScope',
+        native: false
+      },
+      {
+        column: 16,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js',
+        function: 'invokeCallback',
+        line: 231,
+        method: null,
+        native: false
+      },
+      {
+        column: 7,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js',
+        function: 'done',
+        line: 220,
+        method: null,
+        native: false
+      },
+      {
+        column: 7,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/raw-body/index.js',
+        function: 'IncomingMessage.onEnd',
+        line: 280,
+        method: 'onEnd',
+        native: false
+      },
+      {
+        column: 28,
+        file: 'node:events',
+        function: 'IncomingMessage.emit',
+        line: 513,
+        method: 'emit',
+        native: false
+      },
+      {
+        column: 12,
+        file: 'node:domain',
+        function: 'IncomingMessage.emit',
+        line: 489,
+        method: 'emit',
+        native: false
+      }
+    ],
+    req: {
+      url: '/api/v1/guilds/sendMessage',
+      headers: {
+        host: 'localhost:4000',
+        connection: 'keep-alive',
+        'content-length': '86986',
+        pragma: 'no-cache',
+        'cache-control': 'no-cache',
+        'sec-ch-ua': '"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"',
+        'content-type': 'application/json',
+        'sec-ch-ua-mobile': '?0',
+        authorization: 'R4WTN848qyH4TM42yvbkNGRhWGgYu8',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+        'sec-ch-ua-platform': '"Linux"',
+        accept: '*/*',
+        origin: 'http://localhost:5173',
+        'sec-fetch-site': 'same-site',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-dest': 'empty',
+        referer: 'http://localhost:5173/',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'en-US,en;q=0.9,pt-BR;q=0.8,pt;q=0.7,es;q=0.6'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/v1/guilds/sendMessage',
+      query: {}
+    }
+  },
+  level: '\x1B[31merror\x1B[39m',
+  message: 'middlewareError',
+  timestamp: '2023-03-20 21:46:28:4628'
+}
+{
+  meta: {
+    error: CustomError: Something wrong happened ):
+        at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:33:41)
+        at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+      status: 401,
+      error: [],
+      code: undefined
+    },
+    level: 'error',
+    message: 'uncaughtException: Something wrong happened ):\n' +
+      'Error: Something wrong happened ):\n' +
+      '    at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:33:41)\n' +
+      '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+    stack: 'Error: Something wrong happened ):\n' +
+      '    at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:33:41)\n' +
+      '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+    exception: true,
+    date: 'Mon Mar 20 2023 22:28:18 GMT-0300 (Brasilia Standard Time)',
+    process: {
+      pid: 53114,
+      uid: 1000,
+      gid: 1001,
+      cwd: '/home/zizmackrok/Desktop/Code/not-too-powerful/server',
+      execPath: '/home/zizmackrok/.nvm/versions/node/v18.15.0/bin/node',
+      version: 'v18.15.0',
+      argv: [
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/.bin/ts-node',
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/app.ts'
+      ],
+      memoryUsage: {
+        rss: 316571648,
+        heapTotal: 192188416,
+        heapUsed: 187106264,
+        external: 6412507,
+        arrayBuffers: 3672224
+      }
+    },
+    os: { loadavg: [ 1.23, 0.82, 0.83 ], uptime: 45201.16 },
+    trace: [
+      {
+        column: 41,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts',
+        function: 'getUserToken',
+        line: 33,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: 'node:internal/process/task_queues',
+        function: 'processTicksAndRejections',
+        line: 95,
+        method: null,
+        native: false
+      }
+    ],
+    req: {
+      url: '/api/v1/auth/d/userToken',
+      headers: {
+        host: 'localhost:4000',
+        connection: 'keep-alive',
+        'content-length': '41',
+        pragma: 'no-cache',
+        'cache-control': 'no-cache',
+        'sec-ch-ua': '"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"',
+        'sec-ch-ua-platform': '"Linux"',
+        'sec-ch-ua-mobile': '?0',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+        'content-type': 'application/json',
+        accept: '*/*',
+        origin: 'http://localhost:5173',
+        'sec-fetch-site': 'same-site',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-dest': 'empty',
+        referer: 'http://localhost:5173/',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'en-US,en;q=0.9,pt-BR;q=0.8,pt;q=0.7,es;q=0.6'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/v1/auth/d/userToken',
+      query: {}
+    }
+  },
+  level: '\x1B[31merror\x1B[39m',
+  message: 'middlewareError',
+  timestamp: '2023-03-20 22:28:18:2818'
+}
+{
+  meta: {
+    error: CustomError: Something wrong happened ):
+        at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:27:37)
+        at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+      status: 401,
+      error: [],
+      code: undefined
+    },
+    level: 'error',
+    message: 'uncaughtException: Something wrong happened ):\n' +
+      'Error: Something wrong happened ):\n' +
+      '    at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:27:37)\n' +
+      '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+    stack: 'Error: Something wrong happened ):\n' +
+      '    at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:27:37)\n' +
+      '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+    exception: true,
+    date: 'Mon Mar 20 2023 22:28:48 GMT-0300 (Brasilia Standard Time)',
+    process: {
+      pid: 53114,
+      uid: 1000,
+      gid: 1001,
+      cwd: '/home/zizmackrok/Desktop/Code/not-too-powerful/server',
+      execPath: '/home/zizmackrok/.nvm/versions/node/v18.15.0/bin/node',
+      version: 'v18.15.0',
+      argv: [
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/.bin/ts-node',
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/app.ts'
+      ],
+      memoryUsage: {
+        rss: 317100032,
+        heapTotal: 192712704,
+        heapUsed: 187440816,
+        external: 6418656,
+        arrayBuffers: 3678333
+      }
+    },
+    os: { loadavg: [ 0.9, 0.77, 0.81 ], uptime: 45230.53 },
+    trace: [
+      {
+        column: 37,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts',
+        function: 'getUserToken',
+        line: 27,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: 'node:internal/process/task_queues',
+        function: 'processTicksAndRejections',
+        line: 95,
+        method: null,
+        native: false
+      }
+    ],
+    req: {
+      url: '/api/v1/auth/d/userToken',
+      headers: {
+        host: 'localhost:4000',
+        'user-agent': 'insomnia/2022.7.5',
+        'content-type': 'application/json',
+        accept: '*/*',
+        'content-length': '44'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/v1/auth/d/userToken',
+      query: {}
+    }
+  },
+  level: '\x1B[31merror\x1B[39m',
+  message: 'middlewareError',
+  timestamp: '2023-03-20 22:28:48:2848'
+}
+{
+  meta: {
+    error: CustomError: Something wrong happened ):
+        at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:33:41)
+        at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+      status: 401,
+      error: [],
+      code: undefined
+    },
+    level: 'error',
+    message: 'uncaughtException: Something wrong happened ):\n' +
+      'Error: Something wrong happened ):\n' +
+      '    at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:33:41)\n' +
+      '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+    stack: 'Error: Something wrong happened ):\n' +
+      '    at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:33:41)\n' +
+      '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+    exception: true,
+    date: 'Mon Mar 20 2023 22:29:21 GMT-0300 (Brasilia Standard Time)',
+    process: {
+      pid: 53114,
+      uid: 1000,
+      gid: 1001,
+      cwd: '/home/zizmackrok/Desktop/Code/not-too-powerful/server',
+      execPath: '/home/zizmackrok/.nvm/versions/node/v18.15.0/bin/node',
+      version: 'v18.15.0',
+      argv: [
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/.bin/ts-node',
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/app.ts'
+      ],
+      memoryUsage: {
+        rss: 317763584,
+        heapTotal: 193761280,
+        heapUsed: 188328720,
+        external: 6465160,
+        arrayBuffers: 3724837
+      }
+    },
+    os: { loadavg: [ 0.81, 0.76, 0.81 ], uptime: 45264.07 },
+    trace: [
+      {
+        column: 41,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts',
+        function: 'getUserToken',
+        line: 33,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: 'node:internal/process/task_queues',
+        function: 'processTicksAndRejections',
+        line: 95,
+        method: null,
+        native: false
+      }
+    ],
+    req: {
+      url: '/api/v1/auth/d/userToken',
+      headers: {
+        host: 'localhost:4000',
+        connection: 'keep-alive',
+        'content-length': '41',
+        pragma: 'no-cache',
+        'cache-control': 'no-cache',
+        'sec-ch-ua': '"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"',
+        'sec-ch-ua-platform': '"Linux"',
+        'sec-ch-ua-mobile': '?0',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+        'content-type': 'application/json',
+        accept: '*/*',
+        origin: 'http://localhost:5173',
+        'sec-fetch-site': 'same-site',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-dest': 'empty',
+        referer: 'http://localhost:5173/',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'en-US,en;q=0.9,pt-BR;q=0.8,pt;q=0.7,es;q=0.6'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/v1/auth/d/userToken',
+      query: {}
+    }
+  },
+  level: '\x1B[31merror\x1B[39m',
+  message: 'middlewareError',
+  timestamp: '2023-03-20 22:29:21:2921'
+}
+{
+  meta: {
+    error: CustomError: Something wrong happened ):
+        at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:27:37)
+        at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+      status: 401,
+      error: [],
+      code: undefined
+    },
+    level: 'error',
+    message: 'uncaughtException: Something wrong happened ):\n' +
+      'Error: Something wrong happened ):\n' +
+      '    at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:27:37)\n' +
+      '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+    stack: 'Error: Something wrong happened ):\n' +
+      '    at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:27:37)\n' +
+      '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+    exception: true,
+    date: 'Mon Mar 20 2023 22:29:36 GMT-0300 (Brasilia Standard Time)',
+    process: {
+      pid: 53114,
+      uid: 1000,
+      gid: 1001,
+      cwd: '/home/zizmackrok/Desktop/Code/not-too-powerful/server',
+      execPath: '/home/zizmackrok/.nvm/versions/node/v18.15.0/bin/node',
+      version: 'v18.15.0',
+      argv: [
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/.bin/ts-node',
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/app.ts'
+      ],
+      memoryUsage: {
+        rss: 318222336,
+        heapTotal: 193761280,
+        heapUsed: 188582416,
+        external: 6491284,
+        arrayBuffers: 3750961
+      }
+    },
+    os: { loadavg: [ 0.76, 0.76, 0.81 ], uptime: 45279.3 },
+    trace: [
+      {
+        column: 37,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts',
+        function: 'getUserToken',
+        line: 27,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: 'node:internal/process/task_queues',
+        function: 'processTicksAndRejections',
+        line: 95,
+        method: null,
+        native: false
+      }
+    ],
+    req: {
+      url: '/api/v1/auth/d/userToken',
+      headers: {
+        host: 'localhost:4000',
+        'user-agent': 'insomnia/2022.7.5',
+        'content-type': 'application/json',
+        accept: '*/*',
+        'content-length': '44'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/v1/auth/d/userToken',
+      query: {}
+    }
+  },
+  level: '\x1B[31merror\x1B[39m',
+  message: 'middlewareError',
+  timestamp: '2023-03-20 22:29:36:2936'
+}
+{
+  meta: {
+    error: TypeError: Body is unusable
+        at specConsumeBody (node:internal/deps/undici/undici:6466:15)
+        at Response.json (node:internal/deps/undici/undici:6369:18)
+        at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:34:38)
+        at processTicksAndRejections (node:internal/process/task_queues:95:5),
+    level: 'error',
+    message: 'uncaughtException: Body is unusable\n' +
+      'TypeError: Body is unusable\n' +
+      '    at specConsumeBody (node:internal/deps/undici/undici:6466:15)\n' +
+      '    at Response.json (node:internal/deps/undici/undici:6369:18)\n' +
+      '    at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:34:38)\n' +
+      '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+    stack: 'TypeError: Body is unusable\n' +
+      '    at specConsumeBody (node:internal/deps/undici/undici:6466:15)\n' +
+      '    at Response.json (node:internal/deps/undici/undici:6369:18)\n' +
+      '    at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:34:38)\n' +
+      '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+    exception: true,
+    date: 'Mon Mar 20 2023 22:29:56 GMT-0300 (Brasilia Standard Time)',
+    process: {
+      pid: 53909,
+      uid: 1000,
+      gid: 1001,
+      cwd: '/home/zizmackrok/Desktop/Code/not-too-powerful/server',
+      execPath: '/home/zizmackrok/.nvm/versions/node/v18.15.0/bin/node',
+      version: 'v18.15.0',
+      argv: [
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/.bin/ts-node',
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/app.ts'
+      ],
+      memoryUsage: {
+        rss: 360108032,
+        heapTotal: 231510016,
+        heapUsed: 198363664,
+        external: 6637737,
+        arrayBuffers: 3893857
+      }
+    },
+    os: { loadavg: [ 1.2, 0.86, 0.84 ], uptime: 45298.45 },
+    trace: [
+      {
+        column: 15,
+        file: 'node:internal/deps/undici/undici',
+        function: 'specConsumeBody',
+        line: 6466,
+        method: null,
+        native: false
+      },
+      {
+        column: 18,
+        file: 'node:internal/deps/undici/undici',
+        function: 'Response.json',
+        line: 6369,
+        method: 'json',
+        native: false
+      },
+      {
+        column: 38,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts',
+        function: 'getUserToken',
+        line: 34,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: 'node:internal/process/task_queues',
+        function: 'processTicksAndRejections',
+        line: 95,
+        method: null,
+        native: false
+      }
+    ],
+    req: {
+      url: '/api/v1/auth/d/userToken',
+      headers: {
+        host: 'localhost:4000',
+        connection: 'keep-alive',
+        'content-length': '41',
+        pragma: 'no-cache',
+        'cache-control': 'no-cache',
+        'sec-ch-ua': '"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"',
+        'sec-ch-ua-platform': '"Linux"',
+        'sec-ch-ua-mobile': '?0',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+        'content-type': 'application/json',
+        accept: '*/*',
+        origin: 'http://localhost:5173',
+        'sec-fetch-site': 'same-site',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-dest': 'empty',
+        referer: 'http://localhost:5173/',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'en-US,en;q=0.9,pt-BR;q=0.8,pt;q=0.7,es;q=0.6'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/v1/auth/d/userToken',
+      query: {}
+    }
+  },
+  level: '\x1B[31merror\x1B[39m',
+  message: 'middlewareError',
+  timestamp: '2023-03-20 22:29:56:2956'
+}
+{
+  meta: {
+    error: TypeError: Body is unusable
+        at specConsumeBody (node:internal/deps/undici/undici:6466:15)
+        at Response.json (node:internal/deps/undici/undici:6369:18)
+        at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:34:38)
+        at processTicksAndRejections (node:internal/process/task_queues:95:5),
+    level: 'error',
+    message: 'uncaughtException: Body is unusable\n' +
+      'TypeError: Body is unusable\n' +
+      '    at specConsumeBody (node:internal/deps/undici/undici:6466:15)\n' +
+      '    at Response.json (node:internal/deps/undici/undici:6369:18)\n' +
+      '    at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:34:38)\n' +
+      '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+    stack: 'TypeError: Body is unusable\n' +
+      '    at specConsumeBody (node:internal/deps/undici/undici:6466:15)\n' +
+      '    at Response.json (node:internal/deps/undici/undici:6369:18)\n' +
+      '    at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:34:38)\n' +
+      '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+    exception: true,
+    date: 'Mon Mar 20 2023 22:31:01 GMT-0300 (Brasilia Standard Time)',
+    process: {
+      pid: 53909,
+      uid: 1000,
+      gid: 1001,
+      cwd: '/home/zizmackrok/Desktop/Code/not-too-powerful/server',
+      execPath: '/home/zizmackrok/.nvm/versions/node/v18.15.0/bin/node',
+      version: 'v18.15.0',
+      argv: [
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/.bin/ts-node',
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/app.ts'
+      ],
+      memoryUsage: {
+        rss: 321101824,
+        heapTotal: 192712704,
+        heapUsed: 187279056,
+        external: 6422194,
+        arrayBuffers: 3681871
+      }
+    },
+    os: { loadavg: [ 0.98, 0.89, 0.85 ], uptime: 45363.88 },
+    trace: [
+      {
+        column: 15,
+        file: 'node:internal/deps/undici/undici',
+        function: 'specConsumeBody',
+        line: 6466,
+        method: null,
+        native: false
+      },
+      {
+        column: 18,
+        file: 'node:internal/deps/undici/undici',
+        function: 'Response.json',
+        line: 6369,
+        method: 'json',
+        native: false
+      },
+      {
+        column: 38,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts',
+        function: 'getUserToken',
+        line: 34,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: 'node:internal/process/task_queues',
+        function: 'processTicksAndRejections',
+        line: 95,
+        method: null,
+        native: false
+      }
+    ],
+    req: {
+      url: '/api/v1/auth/d/userToken',
+      headers: {
+        host: 'localhost:4000',
+        connection: 'keep-alive',
+        'content-length': '41',
+        pragma: 'no-cache',
+        'cache-control': 'no-cache',
+        'sec-ch-ua': '"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"',
+        'sec-ch-ua-platform': '"Linux"',
+        'sec-ch-ua-mobile': '?0',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+        'content-type': 'application/json',
+        accept: '*/*',
+        origin: 'http://localhost:5173',
+        'sec-fetch-site': 'same-site',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-dest': 'empty',
+        referer: 'http://localhost:5173/',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'en-US,en;q=0.9,pt-BR;q=0.8,pt;q=0.7,es;q=0.6'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/v1/auth/d/userToken',
+      query: {}
+    }
+  },
+  level: '\x1B[31merror\x1B[39m',
+  message: 'middlewareError',
+  timestamp: '2023-03-20 22:31:01:311'
+}
+{
+  meta: {
+    error: TypeError: Body is unusable
+        at specConsumeBody (node:internal/deps/undici/undici:6466:15)
+        at Response.json (node:internal/deps/undici/undici:6369:18)
+        at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:34:38)
+        at processTicksAndRejections (node:internal/process/task_queues:95:5),
+    level: 'error',
+    message: 'uncaughtException: Body is unusable\n' +
+      'TypeError: Body is unusable\n' +
+      '    at specConsumeBody (node:internal/deps/undici/undici:6466:15)\n' +
+      '    at Response.json (node:internal/deps/undici/undici:6369:18)\n' +
+      '    at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:34:38)\n' +
+      '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+    stack: 'TypeError: Body is unusable\n' +
+      '    at specConsumeBody (node:internal/deps/undici/undici:6466:15)\n' +
+      '    at Response.json (node:internal/deps/undici/undici:6369:18)\n' +
+      '    at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:34:38)\n' +
+      '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+    exception: true,
+    date: 'Mon Mar 20 2023 22:31:33 GMT-0300 (Brasilia Standard Time)',
+    process: {
+      pid: 53909,
+      uid: 1000,
+      gid: 1001,
+      cwd: '/home/zizmackrok/Desktop/Code/not-too-powerful/server',
+      execPath: '/home/zizmackrok/.nvm/versions/node/v18.15.0/bin/node',
+      version: 'v18.15.0',
+      argv: [
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/.bin/ts-node',
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/app.ts'
+      ],
+      memoryUsage: {
+        rss: 320749568,
+        heapTotal: 193236992,
+        heapUsed: 187481888,
+        external: 6467298,
+        arrayBuffers: 3723457
+      }
+    },
+    os: { loadavg: [ 0.69, 0.82, 0.83 ], uptime: 45396.37 },
+    trace: [
+      {
+        column: 15,
+        file: 'node:internal/deps/undici/undici',
+        function: 'specConsumeBody',
+        line: 6466,
+        method: null,
+        native: false
+      },
+      {
+        column: 18,
+        file: 'node:internal/deps/undici/undici',
+        function: 'Response.json',
+        line: 6369,
+        method: 'json',
+        native: false
+      },
+      {
+        column: 38,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts',
+        function: 'getUserToken',
+        line: 34,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: 'node:internal/process/task_queues',
+        function: 'processTicksAndRejections',
+        line: 95,
+        method: null,
+        native: false
+      }
+    ],
+    req: {
+      url: '/api/v1/auth/d/userToken',
+      headers: {
+        host: 'localhost:4000',
+        connection: 'keep-alive',
+        'content-length': '41',
+        pragma: 'no-cache',
+        'cache-control': 'no-cache',
+        'sec-ch-ua': '"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"',
+        'sec-ch-ua-platform': '"Linux"',
+        'sec-ch-ua-mobile': '?0',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+        'content-type': 'application/json',
+        accept: '*/*',
+        origin: 'http://localhost:5173',
+        'sec-fetch-site': 'same-site',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-dest': 'empty',
+        referer: 'http://localhost:5173/',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'en-US,en;q=0.9,pt-BR;q=0.8,pt;q=0.7,es;q=0.6'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/v1/auth/d/userToken',
+      query: {}
+    }
+  },
+  level: '\x1B[31merror\x1B[39m',
+  message: 'middlewareError',
+  timestamp: '2023-03-20 22:31:33:3133'
+}
+{
+  meta: {
+    error: TypeError: Body is unusable
+        at specConsumeBody (node:internal/deps/undici/undici:6466:15)
+        at Response.json (node:internal/deps/undici/undici:6369:18)
+        at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:37:38)
+        at processTicksAndRejections (node:internal/process/task_queues:95:5),
+    level: 'error',
+    message: 'uncaughtException: Body is unusable\n' +
+      'TypeError: Body is unusable\n' +
+      '    at specConsumeBody (node:internal/deps/undici/undici:6466:15)\n' +
+      '    at Response.json (node:internal/deps/undici/undici:6369:18)\n' +
+      '    at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:37:38)\n' +
+      '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+    stack: 'TypeError: Body is unusable\n' +
+      '    at specConsumeBody (node:internal/deps/undici/undici:6466:15)\n' +
+      '    at Response.json (node:internal/deps/undici/undici:6369:18)\n' +
+      '    at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:37:38)\n' +
+      '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+    exception: true,
+    date: 'Mon Mar 20 2023 22:32:35 GMT-0300 (Brasilia Standard Time)',
+    process: {
+      pid: 54580,
+      uid: 1000,
+      gid: 1001,
+      cwd: '/home/zizmackrok/Desktop/Code/not-too-powerful/server',
+      execPath: '/home/zizmackrok/.nvm/versions/node/v18.15.0/bin/node',
+      version: 'v18.15.0',
+      argv: [
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/.bin/ts-node',
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/app.ts'
+      ],
+      memoryUsage: {
+        rss: 360964096,
+        heapTotal: 231772160,
+        heapUsed: 198709392,
+        external: 6637968,
+        arrayBuffers: 3894088
+      }
+    },
+    os: { loadavg: [ 0.92, 0.83, 0.83 ], uptime: 45458.14 },
+    trace: [
+      {
+        column: 15,
+        file: 'node:internal/deps/undici/undici',
+        function: 'specConsumeBody',
+        line: 6466,
+        method: null,
+        native: false
+      },
+      {
+        column: 18,
+        file: 'node:internal/deps/undici/undici',
+        function: 'Response.json',
+        line: 6369,
+        method: 'json',
+        native: false
+      },
+      {
+        column: 38,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts',
+        function: 'getUserToken',
+        line: 37,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: 'node:internal/process/task_queues',
+        function: 'processTicksAndRejections',
+        line: 95,
+        method: null,
+        native: false
+      }
+    ],
+    req: {
+      url: '/api/v1/auth/d/userToken',
+      headers: {
+        host: 'localhost:4000',
+        connection: 'keep-alive',
+        'content-length': '41',
+        pragma: 'no-cache',
+        'cache-control': 'no-cache',
+        'sec-ch-ua': '"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"',
+        'sec-ch-ua-platform': '"Linux"',
+        'sec-ch-ua-mobile': '?0',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+        'content-type': 'application/json',
+        accept: '*/*',
+        origin: 'http://localhost:5173',
+        'sec-fetch-site': 'same-site',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-dest': 'empty',
+        referer: 'http://localhost:5173/',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'en-US,en;q=0.9,pt-BR;q=0.8,pt;q=0.7,es;q=0.6'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/v1/auth/d/userToken',
+      query: {}
+    }
+  },
+  level: '\x1B[31merror\x1B[39m',
+  message: 'middlewareError',
+  timestamp: '2023-03-20 22:32:35:3235'
+}
+{
+  meta: {
+    error: TypeError: Body is unusable
+        at specConsumeBody (node:internal/deps/undici/undici:6466:15)
+        at Response.json (node:internal/deps/undici/undici:6369:18)
+        at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:37:38)
+        at processTicksAndRejections (node:internal/process/task_queues:95:5),
+    level: 'error',
+    message: 'uncaughtException: Body is unusable\n' +
+      'TypeError: Body is unusable\n' +
+      '    at specConsumeBody (node:internal/deps/undici/undici:6466:15)\n' +
+      '    at Response.json (node:internal/deps/undici/undici:6369:18)\n' +
+      '    at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:37:38)\n' +
+      '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+    stack: 'TypeError: Body is unusable\n' +
+      '    at specConsumeBody (node:internal/deps/undici/undici:6466:15)\n' +
+      '    at Response.json (node:internal/deps/undici/undici:6369:18)\n' +
+      '    at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:37:38)\n' +
+      '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+    exception: true,
+    date: 'Mon Mar 20 2023 22:33:31 GMT-0300 (Brasilia Standard Time)',
+    process: {
+      pid: 54761,
+      uid: 1000,
+      gid: 1001,
+      cwd: '/home/zizmackrok/Desktop/Code/not-too-powerful/server',
+      execPath: '/home/zizmackrok/.nvm/versions/node/v18.15.0/bin/node',
+      version: 'v18.15.0',
+      argv: [
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/.bin/ts-node',
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/app.ts'
+      ],
+      memoryUsage: {
+        rss: 357289984,
+        heapTotal: 230461440,
+        heapUsed: 188224904,
+        external: 6617973,
+        arrayBuffers: 3877690
+      }
+    },
+    os: { loadavg: [ 1.55, 0.97, 0.87 ], uptime: 45513.5 },
+    trace: [
+      {
+        column: 15,
+        file: 'node:internal/deps/undici/undici',
+        function: 'specConsumeBody',
+        line: 6466,
+        method: null,
+        native: false
+      },
+      {
+        column: 18,
+        file: 'node:internal/deps/undici/undici',
+        function: 'Response.json',
+        line: 6369,
+        method: 'json',
+        native: false
+      },
+      {
+        column: 38,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts',
+        function: 'getUserToken',
+        line: 37,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: 'node:internal/process/task_queues',
+        function: 'processTicksAndRejections',
+        line: 95,
+        method: null,
+        native: false
+      }
+    ],
+    req: {
+      url: '/api/v1/auth/d/userToken',
+      headers: {
+        host: 'localhost:4000',
+        connection: 'keep-alive',
+        'content-length': '41',
+        pragma: 'no-cache',
+        'cache-control': 'no-cache',
+        'sec-ch-ua': '"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"',
+        'sec-ch-ua-platform': '"Linux"',
+        'sec-ch-ua-mobile': '?0',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+        'content-type': 'application/json',
+        accept: '*/*',
+        origin: 'http://localhost:5173',
+        'sec-fetch-site': 'same-site',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-dest': 'empty',
+        referer: 'http://localhost:5173/',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'en-US,en;q=0.9,pt-BR;q=0.8,pt;q=0.7,es;q=0.6'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/v1/auth/d/userToken',
+      query: {}
+    }
+  },
+  level: '\x1B[31merror\x1B[39m',
+  message: 'middlewareError',
+  timestamp: '2023-03-20 22:33:31:3331'
+}
+{
+  meta: {
+    error: TypeError: Body is unusable
+        at specConsumeBody (node:internal/deps/undici/undici:6466:15)
+        at Response.json (node:internal/deps/undici/undici:6369:18)
+        at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:38:38)
+        at processTicksAndRejections (node:internal/process/task_queues:95:5),
+    level: 'error',
+    message: 'uncaughtException: Body is unusable\n' +
+      'TypeError: Body is unusable\n' +
+      '    at specConsumeBody (node:internal/deps/undici/undici:6466:15)\n' +
+      '    at Response.json (node:internal/deps/undici/undici:6369:18)\n' +
+      '    at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:38:38)\n' +
+      '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+    stack: 'TypeError: Body is unusable\n' +
+      '    at specConsumeBody (node:internal/deps/undici/undici:6466:15)\n' +
+      '    at Response.json (node:internal/deps/undici/undici:6369:18)\n' +
+      '    at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:38:38)\n' +
+      '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+    exception: true,
+    date: 'Mon Mar 20 2023 22:34:07 GMT-0300 (Brasilia Standard Time)',
+    process: {
+      pid: 54914,
+      uid: 1000,
+      gid: 1001,
+      cwd: '/home/zizmackrok/Desktop/Code/not-too-powerful/server',
+      execPath: '/home/zizmackrok/.nvm/versions/node/v18.15.0/bin/node',
+      version: 'v18.15.0',
+      argv: [
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/.bin/ts-node',
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/app.ts'
+      ],
+      memoryUsage: {
+        rss: 360263680,
+        heapTotal: 233082880,
+        heapUsed: 188236200,
+        external: 6618016,
+        arrayBuffers: 3877733
+      }
+    },
+    os: { loadavg: [ 1.51, 1.02, 0.9 ], uptime: 45549.64 },
+    trace: [
+      {
+        column: 15,
+        file: 'node:internal/deps/undici/undici',
+        function: 'specConsumeBody',
+        line: 6466,
+        method: null,
+        native: false
+      },
+      {
+        column: 18,
+        file: 'node:internal/deps/undici/undici',
+        function: 'Response.json',
+        line: 6369,
+        method: 'json',
+        native: false
+      },
+      {
+        column: 38,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts',
+        function: 'getUserToken',
+        line: 38,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: 'node:internal/process/task_queues',
+        function: 'processTicksAndRejections',
+        line: 95,
+        method: null,
+        native: false
+      }
+    ],
+    req: {
+      url: '/api/v1/auth/d/userToken',
+      headers: {
+        host: 'localhost:4000',
+        connection: 'keep-alive',
+        'content-length': '41',
+        pragma: 'no-cache',
+        'cache-control': 'no-cache',
+        'sec-ch-ua': '"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"',
+        'sec-ch-ua-platform': '"Linux"',
+        'sec-ch-ua-mobile': '?0',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+        'content-type': 'application/json',
+        accept: '*/*',
+        origin: 'http://localhost:5173',
+        'sec-fetch-site': 'same-site',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-dest': 'empty',
+        referer: 'http://localhost:5173/',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'en-US,en;q=0.9,pt-BR;q=0.8,pt;q=0.7,es;q=0.6'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/v1/auth/d/userToken',
+      query: {}
+    }
+  },
+  level: '\x1B[31merror\x1B[39m',
+  message: 'middlewareError',
+  timestamp: '2023-03-20 22:34:07:347'
+}
+{
+  meta: {
+    error: TypeError: Body is unusable
+        at specConsumeBody (node:internal/deps/undici/undici:6466:15)
+        at Response.json (node:internal/deps/undici/undici:6369:18)
+        at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:38:38)
+        at processTicksAndRejections (node:internal/process/task_queues:95:5),
+    level: 'error',
+    message: 'uncaughtException: Body is unusable\n' +
+      'TypeError: Body is unusable\n' +
+      '    at specConsumeBody (node:internal/deps/undici/undici:6466:15)\n' +
+      '    at Response.json (node:internal/deps/undici/undici:6369:18)\n' +
+      '    at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:38:38)\n' +
+      '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+    stack: 'TypeError: Body is unusable\n' +
+      '    at specConsumeBody (node:internal/deps/undici/undici:6466:15)\n' +
+      '    at Response.json (node:internal/deps/undici/undici:6369:18)\n' +
+      '    at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:38:38)\n' +
+      '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+    exception: true,
+    date: 'Mon Mar 20 2023 22:35:10 GMT-0300 (Brasilia Standard Time)',
+    process: {
+      pid: 55102,
+      uid: 1000,
+      gid: 1001,
+      cwd: '/home/zizmackrok/Desktop/Code/not-too-powerful/server',
+      execPath: '/home/zizmackrok/.nvm/versions/node/v18.15.0/bin/node',
+      version: 'v18.15.0',
+      argv: [
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/.bin/ts-node',
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/app.ts'
+      ],
+      memoryUsage: {
+        rss: 357842944,
+        heapTotal: 232034304,
+        heapUsed: 188027192,
+        external: 6605001,
+        arrayBuffers: 3864718
+      }
+    },
+    os: { loadavg: [ 1.1, 0.96, 0.88 ], uptime: 45613.39 },
+    trace: [
+      {
+        column: 15,
+        file: 'node:internal/deps/undici/undici',
+        function: 'specConsumeBody',
+        line: 6466,
+        method: null,
+        native: false
+      },
+      {
+        column: 18,
+        file: 'node:internal/deps/undici/undici',
+        function: 'Response.json',
+        line: 6369,
+        method: 'json',
+        native: false
+      },
+      {
+        column: 38,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts',
+        function: 'getUserToken',
+        line: 38,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: 'node:internal/process/task_queues',
+        function: 'processTicksAndRejections',
+        line: 95,
+        method: null,
+        native: false
+      }
+    ],
+    req: {
+      url: '/api/v1/auth/d/userToken',
+      headers: {
+        host: 'localhost:4000',
+        connection: 'keep-alive',
+        'content-length': '41',
+        pragma: 'no-cache',
+        'cache-control': 'no-cache',
+        'sec-ch-ua': '"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"',
+        'sec-ch-ua-platform': '"Linux"',
+        'sec-ch-ua-mobile': '?0',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+        'content-type': 'application/json',
+        accept: '*/*',
+        origin: 'http://localhost:5173',
+        'sec-fetch-site': 'same-site',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-dest': 'empty',
+        referer: 'http://localhost:5173/',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'en-US,en;q=0.9,pt-BR;q=0.8,pt;q=0.7,es;q=0.6'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/v1/auth/d/userToken',
+      query: {}
+    }
+  },
+  level: '\x1B[31merror\x1B[39m',
+  message: 'middlewareError',
+  timestamp: '2023-03-20 22:35:10:3510'
+}

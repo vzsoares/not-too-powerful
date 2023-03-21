@@ -27,7 +27,16 @@ export const getUserToken = async (req: Request, res: Response) => {
   if (request.status !== 200) throw new CustomError(401);
   const data = await request.json();
 
-  res.ok(data);
+  const identifyReq = await fetch('https://discordapp.com/api/users/@me', {
+    // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
+    headers: { authorization: `Bearer ${data['access_token']}` },
+    method: 'GET',
+    body: null,
+  });
+  if (identifyReq.status !== 200) throw new CustomError(401);
+  const identifyData = await identifyReq.json();
+
+  res.ok({ auth: data, user: identifyData });
 };
 
 export const refreshUserToken = async (req: Request, res: Response) => {
