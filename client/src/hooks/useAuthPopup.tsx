@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 import { discordGetUserCode } from '../../env';
 import { useLazyGetTokenQuery } from '../api/auth.api';
-import { setAuth } from '../store/user';
+import { setCredentials } from '../store/user';
 import { Toast } from '../components/Toast/Toast';
 import { useAppDispatch } from '../hooks';
 
@@ -48,7 +48,7 @@ export default function useAuthPopup() {
         verifyToken(code)
           .unwrap()
           .then((r) => {
-            dispatch(setAuth(r.data));
+            dispatch(setCredentials(r.data));
             // TODO success toast
             Toast.show({
               title: 'Success !!',

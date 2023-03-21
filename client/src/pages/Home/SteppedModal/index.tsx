@@ -1,7 +1,8 @@
 import { Fragment } from 'react';
-import { Dialog, Typography, Box } from '@mui/material';
+import { DoubleArrow } from '@mui/icons-material';
+import { Dialog, Typography, Box, SvgIcon } from '@mui/material';
 
-import { setModalOpen } from '../../../store/upload';
+import { setModalOpen, setStep } from '../../../store/upload';
 import { useAppDispatch, useAppSelector } from '../../../hooks';
 
 import GuildSelector from './components/GuildSelector';
@@ -14,7 +15,11 @@ function SteppedModal() {
   const dispatch = useAppDispatch();
 
   const modalOpen = upload.modalOpen;
-  const handleClose = () => dispatch(setModalOpen(false));
+  const resetStep = () => dispatch(setStep(1));
+  const handleClose = () => {
+    dispatch(setModalOpen(false));
+    resetStep();
+  };
 
   const step = upload.step;
 
@@ -34,8 +39,21 @@ function SteppedModal() {
       }}
     >
       <Stepper />
-
-      <Box sx={{ display: 'flex', flexDirection: 'column', mt: 4, flex: 1 }}>
+      <SvgIcon
+        component={DoubleArrow}
+        onClick={resetStep}
+        color='primary'
+        sx={{
+          fontSize: '2.5rem',
+          mt: 1,
+          cursor: 'pointer',
+          transform: 'rotate(180deg)',
+          '&:hover': {
+            transform: 'scale(1.2) rotate(180deg)',
+          },
+        }}
+      />
+      <Box sx={{ display: 'flex', flexDirection: 'column', mt: 1, flex: 1 }}>
         {step === 1 ? (
           <AuthStep />
         ) : step === 2 ? (

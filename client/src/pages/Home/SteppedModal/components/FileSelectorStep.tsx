@@ -11,12 +11,14 @@ import { useRef, useState } from 'react';
 import compressImage from '../../../../utils/compressImage';
 import { API_BASE } from '../../../../../env';
 import { Toast } from '../../../../components/Toast/Toast';
-import { useAppDispatch } from '../../../../hooks';
-import { setModalOpen } from '../../../../store/upload';
+import { useAppDispatch, useAppSelector } from '../../../../hooks';
+import { setModalOpen, setStep } from '../../../../store/upload';
 
 function FileSelectorStep() {
   const dispatch = useAppDispatch();
+  const user = useAppSelector((x) => x.user);
   const handleClose = () => dispatch(setModalOpen(false));
+  const resetStep = () => dispatch(setStep(1));
 
   const [loading, setLoading] = useState(false);
   const [file, setFile] = useState<File | null>(null);
@@ -31,6 +33,7 @@ function FileSelectorStep() {
     handleClose();
     setFile(null);
     setMessage('');
+    resetStep();
   };
 
   const inputRef = useRef<HTMLInputElement>(null);
@@ -45,7 +48,7 @@ function FileSelectorStep() {
     const formData = new FormData();
     formData.append('content', msg);
     formData.append('attachments', processedFile);
-    formData.append('userId', '983926090831659018');
+    formData.append('userId', user.user?.id ?? '');
 
     const response = await fetch(`${API_BASE}/api/v1/guilds/sendMessage`, {
       body: formData,

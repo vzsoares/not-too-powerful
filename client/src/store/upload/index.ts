@@ -11,7 +11,7 @@ interface uploadState {
 const initialState: uploadState = {
   selectedGuild: null,
   selectedGuildChannel: null,
-  modalOpen: true,
+  modalOpen: false,
   step: 1,
 };
 

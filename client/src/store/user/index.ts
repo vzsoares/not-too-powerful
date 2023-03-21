@@ -2,6 +2,7 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 interface User {
   name: string;
+  id: string;
 }
 interface AuthOjb {
   access_token: string;

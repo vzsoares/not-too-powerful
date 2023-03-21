@@ -1,9 +1,16 @@
 import { Box, Typography } from '@mui/material';
 import ImageIcon from '@mui/icons-material/Image';
 
+import { useAppDispatch } from '../../../hooks';
+import { setModalOpen } from '../../../store/upload';
+
 function UploadBox() {
+  const dispatch = useAppDispatch();
+  const handleOpen = () => dispatch(setModalOpen(true));
+
   return (
     <Box
+      onClick={handleOpen}
       sx={{
         flex: 1,
         my: '3rem',
