@@ -56,5 +56,4 @@ function UploadBox() {
   );
 }
 
-// TODO you must log in first
 export default UploadBox;

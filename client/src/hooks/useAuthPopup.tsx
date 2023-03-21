@@ -49,16 +49,13 @@ export default function useAuthPopup() {
           .unwrap()
           .then((r) => {
             dispatch(setCredentials(r.data));
-            // TODO success toast
             Toast.show({
               title: 'Success !!',
               message: 'Logged in',
               type: 'success',
             });
           })
-          .catch((e) => {
-            // TODO
-            console.error('error login in', e);
+          .catch(() => {
             Toast.show({
               title: 'Error !!',
               message: 'Failed logging in',

@@ -9,7 +9,6 @@ import GuildSelector from './components/GuildSelector';
 import AuthStep from './components/AuthStep';
 import FileSelectorStep from './components/FileSelectorStep';
 
-// TODO stepped modal, login/server.channel/img/send
 function SteppedModal() {
   const upload = useAppSelector((x) => x.upload);
   const dispatch = useAppDispatch();

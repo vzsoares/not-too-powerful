@@ -63,6 +63,7 @@ export const discordApi = createApi({
   }),
 });
 // TODO identify user
+// TODO handle errors (log user out on 401)
 
 export const { useGetGuildMatchesQuery, useGetGuildChannelsQuery } = discordApi;
 

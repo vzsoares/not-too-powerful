@@ -49,7 +49,7 @@ export const authApi = createApi({
     }),
   }),
 });
-// TODO identify user
+// TODO identify user separately
 
 export const { useLazyGetTokenQuery } = authApi;
 
