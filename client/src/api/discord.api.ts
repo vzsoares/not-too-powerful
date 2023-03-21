@@ -25,6 +25,12 @@ export interface GuildChannelSummary {
   permission_overwrites: string[] | null;
 }
 
+export interface sendMessageT {
+  content?: string;
+  attachments: File;
+  userId: string;
+}
+
 export const discordApi = createApi({
   baseQuery: fetchBaseQuery({
     baseUrl: `${API_BASE}/`,
@@ -47,6 +53,13 @@ export const discordApi = createApi({
         params: { guild_id },
       }),
     }),
+    // sendMessage: build.query<API_RESULT<unknown>, FormData>({
+    //   query: (body) => ({
+    //     method: 'POST',
+    //     url: 'api/v1/guilds/sendMessage',
+    //     body,
+    //   }),
+    // }),
   }),
 });
 // TODO identify user

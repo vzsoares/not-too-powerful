@@ -1,20 +1,74 @@
 import ImageIcon from '@mui/icons-material/Image';
-import { Box, Button, Typography } from '@mui/material';
+import {
+  Box,
+  Button,
+  CircularProgress,
+  OutlinedInput,
+  Typography,
+} from '@mui/material';
 import { useRef, useState } from 'react';
 
+import compressImage from '../../../../utils/compressImage';
+import { API_BASE } from '../../../../../env';
+import { Toast } from '../../../../components/Toast/Toast';
+import { useAppDispatch } from '../../../../hooks';
+import { setModalOpen } from '../../../../store/upload';
+
 function FileSelectorStep() {
+  const dispatch = useAppDispatch();
+  const handleClose = () => dispatch(setModalOpen(false));
+
+  const [loading, setLoading] = useState(false);
   const [file, setFile] = useState<File | null>(null);
+  const [message, setMessage] = useState('');
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files?.[0]) {
       setFile(e.target.files?.[0]);
     }
   };
 
+  const handleClear = () => {
+    handleClose();
+    setFile(null);
+    setMessage('');
+  };
+
   const inputRef = useRef<HTMLInputElement>(null);
   const handleClick = () => inputRef.current?.click();
 
-  const handleSendFile = () => {
-    // console.log(file);
+  const handleSendFile = async () => {
+    if (!file) return;
+    const processedFile = await compressImage(file);
+    if (processedFile instanceof Error) return;
+    setLoading(true);
+    const msg = message;
+    const formData = new FormData();
+    formData.append('content', msg);
+    formData.append('attachments', processedFile);
+    formData.append('userId', '983926090831659018');
+
+    const response = await fetch(`${API_BASE}/api/v1/guilds/sendMessage`, {
+      body: formData,
+      method: 'POST',
+    });
+    if (response.status !== 200) {
+      Toast.show({
+        title: 'Error !!',
+        message: 'Failed',
+        type: 'error',
+      });
+      setLoading(false);
+      handleClear();
+      return;
+    }
+
+    Toast.show({
+      title: 'Success !!',
+      message: 'Message sent',
+      type: 'success',
+    });
+    setLoading(false);
+    handleClear();
   };
   return (
     <Box
@@ -56,14 +110,27 @@ function FileSelectorStep() {
           />
         </Box>
       </Box>
-      <Button
-        variant='contained'
-        sx={{ ml: 'auto', mt: 2, py: 1.5, px: 3.5 }}
-        disabled={!file}
-        onClick={() => handleSendFile()}
-      >
-        SEND
-      </Button>
+      <OutlinedInput
+        // inputProps={{ style: { padding: '6px' } }}
+        sx={{ minWidth: '232px', minHeight: '42px', p: '8px 10px' }}
+        placeholder='Message?'
+        value={message}
+        onChange={(e) => setMessage(e.target.value)}
+        multiline
+      />
+      {loading ? (
+        <CircularProgress sx={{ marginLeft: 'auto' }} />
+      ) : (
+        <Button
+          variant='contained'
+          sx={{ ml: 'auto', mt: 2, py: 1.5, px: 3.5 }}
+          disabled={!file}
+          // eslint-disable-next-line @typescript-eslint/no-misused-promises
+          onClick={handleSendFile}
+        >
+          SEND
+        </Button>
+      )}
     </Box>
   );
 }
