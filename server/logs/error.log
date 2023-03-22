@@ -4036,3 +4036,89 @@
   message: 'middlewareError',
   timestamp: '2023-03-20 22:35:10:3510'
 }
+{
+  meta: {
+    error: p [Error]: Something wrong happened ):
+        at s (/home/zizmackrok/Desktop/Code/not-too-powerful/server/build/out.js:1:5431)
+        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+        at async M (/home/zizmackrok/Desktop/Code/not-too-powerful/server/build/out.js:1:5470) {
+      status: 401,
+      error: [],
+      code: undefined
+    },
+    level: 'error',
+    message: 'uncaughtException: Something wrong happened ):\n' +
+      'Error: Something wrong happened ):\n' +
+      '    at s (/home/zizmackrok/Desktop/Code/not-too-powerful/server/build/out.js:1:5431)\n' +
+      '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+      '    at async M (/home/zizmackrok/Desktop/Code/not-too-powerful/server/build/out.js:1:5470)',
+    stack: 'Error: Something wrong happened ):\n' +
+      '    at s (/home/zizmackrok/Desktop/Code/not-too-powerful/server/build/out.js:1:5431)\n' +
+      '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+      '    at async M (/home/zizmackrok/Desktop/Code/not-too-powerful/server/build/out.js:1:5470)',
+    exception: true,
+    date: 'Tue Mar 21 2023 23:09:40 GMT-0300 (Brasilia Standard Time)',
+    process: {
+      pid: 60575,
+      uid: 1000,
+      gid: 1001,
+      cwd: '/home/zizmackrok/Desktop/Code/not-too-powerful/server',
+      execPath: '/home/zizmackrok/.nvm/versions/node/v18.15.0/bin/node',
+      version: 'v18.15.0',
+      argv: [
+        '/home/zizmackrok/.nvm/versions/node/v18.15.0/bin/node',
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/build/out'
+      ],
+      memoryUsage: {
+        rss: 101761024,
+        heapTotal: 25874432,
+        heapUsed: 23697960,
+        external: 2281724,
+        arrayBuffers: 114005
+      }
+    },
+    os: { loadavg: [ 1.75, 1.88, 1.48 ], uptime: 47798.62 },
+    trace: [
+      {
+        column: 5431,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/build/out.js',
+        function: 's',
+        line: 1,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: 'node:internal/process/task_queues',
+        function: 'process.processTicksAndRejections',
+        line: 95,
+        method: 'processTicksAndRejections',
+        native: false
+      },
+      {
+        column: 5470,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/build/out.js',
+        function: 'async M',
+        line: 1,
+        method: null,
+        native: false
+      }
+    ],
+    req: {
+      url: '/api/v1/guilds/matches',
+      headers: {
+        host: 'localhost:4000',
+        'user-agent': 'insomnia/2022.7.5',
+        authorization: 'QCngjG2VOoB8pO08j5U7D2wEDthyaz',
+        accept: '*/*'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/api/v1/guilds/matches',
+      query: {}
+    }
+  },
+  level: '\x1B[31merror\x1B[39m',
+  message: 'middlewareError',
+  timestamp: '2023-03-21 23:09:40:940'
+}
