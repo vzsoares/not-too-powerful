@@ -35,5 +35,5 @@
       "@startup/*": ["./startup/*"]
     }
   },
-  "exclude": ["node_modules", "build","./esbuild.js"]
+  "exclude": ["node_modules", "build", "./esbuild.js"]
 }
