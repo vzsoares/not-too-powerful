@@ -1,7 +1,5 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
-import { API_BASE } from '../../env';
-
 import { authenticationHeader } from './utils/headers';
 
 export interface GuildSummary {
@@ -33,7 +31,7 @@ export interface sendMessageT {
 
 export const discordApi = createApi({
   baseQuery: fetchBaseQuery({
-    baseUrl: `${API_BASE}/`,
+    baseUrl: `${import.meta.env.VITE_API_BASE ?? ''}/`,
     prepareHeaders: authenticationHeader,
   }),
   reducerPath: 'discord-api',

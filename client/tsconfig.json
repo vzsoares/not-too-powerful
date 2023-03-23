@@ -4,7 +4,7 @@
     "useDefineForClassFields": true,
     "baseUrl": "./",
     "rootDir": ".",
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "lib": ["DOM", "DOM.Iterable", "ESNext", "WebWorker"],
     "allowJs": false,
     "skipLibCheck": true,
     "esModuleInterop": false,
@@ -17,7 +17,8 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "types": ["vite/client"]
+    "types": ["vite/client"],
+    "typeRoots": ["types", "./node_modules/@types", "./src/env.d.ts"]
   },
   "include": ["**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules", "public", "dist"],

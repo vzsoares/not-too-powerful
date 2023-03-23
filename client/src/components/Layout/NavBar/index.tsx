@@ -3,7 +3,6 @@ import { Box, darken } from '@mui/system';
 import PersonIcon from '@mui/icons-material/Person';
 import { useState } from 'react';
 
-import { discordAddBotToBot } from '../../../../env';
 import { useAppDispatch, useAppSelector } from '../../../hooks';
 import useAuthPopup from '../../../hooks/useAuthPopup';
 
@@ -12,7 +11,11 @@ function Navbar() {
     <NavContainer>
       <Button
         onClick={() => {
-          window.open(discordAddBotToBot, '_blank', '');
+          window.open(
+            import.meta.env.VITE_DISCORD_ADD_BOT_TO_SERVER,
+            '_blank',
+            '',
+          );
         }}
         variant='contained'
         sx={{ py: { xs: '1rem', md: '1.5rem' }, height: 'fit-content' }}

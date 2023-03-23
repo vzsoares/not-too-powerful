@@ -1,0 +1,1 @@
+yarn vite build --emptyOutDir --outDir ../server/dist/ 

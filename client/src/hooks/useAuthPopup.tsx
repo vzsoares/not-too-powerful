@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 
-import { discordGetUserCode } from '../../env';
 import { useLazyGetTokenQuery } from '../api/auth.api';
 import { setCredentials } from '../store/user';
 import { Toast } from '../components/Toast/Toast';
@@ -18,7 +17,7 @@ export default function useAuthPopup() {
     const left = window.screenX + (window.outerWidth - width) / 2;
     const top = window.screenY + (window.outerHeight - height) / 2.5;
     const title = ``;
-    const url = discordGetUserCode;
+    const url = import.meta.env.VITE_DISCORD_GET_USER_CODE;
     const popup = window.open(
       url,
       title,

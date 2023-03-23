@@ -1,7 +1,4 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
-
-import { API_BASE } from '../../env';
-
 interface RefreshTokenResult {
   access_token: string;
   expires_in: number;
@@ -28,7 +25,7 @@ interface GetTokenResult {
 
 export const authApi = createApi({
   baseQuery: fetchBaseQuery({
-    baseUrl: `${API_BASE}/`,
+    baseUrl: `${import.meta.env.VITE_API_BASE ?? ''}/`,
   }),
   reducerPath: 'auth-api',
   tagTypes: [],

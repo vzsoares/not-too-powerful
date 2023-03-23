@@ -9,7 +9,6 @@ import {
 import { useRef, useState } from 'react';
 
 import compressImage from '../../../../utils/compressImage';
-import { API_BASE } from '../../../../../env';
 import { Toast } from '../../../../components/Toast/Toast';
 import { useAppDispatch, useAppSelector } from '../../../../hooks';
 import { setModalOpen, setStep } from '../../../../store/upload';
@@ -50,10 +49,13 @@ function FileSelectorStep() {
     formData.append('attachments', processedFile);
     formData.append('userId', user.user?.id ?? '');
 
-    const response = await fetch(`${API_BASE}/api/v1/guilds/sendMessage`, {
-      body: formData,
-      method: 'POST',
-    });
+    const response = await fetch(
+      `${import.meta.env.VITE_API_BASE ?? ''}/api/v1/guilds/sendMessage`,
+      {
+        body: formData,
+        method: 'POST',
+      },
+    );
     if (response.status !== 200) {
       Toast.show({
         title: 'Error !!',
