@@ -25,7 +25,7 @@ dotenv.config();
 const app = express();
 const port = process.env.PORT ?? 4000;
 
-app.use(express.static(path.resolve(__dirname, 'dist')));
+app.use(express.static('dist'));
 app.use(express.json());
 app.use(morgan('tiny'));
 app.use(express.urlencoded({ extended: false }));

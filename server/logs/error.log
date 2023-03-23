@@ -4122,3 +4122,363 @@
   message: 'middlewareError',
   timestamp: '2023-03-21 23:09:40:940'
 }
+{
+  meta: {
+    error: CustomError: Something wrong happened ):
+        at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:27:37)
+        at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+      status: 401,
+      error: [],
+      code: undefined
+    },
+    level: 'error',
+    message: 'uncaughtException: Something wrong happened ):\n' +
+      'Error: Something wrong happened ):\n' +
+      '    at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:27:37)\n' +
+      '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+    stack: 'Error: Something wrong happened ):\n' +
+      '    at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:27:37)\n' +
+      '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+    exception: true,
+    date: 'Wed Mar 22 2023 22:53:41 GMT-0300 (Brasilia Standard Time)',
+    process: {
+      pid: 76779,
+      uid: 1000,
+      gid: 1001,
+      cwd: '/home/zizmackrok/Desktop/Code/not-too-powerful/server',
+      execPath: '/home/zizmackrok/.nvm/versions/node/v18.15.0/bin/node',
+      version: 'v18.15.0',
+      argv: [
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/.bin/ts-node',
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/app.ts'
+      ],
+      memoryUsage: {
+        rss: 356163584,
+        heapTotal: 235180032,
+        heapUsed: 188466440,
+        external: 7118361,
+        arrayBuffers: 4378078
+      }
+    },
+    os: { loadavg: [ 1.83, 1.32, 1.22 ], uptime: 47562.91 },
+    trace: [
+      {
+        column: 37,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts',
+        function: 'getUserToken',
+        line: 27,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: 'node:internal/process/task_queues',
+        function: 'processTicksAndRejections',
+        line: 95,
+        method: null,
+        native: false
+      }
+    ],
+    req: {
+      url: '/api/v1/auth/d/userToken',
+      headers: {
+        host: 'localhost:4000',
+        connection: 'keep-alive',
+        'content-length': '41',
+        pragma: 'no-cache',
+        'cache-control': 'no-cache',
+        'sec-ch-ua': '"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"',
+        'sec-ch-ua-platform': '"Linux"',
+        'sec-ch-ua-mobile': '?0',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+        'content-type': 'application/json',
+        accept: '*/*',
+        origin: 'http://localhost:4000',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-dest': 'empty',
+        referer: 'http://localhost:4000/',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'en-US,en;q=0.9,pt-BR;q=0.8,pt;q=0.7,es;q=0.6',
+        cookie: '_ga=GA1.1.1602643740.1679411817; _ga_5MFE1WD0SZ=GS1.1.1679495660.3.0.1679495660.0.0.0; _gid=GA1.1.1710873260.1679520384; _ga_NQGLWP8VHN=GS1.1.1679527113.5.0.1679527113.0.0.0'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/v1/auth/d/userToken',
+      query: {}
+    }
+  },
+  level: '\x1B[31merror\x1B[39m',
+  message: 'middlewareError',
+  timestamp: '2023-03-22 22:53:41:5341'
+}
+{
+  meta: {
+    error: CustomError: Something wrong happened ):
+        at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:27:37)
+        at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+      status: 401,
+      error: [],
+      code: undefined
+    },
+    level: 'error',
+    message: 'uncaughtException: Something wrong happened ):\n' +
+      'Error: Something wrong happened ):\n' +
+      '    at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:27:37)\n' +
+      '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+    stack: 'Error: Something wrong happened ):\n' +
+      '    at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:27:37)\n' +
+      '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+    exception: true,
+    date: 'Wed Mar 22 2023 22:54:53 GMT-0300 (Brasilia Standard Time)',
+    process: {
+      pid: 76779,
+      uid: 1000,
+      gid: 1001,
+      cwd: '/home/zizmackrok/Desktop/Code/not-too-powerful/server',
+      execPath: '/home/zizmackrok/.nvm/versions/node/v18.15.0/bin/node',
+      version: 'v18.15.0',
+      argv: [
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/.bin/ts-node',
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/app.ts'
+      ],
+      memoryUsage: {
+        rss: 314916864,
+        heapTotal: 191139840,
+        heapUsed: 186869088,
+        external: 6790532,
+        arrayBuffers: 4050209
+      }
+    },
+    os: { loadavg: [ 2.26, 1.51, 1.29 ], uptime: 47634.75 },
+    trace: [
+      {
+        column: 37,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts',
+        function: 'getUserToken',
+        line: 27,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: 'node:internal/process/task_queues',
+        function: 'processTicksAndRejections',
+        line: 95,
+        method: null,
+        native: false
+      }
+    ],
+    req: {
+      url: '/api/v1/auth/d/userToken',
+      headers: {
+        host: 'localhost:4000',
+        connection: 'keep-alive',
+        'content-length': '41',
+        pragma: 'no-cache',
+        'cache-control': 'no-cache',
+        'sec-ch-ua': '"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"',
+        'sec-ch-ua-platform': '"Linux"',
+        'sec-ch-ua-mobile': '?0',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+        'content-type': 'application/json',
+        accept: '*/*',
+        origin: 'http://localhost:4000',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-dest': 'empty',
+        referer: 'http://localhost:4000/',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'en-US,en;q=0.9,pt-BR;q=0.8,pt;q=0.7,es;q=0.6',
+        cookie: '_ga=GA1.1.1602643740.1679411817; _ga_5MFE1WD0SZ=GS1.1.1679495660.3.0.1679495660.0.0.0; _gid=GA1.1.1710873260.1679520384; _ga_NQGLWP8VHN=GS1.1.1679527113.5.0.1679527113.0.0.0'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/v1/auth/d/userToken',
+      query: {}
+    }
+  },
+  level: '\x1B[31merror\x1B[39m',
+  message: 'middlewareError',
+  timestamp: '2023-03-22 22:54:53:5453'
+}
+{
+  meta: {
+    error: CustomError: Something wrong happened ):
+        at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:27:37)
+        at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+      status: 401,
+      error: [],
+      code: undefined
+    },
+    level: 'error',
+    message: 'uncaughtException: Something wrong happened ):\n' +
+      'Error: Something wrong happened ):\n' +
+      '    at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:27:37)\n' +
+      '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+    stack: 'Error: Something wrong happened ):\n' +
+      '    at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:27:37)\n' +
+      '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+    exception: true,
+    date: 'Wed Mar 22 2023 22:55:02 GMT-0300 (Brasilia Standard Time)',
+    process: {
+      pid: 76779,
+      uid: 1000,
+      gid: 1001,
+      cwd: '/home/zizmackrok/Desktop/Code/not-too-powerful/server',
+      execPath: '/home/zizmackrok/.nvm/versions/node/v18.15.0/bin/node',
+      version: 'v18.15.0',
+      argv: [
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/.bin/ts-node',
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/app.ts'
+      ],
+      memoryUsage: {
+        rss: 314687488,
+        heapTotal: 191926272,
+        heapUsed: 187089672,
+        external: 6363924,
+        arrayBuffers: 3623601
+      }
+    },
+    os: { loadavg: [ 1.98, 1.47, 1.28 ], uptime: 47643.23 },
+    trace: [
+      {
+        column: 37,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts',
+        function: 'getUserToken',
+        line: 27,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: 'node:internal/process/task_queues',
+        function: 'processTicksAndRejections',
+        line: 95,
+        method: null,
+        native: false
+      }
+    ],
+    req: {
+      url: '/api/v1/auth/d/userToken',
+      headers: {
+        host: 'localhost:4000',
+        connection: 'keep-alive',
+        'content-length': '41',
+        pragma: 'no-cache',
+        'cache-control': 'no-cache',
+        'sec-ch-ua': '"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"',
+        'sec-ch-ua-platform': '"Linux"',
+        'sec-ch-ua-mobile': '?0',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+        'content-type': 'application/json',
+        accept: '*/*',
+        origin: 'http://localhost:4000',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-dest': 'empty',
+        referer: 'http://localhost:4000/',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'en-US,en;q=0.9,pt-BR;q=0.8,pt;q=0.7,es;q=0.6',
+        cookie: '_ga=GA1.1.1602643740.1679411817; _ga_5MFE1WD0SZ=GS1.1.1679495660.3.0.1679495660.0.0.0; _gid=GA1.1.1710873260.1679520384; _ga_NQGLWP8VHN=GS1.1.1679527113.5.0.1679527113.0.0.0'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/v1/auth/d/userToken',
+      query: {}
+    }
+  },
+  level: '\x1B[31merror\x1B[39m',
+  message: 'middlewareError',
+  timestamp: '2023-03-22 22:55:02:552'
+}
+{
+  meta: {
+    error: CustomError: Something wrong happened ):
+        at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:27:37)
+        at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+      status: 401,
+      error: [],
+      code: undefined
+    },
+    level: 'error',
+    message: 'uncaughtException: Something wrong happened ):\n' +
+      'Error: Something wrong happened ):\n' +
+      '    at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:27:37)\n' +
+      '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+    stack: 'Error: Something wrong happened ):\n' +
+      '    at getUserToken (/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts:27:37)\n' +
+      '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+    exception: true,
+    date: 'Wed Mar 22 2023 22:57:14 GMT-0300 (Brasilia Standard Time)',
+    process: {
+      pid: 77357,
+      uid: 1000,
+      gid: 1001,
+      cwd: '/home/zizmackrok/Desktop/Code/not-too-powerful/server',
+      execPath: '/home/zizmackrok/.nvm/versions/node/v18.15.0/bin/node',
+      version: 'v18.15.0',
+      argv: [
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/node_modules/.bin/ts-node',
+        '/home/zizmackrok/Desktop/Code/not-too-powerful/server/app.ts'
+      ],
+      memoryUsage: {
+        rss: 316329984,
+        heapTotal: 191401984,
+        heapUsed: 185929592,
+        external: 6355118,
+        arrayBuffers: 3614835
+      }
+    },
+    os: { loadavg: [ 1.72, 1.48, 1.3 ], uptime: 47775.54 },
+    trace: [
+      {
+        column: 37,
+        file: '/home/zizmackrok/Desktop/Code/not-too-powerful/server/controllers/discordAuth/index.ts',
+        function: 'getUserToken',
+        line: 27,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: 'node:internal/process/task_queues',
+        function: 'processTicksAndRejections',
+        line: 95,
+        method: null,
+        native: false
+      }
+    ],
+    req: {
+      url: '/api/v1/auth/d/userToken',
+      headers: {
+        host: 'localhost:4000',
+        connection: 'keep-alive',
+        'content-length': '41',
+        pragma: 'no-cache',
+        'cache-control': 'no-cache',
+        'sec-ch-ua': '"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"',
+        'sec-ch-ua-platform': '"Linux"',
+        'sec-ch-ua-mobile': '?0',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+        'content-type': 'application/json',
+        accept: '*/*',
+        origin: 'http://localhost:4000',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-dest': 'empty',
+        referer: 'http://localhost:4000/',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'en-US,en;q=0.9,pt-BR;q=0.8,pt;q=0.7,es;q=0.6',
+        cookie: '_ga=GA1.1.1602643740.1679411817; _ga_5MFE1WD0SZ=GS1.1.1679495660.3.0.1679495660.0.0.0; _gid=GA1.1.1710873260.1679520384; _ga_NQGLWP8VHN=GS1.1.1679527113.5.0.1679527113.0.0.0'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/v1/auth/d/userToken',
+      query: {}
+    }
+  },
+  level: '\x1B[31merror\x1B[39m',
+  message: 'middlewareError',
+  timestamp: '2023-03-22 22:57:14:5714'
+}

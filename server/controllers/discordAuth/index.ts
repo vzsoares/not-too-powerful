@@ -19,7 +19,8 @@ export const getUserToken = async (req: Request, res: Response) => {
       client_id: process.env.CLIENT_ID ?? '',
       client_secret: process.env.CLIENT_SECRET ?? '',
       grant_type: 'authorization_code',
-      redirect_uri: 'http://localhost:5173/',
+      // TODO REDIRECT_URI = dev=5173 ; prod=4000
+      redirect_uri: process.env.REDIRECT_URI ?? '',
       code: reqBody.code,
     }),
   };
