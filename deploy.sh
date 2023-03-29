@@ -8,7 +8,6 @@
 # !run docker with env file, and expose port 4000 to host(ME)
 # docker run -p 4000:4000 --env-file .env nottoopowerful:latest
 
-
 echo "building client"
 (cd client/ && yarn vite build --emptyOutDir --outDir ../server/dist/) 
 
@@ -27,8 +26,9 @@ aws ecr get-login-password --region us-east-1 | docker login --username AWS --pa
 echo "EXEC DOCKER PUSH"
 docker push 355738159777.dkr.ecr.us-east-1.amazonaws.com/gum-bults:latest
 
-# TODO automate deploy
-# EX: echo eval $(aws ecs update-service --cluster aprova-custer-prod --service approva-connect --force-new-deployment --region us-east-1)
+echo "EXEC AWS UPDATE-SERVICE"
+echo eval $(aws ecs update-service --cluster not-to-poweful-dev --service 
+not-to-poweful-dev-service-2 --force-new-deployment --region us-east-1)
 
 # https://not-to-poweful-dev-balancer-2099129308.us-east-1.elb.amazonaws.com/
 
