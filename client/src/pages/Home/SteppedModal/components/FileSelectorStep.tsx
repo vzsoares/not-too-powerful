@@ -16,6 +16,8 @@ import { setModalOpen, setStep } from '../../../../store/upload';
 function FileSelectorStep() {
   const dispatch = useAppDispatch();
   const user = useAppSelector((x) => x.user);
+  const guild = useAppSelector((x) => x.upload);
+
   const handleClose = () => dispatch(setModalOpen(false));
   const resetStep = () => dispatch(setStep(1));
 
@@ -48,6 +50,7 @@ function FileSelectorStep() {
     formData.append('content', msg);
     formData.append('attachments', processedFile);
     formData.append('userId', user.user?.id ?? '');
+    formData.append('channelId', guild.selectedGuildChannel?.id ?? '');
 
     const response = await fetch(
       `${import.meta.env.VITE_API_BASE ?? ''}/api/v1/guilds/sendMessage`,

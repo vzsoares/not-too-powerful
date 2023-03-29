@@ -85,6 +85,9 @@ export const postImage = async (req: Request, res: Response) => {
   const userIdSchema = z
     .string({ required_error: "'userId' is required" })
     .min(5);
+  const idSchema = z
+    .string({ required_error: "'channelId' is required" })
+    .min(5);
   if (!req.files || Object.keys(req.files).length === 0) {
     return res.status(400).send('No files were uploaded.');
   }
@@ -94,6 +97,7 @@ export const postImage = async (req: Request, res: Response) => {
 
   const message = req.body?.content as string | undefined;
   const userId = userIdSchema.parse(req.body?.userId);
+  const channelId = idSchema.parse(req.body.channelId);
 
   const processedFile = await ProcessImage(file['data']);
 
@@ -104,7 +108,7 @@ export const postImage = async (req: Request, res: Response) => {
   });
 
   const response = await axios.post(
-    'https://discordapp.com/api/channels/1067968693017002047/messages',
+    `https://discordapp.com/api/channels/${channelId}/messages`,
     form,
     {
       headers: {
