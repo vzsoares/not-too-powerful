@@ -23,7 +23,5 @@
     "husky": "^8.0.3",
     "lint-staged": "^13.1.0"
   },
-  "dependencies": {
-    "winston": "^3.8.2"
-  }
+  "dependencies": {}
 }
