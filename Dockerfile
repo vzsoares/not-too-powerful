@@ -4,7 +4,7 @@ WORKDIR /usr/src/app
 
 COPY ["server/package.json", "server/yarn.lock*", "./"]
 COPY ["server/build/out.js", "./build/"]
-COPY server/dist ./dist 
+COPY ["server/dist", "./dist"]
 
 RUN yarn install
 EXPOSE 4000
