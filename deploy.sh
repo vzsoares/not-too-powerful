@@ -31,6 +31,8 @@ docker push 355738159777.dkr.ecr.us-east-1.amazonaws.com/gum-bults:latest
 echo "EXEC AWS UPDATE-SERVICE"
 aws ecs update-service --cluster "not-to-poweful-dev" --service "not-to-poweful-dev-service-2" --force-new-deployment --region us-east-1
 
+echo "SUCCESS"
+
 # https://not-to-poweful-dev-balancer-2099129308.us-east-1.elb.amazonaws.com/
 
 # prod bug, do not use https with invalid ssl or discordapi will cry
