@@ -11,6 +11,8 @@
     "test-smoke": "cd client && yarn run test && cd ../server && yarn run test",
     "fmt": "cd client && yarn fmt && cd ../server && yarn fmt",
     "check-types": "cd client && yarn check-types && cd ../server && yarn check-types",
+    "check-prettier": "cd client && yarn check-prettier && cd ../server && yarn check-prettier",
+    "check-lint": "cd client && yarn check-lint && cd ../server && yarn check-lint",
     "prepare": "husky install"
   },
   "lint-staged": {

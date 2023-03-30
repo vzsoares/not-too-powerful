@@ -1,4 +1,4 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-yarn fmt && yarn check-types && yarn test-smoke
+yarn check-lint && yarn check-prettier && yarn check-types && yarn test-smoke

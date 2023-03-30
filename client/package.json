@@ -9,6 +9,10 @@
     "preview": "vite preview",
     "test": "vitest run",
     "fmt": " yarn prettier -w . && yarn eslint --fix .",
+    "lint-fix": "yarn eslint --fix src",
+    "prettier-format": "yarn prettier --config ../.prettierrc.yml --write src",
+    "check-prettier": "yarn prettier --check src",
+    "check-lint": "yarn eslint src --max-warnings=0",
     "check-types": "yarn tsc --project ./tsconfig.json --noemit && echo 'Client types are valid ✔︎'"
   },
   "dependencies": {
