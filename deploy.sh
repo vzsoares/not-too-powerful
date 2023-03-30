@@ -8,11 +8,13 @@
 # !run docker with env file, and expose port 4000 to host(ME)
 # docker run -p 4000:4000 --env-file .env nottoopowerful:latest
 
+set -e
+
 echo "building client"
-(cd client/ && yarn vite build --emptyOutDir --outDir ../server/dist/) 
+(cd client/ && yarn install && yarn vite build --emptyOutDir --outDir ../server/dist/) 
 
 echo "building server"
-(cd server/ && yarn build) 
+(cd server/ && yarn install && yarn build) 
 
 echo "building docker image"
 docker buildx build --no-cache --pull --file Dockerfile -t gum-bults .
