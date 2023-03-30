@@ -28,7 +28,7 @@ jobs:
     - run: npm install yarn
 
     - name: Generate client env
-    - run: |
+      run: |
         touch client/.env
         echo "VITE_DISCORD_GET_USER_CODE=${{ secrets.VITE_DISCORD_GET_USER_CODE }}" >> client/.env
         echo "VITE_DISCORD_ADD_BOT_TO_SERVER=${{ secrets.VITE_DISCORD_ADD_BOT_TO_SERVER }}" >> client/.env
