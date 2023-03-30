@@ -34,6 +34,7 @@ rules:
   eol-last: error
 
   # typescript-eslint
+  array-callback-return: off
   '@typescript-eslint/no-unused-vars': error
   '@typescript-eslint/explicit-function-return-type': off
   '@typescript-eslint/strict-boolean-expressions': off

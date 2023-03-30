@@ -1,5 +1,8 @@
-import { Box, Typography, lighten, Button } from '@mui/material';
+import { Box, Typography, lighten, Button, SvgIcon } from '@mui/material';
+import TagIcon from '@mui/icons-material/Tag';
+import VolumeUpIcon from '@mui/icons-material/VolumeUp';
 
+import { ReactComponent as DiscordLogo } from '../../../../assets/discord-icon.svg';
 import {
   useGetGuildMatchesQuery,
   useGetGuildChannelsQuery,
@@ -26,9 +29,17 @@ function GuildSelector() {
       skip: !upload.selectedGuild?.id,
     },
   );
+
   return (
     <>
-      <Box sx={{ display: 'flex', flex: 1 }}>
+      <Box
+        sx={{
+          display: 'flex',
+          flex: 1,
+          flexDirection: { xs: 'column', md: 'row' },
+          gap: { xs: 3, md: 0 },
+        }}
+      >
         <Box sx={{ display: 'flex', flexDirection: 'column', flex: 1 }}>
           <Typography>Server:</Typography>
           {guild_matches?.data.map((el, i) => {
@@ -37,6 +48,16 @@ function GuildSelector() {
               <ListItem
                 key={i}
                 evenOdd={isOdd}
+                icon={
+                  <SvgIcon
+                    component={DiscordLogo}
+                    inheritViewBox
+                    sx={{
+                      fontSize: '2.5rem',
+                      color: 'gray.900',
+                    }}
+                  />
+                }
                 name={el?.name}
                 selected={upload.selectedGuild?.id === el?.id}
                 onClick={() => {
@@ -51,11 +72,31 @@ function GuildSelector() {
         <Box sx={{ display: 'flex', flexDirection: 'column', flex: 1 }}>
           <Typography>Channel:</Typography>
           {guild_channels?.data.map((el, i) => {
+            if (![0, 2].includes(el.type)) return;
             const isEven = !(i % 2);
             return (
               <ListItem
                 key={i}
                 evenOdd={isEven}
+                icon={
+                  el.type === 0 ? (
+                    <SvgIcon
+                      component={TagIcon}
+                      sx={{
+                        fontSize: '2.5rem',
+                        color: 'gray.900',
+                      }}
+                    />
+                  ) : (
+                    <SvgIcon
+                      component={VolumeUpIcon}
+                      sx={{
+                        fontSize: '2.5rem',
+                        color: 'gray.900',
+                      }}
+                    />
+                  )
+                }
                 name={el?.name}
                 selected={upload.selectedGuildChannel?.id === el?.id}
                 onClick={() => {
@@ -86,11 +127,13 @@ function ListItem({
   name,
   selected,
   onClick,
+  icon,
 }: {
   evenOdd: boolean;
   name: string;
   selected: boolean;
   onClick: () => void;
+  icon: React.ReactNode;
 }) {
   const { theme } = useEnhancedTheme();
   const secondary600 = lighten(theme.palette.secondary.main, 0.7);
@@ -98,6 +141,9 @@ function ListItem({
     <Box
       onClick={onClick}
       sx={{
+        display: 'inline-flex',
+        gap: '1rem',
+        alignItems: 'center',
         bgcolor: selected
           ? 'primary.main'
           : evenOdd
@@ -113,7 +159,16 @@ function ListItem({
         },
       }}
     >
-      <Typography>{name}</Typography>
+      {icon}
+      <Typography
+        sx={{
+          whiteSpace: 'nowrap',
+          overflow: 'hidden',
+          textOverflow: 'ellipsis',
+        }}
+      >
+        {name}
+      </Typography>
     </Box>
   );
 }
