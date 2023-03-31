@@ -1,0 +1,26 @@
+version: "3.8"
+services:
+  nginx:
+    restart: always
+    build:
+      context: ./.nginx
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    depends_on:
+      - api
+    networks:
+      - app-network
+
+  api:
+    build:
+        context: ./
+        dockerfile: Dockerfile
+    env_file:
+      - ./server/.env
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

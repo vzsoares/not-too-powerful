@@ -7,6 +7,8 @@
 
 # !run docker with env file, and expose port 4000 to host(ME)
 # docker run -p 4000:4000 --env-file .env nottoopowerful:latest
+# docker buildx build -t notnot .
+# docker run -p 4000:80 --env-file ./server/.env notnot
 
 set -e
 
