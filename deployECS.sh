@@ -5,11 +5,6 @@
 # !start docker
 # sudo dockerd
 
-# !run docker with env file, and expose port 4000 to host(ME)
-# docker run -p 4000:4000 --env-file .env nottoopowerful:latest
-# docker buildx build -t notnot .
-# docker run -p 4000:80 --env-file ./server/.env notnot
-
 set -e
 
 echo "building client"
@@ -37,4 +32,4 @@ echo "SUCCESS"
 
 # https://not-to-poweful-dev-balancer-2099129308.us-east-1.elb.amazonaws.com/
 
-# prod bug, do not use https with invalid ssl or discordapi will cry
+

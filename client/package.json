@@ -5,7 +5,7 @@
   "license": "ISC",
   "scripts": {
     "dev": "vite",
-    "build": "yarn vite build",
+    "build": "yarn vite build --emptyOutDir --outDir ../server/dist/",
     "preview": "vite preview",
     "test": "vitest run",
     "fmt": " yarn prettier -w . && yarn eslint --fix .",
