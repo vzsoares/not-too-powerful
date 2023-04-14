@@ -1,0 +1,66 @@
+- hosts: my_host
+  become: true
+
+  vars:
+    aws_access_key_id: "{{ aws_access_key_id }}"
+    aws_secret_access_key: "{{ aws_secret_access_key }}"
+    aws_region: "{{ aws_region }}"
+    aws_account_id: "{{ aws_account_id }}"
+    compose_item: "{{ compose_item }}"
+
+  tasks:
+    - name: Create AWS CLI configuration directory
+      file:
+        path: /home/ubuntu/.aws
+        state: directory
+        mode: "0755"
+        owner: ubuntu
+        group: ubuntu
+    - name: Create AWS CLI credentials file
+      copy:
+        content: |
+          [default]
+          aws_access_key_id = {{ aws_access_key_id }}
+          aws_secret_access_key = {{ aws_secret_access_key }}
+        dest: /home/ubuntu/.aws/credentials
+        mode: "0600"
+        owner: ubuntu
+        group: ubuntu
+    - name: Create AWS CLI configuration file
+      copy:
+        content: |
+          [default]
+          region = {{ aws_region }}
+        dest: /home/ubuntu/.aws/config
+        mode: "0600"
+        owner: ubuntu
+        group: ubuntu
+
+    - name: Ensure Docker service is started
+      service:
+        name: docker
+        state: started
+
+    - name: Docker login
+      shell: aws ecr get-login-password --region {{ aws_region }} | docker login --username AWS --password-stdin {{ aws_account_id }}.dkr.ecr.{{ aws_region }}.amazonaws.com
+
+    - name: Create env
+      shell:  |
+        [ -e .env ] && rm .env
+        touch .env
+        echo "PORT={{ PORT }}" >> .env
+        echo "CLIENT_TOKEN={{ CLIENT_TOKEN }}" >> .env
+        echo "CLIENT_ID={{ CLIENT_ID }}" >> .env
+        echo "CLIENT_SECRET={{ CLIENT_SECRET }}" >> .env
+        echo "REDIRECT_URI={{ REDIRECT_URI }}" >> .env
+
+    - name: copy Docker Compose files
+      copy:
+        src: ./{{ compose_item }}
+        dest: ./{{ compose_item }}
+      loop:
+      - "{{ compose_item }}"
+
+    - name: deploy Docker Compose stack
+      shell: docker-compose -f {{ compose_item }} up -d
+

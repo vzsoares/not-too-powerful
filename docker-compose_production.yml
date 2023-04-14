@@ -1,0 +1,26 @@
+version: '3.8'
+services:
+  nginx:
+    restart: always
+    image: 355738159777.dkr.ecr.us-east-1.amazonaws.com/nginx-tasty-water:latest
+    ports:
+      - '80:80'
+    depends_on:
+      - not-too-powerful
+    networks:
+      - app-network
+
+  not-too-powerful:
+    image: 355738159777.dkr.ecr.us-east-1.amazonaws.com/not-too-powerful:latest
+    environment:
+      - PORT
+      - CLIENT_TOKEN
+      - CLIENT_ID
+      - CLIENT_SECRET
+      - REDIRECT_URI
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

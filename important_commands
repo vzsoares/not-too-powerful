@@ -1,0 +1,8 @@
+
+# RUN PLAYBOOK
+ansible-playbook -i inventory.yml playbook_pull_and_compose.yml -vvv --extra-vars "@.env.playbook.json"
+
+
+# TODO
+# get ssh through cli
+# pipeline
