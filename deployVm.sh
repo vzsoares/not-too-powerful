@@ -2,6 +2,8 @@
 
 # docker rmi --force  $(docker images -f dangling=true -q)
 # docker run -p 4000:4000 --env-file ./server/.env notnot
+# --progress=plain --no-cache --pull
+# docker system prune -a
 
 # docker buildx build \
 # -t notnot \

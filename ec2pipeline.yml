@@ -1,0 +1,33 @@
+# TODO
+
+# name: Deploy to VM
+
+# on:
+#   push:
+#     branches:
+#       - main
+
+# jobs:
+#   deploy:
+#     runs-on: ubuntu-latest
+
+#     steps:
+#       - name: Checkout code
+#         uses: actions/checkout@v2
+
+#       - name: Configure SSH
+#         uses: webfactory/ssh-agent@v0.5.0
+#         with:
+#           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+#       - name: Install Ansible
+#         run: sudo apt-get update && sudo apt-get -y install ansible
+
+#       - name: Deploy application
+#         run: ansible-playbook playbook.yml -i inventory.yml
+
+#       - name: Clean up SSH
+#         uses: webfactory/ssh-agent@v0.5.0
+#         with:
+#           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+#           remove: true

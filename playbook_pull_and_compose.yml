@@ -62,5 +62,5 @@
       - "{{ compose_item }}"
 
     - name: deploy Docker Compose stack
-      shell: docker-compose -f {{ compose_item }} up -d
+      shell: docker-compose -f {{ compose_item }} pull && docker-compose -f {{ compose_item }} up -d
 
