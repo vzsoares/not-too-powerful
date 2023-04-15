@@ -16,3 +16,4 @@ sudo docker logs 625f55e37e7c
 # get ssh through cli
 # pipeline
 # pass push_ecr args as vars
+# playbook_ just updates service 
