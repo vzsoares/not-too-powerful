@@ -35,7 +35,7 @@ jobs:
           key: ${{secrets.SSH_PRIVATE_KEY}}
           options: |
             --inventory inventory_production.yml
-            --extra-vars "aws_access_key_id={{ secrets.aws_access_key_id }} aws_secret_access_key={{ secrets.aws_secret_access_key }} aws_region={{ secrets.aws_region }} aws_account_id={{ secrets.aws_account_id }} compose_item={{ secrets.secrets.compose_item }} CLIENT_TOKEN={{ secrets.CLIENT_TOKEN }} PORT={{ secrets.PORT }} CLIENT_TOKEN={{ secrets.CLIENT_TOKEN }} CLIENT_ID={{ secrets.CLIENT_ID }} CLIENT_SECRET={{ secrets.CLIENT_SECRET }} REDIRECT_URI={{ secrets.REDIRECT_URI }}"
+            --extra-vars "aws_access_key_id={{ secrets.AWS_ACCESS_KEY_ID }} aws_secret_access_key={{ secrets.AWS_SECRET_ACCESS_KEY }} aws_region={{ secrets.AWS_REGION }} aws_account_id={{ secrets.AWS_ACCOUNT_ID }} compose_item={{ secrets.COMPOSE_ITEM }} CLIENT_TOKEN={{ secrets.CLIENT_TOKEN }} PORT={{ secrets.PORT }} CLIENT_TOKEN={{ secrets.CLIENT_TOKEN }} CLIENT_ID={{ secrets.CLIENT_ID }} CLIENT_SECRET={{ secrets.CLIENT_SECRET }} REDIRECT_URI={{ secrets.REDIRECT_URI }}"
 
       # - name: Clean up SSH
       #   uses: webfactory/ssh-agent@v0.5.0
