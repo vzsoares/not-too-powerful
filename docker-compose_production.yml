@@ -2,7 +2,7 @@ version: '3.8'
 services:
   nginx:
     restart: always
-    image: 355738159777.dkr.ecr.us-east-1.amazonaws.com/nginx-tasty-water:latest
+    image: ${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${IMAGE_NAME_ROOT}:${IMAGE_NAME_ROOT_VERSION}
     ports:
       - '80:80'
     depends_on:
@@ -11,7 +11,7 @@ services:
       - app-network
 
   not-too-powerful:
-    image: 355738159777.dkr.ecr.us-east-1.amazonaws.com/not-too-powerful:latest
+    image: ${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${IMAGE_NAME_4000}:${IMAGE_NAME_ROOT_VERSION}
     environment:
       - PORT
       - CLIENT_TOKEN

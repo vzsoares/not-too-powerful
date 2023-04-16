@@ -2,37 +2,37 @@
   become: true
 
   vars:
-    aws_access_key_id: "{{ aws_access_key_id }}"
-    aws_secret_access_key: "{{ aws_secret_access_key }}"
-    aws_region: "{{ aws_region }}"
-    aws_account_id: "{{ aws_account_id }}"
-    compose_item: "{{ compose_item }}"
+    AWS_ACCESS_KEY_ID: '{{ AWS_ACCESS_KEY_ID }}'
+    AWS_SECRET_ACCESS_KEY: '{{ AWS_SECRET_ACCESS_KEY }}'
+    AWS_REGION: '{{ AWS_REGION }}'
+    AWS_ACCOUNT_ID: '{{ AWS_ACCOUNT_ID }}'
+    COMPOSE_ITEM: '{{ COMPOSE_ITEM }}'
 
   tasks:
     - name: Create AWS CLI configuration directory
       file:
         path: /home/ubuntu/.aws
         state: directory
-        mode: "0755"
+        mode: '0755'
         owner: ubuntu
         group: ubuntu
     - name: Create AWS CLI credentials file
       copy:
         content: |
           [default]
-          aws_access_key_id = {{ aws_access_key_id }}
-          aws_secret_access_key = {{ aws_secret_access_key }}
+          AWS_ACCESS_KEY_ID = {{ AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY = {{ AWS_SECRET_ACCESS_KEY }}
         dest: /home/ubuntu/.aws/credentials
-        mode: "0600"
+        mode: '0600'
         owner: ubuntu
         group: ubuntu
     - name: Create AWS CLI configuration file
       copy:
         content: |
           [default]
-          region = {{ aws_region }}
+          region = {{ AWS_REGION }}
         dest: /home/ubuntu/.aws/config
-        mode: "0600"
+        mode: '0600'
         owner: ubuntu
         group: ubuntu
 
@@ -42,10 +42,10 @@
         state: started
 
     - name: Docker login
-      shell: aws ecr get-login-password --region {{ aws_region }} | docker login --username AWS --password-stdin {{ aws_account_id }}.dkr.ecr.{{ aws_region }}.amazonaws.com
+      shell: aws ecr get-login-password --region {{ AWS_REGION }} | docker login --username AWS --password-stdin {{ AWS_ACCOUNT_ID }}.dkr.ecr.{{ AWS_REGION }}.amazonaws.com
 
     - name: Create env
-      shell:  |
+      shell: |
         [ -e .env ] && rm .env
         touch .env
         echo "PORT={{ PORT }}" >> .env
@@ -53,17 +53,21 @@
         echo "CLIENT_ID={{ CLIENT_ID }}" >> .env
         echo "CLIENT_SECRET={{ CLIENT_SECRET }}" >> .env
         echo "REDIRECT_URI={{ REDIRECT_URI }}" >> .env
+        echo "AWS_ACCOUNT_ID={{ AWS_ACCOUNT_ID }}" >> .env
+        echo "AWS_REGION={{ AWS_REGION }}" >> .env
+        echo "IMAGE_NAME_ROOT={{ IMAGE_NAME_ROOT }}" >> .env
+        echo "IMAGE_NAME_ROOT_VERSION={{ IMAGE_NAME_ROOT_VERSION }}" >> .env
+        echo "IMAGE_NAME_4000={{ IMAGE_NAME_4000 }}" >> .env
 
     - name: Copy Docker Compose files
       copy:
-        src: ./{{ compose_item }}
-        dest: ./{{ compose_item }}
+        src: ./{{ COMPOSE_ITEM }}
+        dest: ./{{ COMPOSE_ITEM }}
       loop:
-      - "{{ compose_item }}"
+        - '{{ COMPOSE_ITEM }}'
 
     - name: Deploy Docker Compose stack
-      shell: docker-compose -f {{ compose_item }} pull && docker-compose -f {{ compose_item }} up -d
+      shell: docker-compose -f {{ COMPOSE_ITEM }} pull && docker-compose -f {{ COMPOSE_ITEM }} up -d
 
     - name: Clear dangling images
       shell: docker rmi --force  $(docker images -f dangling=true -q)
-
