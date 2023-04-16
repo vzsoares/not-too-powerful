@@ -3,17 +3,15 @@
 ansible-playbook -i inventory.yml playbook_pull_and_compose.yml -vvv --extra-vars "@.env.playbook.json"
 
 # bash inside image 
-docker exec -it 57f0011dfbd3 bash
-docker run --rm -it --entrypoint bash 57f0011dfbd3
-docker run -it --entrypoint sh 57f0011dfbd3
+docker exec -it ****** bash
+docker run --rm -it --entrypoint bash *****
+docker run -it --entrypoint sh ****
 
 # inside vm
-sudo docker logs 625f55e37e7c
+sudo docker logs *****
 
+# delete dangling images
+docker rmi --force  $(docker images -f dangling=true -q)
 
-
-# TODO
-# get ssh through cli
-# pipeline
-# pass push_ecr args as vars
-# playbook_ just updates service 
+# run app
+docker run -p 4000:4000 --env-file ./server/.env notnot

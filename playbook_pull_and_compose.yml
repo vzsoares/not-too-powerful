@@ -1,4 +1,4 @@
-- hosts: my_host
+- hosts: aws_ec2_tasty_water
   become: true
 
   vars:
