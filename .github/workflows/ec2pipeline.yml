@@ -13,10 +13,23 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: Configure AWS credentials to push ecr
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID_ACTION }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY_ACTION }}
+          aws-region: ${{ secrets.AWS_REGION }}
+
+      - name: Build nginx
+        run: bash push_ecr_nginx.sh ${{ secrets.AWS_REGION }} ${{ secrets.AWS_ACCOUNT_ID }} ${{ secrets.IMAGE_NAME_4000 }} ${{ secrets.IMAGE_NAME_ROOT_VERSION }} ${{ secrets.VITE_DISCORD_GET_USER_CODE }} ${{ secrets.VITE_DISCORD_ADD_BOT_TO_SERVER }} ${{ secrets.VITE_API_BASE }}
+
+      - name: Build app
+        run: bash push_ecr_not-too-powerful.sh ${{ secrets.AWS_REGION }} ${{ secrets.AWS_ACCOUNT_ID }} ${{ secrets.IMAGE_NAME_4000 }} ${{ secrets.IMAGE_NAME_ROOT }} ${{ secrets.IMAGE_NAME_ROOT_VERSION }}
+
       - name: Deploy application/Run playbook
         uses: dawidd6/action-ansible-playbook@v2.6.1
         with:
-          playbook: playbook_pull_and_compose.yml     
+          playbook: playbook_pull_and_compose.yml
           directory: ./
           key: ${{secrets.SSH_PRIVATE_KEY}}
           options: |

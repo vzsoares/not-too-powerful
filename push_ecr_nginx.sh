@@ -2,10 +2,16 @@ set -e
 
 cd .nginx/
 
-aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 355738159777.dkr.ecr.us-east-1.amazonaws.com
+AWS_REGION=$1
+AWS_ACCOUNT_ID=$2
+IMAGE_NAME_4000=$3
+IMAGE_NAME_ROOT=$4 
+IMAGE_NAME_ROOT_VERSION=$5
 
-docker buildx build -t nginx-tasty-water --build-arg "IMAGE_NAME_4000=not-too-powerful" .
+aws ecr get-login-password --region ${AWS_REGION} | docker login --username AWS --password-stdin ${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com
 
-docker tag nginx-tasty-water:latest 355738159777.dkr.ecr.us-east-1.amazonaws.com/nginx-tasty-water:latest
+docker buildx build -t ${IMAGE_NAME_ROOT} --build-arg "IMAGE_NAME_4000=${IMAGE_NAME_4000}" .
 
-docker push 355738159777.dkr.ecr.us-east-1.amazonaws.com/nginx-tasty-water:latest
+docker tag ${IMAGE_NAME_ROOT}:${IMAGE_NAME_ROOT_VERSION} ${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${IMAGE_NAME_ROOT}:${IMAGE_NAME_ROOT_VERSION}
+
+docker push ${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${IMAGE_NAME_ROOT}:${IMAGE_NAME_ROOT_VERSION}
