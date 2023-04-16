@@ -54,13 +54,16 @@
         echo "CLIENT_SECRET={{ CLIENT_SECRET }}" >> .env
         echo "REDIRECT_URI={{ REDIRECT_URI }}" >> .env
 
-    - name: copy Docker Compose files
+    - name: Copy Docker Compose files
       copy:
         src: ./{{ compose_item }}
         dest: ./{{ compose_item }}
       loop:
       - "{{ compose_item }}"
 
-    - name: deploy Docker Compose stack
+    - name: Deploy Docker Compose stack
       shell: docker-compose -f {{ compose_item }} pull && docker-compose -f {{ compose_item }} up -d
+
+    - name: Clear dangling images
+      shell: docker rmi --force  $(docker images -f dangling=true -q)
 

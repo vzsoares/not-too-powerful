@@ -13,34 +13,12 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      # - name: Configure SSH
-      #   uses: webfactory/ssh-agent@v0.5.0
-      #   with:
-      #     ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
-
-      # - name: Install Ansible
-      #   run: sudo apt-get update && sudo apt-get -y install ansible
-
-      # - name: Deploy application
-      #   run: |
-      #     ansible-playbook -i inventory_production.yml playbook_pull_and_compose.yml --extra-vars \
-      #     "aws_access_key_id={{ secrets.aws_access_key_id }} aws_secret_access_key={{ secrets.aws_secret_access_key }} aws_region={{ secrets.aws_region }} aws_account_id={{ secrets.aws_account_id }} compose_item={{ secrets.secrets.compose_item }} CLIENT_TOKEN={{ secrets.CLIENT_TOKEN }} PORT={{ secrets.PORT }} CLIENT_TOKEN={{ secrets.CLIENT_TOKEN }} CLIENT_ID={{ secrets.CLIENT_ID }} CLIENT_SECRET={{ secrets.CLIENT_SECRET }} REDIRECT_URI={{ secrets.REDIRECT_URI }}"
       - name: Deploy application/Run playbook
         uses: dawidd6/action-ansible-playbook@v2.6.1
         with:
-          # Required, playbook filepath
           playbook: playbook_pull_and_compose.yml     
           directory: ./
-          # Optional, SSH private key
           key: ${{secrets.SSH_PRIVATE_KEY}}
           options: |
             --inventory inventory_production.yml
             --extra-vars "aws_access_key_id=${{ secrets.AWS_ACCESS_KEY_ID }} aws_secret_access_key=${{ secrets.AWS_SECRET_ACCESS_KEY }} aws_region=${{ secrets.AWS_REGION }} aws_account_id=${{ secrets.AWS_ACCOUNT_ID }} compose_item=${{ secrets.COMPOSE_ITEM }} CLIENT_TOKEN=${{ secrets.CLIENT_TOKEN }} PORT=${{ secrets.PORT }} CLIENT_TOKEN=${{ secrets.CLIENT_TOKEN }} CLIENT_ID=${{ secrets.CLIENT_ID }} CLIENT_SECRET=${{ secrets.CLIENT_SECRET }} REDIRECT_URI=${{ secrets.REDIRECT_URI }}"
-
-      # - name: Clean up SSH
-      #   uses: webfactory/ssh-agent@v0.5.0
-      #   with:
-      #     ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
-      #     remove: true
-
-          # https://stackoverflow.com/questions/74048180/how-to-run-ansible-playbook-from-github-actions-without-using-external-action
