@@ -1,0 +1,36 @@
+version: "3.8"
+services:
+  nginx:
+    restart: always
+    build:
+      context: ./.nginx
+      dockerfile: Dockerfile
+      args:
+         IMAGE_NAME_4000: ${IMAGE_NAME_4000}
+    ports:
+      - "80:80"
+    depends_on:
+      - api
+    networks:
+      - app-network
+
+  api:
+    build:
+        context: ./
+        dockerfile: Dockerfile
+        args:
+            VITE_DISCORD_GET_USER_CODE: ${VITE_DISCORD_GET_USER_CODE}
+            VITE_DISCORD_ADD_BOT_TO_SERVER: ${VITE_DISCORD_ADD_BOT_TO_SERVER}
+            VITE_API_BASE: ${VITE_API_BASE}
+    environment:
+      - PORT
+      - CLIENT_TOKEN
+      - CLIENT_ID
+      - CLIENT_SECRET
+      - REDIRECT_URI
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
