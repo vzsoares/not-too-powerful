@@ -10,8 +10,8 @@ functions:
     handler: handler.handler
     events:
       - httpApi:
-          path: /
-          method: get
+          path: /{proxy+}
+          method: ANY
 
 custom:
   esbuild:

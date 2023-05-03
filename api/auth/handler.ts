@@ -1,9 +1,20 @@
+import getToken from './actions/getToken';
+
 import type { APIGatewayProxyEvent, APIGatewayProxyResult } from 'aws-lambda';
 
-export const handler = (event: APIGatewayProxyEvent): APIGatewayProxyResult => {
-  const queries = JSON.stringify(event.queryStringParameters);
-  return {
-    statusCode: 200,
-    body: JSON.stringify({ queries: `${queries}`, hi: 'hello' }),
-  };
+export const handler = async (
+  event: APIGatewayProxyEvent,
+): Promise<APIGatewayProxyResult> => {
+  const proxy = event.pathParameters?.proxy;
+
+  switch (proxy) {
+    case 'getToken':
+      return await getToken(event);
+    case 'refreshToken':
+    default:
+      return {
+        statusCode: 400,
+        body: JSON.stringify({}),
+      };
+  }
 };

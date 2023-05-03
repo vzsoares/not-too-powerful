@@ -1,8 +1,12 @@
 parser: '@typescript-eslint/parser'
 parserOptions:
   project: ./tsconfig.json
-  tsconfigRootDir: ./
+  tsconfigRootDir: "./api/auth"
 root: true
+
+ignorePatterns:
+  - esbuild.js
+  - dist/*
 
 extends:
   - eslint:recommended
@@ -27,6 +31,7 @@ settings:
 
 rules:
   prettier/prettier: error
+  '@typescript-eslint/require-await': 0
   import/order:
     - error
     - newlines-between: always
