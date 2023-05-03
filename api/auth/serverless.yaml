@@ -13,9 +13,9 @@ functions:
           path: /{proxy+}
           method: ANY
     environment:
-      CLIENT_ID: TODO
-      CLIENT_SECRET: TODO
-      REDIRECT_URI: TODO
+      CLIENT_ID: ${file(./.env.${opt:stage, 'dev'}.json):CLIENT_ID}
+      CLIENT_SECRET: ${file(./.env.${opt:stage, 'dev'}.json):CLIENT_SECRET}
+      REDIRECT_URI: ${file(./.env.${opt:stage, 'dev'}.json):REDIRECT_URI}
 
 custom:
   esbuild:

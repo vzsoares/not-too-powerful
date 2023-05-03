@@ -34,27 +34,26 @@ export default async function handler(
     }),
   };
   const request = await fetch('https://discord.com/api/oauth2/token', options);
+  const data = (await request.json()) as Record<string, string>;
   if (request.status !== 200) {
     return {
       statusCode: 401,
-      body: JSON.stringify({ request }),
+      body: JSON.stringify({ data: data }),
     };
   }
-  const data = (await request.json()) as Record<string, string>;
 
   const identifyReq = await fetch('https://discordapp.com/api/users/@me', {
-    // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
     headers: { authorization: `Bearer ${data.access_token}` },
     method: 'GET',
     body: null,
   });
+  const identifyData = (await identifyReq.json()) as Record<string, string>;
   if (identifyReq.status !== 200) {
     return {
       statusCode: 401,
-      body: JSON.stringify({ identifyReq }),
+      body: JSON.stringify({ data: identifyData }),
     };
   }
-  const identifyData = (await identifyReq.json()) as Record<string, string>;
 
   return {
     statusCode: 200,
