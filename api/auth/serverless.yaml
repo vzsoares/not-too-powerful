@@ -12,6 +12,10 @@ functions:
       - httpApi:
           path: /{proxy+}
           method: ANY
+    environment:
+      CLIENT_ID: TODO
+      CLIENT_SECRET: TODO
+      REDIRECT_URI: TODO
 
 custom:
   esbuild:
