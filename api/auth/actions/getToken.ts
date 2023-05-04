@@ -1,11 +1,12 @@
 import * as z from 'zod';
 
-import { RequestContext } from '../handler';
-
-import type { APIGatewayProxyEvent, APIGatewayProxyResult } from 'aws-lambda';
+import type {
+  APIGatewayProxyEventEnhanced,
+  APIGatewayProxyResult,
+} from 'aws-lambda';
 
 export default async function handler(
-  event: { requestContext: RequestContext } & APIGatewayProxyEvent,
+  event: APIGatewayProxyEventEnhanced,
 ): Promise<APIGatewayProxyResult> {
   const bodySchema = z.object({
     code: z.string().min(20).max(40),
