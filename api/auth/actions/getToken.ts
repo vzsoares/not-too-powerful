@@ -1,17 +1,17 @@
 import * as z from 'zod';
 
+import { RequestContext } from '../handler';
+
 import type { APIGatewayProxyEvent, APIGatewayProxyResult } from 'aws-lambda';
 
 export default async function handler(
-  event: APIGatewayProxyEvent,
+  event: { requestContext: RequestContext } & APIGatewayProxyEvent,
 ): Promise<APIGatewayProxyResult> {
   const bodySchema = z.object({
     code: z.string().min(20).max(40),
   });
 
-  //@ts-expect-error Bala
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
-  if ((event.requestContext.http?.method as string) !== 'POST') {
+  if (event.requestContext.http.method !== 'POST') {
     return {
       statusCode: 400,
       body: JSON.stringify({}),

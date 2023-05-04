@@ -4,18 +4,23 @@ frameworkVersion: '3'
 provider:
   name: aws
   runtime: nodejs18.x
-
+  environment:
+    CLIENT_ID: ${file(./.env.${opt:stage, 'dev'}.json):CLIENT_ID}
+    CLIENT_SECRET: ${file(./.env.${opt:stage, 'dev'}.json):CLIENT_SECRET}
+    REDIRECT_URI: ${file(./.env.${opt:stage, 'dev'}.json):REDIRECT_URI}
 functions:
-  handler:
-    handler: handler.handler
-    events:
-      - httpApi:
-          path: /{proxy+}
-          method: ANY
-    environment:
-      CLIENT_ID: ${file(./.env.${opt:stage, 'dev'}.json):CLIENT_ID}
-      CLIENT_SECRET: ${file(./.env.${opt:stage, 'dev'}.json):CLIENT_SECRET}
-      REDIRECT_URI: ${file(./.env.${opt:stage, 'dev'}.json):REDIRECT_URI}
+    getTokenHandler:
+      handler: handler.getTokenHandler
+      events:
+        - httpApi:
+            path: /getToken
+            method: POST
+  # handler:
+  #   handler: handler.handler
+  #   events:
+  #     - httpApi:
+  #         path: /{proxy+}
+  #         method: ANY
 
 custom:
   esbuild:
