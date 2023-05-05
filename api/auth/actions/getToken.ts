@@ -5,12 +5,16 @@ import type {
   APIGatewayProxyResult,
 } from 'aws-lambda';
 
+// @ts-ignore
+import helpers from 'helpers';
+
 export default async function handler(
   event: APIGatewayProxyEventEnhanced,
 ): Promise<APIGatewayProxyResult> {
   const bodySchema = z.object({
     code: z.string().min(20).max(40),
   });
+  return helpers.response(200, { zap: 'zapeia' });
 
   if (event.requestContext.http.method !== 'POST') {
     return {
