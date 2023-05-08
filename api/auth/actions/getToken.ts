@@ -14,16 +14,8 @@ export default async function handler(
   const bodySchema = z.object({
     code: z.string().min(20).max(40),
   });
-  return helpers.response(200, { zap: 'zapeia' });
 
-  if (event.requestContext.http.method !== 'POST') {
-    return {
-      statusCode: 400,
-      body: JSON.stringify({}),
-    };
-  }
-
-  const reqBody = bodySchema.parse(JSON.parse(event.body ?? ''));
+  const reqBody = bodySchema.parse(JSON.parse(event?.body ?? '""'));
 
   const options = {
     method: 'POST',
@@ -41,10 +33,7 @@ export default async function handler(
   const request = await fetch('https://discord.com/api/oauth2/token', options);
   const data = (await request.json()) as Record<string, string>;
   if (request.status !== 200) {
-    return {
-      statusCode: 401,
-      body: JSON.stringify({ data: data }),
-    };
+    return helpers.response(401, { data: data });
   }
 
   const identifyReq = await fetch('https://discordapp.com/api/users/@me', {
@@ -54,14 +43,8 @@ export default async function handler(
   });
   const identifyData = (await identifyReq.json()) as Record<string, string>;
   if (identifyReq.status !== 200) {
-    return {
-      statusCode: 401,
-      body: JSON.stringify({ data: identifyData }),
-    };
+    return helpers.response(401, { data: identifyData });
   }
 
-  return {
-    statusCode: 200,
-    body: JSON.stringify({ auth: data, user: identifyData }),
-  };
+  return helpers.response(200, { auth: data, user: identifyData });
 }
