@@ -15,6 +15,7 @@ provider:
     binaryMediaTypes:
       - 'multipart/form-data'
 
+functions:
   sendImageMessage:
     handler: handler.sendImageMessageHandler
     events:
