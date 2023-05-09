@@ -1,4 +1,5 @@
 import getBotMatches from './actions/getBotMatches';
+import getGuildsChannels from './actions/getGuildsChannels';
 
 import type {
   APIGatewayProxyEventEnhanced,
@@ -24,3 +25,6 @@ export const handler = async (
 
 export const getBotMatchesHandler = (e: APIGatewayProxyEventEnhanced) =>
   handler(e, getBotMatches);
+
+  export const getGuildsChannelsHandler = (e: APIGatewayProxyEventEnhanced) =>
+  handler(e, getGuildsChannels);

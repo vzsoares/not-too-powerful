@@ -19,12 +19,13 @@ functions:
       - httpApi:
           path: /getBotMatches
           method: GET
-  # handler:
-  #   handler: handler.handler
-  #   events:
-  #     - httpApi:
-  #         path: /{proxy+}
-  #         method: ANY
+  getGuildsChannels:
+    handler: handler.getGuildsChannelsHandler
+    events:
+      - httpApi:
+          path: /getGuildsChannels
+          method: GET
+
 
 custom:
   esbuild:
