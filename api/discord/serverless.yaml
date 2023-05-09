@@ -46,6 +46,11 @@ custom:
     minify: false
     external:
       - 'helpers'
+      - sharp
+    packagerOptions:
+      scripts:
+        - npm install --arch=x64 --platform=linux sharp
+
   serverless-offline:
     useDocker: true
 

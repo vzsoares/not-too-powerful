@@ -10,6 +10,7 @@ import type {
 import helpers from 'helpers';
 
 import parser from 'lambda-multipart-parser';
+import { ProcessImage } from '../utils/processImage';
 
 export default async function handler(
   event: APIGatewayProxyEventEnhanced,
@@ -34,14 +35,13 @@ export default async function handler(
   const userId = userIdSchema.parse(result.userId);
   const channelId = idSchema.parse(result.channelId);
 
-  //   const processedFile = await ProcessImage(file['data']);
-  const processedFile = file;
+  const processedFile = await ProcessImage(file.content);
 
   form.append('content', `<@${userId}>${message ? '\n' + message : ''}`);
 
-  const toSendBlob = new Blob([file.content]);
+  const toSendBlob = new Blob([processedFile]);
 
-  form.append('attachments', toSendBlob, file.filename);
+  form.append('attachments', toSendBlob, `${file.filename.split('.')[0]}.webp`);
 
   const response = await fetch(
     `https://discordapp.com/api/channels/${channelId}/messages`,
