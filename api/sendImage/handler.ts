@@ -1,5 +1,4 @@
-import getBotMatches from './actions/getBotMatches';
-import getGuildsChannels from './actions/getGuildsChannels';
+import sendImageMessage from './actions/sendImageMessage';
 
 import type {
   APIGatewayProxyEventEnhanced,
@@ -23,8 +22,7 @@ export const handler = async (
   }
 };
 
-export const getBotMatchesHandler = (e: APIGatewayProxyEventEnhanced) =>
-  handler(e, getBotMatches);
+export const sendImageMessageHandler = (e: APIGatewayProxyEventEnhanced) =>
+  handler(e, sendImageMessage);
 
-export const getGuildsChannelsHandler = (e: APIGatewayProxyEventEnhanced) =>
-  handler(e, getGuildsChannels);
+// https://stackoverflow.com/questions/38599028/parse-multipart-form-data-from-body-as-string-on-aws-lambda

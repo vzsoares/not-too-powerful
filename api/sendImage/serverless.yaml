@@ -1,4 +1,4 @@
-service: not-too-powerful-discord-guilds
+service: not-too-powerful-discord-images
 frameworkVersion: '3'
 
 provider:
@@ -11,20 +11,21 @@ provider:
     CLIENT_TOKEN: ${file(./.env.${opt:stage, 'dev'}.json):CLIENT_TOKEN}
   layers:
     - arn:aws:lambda:us-east-1:355738159777:layer:layerHelpers:4
+  apiGateway:
+    binaryMediaTypes:
+      - 'multipart/form-data'
 
-functions:
-  getBotMatchesHandler:
-    handler: handler.getBotMatchesHandler
+  sendImageMessage:
+    handler: handler.sendImageMessageHandler
     events:
-      - httpApi:
-          path: /getBotMatches
-          method: GET
-  getGuildsChannels:
-    handler: handler.getGuildsChannelsHandler
-    events:
-      - httpApi:
-          path: /getGuildsChannels
-          method: GET
+      - http:
+          path: /sendImageMessage
+          method: POST
+          cors:
+            origin: '*'
+            headers:
+              - Content-Type
+              - Accept
 
 custom:
   esbuild:
@@ -32,6 +33,10 @@ custom:
     minify: false
     external:
       - 'helpers'
+      - sharp
+    packagerOptions:
+      scripts:
+        - npm install --arch=x64 --platform=linux sharp
 
   serverless-offline:
     useDocker: true
