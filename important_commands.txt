@@ -1,6 +1,0 @@
-
-# RUN PLAYBOOK
-ansible-playbook -i inventory.yml playbook_pull_and_compose.yml -vvv --extra-vars "@.env.playbook.json"
-
-# run app
-docker run -p 4000:4000 --env-file ./server/.env notnot
