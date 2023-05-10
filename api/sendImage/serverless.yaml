@@ -4,6 +4,7 @@ frameworkVersion: '3'
 provider:
   name: aws
   runtime: nodejs18.x
+  region: us-east-1
   environment:
     CLIENT_ID: ${file(./.env.${opt:stage, 'dev'}.json):CLIENT_ID}
     CLIENT_SECRET: ${file(./.env.${opt:stage, 'dev'}.json):CLIENT_SECRET}
