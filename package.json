@@ -7,12 +7,12 @@
   "main": "app.ts",
   "scripts": {
     "dev-c": "cd client && yarn dev",
-    "build": "cd client && yarn build && yarn build",
-    "test-smoke": "cd client && yarn run test && yarn run test",
-    "fmt": "cd client && yarn fmt && yarn fmt",
-    "check-types": "cd client && yarn check-types && yarn check-types",
-    "check-prettier": "cd client && yarn check-prettier && yarn check-prettier",
-    "check-lint": "cd client && yarn check-lint && yarn check-lint",
+    "build": "cd client && yarn build",
+    "test-smoke": "cd client && yarn run test",
+    "fmt": "cd client && yarn fmt",
+    "check-types": "cd client && yarn check-types",
+    "check-prettier": "cd client && yarn check-prettier",
+    "check-lint": "cd client && yarn check-lint",
     "prepare": "husky install"
   },
   "lint-staged": {
