@@ -32,14 +32,14 @@ export const authApi = createApi({
   endpoints: (build) => ({
     getToken: build.query<API_RESULT<GetTokenResult>, string>({
       query: (code) => ({
-        url: 'api/v1/auth/d/userToken',
+        url: 'auth/getToken',
         method: 'POST',
         body: { code },
       }),
     }),
     refreshToken: build.query<API_RESULT<RefreshTokenResult>, string>({
       query: (refreshToken) => ({
-        url: 'api/v1/auth/d/refreshToken',
+        url: 'auth/refreshToken',
         method: 'POST',
         body: { refresh_token: refreshToken },
       }),
