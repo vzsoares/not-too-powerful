@@ -16,6 +16,8 @@ provider:
   apiGateway:
     binaryMediaTypes:
       - 'multipart/form-data'
+  httpApi:
+    cors: true
 
 functions:
   sendImageMessage:

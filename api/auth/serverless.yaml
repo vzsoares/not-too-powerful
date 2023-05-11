@@ -13,6 +13,8 @@ provider:
     STAGE: ${opt:stage, 'dev'}
   layers:
     - arn:aws:lambda:us-east-1:355738159777:layer:layerHelpers:4
+  httpApi:
+    cors: true
 
 functions:
   getTokenHandler:
@@ -21,6 +23,7 @@ functions:
       - httpApi:
           path: /getToken
           method: POST
+
   # handler:
   #   handler: handler.handler
   #   events:
