@@ -33,10 +33,19 @@ custom:
     minify: false
     external:
       - 'helpers'
-
   serverless-offline:
     useDocker: true
+  customDomain:
+    domainName: 'api.not-too-powerful.zenhalab.com'
+    stage: ${sls:stage}
+    basePath: '${sls:stage}/discord'
+    certificateName: 'api.not-too-powerful.zenhalab.com'
+    createRoute53Record: false
+    createRoute53IPv6Record: false
+    endpointType: REGIONAL
+    apiType: http
 
 plugins:
   - serverless-esbuild
   - serverless-offline
+  - serverless-domain-manager

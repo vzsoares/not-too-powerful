@@ -5,6 +5,7 @@ provider:
   name: aws
   runtime: nodejs18.x
   region: us-east-1
+  stage: ${opt:stage, 'dev'}
   environment:
     CLIENT_ID: ${file(./.env.${opt:stage, 'dev'}.json):CLIENT_ID}
     CLIENT_SECRET: ${file(./.env.${opt:stage, 'dev'}.json):CLIENT_SECRET}
@@ -20,14 +21,9 @@ functions:
   sendImageMessage:
     handler: handler.sendImageMessageHandler
     events:
-      - http:
+      - httpApi:
           path: /sendImageMessage
           method: POST
-          cors:
-            origin: '*'
-            headers:
-              - Content-Type
-              - Accept
 
 custom:
   esbuild:
@@ -39,10 +35,19 @@ custom:
     packagerOptions:
       scripts:
         - npm install --arch=x64 --platform=linux sharp
-
   serverless-offline:
     useDocker: true
+  customDomain:
+    domainName: 'api.not-too-powerful.zenhalab.com'
+    stage: ${sls:stage}
+    basePath: '${sls:stage}/image'
+    certificateName: 'api.not-too-powerful.zenhalab.com'
+    createRoute53Record: false
+    createRoute53IPv6Record: false
+    endpointType: REGIONAL
+    apiType: http
 
 plugins:
   - serverless-esbuild
   - serverless-offline
+  - serverless-domain-manager
