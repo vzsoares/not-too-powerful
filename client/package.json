@@ -8,7 +8,7 @@
     "build": "yarn vite build --emptyOutDir",
     "preview": "vite preview",
     "test": "vitest run",
-    "fmt": " yarn prettier -w . && yarn eslint --fix .",
+    "fmt": " yarn prettier -w . --ignore-unknown --ignore-path ./.gitignore && yarn eslint --fix . --ignore-path ./.gitignore --ext .ts,.tsx",
     "lint-fix": "yarn eslint --fix src",
     "prettier-format": "yarn prettier --config ../.prettierrc.yml --write src",
     "check-prettier": "yarn prettier --check src",

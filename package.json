@@ -15,12 +15,8 @@
     "check-lint": "cd client && yarn check-lint",
     "prepare": "husky install"
   },
-  "lint-staged": {
-    "*.{ts,tsx,js,jsx}": "yarn fmt"
-  },
   "devDependencies": {
-    "husky": "^8.0.3",
-    "lint-staged": "^13.1.0"
+    "husky": "^8.0.3"
   },
   "dependencies": {}
 }

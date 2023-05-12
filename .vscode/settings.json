@@ -2,7 +2,7 @@
   "prettier.configPath": "./.prettierrc.yml",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "eslint.workingDirectories": [
-    "client",
+    "client","api"
   ],
   "[dockerfile]": {
     "editor.defaultFormatter": "ms-azuretools.vscode-docker"

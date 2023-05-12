@@ -14,6 +14,7 @@ export const handler = async (
     const result = await fn(event);
 
     return result;
+
   } catch (error) {
     console.error(error);
     return {
