@@ -57,4 +57,3 @@ export default async function handler(
   const data = await response.json();
   return helpers.response(200, data);
 }
-// TODO separate into other lambda
