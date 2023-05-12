@@ -1,0 +1,55 @@
+service: not-too-powerful-discord-images
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: us-east-1
+  stage: ${opt:stage, 'dev'}
+  environment:
+    CLIENT_ID: ${file(./.env.${opt:stage, 'dev'}.json):CLIENT_ID}
+    CLIENT_SECRET: ${file(./.env.${opt:stage, 'dev'}.json):CLIENT_SECRET}
+    REDIRECT_URI: ${file(./.env.${opt:stage, 'dev'}.json):REDIRECT_URI}
+    CLIENT_TOKEN: ${file(./.env.${opt:stage, 'dev'}.json):CLIENT_TOKEN}
+  layers:
+    - arn:aws:lambda:us-east-1:355738159777:layer:layerHelpers:4
+  apiGateway:
+    binaryMediaTypes:
+      - 'multipart/form-data'
+  httpApi:
+    cors: true
+
+functions:
+  sendImageMessage:
+    handler: handler.sendImageMessageHandler
+    events:
+      - httpApi:
+          path: /sendImageMessage
+          method: POST
+
+custom:
+  esbuild:
+    bundle: true
+    minify: false
+    external:
+      - 'helpers'
+      - sharp
+    packagerOptions:
+      scripts:
+        - npm install --arch=x64 --platform=linux sharp
+  serverless-offline:
+    useDocker: true
+  customDomain:
+    domainName: 'api.not-too-powerful.zenhalab.com'
+    stage: ${sls:stage}
+    basePath: '${sls:stage}/image'
+    certificateName: 'api.not-too-powerful.zenhalab.com'
+    createRoute53Record: false
+    createRoute53IPv6Record: false
+    endpointType: REGIONAL
+    apiType: http
+
+plugins:
+  - serverless-esbuild
+  - serverless-offline
+  - serverless-domain-manager

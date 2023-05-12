@@ -39,7 +39,7 @@ export const discordApi = createApi({
   endpoints: (build) => ({
     getGuildMatches: build.query<API_RESULT<GuildSummary[]>, undefined>({
       query: () => ({
-        url: 'api/v1/guilds/matches',
+        url: 'discord/getBotMatches',
       }),
     }),
     getGuildChannels: build.query<
@@ -47,7 +47,7 @@ export const discordApi = createApi({
       GuildSummary['id']
     >({
       query: (guild_id) => ({
-        url: 'api/v1/guilds/channels',
+        url: 'discord/getGuildsChannels',
         params: { guild_id },
       }),
     }),

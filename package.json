@@ -1,27 +1,22 @@
 {
   "name": "not-too-powerful",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Discord Bot",
   "author": "vzsoares",
   "license": "ISC",
   "main": "app.ts",
   "scripts": {
-    "dev-s": "cd server && yarn start",
     "dev-c": "cd client && yarn dev",
-    "build": "cd client && yarn build && cd ../server && yarn build",
-    "test-smoke": "cd client && yarn run test && cd ../server && yarn run test",
-    "fmt": "cd client && yarn fmt && cd ../server && yarn fmt",
-    "check-types": "cd client && yarn check-types && cd ../server && yarn check-types",
-    "check-prettier": "cd client && yarn check-prettier && cd ../server && yarn check-prettier",
-    "check-lint": "cd client && yarn check-lint && cd ../server && yarn check-lint",
+    "build": "cd client && yarn build",
+    "test-smoke": "cd client && yarn run test",
+    "fmt": "cd client && yarn fmt",
+    "check-types": "cd client && yarn check-types",
+    "check-prettier": "cd client && yarn check-prettier",
+    "check-lint": "cd client && yarn check-lint",
     "prepare": "husky install"
   },
-  "lint-staged": {
-    "*.{ts,tsx,js,jsx}": "yarn fmt"
-  },
   "devDependencies": {
-    "husky": "^8.0.3",
-    "lint-staged": "^13.1.0"
+    "husky": "^8.0.3"
   },
   "dependencies": {}
 }

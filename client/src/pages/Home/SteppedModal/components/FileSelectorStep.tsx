@@ -53,7 +53,7 @@ function FileSelectorStep() {
     formData.append('channelId', guild.selectedGuildChannel?.id ?? '');
 
     const response = await fetch(
-      `${import.meta.env.VITE_API_BASE ?? ''}/api/v1/guilds/sendMessage`,
+      `${import.meta.env.VITE_API_BASE ?? ''}/image/sendImageMessage`,
       {
         body: formData,
         method: 'POST',

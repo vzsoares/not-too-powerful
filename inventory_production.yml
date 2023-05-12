@@ -1,4 +1,0 @@
-aws_ec2_tasty_water:
-  hosts:
-    ec2-107-23-43-47.compute-1.amazonaws.com:
-      ansible_ssh_user: ubuntu
