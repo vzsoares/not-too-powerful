@@ -24,5 +24,3 @@ export const handler = async (
 
 export const sendImageMessageHandler = (e: APIGatewayProxyEventEnhanced) =>
   handler(e, sendImageMessage);
-
-// https://stackoverflow.com/questions/38599028/parse-multipart-form-data-from-body-as-string-on-aws-lambda
