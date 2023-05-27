@@ -6,7 +6,7 @@
 ![GitHub language count](https://img.shields.io/github/languages/count/vzsoares/not-too-powerful?style=for-the-badge)
 ![GitHub forks](https://img.shields.io/github/forks/vzsoares/not-too-powerful?style=for-the-badge)
 
-![image](imgimg.jpg)
+![image](assets/imgimg.jpg)
 
 > Discord bot to send powerful images
 
@@ -90,3 +90,11 @@ Now the **Real** reason behind this project was to learn about infrastructure, a
     <br/>
     <br/>
     So considering the price that's basically free due to aws free tier, this is the deployment i choose to keep the project
+
+## ⚡ Extra
+
+- Ugly diagrammed ideas. [here](not-too-poweful.excalidraw)
+
+- initial spark
+
+  <img src="assets/spark.jpg" style="max-width:400px;"/>
