@@ -6,10 +6,10 @@ provider:
   runtime: nodejs18.x
   region: us-east-1
   environment:
-    CLIENT_ID: ${file(./.env.${opt:stage, 'dev'}.json):CLIENT_ID}
-    CLIENT_SECRET: ${file(./.env.${opt:stage, 'dev'}.json):CLIENT_SECRET}
-    REDIRECT_URI: ${file(./.env.${opt:stage, 'dev'}.json):REDIRECT_URI}
-    CLIENT_TOKEN: ${file(./.env.${opt:stage, 'dev'}.json):CLIENT_TOKEN}
+    CLIENT_ID: ${ssm:/${sls:stage}/NOT-TOO-POWERFUL_CLIENT_ID}
+    CLIENT_SECRET: ${ssm:/${sls:stage}/NOT-TOO-POWERFUL_CLIENT_SECRET}
+    REDIRECT_URI: ${ssm:/${sls:stage}/NOT-TOO-POWERFUL_REDIRECT_URI}
+    CLIENT_TOKEN: ${ssm:/${sls:stage}/NOT-TOO-POWERFUL_CLIENT_TOKEN}
   layers:
     - arn:aws:lambda:us-east-1:355738159777:layer:layerHelpers:4
   httpApi:
